@@ -1,0 +1,27 @@
+# dbbolton's .screenrc
+
+# disable the annoying startup message
+startup_message off
+
+# statusbar
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.kW}%-w%{.Wk}%n %t%{-}%+w %=%{..B}%H %{..Y}%1` %{..M}%2` %{..C}%3`%{..G}%4` %{..R}%d/%m %c"
+
+# some vim-like keybindings for navigating between regions
+bind j focus down
+#bind k focus up 	# just use ^k^k for kill
+bind t focus top
+bind b focus bottom
+
+# commands used for the statusbar
+backtick 1 5 5 sysstats -l
+backtick 2 5 5 sysstats -a
+backtick 3 5 5 sysstats -t
+backtick 4 5 5 sysstats -b
+
+# I have these as one-line shell scripts in my ~/bin/
+# mem-act      =	grep '^Active:.*' /proc/meminfo | awk '{ mem=($2)/(1000) ; \ 
+#			printf "%0.0f MB\n", mem }'
+# battery-info =  	acpi -b | awk '{print $4}'
+# current-load = 	uptime | awk '{ printf "%0.2f\n", $8 }'

@@ -1,0 +1,72 @@
+2011-07-08 14:58:27		irc: connecting to server irc.debian.org/6667...
+2011-07-08 14:58:28		irc: connected to irc.debian.org/6667 (64.62.190.36)
+2011-07-08 14:58:28	↔	charm.oftc.net (charm.oftc.net): *** Looking up your hostname...
+2011-07-08 14:58:28	↔	charm.oftc.net (charm.oftc.net): *** Checking Ident
+2011-07-08 14:58:28	↔	charm.oftc.net (charm.oftc.net): *** Found your hostname
+2011-07-08 14:58:39	↔	charm.oftc.net (charm.oftc.net): *** No Ident response
+2011-07-08 14:58:39		irc: nickname "dbbolton" is already in use, trying nickname #2 ("dbbolton1")
+2011-07-08 14:58:39	↔	Welcome to the OFTC Internet Relay Chat Network dbbolton1
+2011-07-08 14:58:39	↔	Your host is charm.oftc.net[64.62.190.36/6667], running version hybrid-7.2.2+oftc1.6.8
+2011-07-08 14:58:39	↔	This server was created Jan 26 2010 at 23:25:21
+2011-07-08 14:58:39	↔	charm.oftc.net hybrid-7.2.2+oftc1.6.8 CDGPRSabcdfgiklnorsuwxyz biklmnopstveI bkloveI
+2011-07-08 14:58:39	↔	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=390 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2011-07-08 14:58:39	↔	CHANLIMIT=#:70 CHANNELLEN=50 CHANMODES=eIqb,k,l,imnpstMRS ELIST=CMNTU SAFELIST KNOCK AWAYLEN=160 EXCEPTS=e INVEX=I :are supported by this server
+2011-07-08 14:58:39	↔	9KCAAAMPN :your unique ID
+2011-07-08 14:58:39	↔	There are 72 users and 7886 invisible on 18 servers
+2011-07-08 14:58:39	↔	26 :IRC Operators online
+2011-07-08 14:58:39	↔	4 :unknown connection(s)
+2011-07-08 14:58:39	↔	1775 :channels formed
+2011-07-08 14:58:39	↔	I have 694 clients and 1 servers
+2011-07-08 14:58:39	↔	Current local users: 694  Max: 705
+2011-07-08 14:58:39	↔	Current global users: 7958  Max: 8122
+2011-07-08 14:58:39	↔	Highest connection count: 706 (705 clients) (16106 connections received)
+2011-07-08 14:58:39	↔	- charm.oftc.net Message of the Day -
+2011-07-08 14:58:39	↔	- Welcome to OFTC - The Open and Free Technology Community
+2011-07-08 14:58:39	↔	-
+2011-07-08 14:58:39	↔	- You have connected to OFTC's IRC services.
+2011-07-08 14:58:39	↔	-
+2011-07-08 14:58:39	↔	- We are not a general purpose chat platform, but a topical
+2011-07-08 14:58:39	↔	- network intent on providing the open source and free
+2011-07-08 14:58:39	↔	- software communities a means to cooperate and communicate.
+2011-07-08 14:58:39	↔	- As such, illegal and off-topic activity, such as warez
+2011-07-08 14:58:39	↔	- trading, may result in being barred from access.
+2011-07-08 14:58:39	↔	-
+2011-07-08 14:58:39	↔	- The Open and Free Technology Community was founded at the
+2011-07-08 14:58:39	↔	- end of 2001 by a group of experienced members of the Open
+2011-07-08 14:58:39	↔	- Source and Free Software communities; it is aimed at
+2011-07-08 14:58:39	↔	- providing these communities with better communication,
+2011-07-08 14:58:39	↔	- development, and support infrastructure. Our goal is to
+2011-07-08 14:58:39	↔	- provide stable services to members of the community in any
+2011-07-08 14:58:39	↔	- part of the world, while listening closely to their needs
+2011-07-08 14:58:39	↔	- and desires.
+2011-07-08 14:58:39	↔	-
+2011-07-08 14:58:39	↔	- For more information on OFTC please visit http://www.oftc.net/.
+2011-07-08 14:58:39	↔	-
+2011-07-08 14:58:39	↔	- If you require assistance stop by in channel #oftc, or email
+2011-07-08 14:58:39	↔	- support@oftc.net with details.
+2011-07-08 14:58:39	↔	-
+2011-07-08 14:58:39	↔	- 2008-06-19  Rotating server certificates
+2011-07-08 14:58:39	↔	- ----------------------------------------
+2011-07-08 14:58:39	↔	- We are slowly rotating our servers' SSL certificates.  The new
+2011-07-08 14:58:39	↔	- certs are signed, indirectly, by SPI's certification authority
+2011-07-08 14:58:39	↔	- and no longer by cacert's.
+2011-07-08 14:58:39	↔	-
+2011-07-08 14:58:39	↔	- If you use SSL to connect to our network (ports 6697 and 9999)
+2011-07-08 14:58:39	↔	- and you verify the certs you need to get SPI's root cert from
+2011-07-08 14:58:39	↔	- <URL:http://www.spi-inc.org/secretary/spi-cacert.crt/view>.
+2011-07-08 14:58:39	↔	-
+2011-07-08 14:58:39	↔	-
+2011-07-08 14:58:39	↔	- 2007-11-23  Enabling ssl client certificates
+2011-07-08 14:58:39	↔	- --------------------------------------------
+2011-07-08 14:58:39	↔	- NickServ now supports auto-identification using SSL connections
+2011-07-08 14:58:39	↔	- and client certificates.
+2011-07-08 14:58:39	↔	-
+2011-07-08 14:58:39	↔	- Please see http://www.oftc.net/oftc/NickServ/CertFP for
+2011-07-08 14:58:39	↔	- more information.
+2011-07-08 14:58:39	↔	-
+2011-07-08 14:58:39	↔	- Thanks and enjoy your stay,
+2011-07-08 14:58:39	↔	-
+2011-07-08 14:58:39	↔	-         The OFTC team
+2011-07-08 14:58:39	↔	End of /MOTD command.
+2011-07-08 14:58:39	↔	User mode [+i] by dbbolton1
+2011-07-08 17:49:26		irc: disconnected from server

@@ -1,0 +1,13 @@
+--backup-file-extension=.orig
+--brace-tightness=0
+--closing-side-comment-interval=6
+--continuation-indentation=4
+--entab-leading-whitespace=4
+--indent-columns=4
+--maximum-line-length=80
+--nooutdent-long-lines
+--notrim-qw
+--nospace-for-semicolon
+--paren-tightness=0
+--square-bracket-tightness=0
+--tabs

@@ -1,0 +1,389 @@
+2009-12-26 08:02:34	-->	dbbolton (~daniel@pool-72-84-46-84.clrkwv.east.verizon.net) has joined #debian
+2009-12-26 08:02:34	--	Topic for #debian is "/msg dpkg lenny | /msg dpkg etch | /msg dpkg etch->lenny | FAQ: http://wiki.debian.org/DebianIRC | NO FLOOD: /msg dpkg paste | /msg bots NOT people | offtopic: #debian-offtopic"
+2009-12-26 08:02:34	--	Topic set by themill!~stuart@themill.user.oftc.net on Tue Nov 10 09:42:32 2009
+2009-12-26 08:02:34	--	Nicks #debian: [@debhelper @Ganneff [fFf] [fFf]1 [machine] __iron AbsintheSyringe adb Alam_Squeeze Aleric alienux alvarezp amitg Amorphous amphi And1 angasule annttu anonissimus ansgar anton ao2 aptituz arf` argonel aropupu ArthurLiu avtobiff azeem_ azeta_ babilen beardy bittin BLarg blarson blast_hardcheese blue bohica Bolle1961 btQuark Buccia`26C3 byonk bzed Caesar carnil cbmuser cdlu Celelibi_ chahibi chaos chattr chihchun cjac colby CompWizrd ComradeHaz coruja CosmicB creyon_ crib ct ctaylor cuba33ci Daniel_Duesentrieb davi davromaniak davyg dbbolton dcat deavid DebZhila derfel devicenull dez diggy dinomite djj djw DLange dmz dogi dondelelcaro donfede doomcup dotslash_ dpkg dr|z3d dserban__ dutchfish dwatson dwon ECC_OK eightyeight eljefe elky elsimio elusive emixam EmleyMoor emonge erin2 ernesto esaym153 esk ewanm89 ffws fgh fgrequena FloodServ Flooo`Off flypiper fnmueller fnordus frank franklin_ freex frood Gathond gbp geenna Getty ghantoos glok Gromitt groulder grummund gsimmons Guest449 h2oman hardwire haxi_ Hazelesque Hazel|work helix HellDragon hobbestigrou_ Holborn Hunger Huseyin Hydroxide ichdasich ifvoid infernix inglor inzo ivan` iwamatsu iwamatsu0 jackyf Jahman JanC jcwu jeflui Jflesch jkoenig jmarsden jmho jmm JohnDoh johns jones- jpinx-eeepc jrabbit_ jscinoz jusefina juzam jvw k1lumin4t1 kalos Kasabian kaziem khades kingsley klando kmshanah Knorrie kolter koollman kop kutio Kvant lancetw Laney lanthan__ lbt lenios_ less Lethalman_ linac lionel_ locklace LoRez lucascoala M0ffe magellanino magyar magyar_ Man_of_Wax marga marh Marillion marnold mase_ massmc matth Maulkin mavez maxb MayskiyJuk mc68040 melmothX melsonmore mentor Meths mikegrb MikeN miksuh MJD mjgoins ml| MoDaX Mr_Queue mrnice munga_ musca Myon nano- narcan Nehyx Nemoder neophyte nfc niekie noflash nomadium nosbig nou nowhere_man OdyX OkropNick olasd omes Otter ottoshmidt oxmoz_ Oyashiro paistis panthera patofiero paveq pbn peej perk petemc peterS Phoenix_the_II phorce1 phyrrus_ pi_ Piet pkrzywic1i pos Pryon puff QPrime quasisane quitte_ r rage ralph raylu resmo retrospectacus rex RexKiller RichiH ripi rmayorga Roa rockstar rudi_s rwhb2 rwittler s0likka saapas sardyno satanus seanius sep sharrow shriekout shweppsie SiCuTDeUx__ sidewalk simonrvn Sirenia slush smiley sney snorre somdev sphenxes spion StarkD stevecotton streuner suiside Supaplex superkuh sward T_X tamiko tarzeau tazz TCW Tenguch ThA_AngE the-dude tomaw Torsten_W trifolio6_ tully tuxcrafter UNera virm Vyrus001 waa weasel wnd woozy Wyzard X-LP_ XayOn xlotlu_ xorl_ xsdg xzu yang Yoda-BZH yves z0b3l zeroXten zhengyi zl0ty zobel zumbi]
+2009-12-26 08:02:34	--	Channel #debian: 346 nicks (2 ops, 0 halfop, 0 voice, 344 normal)
+2009-12-26 08:02:34	--	Channel created on Mon Sep 15 22:59:50 2008
+2009-12-26 08:02:46	<--	stevecotton (~stevecott@cpc3-hitc1-0-0-cust410.lutn.cable.ntl.com) has quit (Remote host closed the connection)
+2009-12-26 08:02:48	somdev	Thank you.... for helping...
+2009-12-26 08:03:04	babilen	somdev: Unfortunately this is a Debian support channel and we can't support every distribution based on Debian in here, just because the other channels are less helpful. Sorry. But you can install Debian and come here for all the help you need
+2009-12-26 08:03:31	-->	kmap (~kappaiah@princess.ece.utexas.edu) has joined #debian
+2009-12-26 08:04:06	babilen	somdev: And you might get answers if you ask really basic questions. But the answers given to you might not work on Ubuntu and you will always be told to ask in #ubuntu once we notice that you are running Ubuntu.
+2009-12-26 08:04:56	-->	icebrain (~icebrain@co3-84-90-130-39.netvisao.pt) has joined #debian
+2009-12-26 08:05:55	<--	dr|z3d (~dr|z3d@09GAAAI2X.tor-irc.dnsbl.oftc.net) has quit (Remote host closed the connection)
+2009-12-26 08:06:02	-->	dr|zed (~dr|z3d@09GAAAJFT.tor-irc.dnsbl.oftc.net) has joined #debian
+2009-12-26 08:06:05	--	dr|zed is now known as dr|z3d
+2009-12-26 08:08:51	somdev	@babilen : Ok... I understood.... Thank you  for your Help so far... one last Question.... Is there any way of getting Debian CDs for free just as Ubuntu delivers ??? and if not, Then What is the average size of a downloadable Debian Distribution ??
+2009-12-26 08:09:23	melsonmore	You can get a netinst iso thats only about 149MB.
+2009-12-26 08:09:28	babilen	somdev: you can download the 'netinstall' image and burn it yourself
+2009-12-26 08:10:23	babilen	somdev: that rewuires you to have a working network connection while you install though, if you want to install anything like Gnome, KDE, or so. You can also download CD1/DVD1 which contains more packages
+2009-12-26 08:10:29	babilen	!netinstall
+2009-12-26 08:10:30	dpkg	extra, extra, read all about it, netinst is a small CD image with which you can install Debian.  If, during the installation process you have a working Internet connection, you can install more packages straight away, otherwise, you will have a base install and more packages later.  See http://www.debian.org/CD/netinst/  See also <check iso image>, <dialup install>, <usb install>, <pppoe install>, <netboot>, <bf>, <installer>.
+2009-12-26 08:10:50	babilen	!tell somdev -about ig
+2009-12-26 08:11:10	-->	hvw (~hugo@200.57.201.180) has joined #debian
+2009-12-26 08:12:25	somdev	 Ok...
+2009-12-26 08:12:34	somdev	Thank you very much...
+2009-12-26 08:12:54	babilen	somdev: have fun, and come here if you have *any* question regarding Debian
+2009-12-26 08:13:08	somdev	:)
+2011-02-21 23:41:29	⇨	dbbolton (~daniel@c-98-239-141-60.hsd1.wv.comcast.net) has joined #debian
+2011-02-21 23:41:29	↔	Topic for #debian is "squeeze (6.0) released; /msg dpkg squeeze ; /msg dpkg lenny->squeeze | /msg dpkg new website | lenny (5.0.8) /msg dpkg 5.0.8 | NO FLOOD: /msg dpkg pastebin | /msg bots NOT people | offtopic: #debian-offtopic | FAQ: http://bit.ly/DebFAQ"
+2011-02-21 23:41:29	↔	Topic set by themill (~stuart@themill.user.oftc.net) on Thu, 10 Feb 2011 07:30:39
+2011-02-21 23:41:29	↔	Nicks #debian: [@debhelper [machine] _Danilo_ _julian _Megaf _neil_ _retroj_ `chris adb agentc ailo Alam_Squeeze alec1 Aleric algorist alsobrsp_ alvin AmberJ amitz Amorphous amphi And1 annttu ansgar ant__ antgel apecat aranax arand arctanx argkde4 Ariannah arif_ali aroundthfur Arrowmaster arsasson ArthurLiu arw astronut behanw bgupta BLarg blarson blue BlueG Bolle1961 bolt bones_was_here Brigo brlancer Bucciarati buffoon_work byonk bzed Caelum Caesar Cap_J_L_Picard carnil catsup catzilla cd_ cdlu ceipha Celelibi chahibi chaos chattr chealer chiku chitchat chk chrisreich chron_ clocker cmn cmot CompWizrd ComradeHaz` coruja cozminsky Craighton crc crib ct ctaylor cthuluh cuba33ci cydork cyril d-b damien dandelion dandersson Daniel_Duesentrieb darkhawk darkskiez datacrusher Daviey dba dbbolton dbeal dcraig deavid Derevko derfel deufrai devil Digit dimonov diovfi disposable district djj djw DLange dmz dondelelcaro donfede dooglus_ dotCOMmie dpkg Drakevr Drayakir dyfrgi E0x EagleRock edhunter edog eightyeight ekke elky elsimio EmleyMoor Emmanuel_Chanel emonge enderst esaym153 esk Esteban everythingdaniel ext faheem faw fbs_ felipe ffws FloodServ fnmueller frank_usrs franklin_ freex fugit funkyHat gamam Ganneff Gathond gbp gernot ghantoos ghosTM55 gnomeapt gotnone gravity graytron Gromitt grummund grumpy gsimmons Guest2016 Guest2176 guide Gurka_ hardwalker HarryS hazard3 heffay helix hev hfr hggdh hide hoax Holborn horchata_ Hunger Huns Hydroxide ia iCEmAN_CZ ichdasich ike infernix ivan` iwamatsu jamuraa JanC jaskal jeremiah_ jeremyb jeremyd Jflesch jhr jhujhiti jhutchins jibel_ jillsmitt jjp jmad980 jmho jmm__ joar johns jordanm jpon jrabbit JStoker judd juhaj juhov jurg k-man K6ORJ kanru Katai katsrc kef kelsoo kenoby kenyon kevin8t8 kickmule kindastuck kingsley Kion klando klh klono_ kmap kneet Knorrie kolter koollman kop kutio Kvant L3ttuc3 Laney Lantizia LegolasV lionel_ llimeht LM lmc locklace LoRez LotR lsm5 m0 M0ffe magellanino magy_ magyar maniac manishe mariusv marnanel massmc mattcen matth Maulkin maxb mc68040 meebey MeglaW mehdi_ Meise mercutio22 MichealH mikegrb miksuh MissionCritical MJD mlundblad ml| ml|_ MoDaX montyboy montyboy_ morruth mosno mquin MrFrood MrPlop msanger murisfurder musca MuzerAway mwalling Myon nasuta nb NCommander nelsonfx Nemoder netwareru nevyn Newa niekie NightMonkey nike nirvani noflex Odd_Bloke OdyX olasd oskie Otter ourizo oxan P1ersson paggas patofiero pbn peej petemc peter5 pgs Phoenix_the_II phorce1 phorce1_home phurl pi__ piffey pipe pipeep plantigrade prem priyesh Pryon przemoc puck quasisane quiritius r0ger ram0 ramnet ratboy_away real reklipz resmo_ retrospectacus RichiH riordian rmayorga rockstar rot13 rozzin rsteig rudi_s ryanc saapas sallesao samferry sarkofag scrp3l SD seanius seigan simon42 simonrvn skyegg_away SLot slush Slydder smacnay smhar sney snorre sof soloflyer Some_Person sortadi soumyadip spion spridarn SQlvpapir srbaker srtu ssb stderr_dk stoffepojken streuner stroyan SubZero_ suiside_ sunoano superbob sutula sward swistak35 sylar SynrG Tadej taffit TaitenP Talon tamiko taranto TCW tehlaGanas th tharkun the-dude thewanderer|afk thierry thietanen timon tj tlyu tom4golf tomaw tonsofpcs trench tt tuxcrafter tuxwarrior Unmensch unyes uovobw user01 user01_ valdyn Vivek_ vtts vyler Vyrus001 w3asel wasi weasel weinzwang wiqd wnd XayOn Xeross xor_ xsdg xun xyentei yang Yoda-BZH yofel Yvemath Zaba zamolxes zem_ zeroXten Zhad ziirish_ zmoelnig]
+2011-02-21 23:41:29	↔	Channel #debian: 459 nicks (1 op, 0 halfops, 0 voices, 458 normals)
+2011-02-21 23:41:30	↔	Channel created on Mon, 15 Sep 2008 22:59:50
+2011-02-21 23:41:34		irc: disconnected from server
+2011-07-08 14:57:55	⇨	dbbolton (~daniel@c-98-239-141-60.hsd1.wv.comcast.net) has joined #debian
+2011-07-08 14:57:55	↔	Topic for #debian is "squeeze (6.0.2) released; /msg dpkg squeeze ; /msg dpkg lenny->squeeze | lenny (5.0.8) /msg dpkg 5.0.8 | NO FLOOD: /msg dpkg pastebin | /msg bots NOT people | offtopic: #debian-offtopic | wheezy/sid: #debian-next | FAQ: http://deb.li/IRCFAQ"
+2011-07-08 14:57:55	↔	Topic set by ChanServ (services@services.oftc.net) on Tue, 28 Jun 2011 08:54:17
+2011-07-08 14:57:55	↔	Nicks #debian: [[machine] __Alex_ _Danilo_ _julian _neil_ `chris_ a7ndrew aaronyy_ abrotman adb adema adi agaida akerl akess Alam_Lenny Aleric algorist aliceinwire alsobrsp amitz Amorphous And1 andi_86 andres annttu ansgar ant_ antgel ao2 apecat Ariannah AriMartti armani aroundthfur Arrowmaster ArthurLiu astraljava astronut aurimai avtobiff away_Ruusento ayaka AzaToth azatoth_work babilen balsamo behanw Bertram betinho bim_ir Blacker47 BLarg blarson blue bluenemo bolt bones_was_here BPM br0kend breakout Brigo Bucciarati budus byonk bzed CaBa Caelum Caesar cahoot carnil carnil_ Caroll catsup cdlu cedric Celelibi chahibi chaos chaosIrs1i chattr chealer chihchun chpln_ chron cirzgamanti`` ck_ cl0ckw0rk classico clinton_ clocker cmn CompWizdr ComradeHaz` coruja cquinn creemj creyon crib cthuluh cuba33ci cybersphinx_ CyL d-b dac_ dajhorn damien Daniel_Duesentrieb darkskiez Daviey davromaniak dba dbbolton deavid debsan devil dez digilink dihydrocapsaicin disposable djj djw DLange dmz dondelelcaro donfede dooglus dotCOMmie DrFranz dselect dudz_ dugi dutchfish EagleRock edhunter edog egwk eightyeight elsimio EmleyMoor Emmanuel_Chanel emonge enderst EnisDonKing eof_ Erbureth errr_ esaym153 esk Esteban estudante f0rk FascinioBR faw fbs feuerrot ffws filhocf flamingspinach_ FloodServ flypiper fnmueller frank_usrs franklin frh Fudgey_ fugit funkyHat Ganneff Gathond gernot gezgin ghantoos_ gigio gnugr GNUpuma gnusosa_ gooby gravity Gromit grove grrrrrr grummund gsimmons guehl Guest5535 guide gusnan hachi hanez HarryS hdk helino helix hfr hggdh hide hnrgrgr Holborn hubutm20 Hunger- hychen Hydroxide iCEmAN_CZ ichdasich ifvoid ignite infernix Infra_HDC inix isaac1024 ivan` ivo_ iwamatsu jamuraa JanC janos_ JanVB jared0x90 jasonsmr jbrand jcole jcwu jeremiah_ jeremyb jespada Jflesch jhr jhujhiti jhutchins_lt jibel jibel_ jimbodoors jmccrohan jmho joh johns jordanm jpon JStoker jthomas juanfra judd jurie_ jvw jww_ k1lumin4t1 k4z Kaimei kanru Katai kbar kelkoobenoitr kelsoo kenoby kevin8t8 kingsley kisisten kmap Knorrie kolter koollman kop kudlaty kuhkatz kuroi kutio Kyon0 l0ckd0wn Lantizia lbt lelamal LetoPoole LeuX Levenson lindi- llimeht lmc_ loceur_wee m0_ M0ffe magellanino mandark manishe marcels marga markje marwel mattcen matth mattux Maulkin maxb MAXmark mc68040 medicalwei meebey meise melmothX mentor metkal MichealH Miguel0n mikegrb miksuh minecraftfan mirage335 MissionCritical MJD mjr ml| mmgc84 MoDaX morjak morruth MrFrood MrPlop msantana mtn mu574n9 murisfurder musca mutante Muzer mwalling Myon naiv naiv_ nb NCommander Nemoder nevyn Newa nicholi nickzxcv niekie noddingGeek noi nonsenso nosbig nou nyov OdyX OkropNick olasd Omni_Lynk ompaul Osiris_X oskie Otter Out`Of`Control P-K P1ersson Parsifal pastubbs pavi pcc pde petemc peterS phorce1 phorce1_home pi_ Pitxyoki plantigrade Pryon q66 quasisane Quintasan r0ger r4co0n real redbandit retrospectacus RichiH rjsalts rk13 rnowak robertf rockstar rsalveti rudi_s ryanc s_i_m s_i_m_ saapas Sanitoeter Sark sarkofag seanius shedammit SLot slush smb sney snorre_ soloflyer SpeedyG spion sret srtu stderr stdhell steffan_ stew stillLotR stoffepojken streuner stroyan SubZero_ suiside SuperDale sutula sward swistak35 sylar SynrG syntaur t0aster Tadej Talon tamiko TCW tensorpudding tfiebig ThaAmazonous the-dude thegodlikehobo thunderrd TIBS01 Tiff timeoh tjader tlyu tnnnS tomaw tomcheng86 tonsofpcs topyli toto42 towo` tty234 tulitar UltimediaOS unixabg Unmenschlich unxbm3r1 valdyn vav vibora vicentimartins vizzord vtts vyrus001 weasel weedeater64 weinzwang whirli Wyzard X-LP XayOn xbayrockx Xeross Xerrao xsdg xuser Yoda-BZH Zaba Zathras zeroedout zeroXten ziirish_ ziirish` zyga zykotick9]
+2011-07-08 14:57:55	↔	Channel #debian: 475 nicks (0 ops, 0 halfops, 0 voices, 475 normals)
+2011-07-08 14:57:57	↔	Channel created on Mon, 15 Sep 2008 22:59:50
+2011-07-08 14:58:01	⇨	zerlix (~zerlix@p5B22324A.dip.t-dialin.net) has joined #debian
+2011-07-08 14:58:01	⇨	duxklr (~duxklr@wufis-pat6.nts.wustl.edu) has joined #debian
+2011-07-08 14:58:13	⇦	zerlix (~zerlix@p5B22324A.dip.t-dialin.net) has quit
+2011-07-08 14:59:42	⇦	SLot (~SLot@ns2.gruposim.com.br) has quit (Remote host closed the connection)
+2011-07-08 15:00:50	⇨	foolano (~magnetic@14.Red-88-26-177.staticIP.rima-tde.net) has joined #debian
+2011-07-08 15:00:56	Osiris_X	ok I think weechat is going to win the race
+2011-07-08 15:02:28	⇨	aod93 (~aaron@a89-182-4-222.net-htp.de) has joined #debian
+2011-07-08 15:02:33	gnugr	Osiris_X: follow this " http://www.weechat.org/files/doc/stable/weechat_quickstart.en.html#start "
+2011-07-08 15:02:49	⇦	aod93 (~aaron@a89-182-4-222.net-htp.de) has left #debian
+2011-07-08 15:02:55	↔	eof_ is now known as eof
+2011-07-08 15:03:10	Osiris_X	cheers gnugr
+2011-07-08 15:03:17	⇨	B3NNUX (~B3NNUX@200.28.86.202) has joined #debian
+2011-07-08 15:03:26	gnugr	break a leg
+2011-07-08 15:03:30	gnugr	haha
+2011-07-08 15:03:42	⇦	hychen (~hychen@111-249-157-15.dynamic.hinet.net) has quit (Quit: Leaving)
+2011-07-08 15:04:10	⇦	steffan_ (~scisteffa@91.85.212.172) has quit (Ping timeout: 480 seconds)
+2011-07-08 15:04:58	Omni_Lynk	how do you get root command to edit the sorce.list file?
+2011-07-08 15:05:13	bluenemo	su (give password) then nano /etc/apt/sources.list
+2011-07-08 15:05:25	bluenemo	crtl x  -   y   -   enter
+2011-07-08 15:05:35	⇦	byonk (~byonk@114-32-5-66.HINET-IP.hinet.net) has quit (Remote host closed the connection)
+2011-07-08 15:05:40	⇦	isaac1024 (~isaac1024@95.60.222.77) has quit (Remote host closed the connection)
+2011-07-08 15:05:41	⇦	chattr (~mike@184.85.189.72.cfl.res.rr.com) has quit (Ping timeout: 480 seconds)
+2011-07-08 15:05:42	Omni_Lynk	thank you.. i was trying gedit installed yet.
+2011-07-08 15:07:52	gnugr	ctrl+o - enter - ctrl+x
+2011-07-08 15:07:58	⇦	budus (~budus@adsl-ull-101-158.41-151.net24.it) has quit (Quit: Sto andando via)
+2011-07-08 15:09:22	bluenemo	yep works both. x is just quit.. he asks if he wants to save before. o is normal save
+2011-07-08 15:09:24	bluenemo	man nano :)
+2011-07-08 15:09:37	jhutchins_lt	vim!
+2011-07-08 15:10:25	⇨	budus (~budus@adsl-ull-101-158.41-151.net24.it) has joined #debian
+2011-07-08 15:11:40	⇦	grrrrrr (~libertad@2001:1291:234:0:7ae4:ff:fe00:7a83) has quit (Remote host closed the connection)
+2011-07-08 15:11:47	⇨	Texou (~Texou@ARennes-552-1-19-73.w92-135.abo.wanadoo.fr) has joined #debian
+2011-07-08 15:12:38	Omni_Lynk	bluenemo, allright, sorry for the delay, i'm still new to everything linux. i'm better w/ ubuntu than Debian. K, the source.list is the same as yours.
+2011-07-08 15:13:00	bluenemo	apt-get update && apt-get upgrade && apt-chache search foobar
+2011-07-08 15:13:04	bluenemo	then apt-get install foobar ;)
+2011-07-08 15:13:19	Omni_Lynk	what is foobar?
+2011-07-08 15:13:58	⇨	jofe (~jofe@host-188-174-177-11.customer.m-online.net) has joined #debian
+2011-07-08 15:14:16	Omni_Lynk	so with && you can start a new command all in the same line?
+2011-07-08 15:14:18	bluenemo	something like blabla for programmers.. ;) just take the stuff you want to search for for foobar
+2011-07-08 15:14:29	⇨	Greg (~Greg@graska.reolight.net) has joined #debian
+2011-07-08 15:14:43	⇦	budus (~budus@adsl-ull-101-158.41-151.net24.it) has quit
+2011-07-08 15:15:19	⇨	piney0 (~piney@c-68-36-67-208.hsd1.nj.comcast.net) has joined #debian
+2011-07-08 15:16:13	⇨	budus (~budus@adsl-ull-101-158.41-151.net24.it) has joined #debian
+2011-07-08 15:16:33	⇨	chucky82 (~chucky82@r190-135-12-49.dialup.adsl.anteldata.net.uy) has joined #debian
+2011-07-08 15:16:33	jofe	Hi, I'm trying to install Wheezy on my Samsung X20 Notebook. But get a "No kernel modules where found" error with the testing installer usb+cd tested. Any Idee ?
+2011-07-08 15:17:21	chucky82	Hi!! :-) Does someone knows which files do I have to touch to configure exim4 ? I could not find any information by searching
+2011-07-08 15:17:47	⇦	Greg (~Greg@graska.reolight.net) has quit
+2011-07-08 15:17:50	bluenemo	Omni_Lynk, when you do foobar && foobaz, foobaz will be executed if foobar exits with status 0 (worked). when you do foobar || foobaz, foobaz will be executed if foobar exits with status 1 (failed)
+2011-07-08 15:17:52	bluenemo	man bash ;)
+2011-07-08 15:19:38	Omni_Lynk	bluenemo, So if i know that the commands work doing && is fine, if i'm not sure if they will work using || is a better idea?
+2011-07-08 15:20:07	jofe	Same problem with businesscard iso
+2011-07-08 15:20:10	bluenemo	hm well... you can do foobar && foobaz || barbaz for example :D
+2011-07-08 15:20:30	bluenemo	google for a bash guide and join #bash on freenode. lots of info to learn about bash :)
+2011-07-08 15:21:07	Omni_Lynk	at the moment this is my side project to make the office run faster. I'll look into'em tho.
+2011-07-08 15:21:11	jofe	 join /debian-next
+2011-07-08 15:21:13	jhutchins_lt	Omni_Lynk: http://en.wikipedia.org/wiki/Foobar
+2011-07-08 15:21:13	⇨	Antarctica (~Antarctic@net248-0-245-109.mbb.telenor.rs) has joined #debian
+2011-07-08 15:21:18	bluenemo	:D
+2011-07-08 15:21:28	⇦	jofe (~jofe@host-188-174-177-11.customer.m-online.net) has quit (Quit: Verlassend)
+2011-07-08 15:22:00	⇨	Sk1talec (~IceChat77@89.250.153.243) has joined #debian
+2011-07-08 15:22:40	⇨	jrib (~jrib@pool-96-233-22-172.bstnma.east.verizon.net) has joined #debian
+2011-07-08 15:23:03	Omni_Lynk	I received this while doing the update / upgrade http://pastebin.com/XpBPD0Ky
+2011-07-08 15:24:04	⇦	budus (~budus@adsl-ull-101-158.41-151.net24.it) has quit (Quit: Sto andando via)
+2011-07-08 15:24:09	Omni_Lynk	hmm, i though i had samba installed.. guess not.
+2011-07-08 15:24:27	⇨	xamanu (~felix@p54A6353F.dip.t-dialin.net) has joined #debian
+2011-07-08 15:24:32	⇦	__Alex_ (~marek@44-103-80-78.tmcz.cz) has quit (Quit: Lost terminal)
+2011-07-08 15:24:38	jhutchins_lt	Omni_Lynk: Um, that's saying it's changing the behavior of samba during the upgrade.
+2011-07-08 15:25:04	⇦	piney0 (~piney@c-68-36-67-208.hsd1.nj.comcast.net) has quit (Ping timeout: 480 seconds)
+2011-07-08 15:25:24	⇦	jcole (~jcole@pal01cs005.americas.hp.net) has quit (Remote host closed the connection)
+2011-07-08 15:26:01	⇨	_dugi (~dugi@87-206-52-228.dynamic.chello.pl) has joined #debian
+2011-07-08 15:26:05	⇨	DrFranz_ (~DrFranz@dynamic-adsl-78-13-147-46.clienti.tiscali.it) has joined #debian
+2011-07-08 15:26:07	⇨	Mr_Anderson (~Mr_Anders@lau06-6-78-230-198-93.fbx.proxad.net) has joined #debian
+2011-07-08 15:26:23	⇦	_dugi (~dugi@87-206-52-228.dynamic.chello.pl) has left #debian
+2011-07-08 15:26:40	⇦	ompaul (~ompaul@109.76.222.37) has quit (Quit: Konversation terminated!)
+2011-07-08 15:26:45	⇨	ompaul (~ompaul@109.76.222.37) has joined #debian
+2011-07-08 15:27:06	Omni_Lynk	jhutchins_lt, It pops up, but i do  not see where to continue from there.
+2011-07-08 15:27:10	⇦	Mr_Anderson (~Mr_Anders@lau06-6-78-230-198-93.fbx.proxad.net) has quit
+2011-07-08 15:27:11	⇨	zkc4lnx (~zkc4lnx@201-43-123-3.dsl.telesp.net.br) has joined #debian
+2011-07-08 15:27:31	⇦	zkc4lnx (~zkc4lnx@201-43-123-3.dsl.telesp.net.br) has quit (Remote host closed the connection)
+2011-07-08 15:28:15	⇨	M (M@cpc7-brig17-2-0-cust33.3-3.cable.virginmedia.com) has joined #debian
+2011-07-08 15:28:20	M	how do i install java on debian with apt?
+2011-07-08 15:28:23	M	is it contrib or something?
+2011-07-08 15:28:34	babilen	%install java
+2011-07-08 15:28:34	dselect	For the Java web browser plugin, install either the free icedtea6-plugin (Squeeze) or icedtea-gcjwebplugin (Lenny) package, or the <non-free> sun-java6-plugin package.  For other Java programs, you can install the default-jre package to get a Java runtime; use "apt-cache search java-virtual-machine" to see other implementations.  The best options are probably openjdk-6-jre or sun-java6-jre (non-free).  See also <java alternatives>.
+2011-07-08 15:28:45	⇦	egwk (~egwk@ppp-94-65-80-117.home.otenet.gr) has quit (Quit: Leaving)
+2011-07-08 15:28:59	babilen	M: I am fairly happy with openjdk-6, but YMMV
+2011-07-08 15:29:10	⇨	DrFranz__ (~DrFranz@dynamic-adsl-78-13-148-95.clienti.tiscali.it) has joined #debian
+2011-07-08 15:29:15	M	thanks!
+2011-07-08 15:29:31	M	here she blows!
+2011-07-08 15:29:40	⇦	abrotman (~abrotman@c-71-230-219-90.hsd1.pa.comcast.net) has quit (Ping timeout: 480 seconds)
+2011-07-08 15:29:41	babilen	(that is free and in main, sun's in non-free)
+2011-07-08 15:31:13	M	completely compatible?
+2011-07-08 15:31:42	Omni_Lynk	So when that Samba window pops up again (it takes over the whole terminal) what do i press to continue? Enter didnt work, space, shift enter esc.. nothing clears me out.
+2011-07-08 15:32:06	babilen	%openjdk
+2011-07-08 15:32:06	dselect	OpenJDK is the open source release of <Java> from Sun Microsystems (now Oracle America).  All required functionality (according to the J2SE spec) is present, but some optional stuff is missing and some stuff uses different implementations from Oracle's binary JDK.  Install the openjdk-6-jre package for the runtime environment or openjdk-6-jdk for the development kit.  http://openjdk.java.net/  #openjdk on irc.oftc.net.
+2011-07-08 15:32:24	⇨	piney0 (~piney@c-68-36-67-208.hsd1.nj.comcast.net) has joined #debian
+2011-07-08 15:32:57	⇦	DrFranz (~DrFranz@dynamic-adsl-78-13-144-236.clienti.tiscali.it) has quit (Ping timeout: 480 seconds)
+2011-07-08 15:33:05	⇨	joel (~joel@AToulouse-754-1-14-16.w90-55.abo.wanadoo.fr) has joined #debian
+2011-07-08 15:33:08	M	which ftpd do you guys recommend that works out of the box?
+2011-07-08 15:33:12	⇨	XeonBloomfield (~XeonBloom@user118-076.satfilm.net.pl) has joined #debian
+2011-07-08 15:33:27	⇦	joel (~joel@AToulouse-754-1-14-16.w90-55.abo.wanadoo.fr) has quit
+2011-07-08 15:33:48	⇨	Quintasan_ (~quassel@p5DE7A173.dip.t-dialin.net) has joined #debian
+2011-07-08 15:33:54	s_i_m_	M, vsftpd
+2011-07-08 15:34:00	M	ty!
+2011-07-08 15:34:00	weedeater64	cat >> sources.list
+2011-07-08 15:34:07	weedeater64	new entry
+2011-07-08 15:34:10	⇦	Sk1talec (~IceChat77@89.250.153.243) has quit (Ping timeout: 480 seconds)
+2011-07-08 15:34:22	↔	Quintasan is now known as Guest1458
+2011-07-08 15:34:22	↔	Quintasan_ is now known as Quintasan
+2011-07-08 15:34:25	weedeater64	Ctrl + c
+2011-07-08 15:35:10	M	vsftpd says this server is anonymous only
+2011-07-08 15:35:22	⇨	DrFranz (~DrFranz@dynamic-adsl-78-13-148-250.clienti.tiscali.it) has joined #debian
+2011-07-08 15:35:37	M	local_enable option? :-)
+2011-07-08 15:35:57	s_i_m_	M, must be read the man
+2011-07-08 15:36:00	⇦	DrFranz_ (~DrFranz@dynamic-adsl-78-13-147-46.clienti.tiscali.it) has quit (Ping timeout: 480 seconds)
+2011-07-08 15:36:47	s_i_m_	M, the config is simple and well-documented
+2011-07-08 15:37:26	chucky82	Hi!! :-) Does someone knows which files do I have to touch to configure exim4 ? I could not find any information by searching
+2011-07-08 15:37:28	⇨	RobinJ (~Robin@host068-007.kpn-gprs.nl) has joined #debian
+2011-07-08 15:38:02	s_i_m_	chucky82, files in /etc/exim4/conf.d
+2011-07-08 15:38:07	M	hmm permission errors now
+2011-07-08 15:38:39	chucky82	s_i_m but I find variables that are nowhere defined, I don't know how the configuration is structured
+2011-07-08 15:38:40	⇦	Texou (~Texou@ARennes-552-1-19-73.w92-135.abo.wanadoo.fr) has quit (Read error: No route to host)
+2011-07-08 15:38:52	chucky82	I don't know where to start to begin customizing the install
+2011-07-08 15:38:58	⇨	abrotman (~abrotman@c-71-230-219-90.hsd1.pa.comcast.net) has joined #debian
+2011-07-08 15:39:00	M	sorted, nm :-))
+2011-07-08 15:39:47	s_i_m_	chucky82, there is a good documentation in /usr/share/doc/exim4/
+2011-07-08 15:39:51	⇨	Volley (~worf@chello080109200187.3.sc-graz.chello.at) has joined #debian
+2011-07-08 15:39:57	⇦	vizzord (~exn@195.49.206.202) has quit (Quit: see you)
+2011-07-08 15:40:20	⇦	Guest1458 (~quassel@p5DE79205.dip.t-dialin.net) has quit (Ping timeout: 480 seconds)
+2011-07-08 15:40:22	chucky82	s_i_m thanks, I already found that, but I'm missing some point or something... :-(
+2011-07-08 15:41:06	chucky82	s_i_m there are some utilities related with this update-exim4.conf and I think there's another one
+2011-07-08 15:41:18	chucky82	s_i_m that I don't understand exactly what do they do?
+2011-07-08 15:41:42	s_i_m_	yes, try dpkg-reconfigure exim4-config
+2011-07-08 15:42:07	⇦	DrFranz__ (~DrFranz@dynamic-adsl-78-13-148-95.clienti.tiscali.it) has quit (Ping timeout: 480 seconds)
+2011-07-08 15:42:31	⇨	DrFranz_ (~DrFranz@dynamic-adsl-78-13-144-238.clienti.tiscali.it) has joined #debian
+2011-07-08 15:43:15	⇦	cahoot (~radix@c83-252-75-32.bredband.comhem.se) has quit (Ping timeout: 480 seconds)
+2011-07-08 15:43:33	⇨	DrFranz__ (~DrFranz@dynamic-adsl-78-13-146-152.clienti.tiscali.it) has joined #debian
+2011-07-08 15:43:46	chucky82	s_i_m I have some files on exim4.conf.template that I don't see defined anywhere, like MAIN_RELY_TO_DOMAINS where are those macros defined?
+2011-07-08 15:43:49	⇨	themill (~stuart@themill.user.oftc.net) has joined #debian
+2011-07-08 15:43:57	M	guys, you're awesome as always - thank you very much!
+2011-07-08 15:44:02	⇦	M (M@cpc7-brig17-2-0-cust33.3-3.cable.virginmedia.com) has quit
+2011-07-08 15:44:13	⇦	Blacker47 (~Blacker47@p57A90118.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2011-07-08 15:45:10	⇦	RobinJ (~Robin@host068-007.kpn-gprs.nl) has quit (Quit: Killed (NickServ (GHOST command used by MemoServ)))
+2011-07-08 15:45:15	⇨	NITRO (~NITRO@9YYAABV5Y.tor-irc.dnsbl.oftc.net) has joined #debian
+2011-07-08 15:45:54	NITRO	Hi there
+2011-07-08 15:46:02	s_i_m_	chucky82, /etc/exim4/conf.d/. But are you sure that dpkg-reconfigure exim4-config is not enough for you?
+2011-07-08 15:46:17	⇦	NITRO (~NITRO@9YYAABV5Y.tor-irc.dnsbl.oftc.net) has quit
+2011-07-08 15:46:34	⇦	piney0 (~piney@c-68-36-67-208.hsd1.nj.comcast.net) has quit (Ping timeout: 480 seconds)
+2011-07-08 15:46:37	⇨	DrFra252 (~DrFranz@dynamic-adsl-78-13-150-121.clienti.tiscali.it) has joined #debian
+2011-07-08 15:46:43	chucky82	s_i_m_ I need virtual domains, mysql user database....
+2011-07-08 15:46:45	⇦	jrib (~jrib@pool-96-233-22-172.bstnma.east.verizon.net) has quit (Quit: WeeChat 0.3.4)
+2011-07-08 15:47:19	s_i_m_	chucky82, okay. Than you may prefer a customized config as a single file.
+2011-07-08 15:47:26	s_i_m_	Then*
+2011-07-08 15:47:40	⇨	Black_Prince (~Prince@91.191.20.15) has joined #debian
+2011-07-08 15:47:41	s_i_m_	It is also explain in the documentation.
+2011-07-08 15:47:48	s_i_m_	explained*
+2011-07-08 15:49:04	↔	andres is now known as zz_andres
+2011-07-08 15:49:06	chucky82	s_i_m thanks, I've found http://pkg-exim4.alioth.debian.org/README/README.Debian.html#id280581 I'm givining it a read
+2011-07-08 15:49:07	chucky82	:-)
+2011-07-08 15:49:39	s_i_m_	chucky82, that is installed in yours /usr/share/doc/exim4/....
+2011-07-08 15:49:43	⇦	dugi (~dugi@87-206-52-228.dynamic.chello.pl) has left #debian
+2011-07-08 15:50:04	chucky82	s_i_m thanks :-)
+2011-07-08 15:50:05	⇦	DrFranz (~DrFranz@dynamic-adsl-78-13-148-250.clienti.tiscali.it) has quit (Ping timeout: 480 seconds)
+2011-07-08 15:50:07	s_i_m_	some guys really prefer indirect ways :/
+2011-07-08 15:50:20	chucky82	:-$
+2011-07-08 15:50:38	⇦	DrFranz_ (~DrFranz@dynamic-adsl-78-13-144-238.clienti.tiscali.it) has quit (Ping timeout: 480 seconds)
+2011-07-08 15:51:03	⇦	chucky82 (~chucky82@r190-135-12-49.dialup.adsl.anteldata.net.uy) has quit
+2011-07-08 15:52:14	⇨	rss (~rss@84.246.12.41) has joined #debian
+2011-07-08 15:53:07	Omni_Lynk	Ok, all of my problems fixed themselves after i restarted Debian..  Thank you all for your help!
+2011-07-08 15:53:27	⇦	DrFranz__ (~DrFranz@dynamic-adsl-78-13-146-152.clienti.tiscali.it) has quit (Ping timeout: 480 seconds)
+2011-07-08 15:55:05	⇨	Greg (~Greg@graska.reolight.net) has joined #debian
+2011-07-08 15:56:40	⇨	pete_943 (~pete@178.99.156.157) has joined #debian
+2011-07-08 15:57:25	⇦	duxklr (~duxklr@wufis-pat6.nts.wustl.edu) has quit (Quit: Computer has gone to sleep.)
+2011-07-08 15:58:16	jhutchins_lt	Omni_Lynk: Sorry, real life.
+2011-07-08 15:58:51	⇦	pete_943 (~pete@178.99.156.157) has quit (Remote host closed the connection)
+2011-07-08 15:58:59	jhutchins_lt	Omni_Lynk: You may want to do aptitude -f install to make sure everything got installed completely and aptitude upgrade again to make sure you got everything.  I believe q will close the information window that stopped you.
+2011-07-08 16:00:00	Omni_Lynk	jhutchins_lt, I'll remember that next time i get a stupid pop up window. I got Synaptic installed w/ apt-get (i still dont understand why it wouldnt before). Now i'm downloading all of the other things i needed.
+2011-07-08 16:00:11	s_i_m_	seems like we have got an increasing flow of new installs... nice.
+2011-07-08 16:00:17	⇨	rynx (~rynxy@142.167.128.29) has joined #debian
+2011-07-08 16:00:33	⇦	debsan (~debsan@190.245.74.16) has quit (Quit: Leaving)
+2011-07-08 16:00:55	⇦	MAXmark (~MAXmark@93-143-192-1.adsl.net.t-com.hr) has quit (Ping timeout: 480 seconds)
+2011-07-08 16:00:55	weedeater64	^
+2011-07-08 16:01:13	⇨	MAXmark (~MAXmark@93-143-195-24.adsl.net.t-com.hr) has joined #debian
+2011-07-08 16:02:29	⇦	FascinioBR (~FascinioB@187.126.55.213) has quit (Quit: Leaving.)
+2011-07-08 16:02:58	Omni_Lynk	I think my co-worker said that Toyota and another big company were switching things over to Linux. I'd think that would get the downloads going for a bit.
+2011-07-08 16:03:44	s_i_m_	btw, is there any statistics on the percentage of users installing Debian as their first linux? Compared to the percentage of users switching from other distros and just experimenting?
+2011-07-08 16:03:55	jhutchins_lt	,versions iceweasel
+2011-07-08 16:03:57	judd	Package iceweasel on i386 -- lenny: 3.0.6-3; lenny-security: 3.0.6-3; squeeze: 3.5.16-6; lenny-backports: 3.5.16-8~bpo50+1; squeeze-proposed-updates: 3.5.16-8; squeeze-security: 3.5.16-8; sid: 3.5.19-3; wheezy: 3.5.19-3; experimental: 5.0-2
+2011-07-08 16:05:37	⇨	christian (~christian@dslb-092-074-042-227.pools.arcor-ip.net) has joined #debian
+2011-07-08 16:05:57	⇦	christian (~christian@dslb-092-074-042-227.pools.arcor-ip.net) has quit
+2011-07-08 16:06:04	⇨	DrFranz (~DrFranz@dynamic-adsl-78-13-150-230.clienti.tiscali.it) has joined #debian
+2011-07-08 16:06:11	⇨	Blacker47 (~Blacker47@p57A90118.dip0.t-ipconnect.de) has joined #debian
+2011-07-08 16:06:28	⇨	Black47 (~Blacker47@p57A90118.dip0.t-ipconnect.de) has joined #debian
+2011-07-08 16:06:36	⇦	Black47 (~Blacker47@p57A90118.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2011-07-08 16:06:39	⇦	agaida (~agaida@ip-78-94-217-191.unitymediagroup.de) has left #debian
+2011-07-08 16:06:40	⇨	EZmoney (~EZmoney@c-68-58-85-147.hsd1.in.comcast.net) has joined #debian
+2011-07-08 16:06:41	⇨	devil_ (~devil@dslb-088-074-049-129.pools.arcor-ip.net) has joined #debian
+2011-07-08 16:08:25	⇨	yess (~yess@46.12.122.115.dsl.dyn.forthnet.gr) has joined #debian
+2011-07-08 16:08:56	⇨	rage (~rage@val59-3-88-163-151-247.fbx.proxad.net) has joined #debian
+2011-07-08 16:09:46	⇨	jeanjean (~johnnie@a88-113-119-171.elisa-laajakaista.fi) has joined #debian
+2011-07-08 16:09:52	⇦	yess (~yess@46.12.122.115.dsl.dyn.forthnet.gr) has quit
+2011-07-08 16:09:56	⇦	jeanjean (~johnnie@a88-113-119-171.elisa-laajakaista.fi) has quit
+2011-07-08 16:09:59	⇦	abrotman (~abrotman@c-71-230-219-90.hsd1.pa.comcast.net) has quit (Read error: Operation timed out)
+2011-07-08 16:11:10	⇨	DrFranz_ (~DrFranz@dynamic-adsl-78-13-149-122.clienti.tiscali.it) has joined #debian
+2011-07-08 16:11:51	⇦	rynx (~rynxy@142.167.128.29) has quit (Ping timeout: 480 seconds)
+2011-07-08 16:12:48	⇦	DrFra252 (~DrFranz@dynamic-adsl-78-13-150-121.clienti.tiscali.it) has quit (Ping timeout: 480 seconds)
+2011-07-08 16:12:51	⇦	Caroll (~caroll@200.14.32.75) has quit (Quit: Saindo)
+2011-07-08 16:17:32	⇦	aroundthfur (~aroundthf@SE400.PPPoE-1238.sa.bih.net.ba) has quit (Ping timeout: 480 seconds)
+2011-07-08 16:18:00	⇦	DrFranz (~DrFranz@dynamic-adsl-78-13-150-230.clienti.tiscali.it) has quit (Ping timeout: 480 seconds)
+2011-07-08 16:18:43	⇦	breakout (~breakout@85.187.16.103) has quit (Remote host closed the connection)
+2011-07-08 16:18:54	rss	s_i_m: I've only used debian myself. I've had to crash restore one rhel in the past.
+2011-07-08 16:19:15	⇦	zykotick9 (~zykotick9@66.11.174.71) has quit (Quit: Leaving)
+2011-07-08 16:19:28	⇦	ompaul (~ompaul@109.76.222.37) has quit (Remote host closed the connection)
+2011-07-08 16:20:31	estudante	iceweasel is good
+2011-07-08 16:20:34	⇨	lionel (~lionel@ip-249.net-81-220-18.versailles.rev.numericable.fr) has joined #debian
+2011-07-08 16:20:54	⇨	AbsintheSyringe (~havoc@31.176.195.222) has joined #debian
+2011-07-08 16:21:22	⇨	Alternative (~alternati@186.251.97.217) has joined #debian
+2011-07-08 16:21:32	⇦	mtn (~mtn@99-196-115-19.cust.wildblue.net) has quit (Quit: Leaving.)
+2011-07-08 16:22:18	⇦	B3NNUX (~B3NNUX@200.28.86.202) has quit (Remote host closed the connection)
+2011-07-08 16:22:21	⇦	Alternative (~alternati@186.251.97.217) has quit
+2011-07-08 16:22:33	jhutchins_lt	Google+ won't accept iceweasel 3.5.16
+2011-07-08 16:23:48	⇨	ompaul (~ompaul@109.76.222.37) has joined #debian
+2011-07-08 16:23:57	Black_Prince	Use 5.0 from m.d.n :/
+2011-07-08 16:24:10	⇦	Brigo (~Brigo@139.182.60.213.dynamic.mundo-r.com) has quit (Ping timeout: 480 seconds)
+2011-07-08 16:24:15	⇦	marcels (~marcels@5265C40E.cm-8.dynamic.ziggo.nl) has quit (Quit: Lost terminal)
+2011-07-08 16:24:27	 *	devil uses iceweasel 7.0a2 (2011-07-07) and has no idea what google+ makes of that
+2011-07-08 16:24:35	⇦	dajhorn (~dajhorn@adsl-71-158-163-242.dsl.rcsntx.sbcglobal.net) has quit
+2011-07-08 16:24:59	⇦	devil_ (~devil@dslb-088-074-049-129.pools.arcor-ip.net) has quit (Remote host closed the connection)
+2011-07-08 16:24:59	Black_Prince	7.0? wtf
+2011-07-08 16:25:08	devil	aurora channel
+2011-07-08 16:25:24	⇦	gooby (~gooby@94.191.136.184.bredband.3.dk) has left #debian
+2011-07-08 16:25:29	devil	7 moved from nightly to aurora yresterday
+2011-07-08 16:26:10	devil	Black_Prince: http://www.internet-magazin.de/news/mozilla-firefox-7-zum-testen-1157411,185.html
+2011-07-08 16:26:20	⇨	Texou (~Texou@ARennes-552-1-19-73.w92-135.abo.wanadoo.fr) has joined #debian
+2011-07-08 16:26:22	⇨	eknahm (~eknahm@c-75-69-103-97.hsd1.nh.comcast.net) has joined #debian
+2011-07-08 16:26:39	⇨	zykotick9 (~zykotick9@66.11.174.71) has joined #debian
+2011-07-08 16:26:45	⇦	redbandit (~redbandit@5ade08c6.bb.sky.com) has quit (Ping timeout: 480 seconds)
+2011-07-08 16:26:46	⇨	Judas_PhD (~kevin@misterfluffy.dsl.xmission.com) has joined #debian
+2011-07-08 16:26:50	devil	ups, thats german :)
+2011-07-08 16:26:55	⇨	aroundthfur (~aroundthf@SE400.PPPoE-1165.sa.bih.net.ba) has joined #debian
+2011-07-08 16:28:57	⇦	eknahm (~eknahm@c-75-69-103-97.hsd1.nh.comcast.net) has quit
+2011-07-08 16:30:42	⇨	alkmim (~alkmim@189.119.23.222) has joined #debian
+2011-07-08 16:30:59	⇦	noddingGeek (~noddingGe@71.216.58.134) has quit (Ping timeout: 480 seconds)
+2011-07-08 16:31:24	⇨	gomaaz (~das@p5B01ACBC.dip.t-dialin.net) has joined #debian
+2011-07-08 16:31:33	⇨	nelmar (~nelmar_89@190.53.80.15) has joined #debian
+2011-07-08 16:33:15	⇦	jcwu (~jcwu@114.34.56.118) has quit (Remote host closed the connection)
+2011-07-08 16:34:17	⇨	hazard2 (~hazard@pool-108-7-70-183.bstnma.fios.verizon.net) has joined #debian
+2011-07-08 16:34:59	⇦	Talon (~Talon@50.51.42.234) has quit
+2011-07-08 16:35:21	⇦	lionel (~lionel@ip-249.net-81-220-18.versailles.rev.numericable.fr) has quit (Remote host closed the connection)
+2011-07-08 16:35:33	⇦	aroundthfur (~aroundthf@SE400.PPPoE-1165.sa.bih.net.ba) has quit (Ping timeout: 480 seconds)
+2011-07-08 16:35:33	⇨	lionel (~lionel@ip-249.net-81-220-18.versailles.rev.numericable.fr) has joined #debian
+2011-07-08 16:35:54	⇦	nelmar (~nelmar_89@190.53.80.15) has quit
+2011-07-08 16:36:27	⇦	AbsintheSyringe (~havoc@31.176.195.222) has quit (Ping timeout: 480 seconds)
+2011-07-08 16:36:34	⇨	aroundthfur (~aroundthf@SE400.PPPoE-1165.sa.bih.net.ba) has joined #debian
+2011-07-08 16:37:14	⇨	atem (~atem@201.145.2.1) has joined #debian
+2011-07-08 16:37:20	⇦	funkyHat (~m@funkyhat.org) has quit (Ping timeout: 480 seconds)
+2011-07-08 16:37:38	⇦	zykotick9 (~zykotick9@66.11.174.71) has quit (Quit: Leaving)
+2011-07-08 16:37:52	⇦	betinho (~alberto@186.223.209.85) has quit
+2011-07-08 16:37:55	⇨	devil_ (~devil@dslb-088-074-049-129.pools.arcor-ip.net) has joined #debian
+2011-07-08 16:38:31	⇨	duxklr (~duxklr@wufis-pat6.nts.wustl.edu) has joined #debian
+2011-07-08 16:38:38	⇨	chattr (~mike@184.85.189.72.cfl.res.rr.com) has joined #debian
+2011-07-08 16:40:08	⇨	zykotick9 (~zykotick9@66.11.174.71) has joined #debian
+2011-07-08 16:40:48	⇨	noddingGeek (~noddingGe@71.216.58.134) has joined #debian
+2011-07-08 16:41:54	⇨	jeflui (~jeflui@201-27-106-167.dsl.telesp.net.br) has joined #debian
+2011-07-08 16:42:41	⇨	wintellect (~wintellec@cpc1-nmal8-0-0-cust9.croy.cable.virginmedia.com) has joined #debian
+2011-07-08 16:44:00	⇨	Cibort (~Cibort@pc-79-60-86-200.cm.vtr.net) has joined #debian
+2011-07-08 16:44:19	⇨	rynx (~rynxy@142.167.128.29) has joined #debian
+2011-07-08 16:44:29	⇨	AbsintheSyringe (~havoc@31.176.192.120) has joined #debian
+2011-07-08 16:44:29	⇦	Texou (~Texou@ARennes-552-1-19-73.w92-135.abo.wanadoo.fr) has quit (Quit: WeeChat 0.3.5)
+2011-07-08 16:46:05	⇦	filhocf (~filhocf@187-24-166-247.3g.claro.net.br) has quit (Quit: ChatZilla 0.9.87 [Iceweasel 5.0/20110701125147])
+2011-07-08 16:46:36	⇦	atem (~atem@201.145.2.1) has quit (Ping timeout: 480 seconds)
+2011-07-08 16:47:34	⇨	brice83 (~brice@85-218-24-206.dclient.lsne.ch) has joined #debian
+2011-07-08 16:48:50	kingsley	FYI: A nice histogram of the ages of packages installed on my computer is at http://picpaste.com/pics/b9c736b47fe4efb2905ada0d4d64703f.1310155669.png
+2011-07-08 16:49:04	kingsley	It's my shrine to the genius of debian's package management.
+2011-07-08 16:49:08	estudante	how to install adobe flash player?
+2011-07-08 16:49:31	Black_Prince	%adobe flash
+2011-07-08 16:49:31	dselect	Adobe Flash Player is <non-free>.  The easiest way to install it is with the flashplugin-nonfree <contrib> package for squeeze and upwards or lenny-backports.  There is also a flashplayer-mozilla package in <dmm> (non-free section).  WARNING: installing flashplugin-nonfree will NOT automatically keep the plugin updated.  Read more on http://wiki.debian.org/FlashPlayer .  See also <flash amd64>, <bdo>, <dmm>.
+2011-07-08 16:50:39	estudante	kingsley: what is this http://picpaste.com/tastatur.gif ?
+2011-07-08 16:50:53	estudante	kingsley: rs..rs
+2011-07-08 16:51:31	jhutchins_lt	Black_Prince: Mozilla is just messing with it's version numbering.  I think it's the size thing - Microsoft's is bigger.
+2011-07-08 16:51:45	⇨	nadir (~markus@f053157249.adsl.alicedsl.de) has joined #debian
+2011-07-08 16:52:00	⇦	alkmim (~alkmim@189.119.23.222) has quit (Ping timeout: 480 seconds)
+2011-07-08 16:52:06	⇦	nadir (~markus@f053157249.adsl.alicedsl.de) has quit
+2011-07-08 16:52:22	Black_Prince	jhutchins_lt, it always was ... but I thing they are more up to catch chrome not to msie
+2011-07-08 16:52:44	⇨	tazz_ (~gaurav@triband-mum-120.60.145.242.mtnl.net.in) has joined #debian
+2011-07-08 16:53:12	Black_Prince	Since most people will be "Oh look chrome has higher version, it is surely better, and use it "
+2011-07-08 16:53:17	jhutchins_lt	Black_Prince: Remember that IE started out as a rewrite of the mosaic code.  Mosaic went on to become netscape and mozilla.
+2011-07-08 16:54:15	⇨	funkyHat (~m@funkyhat.org) has joined #debian
+2011-07-08 16:56:39	⇨	Rehnquist (~yossarian@ip-94-113-27-114.net.upcbroadband.cz) has joined #debian
+2011-07-08 16:56:49	⇨	phil_ (~phil@93-97-161-139.zone5.bethere.co.uk) has joined #debian
+2011-07-08 16:58:11	⇦	phil_ (~phil@93-97-161-139.zone5.bethere.co.uk) has quit (Remote host closed the connection)
+2011-07-08 16:58:59	⇦	sylar (~sylarrrr@bzq-218-182-227.red.bezeqint.net) has quit (Ping timeout: 480 seconds)
+2011-07-08 16:59:57	⇨	thuldin (~thuldin@s529c8e76.adsl.wanadoo.nl) has joined #debian
+2011-07-08 17:00:07	⇦	kuroi (~marvin@p57A23BDD.dip.t-dialin.net) has quit (Ping timeout: 480 seconds)
+2011-07-08 17:01:22	⇦	EZmoney (~EZmoney@c-68-58-85-147.hsd1.in.comcast.net) has left #debian (has left the channel)
+2011-07-08 17:02:48	⇦	Rehnquist (~yossarian@ip-94-113-27-114.net.upcbroadband.cz) has quit (Remote host closed the connection)
+2011-07-08 17:04:18	⇦	devil_ (~devil@dslb-088-074-049-129.pools.arcor-ip.net) has quit (Ping timeout: 480 seconds)
+2011-07-08 17:06:10	⇦	Omni_Lynk (~Omni@wwisinc.com) has quit (Quit: Leaving)
+2011-07-08 17:06:16	⇦	Infra_HDC (~askinfra@skazo4nik.comex.ru) has quit (Remote host closed the connection)
+2011-07-08 17:06:59	⇦	towo` (~torsten_w@178.25.188.5) has quit (Quit: so, nu isser wech)
+2011-07-08 17:07:22	devil	jhutchins_lt: its rather googles is bigger
+2011-07-08 17:07:39	⇦	inix (~inix@141.99.224.27) has quit (Ping timeout: 480 seconds)
+2011-07-08 17:08:12	devil	jhutchins_lt: but it might bring a wider testbed for the moz developer
+2011-07-08 17:08:21	devil	developers, even
+2011-07-08 17:10:16	devil	aurora 7 has a complete workover of memory management and a telemetry module that lets users transfer their memory usage data to mozilla
+2011-07-08 17:12:40	⇦	Blacker47 (~Blacker47@p57A90118.dip0.t-ipconnect.de) has quit (Ping timeout: 480 seconds)
+2011-07-08 17:14:49	⇨	kuroi (~marvin@p57A25949.dip.t-dialin.net) has joined #debian
+2011-07-08 17:16:06	⇨	rcaverly (~rcaverly@38.107.251.3) has joined #debian
+2011-07-08 17:17:12	MrFrood	jhutchins_lt: can't comment about ie but as far as I am aware the last mosaic code was pulled from mozilla prodducts when the C blob providding gopher support was removed from firefox
+2011-07-08 17:17:48	⇨	hermogenes (~user@177.17.237.88) has joined #debian
+2011-07-08 17:18:26	⇦	rage (~rage@val59-3-88-163-151-247.fbx.proxad.net) has quit (Quit: Quitte)
+2011-07-08 17:19:09	⇦	funkyHat (~m@funkyhat.org) has quit (Ping timeout: 480 seconds)
+2011-07-08 17:19:13	jhutchins_lt	MrFrood: Last I checked the history code still had a bug I reported on mosaic...
+2011-07-08 17:19:22	jhutchins_lt	Could be it's all gone now though.
+2011-07-08 17:19:45	jhutchins_lt	afik mozilla's never done a ground-up rewrite.
+2011-07-08 17:20:21	⇨	cirzgamanti` (~sarefo@xdsl-87-79-210-212.netcologne.de) has joined #debian
+2011-07-08 17:20:27	MrFrood	most likly the bug was re-implemented in new code, mozilla made a big effort to loose the C code
+2011-07-08 17:20:37	MrFrood	iirc
+2011-07-08 17:20:41	⇨	WillianPaixao (~quassel@200.129.136.86) has joined #debian
+2011-07-08 17:22:04	⇦	morjak (~morjak@p5DDABFFA.dip.t-dialin.net) has quit (Ping timeout: 480 seconds)
+2011-07-08 17:22:56	⇨	inix (~inix@p5B024AC4.dip.t-dialin.net) has joined #debian
+2011-07-08 17:24:14	⇦	EnisDonKing (enis.sahin@92.36.220.194) has quit (Quit: brb)
+2011-07-08 17:27:23	⇨	EnisDonKing (enis.sahin@92.36.220.194) has joined #debian
+2011-07-08 17:27:27	⇦	cirzgamanti`` (~sarefo@xdsl-87-78-236-140.netcologne.de) has quit (Ping timeout: 480 seconds)
+2011-07-08 17:27:56	⇨	ballfire (~alex@146.Red-95-121-144.dynamicIP.rima-tde.net) has joined #debian
+2011-07-08 17:28:31	⇦	ballfire (~alex@146.Red-95-121-144.dynamicIP.rima-tde.net) has quit
+2011-07-08 17:28:57	⇨	Rehnquist (~yossarian@ip-94-113-27-114.net.upcbroadband.cz) has joined #debian
+2011-07-08 17:32:19	jhutchins_lt	For the most part firefox has gained more code than it's lost.
+2011-07-08 17:32:55	⇨	funkyHat (~m@funkyhat.org) has joined #debian
+2011-07-08 17:35:20	⇦	AbsintheSyringe (~havoc@31.176.192.120) has quit (Ping timeout: 480 seconds)
+2011-07-08 17:35:31	⇨	leancalper (~leancalpe@190.13.50.159) has joined #debian
+2011-07-08 17:36:45	⇦	Rehnquist (~yossarian@ip-94-113-27-114.net.upcbroadband.cz) has quit (Read error: Connection reset by peer)
+2011-07-08 17:36:59	⇨	AbsintheSyringe (~havoc@31.176.195.222) has joined #debian
+2011-07-08 17:38:04	⇨	metalgeek (~erik@h28n1c1o1119.bredband.skanova.com) has joined #debian
+2011-07-08 17:38:26	⇨	cybersphinx (~cyber@pD9F7B052.dip.t-dialin.net) has joined #debian
+2011-07-08 17:38:34	⇦	metalgeek (~erik@h28n1c1o1119.bredband.skanova.com) has quit
+2011-07-08 17:38:42	⇦	jespada (~jespada@190.210.55.169) has quit (Quit: Ex-Chat)
+2011-07-08 17:39:34	⇦	gomaaz (~das@p5B01ACBC.dip.t-dialin.net) has quit (Quit: Verlassend)
+2011-07-08 17:39:42	⇨	amphi (~amphi@88-108-87-167.dynamic.dsl.as9105.com) has joined #debian
+2011-07-08 17:39:58	⇦	EnisDonKing (enis.sahin@92.36.220.194) has quit (Ping timeout: 480 seconds)
+2011-07-08 17:40:08	⇨	EnisDonKing (enis.sahin@92.36.220.194) has joined #debian
+2011-07-08 17:42:31	⇦	Pitxyoki (~PT-SC-257@a85-138-126-24.cpe.netcabo.pt) has quit (Quit: Pitxyoki)
+2011-07-08 17:43:20	MrFrood	jhutchins_lt: I can't argue with that
+2011-07-08 17:45:21	⇦	chealer (~chealer@modemcable022.66-37-24.mc.videotron.ca) has quit (Remote host closed the connection)
+2011-07-08 17:45:44	⇦	cybersphinx_ (~cyber@p4FD67463.dip.t-dialin.net) has quit (Ping timeout: 480 seconds)
+2011-07-08 17:47:01	⇨	RobinJ (~Robin@cable-252-45.zeelandnet.nl) has joined #debian
+2011-07-08 17:48:29	⇦	RobinJ (~Robin@cable-252-45.zeelandnet.nl) has quit
+2011-07-08 17:48:31	⇨	ewager (~ewager@pc-160-87-86-200.cm.vtr.net) has joined #debian
+2011-07-08 17:49:05	⇦	rynx (~rynxy@142.167.128.29) has quit (Ping timeout: 480 seconds)
+2011-07-08 17:49:26		irc: disconnected from server

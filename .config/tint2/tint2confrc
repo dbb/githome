@@ -1,0 +1,6 @@
+#---------------------------------------------
+# TINT2CONF CONFIG FILE
+cmd_property = python /usr/bin/tintwizard
+width = 500
+height = 350
+

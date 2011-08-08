@@ -1,0 +1,1295 @@
+2009-12-26 08:01:17		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, ruby, tcl, xfer
+2009-12-26 08:01:27	=!=	irc: command "nick" must be executed on irc buffer (server or channel)
+2009-12-26 08:01:45		irc: server irc.oftc.net created (temporary server, NOT SAVED!)
+2009-12-26 08:02:17	=!=	Error: unknown command "msn" (type /help for help)
+2009-12-26 08:13:18		Plugin "aspell" unloaded
+2009-12-26 08:13:18		Plugin "xfer" unloaded
+2009-12-26 08:13:18		Plugin "ruby" unloaded
+2009-12-26 08:13:18		Plugin "charset" unloaded
+2009-12-26 08:13:18		Plugin "python" unloaded
+2009-12-26 08:13:18		Plugin "perl" unloaded
+2010-04-17 21:58:37		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, ruby, tcl, xfer
+2010-04-17 21:58:46		Plugin "aspell" unloaded
+2010-04-17 21:58:46		Plugin "xfer" unloaded
+2010-04-17 21:58:46		Plugin "ruby" unloaded
+2010-04-17 21:58:46		Plugin "charset" unloaded
+2010-04-17 21:58:46		Plugin "python" unloaded
+2010-04-17 21:58:46		Plugin "perl" unloaded
+2010-04-17 22:00:19		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, ruby, tcl, xfer
+2010-04-17 22:00:25		Plugin "aspell" unloaded
+2010-04-17 22:00:25		Plugin "xfer" unloaded
+2010-04-17 22:00:25		Plugin "ruby" unloaded
+2010-04-17 22:00:25		Plugin "charset" unloaded
+2010-04-17 22:00:25		Plugin "python" unloaded
+2010-04-17 22:00:25		Plugin "perl" unloaded
+2010-04-17 22:00:53		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, ruby, tcl, xfer
+2010-04-18 14:26:46		Plugin "aspell" unloaded
+2010-04-18 14:26:46		Plugin "xfer" unloaded
+2010-04-18 14:26:46		Plugin "ruby" unloaded
+2010-04-18 14:26:46		Plugin "charset" unloaded
+2010-04-18 14:26:46		Plugin "python" unloaded
+2010-04-18 14:26:46		Plugin "perl" unloaded
+2010-04-18 16:32:55		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, ruby, tcl, xfer
+2010-04-18 16:47:03		Plugin "aspell" unloaded
+2010-04-18 16:47:03		Plugin "xfer" unloaded
+2010-04-18 16:47:03		Plugin "ruby" unloaded
+2010-04-18 16:47:03		Plugin "charset" unloaded
+2010-04-18 16:47:03		Plugin "python" unloaded
+2010-04-18 16:47:03		Plugin "perl" unloaded
+2010-04-18 16:50:49		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, ruby, tcl, xfer
+2010-04-18 17:08:30		Plugin "aspell" unloaded
+2010-04-18 17:08:30		Plugin "xfer" unloaded
+2010-04-18 17:08:30		Plugin "ruby" unloaded
+2010-04-18 17:08:30		Plugin "charset" unloaded
+2010-04-18 17:08:30		Plugin "python" unloaded
+2010-04-18 17:08:30		Plugin "perl" unloaded
+2010-04-20 07:17:20		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, ruby, tcl, xfer
+2010-04-20 07:25:57		Plugin "aspell" unloaded
+2010-04-20 07:25:57		Plugin "xfer" unloaded
+2010-04-20 07:25:57		Plugin "ruby" unloaded
+2010-04-20 07:25:57		Plugin "charset" unloaded
+2010-04-20 07:25:57		Plugin "python" unloaded
+2010-04-20 07:25:57		Plugin "perl" unloaded
+2010-04-22 22:20:45		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, ruby, tcl, xfer
+2010-04-23 01:30:18		Plugin "aspell" unloaded
+2010-04-23 01:30:18		Plugin "xfer" unloaded
+2010-04-23 01:30:18		Plugin "ruby" unloaded
+2010-04-23 01:30:18		Plugin "charset" unloaded
+2010-04-23 01:30:18		Plugin "python" unloaded
+2010-04-23 01:30:18		Plugin "perl" unloaded
+2010-04-23 11:34:10		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, ruby, tcl, xfer
+2010-04-23 18:41:18		Plugin "aspell" unloaded
+2010-04-23 18:41:18		Plugin "xfer" unloaded
+2010-04-23 18:41:18		Plugin "ruby" unloaded
+2010-04-23 18:41:18		Plugin "charset" unloaded
+2010-04-23 18:41:18		Plugin "python" unloaded
+2010-04-23 18:41:18		Plugin "perl" unloaded
+2010-04-23 22:44:14		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, ruby, tcl, xfer
+2010-04-23 23:24:17		Plugin "aspell" unloaded
+2010-04-23 23:24:17		Plugin "xfer" unloaded
+2010-04-23 23:24:17		Plugin "ruby" unloaded
+2010-04-23 23:24:17		Plugin "charset" unloaded
+2010-04-23 23:24:17		Plugin "python" unloaded
+2010-04-23 23:24:17		Plugin "perl" unloaded
+2010-04-24 12:07:19		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, ruby, tcl, xfer
+2010-04-24 12:11:56		Plugin "aspell" unloaded
+2010-04-24 12:11:56		Plugin "xfer" unloaded
+2010-04-24 12:11:56		Plugin "ruby" unloaded
+2010-04-24 12:11:56		Plugin "charset" unloaded
+2010-04-24 12:11:56		Plugin "python" unloaded
+2010-04-24 12:11:56		Plugin "perl" unloaded
+2010-04-24 12:21:26		Plugins loaded: alias, charset, irc, logger, xfer
+2010-04-24 12:33:41		Filter "joinquit" added:
+2010-04-24 12:33:41		  [joinquit] buffer: * / tags: irc_join,irc_part,irc_quit / regex: * 
+2010-04-24 12:50:12		Options saved to weechat.conf
+2010-04-24 12:50:12		Options saved to plugins.conf
+2010-04-24 12:50:12		Options saved to alias.conf
+2010-04-24 12:50:12		Options saved to irc.conf
+2010-04-24 12:50:12		Options saved to logger.conf
+2010-04-24 12:50:12		Options saved to charset.conf
+2010-04-24 12:50:12		Options saved to xfer.conf
+2010-04-24 15:51:09		Plugins loaded: alias, charset, irc, logger, xfer
+2010-04-25 18:50:29		Plugins loaded: alias, charset, irc, logger, xfer
+2010-04-26 19:26:35		Plugins loaded: alias, charset, irc, logger, xfer
+2010-04-26 19:44:49		Plugins loaded: alias, charset, irc, logger, xfer
+2010-04-26 19:44:57	=!=	irc: command "join" must be executed on connected irc server
+2010-05-02 01:17:00		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-02 01:26:20		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-03 03:00:35		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-04 00:26:29		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-04 01:09:04		Options reloaded from weechat.conf
+2010-05-04 01:09:04		Options reloaded from plugins.conf
+2010-05-04 01:09:04		Options reloaded from alias.conf
+2010-05-04 01:09:04		Options reloaded from irc.conf
+2010-05-04 01:09:04		Options reloaded from logger.conf
+2010-05-04 01:09:04		Options reloaded from charset.conf
+2010-05-04 01:09:04		Options reloaded from xfer.conf
+2010-05-04 01:18:56		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-04 21:15:38		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-04 22:56:35	=!=	Error: unknown command "quit]" (type /help for help)
+2010-05-06 19:28:58		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-07 03:18:46		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-07 03:43:39		[core]  /away  [-all] [message]
+2010-05-07 03:43:39		toggle away status
+2010-05-07 03:43:39		   -all: toggle away status on all connected servers
+2010-05-07 03:43:39		message: message for away (if no message is given, away status is removed)
+2010-05-07 06:56:12		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-07 07:45:01		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-08 12:36:47		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-10 04:29:05		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-10 05:15:31		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-12 16:07:36		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-12 16:18:25		Option "weechat.look.set_title":
+2010-05-12 16:18:25		  description: set title for window (terminal for Curses GUI) with name and version
+2010-05-12 16:18:25		  type: boolean
+2010-05-12 16:18:25		  values: on, off
+2010-05-12 16:18:25		  default value: on
+2010-05-12 16:18:25		  current value: on
+2010-05-13 11:39:33		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-14 00:14:40		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-14 15:35:38		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-15 16:25:36		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-16 17:58:11		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-16 19:20:53		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-17 19:34:57		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-20 23:41:17		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-21 19:11:12		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-25 04:03:07		Plugins loaded: alias, charset, irc, logger, xfer
+2010-05-31 17:45:31		Plugins loaded: alias, charset, irc, logger, xfer
+2010-06-06 19:48:22		Plugins loaded: alias, charset, irc, logger, xfer
+2010-06-10 06:27:06		Plugins loaded: alias, charset, irc, logger, xfer
+2010-06-12 23:53:32		Plugins loaded: alias, charset, irc, logger, xfer
+2010-06-13 07:29:22		Plugins loaded: alias, charset, irc, logger, xfer
+2010-06-13 08:06:56		Options reloaded from weechat.conf
+2010-06-13 08:06:56		Options reloaded from plugins.conf
+2010-06-13 08:06:56		Options reloaded from alias.conf
+2010-06-13 08:06:56		Options reloaded from logger.conf
+2010-06-13 08:06:56		Options reloaded from irc.conf
+2010-06-13 08:06:56		Options reloaded from charset.conf
+2010-06-13 08:06:56		Options reloaded from xfer.conf
+2010-06-13 08:06:57		Options reloaded from weechat.conf
+2010-06-13 08:06:57		Options reloaded from plugins.conf
+2010-06-13 08:06:57		Options reloaded from alias.conf
+2010-06-13 08:06:57		Options reloaded from logger.conf
+2010-06-13 08:06:57		Options reloaded from irc.conf
+2010-06-13 08:06:57		Options reloaded from charset.conf
+2010-06-13 08:06:57		Options reloaded from xfer.conf
+2010-06-14 04:37:38		Plugins loaded: alias, charset, irc, logger, xfer
+2010-06-17 00:01:49		Plugins loaded: alias, charset, irc, logger, xfer
+2010-06-17 13:22:27		Plugins loaded: alias, charset, irc, logger, xfer
+2010-06-18 17:21:13		Plugins loaded: alias, charset, irc, logger, xfer
+2010-06-22 17:13:04		Plugins loaded: alias, charset, irc, logger, xfer
+2010-06-22 17:36:35	=!=	Error: unknown command "quir" (type /help for help)
+2010-06-22 19:56:21		Plugins loaded: alias, charset, irc, logger, xfer
+2010-06-22 19:56:39		irc: server irc.perl.org created (temporary server, NOT SAVED!)
+2010-07-02 21:47:46		Plugins loaded: alias, charset, irc, logger, xfer
+2010-07-02 21:47:58	=!=	irc: command "join" must be executed on connected irc server
+2010-07-02 23:13:10		Plugins loaded: alias, charset, irc, logger, xfer
+2010-07-07 05:09:56		Plugins loaded: alias, charset, irc, logger, xfer
+2010-07-07 05:10:07		irc: server irc.perl.org created (temporary server, NOT SAVED!)
+2010-07-07 05:11:08		weechat internal commands:
+2010-07-07 05:11:08		   away - toggle away status
+2010-07-07 05:11:08		   bar - manage bars
+2010-07-07 05:11:08		   buffer - manage buffers
+2010-07-07 05:11:08		   command - launch explicit WeeChat or plugin command
+2010-07-07 05:11:08		   debug - control debug for core/plugins
+2010-07-07 05:11:08		   filter - filter messages in buffers, to hide/show them according to tags or regex
+2010-07-07 05:11:08		   help - display help about commands and options
+2010-07-07 05:11:08		   history - show buffer command history
+2010-07-07 05:11:08		   input - functions for command line
+2010-07-07 05:11:08		   key - bind/unbind keys
+2010-07-07 05:11:08		   layout - save/apply/reset layout for buffers and windows
+2010-07-07 05:11:08		   mute - execute a command silently
+2010-07-07 05:11:08		   plugin - list/load/unload plugins
+2010-07-07 05:11:08		   proxy - manage proxies
+2010-07-07 05:11:08		   quit - quit WeeChat
+2010-07-07 05:11:08		   reload - reload configuration files from disk
+2010-07-07 05:11:08		   save - save configuration files to disk
+2010-07-07 05:11:08		   set - set config options
+2010-07-07 05:11:08		   unset - unset/reset config options
+2010-07-07 05:11:08		   upgrade - upgrade WeeChat without disconnecting from servers
+2010-07-07 05:11:08		   uptime - show WeeChat uptime
+2010-07-07 05:11:08		   version - show WeeChat version and compilation date
+2010-07-07 05:11:08		   wait - schedule a command execution in future
+2010-07-07 05:11:08		   window - manage windows
+2010-07-07 05:11:08		Other commands:
+2010-07-07 05:11:08		   admin - find information about the administrator of the server
+2010-07-07 05:11:08		   alias - create an alias for a command
+2010-07-07 05:11:08		   allchan - execute a command on all channels of all connected servers
+2010-07-07 05:11:08		   allserv - execute a command on all connected servers
+2010-07-07 05:11:08		   ban - ban nicks or hosts
+2010-07-07 05:11:08		   BYE - quit
+2010-07-07 05:11:08		   C - buffer clear
+2010-07-07 05:11:08		   charset - change charset for current buffer
+2010-07-07 05:11:08		   CHAT - dcc chat
+2010-07-07 05:11:08		   CL - buffer clear
+2010-07-07 05:11:08		   CLOSE - buffer close
+2010-07-07 05:11:08		   connect - connect to IRC server(s)
+2010-07-07 05:11:08		   ctcp - send a CTCP message (Client-To-Client Protocol)
+2010-07-07 05:11:08		   cycle - leave and rejoin a channel
+2010-07-07 05:11:08		   dcc - start DCC (file or chat)
+2010-07-07 05:11:08		   dehalfop - remove half channel operator status from nickname(s)
+2010-07-07 05:11:08		   deop - remove channel operator status from nickname(s)
+2010-07-07 05:11:08		   devoice - remove voice from nickname(s)
+2010-07-07 05:11:08		   die - shutdown the server
+2010-07-07 05:11:08		   disconnect - disconnect from IRC server(s)
+2010-07-07 05:11:08		   EXIT - quit
+2010-07-07 05:11:08		   halfop - give half channel operator status to nickname(s)
+2010-07-07 05:11:08		   IG - ignore
+2010-07-07 05:11:08		   ignore - ignore nicks/hosts from servers or channels
+2010-07-07 05:11:08		   info - get information describing the server
+2010-07-07 05:11:08		   invite - invite a nick on a channel
+2010-07-07 05:11:08		   ison - check if a nickname is currently on IRC
+2010-07-07 05:11:08		   J - join
+2010-07-07 05:11:08		   join - join a channel
+2010-07-07 05:11:08		   K - kick
+2010-07-07 05:11:08		   KB - kickban
+2010-07-07 05:11:08		   kick - forcibly remove a user from a channel
+2010-07-07 05:11:08		   kickban - kicks and bans a nick from a channel
+2010-07-07 05:11:08		   kill - close client-server connection
+2010-07-07 05:11:08		   LEAVE - part
+2010-07-07 05:11:08		   links - list all servernames which are known by the server answering the query
+2010-07-07 05:11:08		   list - list channels and their topic
+2010-07-07 05:11:08		   logger - logger plugin configuration
+2010-07-07 05:11:08		   lusers - get statistics about the size of the IRC network
+2010-07-07 05:11:08		   M - msg
+2010-07-07 05:11:08		   map - show a graphical map of the IRC network
+2010-07-07 05:11:08		   me - send a CTCP action to remote host
+2010-07-07 05:11:08		   me - send a CTCP action to the current channel
+2010-07-07 05:11:08		   mode - change channel or user mode
+2010-07-07 05:11:08		   motd - get the "Message Of The Day"
+2010-07-07 05:11:08		   msg - send message to a nick or channel
+2010-07-07 05:11:08		   MUB - unban *
+2010-07-07 05:11:08		   N - names
+2010-07-07 05:11:08		   names - list nicknames on channels
+2010-07-07 05:11:08		   nick - change current nickname
+2010-07-07 05:11:08		   notice - send notice message to user
+2010-07-07 05:11:08		   op - give channel operator status to nickname(s)
+2010-07-07 05:11:08		   oper - get operator privileges
+2010-07-07 05:11:08		   part - leave a channel
+2010-07-07 05:11:08		   ping - ping server
+2010-07-07 05:11:08		   pong - answer to a ping message
+2010-07-07 05:11:08		   Q - query
+2010-07-07 05:11:08		   query - send a private message to a nick
+2010-07-07 05:11:08		   quote - send raw data to server without parsing
+2010-07-07 05:11:08		   reconnect - reconnect to server(s)
+2010-07-07 05:11:08		   REDRAW - window refresh
+2010-07-07 05:11:08		   rehash - tell the server to reload its config file
+2010-07-07 05:11:08		   restart - tell the server to restart itself
+2010-07-07 05:11:08		   sajoin - forces a user to join channel(s)
+2010-07-07 05:11:08		   samode - change mode on channel, without having operator status
+2010-07-07 05:11:08		   sanick - forces a user to use another nick
+2010-07-07 05:11:08		   sapart - forces a user to leave channel(s)
+2010-07-07 05:11:08		   saquit - forces a user to quit server with a reason
+2010-07-07 05:11:08		   SAY - msg *
+2010-07-07 05:11:08		   server - list, add or remove IRC servers
+2010-07-07 05:11:08		   service - register a new service
+2010-07-07 05:11:08		   servlist - list services currently connected to the network
+2010-07-07 05:11:08		   SIGNOFF - quit
+2010-07-07 05:11:08		   squery - deliver a message to a service
+2010-07-07 05:11:08		   squit - disconnect server links
+2010-07-07 05:11:08		   stats - query statistics about server
+2010-07-07 05:11:08		   summon - give users who are on a host running an IRC server a message asking them to please join IRC
+2010-07-07 05:11:08		   T - topic
+2010-07-07 05:11:08		   time - query local time from server
+2010-07-07 05:11:08		   topic - get/set channel topic
+2010-07-07 05:11:08		   trace - find the route to specific server
+2010-07-07 05:11:08		   UB - unban
+2010-07-07 05:11:08		   unalias - remove aliases
+2010-07-07 05:11:08		   unban - unban nicks or hosts
+2010-07-07 05:11:08		   userhost - return a list of information about nicknames
+2010-07-07 05:11:08		   users - list of users logged into the server
+2010-07-07 05:11:08		   V - command core version
+2010-07-07 05:11:08		   version - give the version info of nick or server (current or specified)
+2010-07-07 05:11:08		   voice - give voice to nickname(s)
+2010-07-07 05:11:08		   W - who
+2010-07-07 05:11:08		   wallops - send a message to all currently connected users who have set the 'w' user mode for themselves
+2010-07-07 05:11:08		   WC - window merge
+2010-07-07 05:11:08		   who - generate a query which returns a list of information
+2010-07-07 05:11:08		   whois - query information about user(s)
+2010-07-07 05:11:08		   whowas - ask for information about a nickname which no longer exists
+2010-07-07 05:11:08		   WI - whois
+2010-07-07 05:11:08		   WII - whois $1 $1
+2010-07-07 05:11:08		   WW - whowas
+2010-07-07 05:11:08		   xfer - xfer control
+2010-07-07 05:24:44		irc: server irc.freenode.net created (temporary server, NOT SAVED!)
+2010-08-27 18:07:35		Plugins loaded: alias, charset, irc, logger, xfer
+2010-09-09 01:20:42		Plugins loaded: alias, charset, irc, logger, xfer
+2010-09-09 01:20:55		irc: server irc.oftc.net created (temporary server, NOT SAVED!)
+2010-09-09 19:30:08		Plugins loaded: alias, charset, irc, logger, xfer
+2010-09-09 19:30:20		irc: server irc.oftc.net created (temporary server, NOT SAVED!)
+2010-09-10 00:46:58		Plugins loaded: alias, charset, irc, logger, xfer
+2010-09-10 00:47:58		irc: server irc.oftc.net created (temporary server, NOT SAVED!)
+2010-11-04 19:06:11		Plugins loaded: alias, charset, irc, logger, xfer
+2010-11-04 22:35:48		Plugins loaded: alias, charset, irc, logger, xfer
+2010-11-07 17:43:43		Plugins loaded: alias, charset, irc, logger, xfer
+2010-11-08 00:05:34		Plugins loaded: alias, charset, irc, logger, xfer
+2010-11-08 00:06:27		irc: server irc.oftc.net created (temporary server, NOT SAVED!)
+2010-11-08 01:43:13		Plugins loaded: alias, charset, irc, logger, xfer
+2010-11-09 02:41:17		Plugins loaded: alias, charset, irc, logger, xfer
+2010-11-17 20:19:28		Plugins loaded: alias, charset, irc, logger, xfer
+2010-11-18 18:04:17		Plugins loaded: alias, charset, irc, logger, xfer
+2010-11-18 23:42:35		Plugins loaded: alias, charset, irc, logger, xfer
+2010-11-28 02:04:48		Plugins loaded: alias, charset, irc, logger, xfer
+2010-11-28 02:05:25		irc: server irc.oftc.net created (temporary server, NOT SAVED!)
+2011-01-03 10:20:53		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-05 01:48:59		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-05 01:49:06		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-06 22:06:58		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-07 01:52:13		Options reloaded from weechat.conf
+2011-02-07 01:52:13		Options reloaded from plugins.conf
+2011-02-07 01:52:13		Options reloaded from alias.conf
+2011-02-07 01:52:13		Options reloaded from logger.conf
+2011-02-07 01:52:13		Options reloaded from irc.conf
+2011-02-07 01:52:13		Options reloaded from charset.conf
+2011-02-07 01:52:13		Options reloaded from xfer.conf
+2011-02-13 14:32:52		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-21 23:17:59	=!=	Warning: /home/daniel/.weechat/irc.conf, line 25: option "open_channel_near_server" unknown for section "look"
+2011-02-21 23:17:59	=!=	Warning: /home/daniel/.weechat/irc.conf, line 26: option "open_pv_near_server" unknown for section "look"
+2011-02-21 23:17:59	=!=	Warning: /home/daniel/.weechat/irc.conf, line 30: option "show_away_once" unknown for section "look"
+2011-02-21 23:17:59	=!=	Warning: /home/daniel/.weechat/irc.conf, line 46: option "anti_flood_prio_high" unknown for section "network"
+2011-02-21 23:17:59	=!=	Warning: /home/daniel/.weechat/irc.conf, line 47: option "anti_flood_prio_low" unknown for section "network"
+2011-02-21 23:17:59	=!=	Warning: /home/daniel/.weechat/irc.conf, line 48: option "away_check" unknown for section "network"
+2011-02-21 23:17:59	=!=	Warning: /home/daniel/.weechat/irc.conf, line 49: option "away_check_max_nicks" unknown for section "network"
+2011-02-21 23:17:59	=!=	Warning: /home/daniel/.weechat/irc.conf, line 52: option "connection_timeout" unknown for section "network"
+2011-02-21 23:17:59	=!=	Warning: /home/daniel/.weechat/irc.conf, line 53: option "default_msg_part" unknown for section "network"
+2011-02-21 23:17:59	=!=	Warning: /home/daniel/.weechat/irc.conf, line 54: option "default_msg_quit" unknown for section "network"
+2011-02-21 23:17:59		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-21 23:24:36		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-21 23:29:39		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-21 23:30:24		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-21 23:31:09		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-21 23:31:55		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-21 23:35:27		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-21 23:35:47		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-21 23:37:17		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-21 23:37:48		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-21 23:38:01	↮	No help available, "plugins" is not a command or an option
+2011-02-21 23:38:05		weechat internal commands:
+2011-02-21 23:38:05		   away - toggle away status
+2011-02-21 23:38:05		   bar - manage bars
+2011-02-21 23:38:05		   buffer - manage buffers
+2011-02-21 23:38:05		   color - define custom colors and display palette of colors
+2011-02-21 23:38:05		   command - launch explicit WeeChat or plugin command
+2011-02-21 23:38:05		   debug - control debug for core/plugins
+2011-02-21 23:38:05		   filter - filter messages in buffers, to hide/show them according to tags or regex
+2011-02-21 23:38:05		   help - display help about commands and options
+2011-02-21 23:38:05		   history - show buffer command history
+2011-02-21 23:38:05		   input - functions for command line
+2011-02-21 23:38:05		   key - bind/unbind keys
+2011-02-21 23:38:05		   layout - save/apply/reset layout for buffers and windows
+2011-02-21 23:38:05		   mute - execute a command silently
+2011-02-21 23:38:05		   plugin - list/load/unload plugins
+2011-02-21 23:38:05		   proxy - manage proxies
+2011-02-21 23:38:05		   quit - quit WeeChat
+2011-02-21 23:38:05		   reload - reload configuration files from disk
+2011-02-21 23:38:05		   save - save configuration files to disk
+2011-02-21 23:38:05		   set - set config options
+2011-02-21 23:38:05		   unset - unset/reset config options
+2011-02-21 23:38:05		   upgrade - upgrade WeeChat without disconnecting from servers
+2011-02-21 23:38:05		   uptime - show WeeChat uptime
+2011-02-21 23:38:05		   version - show WeeChat version and compilation date
+2011-02-21 23:38:05		   wait - schedule a command execution in future
+2011-02-21 23:38:05		   window - manage windows
+2011-02-21 23:38:05		Other commands:
+2011-02-21 23:38:05		   admin - find information about the administrator of the server
+2011-02-21 23:38:05		   alias - create an alias for a command
+2011-02-21 23:38:05		   allchan - execute a command on all channels of all connected servers
+2011-02-21 23:38:05		   allserv - execute a command on all connected servers
+2011-02-21 23:38:05		   ban - ban nicks or hosts
+2011-02-21 23:38:05		   BYE - quit
+2011-02-21 23:38:05		   C - buffer clear
+2011-02-21 23:38:05		   charset - change charset for current buffer
+2011-02-21 23:38:05		   CHAT - dcc chat
+2011-02-21 23:38:05		   CL - buffer clear
+2011-02-21 23:38:05		   CLOSE - buffer close
+2011-02-21 23:38:05		   connect - connect to IRC server(s)
+2011-02-21 23:38:05		   ctcp - send a CTCP message (Client-To-Client Protocol)
+2011-02-21 23:38:05		   cycle - leave and rejoin a channel
+2011-02-21 23:38:05		   dcc - start DCC (file or chat)
+2011-02-21 23:38:05		   dehalfop - remove half channel operator status from nickname(s)
+2011-02-21 23:38:05		   deop - remove channel operator status from nickname(s)
+2011-02-21 23:38:05		   devoice - remove voice from nickname(s)
+2011-02-21 23:38:05		   die - shutdown the server
+2011-02-21 23:38:05		   disconnect - disconnect from IRC server(s)
+2011-02-21 23:38:05		   EXIT - quit
+2011-02-21 23:38:05		   halfop - give half channel operator status to nickname(s)
+2011-02-21 23:38:05		   IG - ignore
+2011-02-21 23:38:05		   ignore - ignore nicks/hosts from servers or channels
+2011-02-21 23:38:05		   info - get information describing the server
+2011-02-21 23:38:05		   invite - invite a nick on a channel
+2011-02-21 23:38:05		   ison - check if a nickname is currently on IRC
+2011-02-21 23:38:05		   J - join
+2011-02-21 23:38:05		   join - join a channel
+2011-02-21 23:38:05		   K - kick
+2011-02-21 23:38:05		   KB - kickban
+2011-02-21 23:38:05		   kick - forcibly remove a user from a channel
+2011-02-21 23:38:05		   kickban - kicks and bans a nick from a channel
+2011-02-21 23:38:05		   kill - close client-server connection
+2011-02-21 23:38:05		   LEAVE - part
+2011-02-21 23:38:05		   links - list all servernames which are known by the server answering the query
+2011-02-21 23:38:05		   list - list channels and their topic
+2011-02-21 23:38:05		   logger - logger plugin configuration
+2011-02-21 23:38:05		   lusers - get statistics about the size of the IRC network
+2011-02-21 23:38:05		   M - msg
+2011-02-21 23:38:05		   map - show a graphical map of the IRC network
+2011-02-21 23:38:05		   me - send a CTCP action to the current channel
+2011-02-21 23:38:05		   me - send a CTCP action to remote host
+2011-02-21 23:38:05		   mode - change channel or user mode
+2011-02-21 23:38:05		   motd - get the "Message Of The Day"
+2011-02-21 23:38:05		   msg - send message to a nick or channel
+2011-02-21 23:38:05		   MUB - unban *
+2011-02-21 23:38:05		   N - names
+2011-02-21 23:38:05		   names - list nicknames on channels
+2011-02-21 23:38:05		   nick - change current nickname
+2011-02-21 23:38:05		   notice - send notice message to user
+2011-02-21 23:38:05		   notify - add a notification for presence or away status of nicks on servers
+2011-02-21 23:38:05		   op - give channel operator status to nickname(s)
+2011-02-21 23:38:05		   oper - get operator privileges
+2011-02-21 23:38:05		   part - leave a channel
+2011-02-21 23:38:05		   ping - ping server
+2011-02-21 23:38:05		   pong - answer to a ping message
+2011-02-21 23:38:05		   Q - query
+2011-02-21 23:38:05		   query - send a private message to a nick
+2011-02-21 23:38:05		   quote - send raw data to server without parsing
+2011-02-21 23:38:05		   reconnect - reconnect to server(s)
+2011-02-21 23:38:05		   REDRAW - window refresh
+2011-02-21 23:38:05		   rehash - tell the server to reload its config file
+2011-02-21 23:38:05		   restart - tell the server to restart itself
+2011-02-21 23:38:05		   sajoin - forces a user to join channel(s)
+2011-02-21 23:38:05		   samode - change mode on channel, without having operator status
+2011-02-21 23:38:05		   sanick - forces a user to use another nick
+2011-02-21 23:38:05		   sapart - forces a user to leave channel(s)
+2011-02-21 23:38:05		   saquit - forces a user to quit server with a reason
+2011-02-21 23:38:05		   SAY - msg *
+2011-02-21 23:38:05		   server - list, add or remove IRC servers
+2011-02-21 23:38:05		   service - register a new service
+2011-02-21 23:38:05		   servlist - list services currently connected to the network
+2011-02-21 23:38:05		   SIGNOFF - quit
+2011-02-21 23:38:05		   squery - deliver a message to a service
+2011-02-21 23:38:05		   squit - disconnect server links
+2011-02-21 23:38:05		   stats - query statistics about server
+2011-02-21 23:38:05		   summon - give users who are on a host running an IRC server a message asking them to please join IRC
+2011-02-21 23:38:05		   T - topic
+2011-02-21 23:38:05		   time - query local time from server
+2011-02-21 23:38:05		   topic - get/set channel topic
+2011-02-21 23:38:05		   trace - find the route to specific server
+2011-02-21 23:38:05		   UB - unban
+2011-02-21 23:38:05		   unalias - remove aliases
+2011-02-21 23:38:05		   unban - unban nicks or hosts
+2011-02-21 23:38:05		   userhost - return a list of information about nicknames
+2011-02-21 23:38:05		   users - list of users logged into the server
+2011-02-21 23:38:05		   V - command core version
+2011-02-21 23:38:05		   version - give the version info of nick or server (current or specified)
+2011-02-21 23:38:05		   voice - give voice to nickname(s)
+2011-02-21 23:38:05		   W - who
+2011-02-21 23:38:05		   wallchops - send a notice to channel ops
+2011-02-21 23:38:05		   wallops - send a message to all currently connected users who have set the 'w' user mode for themselves
+2011-02-21 23:38:05		   WC - window merge
+2011-02-21 23:38:05		   who - generate a query which returns a list of information
+2011-02-21 23:38:05		   whois - query information about user(s)
+2011-02-21 23:38:05		   whowas - ask for information about a nickname which no longer exists
+2011-02-21 23:38:05		   WI - whois
+2011-02-21 23:38:05		   WII - whois $1 $1
+2011-02-21 23:38:05		   WW - whowas
+2011-02-21 23:38:05		   xfer - xfer control
+2011-02-21 23:40:58		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-21 23:41:13		irc: server irc.oftc.net created (temporary server, NOT SAVED!)
+2011-02-21 23:41:44		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-21 23:44:07	↮	Error: unable to load plugin "/usr/lib/weechat/plugins/alias.so": a plugin with same name already exists
+2011-02-21 23:44:07	↮	Error: unable to load plugin "/usr/lib/weechat/plugins/logger.so": a plugin with same name already exists
+2011-02-21 23:44:07	↮	Error: unable to load plugin "/usr/lib/weechat/plugins/irc.so": a plugin with same name already exists
+2011-02-21 23:44:07	↮	Error: unable to load plugin "/usr/lib/weechat/plugins/charset.so": a plugin with same name already exists
+2011-02-21 23:44:07	↮	Error: unable to load plugin "/usr/lib/weechat/plugins/xfer.so": a plugin with same name already exists
+2011-02-21 23:46:01		Plugins loaded: alias, charset, irc, logger, xfer
+2011-02-21 23:47:00	↮	Error: unknown option for "plugin" command
+2011-02-21 23:48:41	↮	Error: unknown command "perl" (type /help for help)
+2011-02-21 23:51:18		perl scripts loaded: buffers
+2011-02-21 23:51:18		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-21 23:51:25		python: loading script "/home/daniel/.weechat/python/autoload/weeget.py"
+2011-02-21 23:51:25	↮	python: unable to register script "weeget" (another script already exists with this name)
+2011-02-21 23:51:25	↮	python: function "register" not found (or failed) in file "/home/daniel/.weechat/python/autoload/weeget.py"
+2011-02-21 23:51:35		weeget: downloading list of scripts...
+2011-02-21 23:51:36		weeget: scripts downloaded
+2011-02-21 23:51:37		Scripts for WeeChat 0.3.4:
+2011-02-21 23:51:37		    alternatetz           py  Add an alternate timezone item.
+2011-02-21 23:51:37		    amarok2               pl  Amarok 2 control and now playing script.
+2011-02-21 23:51:37		    amqp_notify           rb  Send private messages and highlights to an AMQP exchange.
+2011-02-21 23:51:37		    announce_url_title    py  Announce URL title to user or to channel.
+2011-02-21 23:51:37		    audacious             pl  Display which song Audacious is currently playing.
+2011-02-21 23:51:37		    auto_away             py  A simple auto-away script.
+2011-02-21 23:51:37		    autojoin              py  Configure autojoin for all servers according to currently joined channels.
+2011-02-21 23:51:37		    autojoin_on_invite    py  Auto joins channels when invited.
+2011-02-21 23:51:37		    automode              py  Auto op/voice users when they join IRC channel.
+2011-02-21 23:51:37		    away_action           py  Run command on highlight and privmsg when away.
+2011-02-21 23:51:37		    awaylog               pl  Log highlights/private msg when you are away.
+2011-02-21 23:51:37		    bandwidth             py  Displays network interface bandwidth on a bar.
+2011-02-21 23:51:37		    bashorg               pl  Retrieve quotes from bash.org.
+2011-02-21 23:51:37		    beat                  pl  Add a bar item with the Beat-Internet-Time.
+2011-02-21 23:51:37		    beep                  pl  Speaker beep on highlight/private message.
+2011-02-21 23:51:37		    bitlbee_typing_notice py  Send notice when typing message on bitlbee, display if user is writing in a bar item.
+2011-02-21 23:51:37		    buddylist             pl  A simple buddylist to show if your buddies are online/away/offline.
+2011-02-21 23:51:37		    buffer_autoclose      py  Automatically close inactive private message buffers.
+2011-02-21 23:51:37		    buffer_autoset        py  Auto-set buffer properties when a buffer is opened.
+2011-02-21 23:51:37		ir  buffers               pl  Sidebar with list of buffers.
+2011-02-21 23:51:37		    bufsave               py  Save current buffer content to a file.
+2011-02-21 23:51:37		    chan_hl               tcl Highlight some channels on each message.
+2011-02-21 23:51:37		    chanact               py  New hotlist, use names and keybindings instead of numbers.
+2011-02-21 23:51:37		    chanmon               pl  Adds a channel monitor buffer.
+2011-02-21 23:51:37		    chanop                py  Helper script for IRC channel operators.
+2011-02-21 23:51:37		    chanstat              py  Displays channel's peak, low and average users.
+2011-02-21 23:51:37		    colorize_lines        pl  Color the channel text with nick color.
+2011-02-21 23:51:37		    colorize_nicks        py  Use the weechat nick colors in the chat area.
+2011-02-21 23:51:37		    completion            py  Custom word completions.
+2011-02-21 23:51:37		    confversion           py  Save config files in a version control system.
+2011-02-21 23:51:37		    country               py  Print user's country and local time in whois/whowas replies.
+2011-02-21 23:51:37		    cron                  py  Time-based scheduler, like cron and at.
+2011-02-21 23:51:37		    crypt                 py  Encrypt/decrypt messages using openssl.
+2011-02-21 23:51:37		    curiousignore         pl  Remove messages from a nick and only print nick.
+2011-02-21 23:51:37		    dcc_antispam          py  Antispam for DCC file/chat requests.
+2011-02-21 23:51:37		    dellog                pl  Delete log file of current buffer.
+2011-02-21 23:51:37		    expand_url            pl  Expand short URLs.
+2011-02-21 23:51:37		    facebook_rename       py  Rename Facebook usernames when using Bitlbee.
+2011-02-21 23:51:37		    filter_ext            pl  Extends /filter, help against spam.
+2011-02-21 23:51:37		    foo_spam              pl  Show info about current song in foobar2000.
+2011-02-21 23:51:37		    fortune               pl  Sends a random fortune cookie.
+2011-02-21 23:51:37		    gnotify               py  Notifications through Growl.
+2011-02-21 23:51:37		    go                    py  Quick jump to buffers.
+2011-02-21 23:51:37		    grep                  py  Search regular expression in buffers or log files.
+2011-02-21 23:51:37		    growl_net_notify      pl  Notifications through Net::Growl.
+2011-02-21 23:51:37		    gweather              py  Add a bar item with Google weather.
+2011-02-21 23:51:37		    highlightxmpp         py  Relay highlighted and private messages over XMPP (Jabber).
+2011-02-21 23:51:37		    highmon               pl  Adds a highlight monitor buffer.
+2011-02-21 23:51:37		    histsearch            py  Quick search in command history.
+2011-02-21 23:51:37		    hlpvitem              py  Add bar item with highlight/private messages.
+2011-02-21 23:51:37		    hotlist2extern        pl  Give hotlist to an external file/program.
+2011-02-21 23:51:37		    ichatts               py  iChat-style timestamps.
+2011-02-21 23:51:37		    identica              py  Format identi.ca bot messages.
+2011-02-21 23:51:37		    imap_status           py  Bar item with unread imap messages count.
+2011-02-21 23:51:37		    infolist              py  Display infolist in a buffer, useful for script developers.
+2011-02-21 23:51:37		    inotify               py  Notification script using libnotify or dbus with screen support.
+2011-02-21 23:51:37		    iset                  pl  Set WeeChat and plugins options interactively.
+2011-02-21 23:51:37		    jabber                py  Jabber/XMPP protocol.
+2011-02-21 23:51:37		    jnotify               pl  Start an external program if a user or one of your buddies joins a channel you are in.
+2011-02-21 23:51:37		    kbtimeout             py  Kickban nick and unban after some seconds.
+2011-02-21 23:51:37		    kernel                pl  Display latest available kernel on kernel.org.
+2011-02-21 23:51:37		    kikoo                 pl  Send a colored "kikoo" on current channel.
+2011-02-21 23:51:37		    kiloseconds           py  Adds a command and bar item for displaying the current time in kiloseconds.
+2011-02-21 23:51:37		    lastfm                py  Send your latest Last.fm track to the current buffer.
+2011-02-21 23:51:37		    launcher              pl  Launch external commands for signals.
+2011-02-21 23:51:37		    leet                  py  Convert text to leet.
+2011-02-21 23:51:37		    lnotify               py  A libnotify script.
+2011-02-21 23:51:37		    mastermind            pl  Mastermind game.
+2011-02-21 23:51:37		    minbif_typing_notice  rb  Send notice when typing message on minbif, display if user is writing in a bar item.
+2011-02-21 23:51:37		    moc                   pl  Show info about current song in moc.
+2011-02-21 23:51:37		    moc_control           py  Control and now-playing script for moc.
+2011-02-21 23:51:37		    mpdnp                 py  Display which song mpd is currently playing.
+2011-02-21 23:51:37		    mpdspam               rb  Display which song mpd is currently playing.
+2011-02-21 23:51:37		    mplex                 pl  Simple remote control of multiplexer (screen or tmux), optionally set away status.
+2011-02-21 23:51:37		    msg_command           py  Run chat received in a buffer as commands.
+2011-02-21 23:51:37		    myuptime              rb  Sends machine uptime to current channel.
+2011-02-21 23:51:37		    nameday               py  Display name days in bar item and buffer (only french calendar).
+2011-02-21 23:51:37		    newsbar               pl  Print highlights or text given by commands into a bar (auto popup if needed).
+2011-02-21 23:51:37		    nickregain            pl  Automatically attempts to regain IRC primary nick.
+2011-02-21 23:51:37		    notifo_notify         py  Push notification to iPod touch/iPhone with notifo.
+2011-02-21 23:51:37		    notify                py  Notification on screen for highlights and private messages.
+2011-02-21 23:51:37		    pagetitle             py  Adds HTML page titles to http:// urls in your message.
+2011-02-21 23:51:37		    pop3_mail             pl  Check POP3 server for mails and display mail headers.
+2011-02-21 23:51:37		    postpone              py  Postpone written messages for later dispatching if target nick is not on channel.
+2011-02-21 23:51:37		    prism                 py  Send text using rainbow colors.
+2011-02-21 23:51:37		    pybuffer              py  Debugging tool for python scripts or test WeeChat's API functions.
+2011-02-21 23:51:37		    query_blocker         pl  Simple blocker for private message (i.e. spam).
+2011-02-21 23:51:37		    queue                 py  Command queuing.
+2011-02-21 23:51:37		    quodnp                py  A now playing and control script for Quodlibet.
+2011-02-21 23:51:37		    rhythmbox             pl  Display which song rhythmbox is currently playing.
+2011-02-21 23:51:37		    rnotify               tcl Sends highlights to (remote) client using libnotify.
+2011-02-21 23:51:37		    rslap                 pl  Slaps with random messages.
+2011-02-21 23:51:37		    screen_away           py  Set away status when detaching and attaching from screen or tmux.
+2011-02-21 23:51:37		    sensors               py  Displays sensor data.
+2011-02-21 23:51:37		    shell                 py  Run shell commands inside WeeChat.
+2011-02-21 23:51:37		    shortenurl            py  Shorten long urls using isgd or tinyurl.
+2011-02-21 23:51:37		    shuffle               pl  Simple text shuffler.
+2011-02-21 23:51:37		    snarl_net_notify      pl  Snarl notifications for highlights.
+2011-02-21 23:51:37		    snotify               py  Play sound when messages are printed in buffers.
+2011-02-21 23:51:37		    sound                 pl  Play a sound for IRC "CTCP SOUND" message.
+2011-02-21 23:51:37		    spotify               py  Looks up meta information about spotify-URIs and posts back to channel.
+2011-02-21 23:51:37		    stats_bar             pl  Bar items with stats about network interface, load, and free memory.
+2011-02-21 23:51:37		    strmon                pl  Monitoring of highlights, tags, buffers, nicks with optional sound and osd notifications.
+2011-02-21 23:51:37		    tailer                py  Tail any number of files and run any command with line appended.
+2011-02-21 23:51:37		    text_effects          lua Adds effects to words surrounded by certain characters.
+2011-02-21 23:51:37		    text_replace          py  Replaces text you write with replacement text.
+2011-02-21 23:51:37		    thinklight_blink      pl  Thinklight blink on highlight/private message.
+2011-02-21 23:51:37		    tinyurl               py  Get "tinyurl.com" equivalent for URLs.
+2011-02-21 23:51:37		    title                 py  Set terminal title to active buffer name and hotlist items.
+2011-02-21 23:51:37		    toggle_nicklist       py  Auto show and hide nicklist depending on buffer name.
+2011-02-21 23:51:37		    translate             py  Translate string using Google translate API.
+2011-02-21 23:51:37		    typing_counter        py  Bar item showing typing count and cursor position.
+2011-02-21 23:51:37		    ubus                  pl  Ubus notification.
+2011-02-21 23:51:37		    uname                 py  Sends "uname -a" output to current channel.
+2011-02-21 23:51:37		    update_notifier       py  Notify user about WeeChat updates.
+2011-02-21 23:51:37		    uppercase             py  Transform all your input to uppercase (useful for INTERNATIONAL CAPSLOCK DAY).
+2011-02-21 23:51:37		    upside_down           py  Replaces text you write with upside down text.
+2011-02-21 23:51:37		    url_shorten           rb  Shorten long urls in channels.
+2011-02-21 23:51:37		    urlbar                py  Display a url bar for easy clicking or selecting.
+2011-02-21 23:51:37		    urlgrab               py  Logs url and open them in browser.
+2011-02-21 23:51:37		    vdm                   py  Display content of viedemerde.fr/fmylife.com website.
+2011-02-21 23:51:37		    volumeter             pl  Show volume of data on network interface in a bar.
+2011-02-21 23:51:37		    weefish               rb  FiSH encryption / decryption.
+2011-02-21 23:51:37		ir  weeget                py  Scripts manager.
+2011-02-21 23:51:37		    weempd                py  Display which song mpd is currently playing.
+2011-02-21 23:51:37		    weerock               pl  A "now playing" script for several music players.
+2011-02-21 23:51:37		    weetris               pl  Tetris-like game.
+2011-02-21 23:51:37		    whatismyip            py  Display external ip address.
+2011-02-21 23:51:37		    whois_on_query        py  Send "whois" on nick when receiving new IRC query.
+2011-02-21 23:51:37		    windicate             py  Add alerts to the message menu in Ubuntu.
+2011-02-21 23:51:37		    wmiibar               pl  Wmii statusbar notification for highlights.
+2011-02-21 23:51:37		    xfer_setip            py  Set xfer own ip with external ip.
+2011-02-21 23:51:37		    xmms2                 rb  Display which song xmms2 is currently playing.
+2011-02-21 23:51:37		    xosdnotify            tcl Show highlights and private messages with OSD.
+2011-02-21 23:51:37		    yaaa                  pl  Auto-away script.
+2011-02-21 23:51:37		    zerotab               py  Complete empty input line with latest speaker nick in channel.
+2011-02-21 23:53:14		perl: scripts unloaded
+2011-02-21 23:53:14		fifo: pipe closed
+2011-02-21 23:53:17		perl scripts loaded: buffers
+2011-02-21 23:53:17		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-21 23:53:28		perl: scripts unloaded
+2011-02-21 23:53:28		fifo: pipe closed
+2011-02-21 23:53:38		perl scripts loaded: buffers
+2011-02-21 23:53:38		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-21 23:53:47		perl: loading script "/home/daniel/.weechat/perl/autoload/buffers.pl"
+2011-02-21 23:53:47	↮	perl: unable to register script "buffers" (another script already exists with this name)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_is_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_set_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "config_get_plugin", script is not initialized (script: -)
+2011-02-21 23:53:47		perl error: Use of uninitialized value $options{"color_whitelist_buffers"} in split at (eval 2) line 153.
+2011-02-21 23:53:47	↮	perl: unable to call function "bar_item_new", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "bar_new", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "hook_signal", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "hook_signal", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "hook_config", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: unable to call function "bar_item_update", script is not initialized (script: -)
+2011-02-21 23:53:47	↮	perl: function "register" not found (or failed) in file "/home/daniel/.weechat/perl/autoload/buffers.pl"
+2011-02-21 23:54:58		perl: scripts unloaded
+2011-02-21 23:54:58		fifo: pipe closed
+2011-02-21 23:55:04		perl scripts loaded: buffers
+2011-02-21 23:55:04		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-21 23:56:15		perl: scripts unloaded
+2011-02-21 23:56:15		fifo: pipe closed
+2011-02-21 23:56:42		perl scripts loaded: buffers
+2011-02-21 23:56:42		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-21 23:56:53		perl: scripts unloaded
+2011-02-21 23:56:53		fifo: pipe closed
+2011-02-21 23:58:21		perl scripts loaded: buffers
+2011-02-21 23:58:21		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-21 23:58:30		perl: scripts unloaded
+2011-02-21 23:58:30		fifo: pipe closed
+2011-02-21 23:58:41		perl scripts loaded: buffers
+2011-02-21 23:58:41		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-21 23:58:47		perl: scripts unloaded
+2011-02-21 23:58:47		fifo: pipe closed
+2011-02-21 23:58:55		perl scripts loaded: buffers
+2011-02-21 23:58:55		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-21 23:59:05		perl: scripts unloaded
+2011-02-21 23:59:05		fifo: pipe closed
+2011-02-21 23:59:15		perl scripts loaded: buffers
+2011-02-21 23:59:15		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-21 23:59:18		perl: scripts unloaded
+2011-02-21 23:59:18		fifo: pipe closed
+2011-02-21 23:59:38		perl scripts loaded: buffers
+2011-02-21 23:59:38		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-21 23:59:57		perl: scripts unloaded
+2011-02-21 23:59:57		fifo: pipe closed
+2011-02-22 00:00:07		perl scripts loaded: buffers
+2011-02-22 00:00:07		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-22 00:00:09		perl: scripts unloaded
+2011-02-22 00:00:09		fifo: pipe closed
+2011-02-22 00:00:22		perl scripts loaded: buffers
+2011-02-22 00:00:22		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-22 00:01:12		perl: scripts unloaded
+2011-02-22 00:01:12		fifo: pipe closed
+2011-02-22 00:02:13		perl scripts loaded: buffers
+2011-02-22 00:02:13		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-22 00:44:37		perl: scripts unloaded
+2011-02-22 00:44:37		fifo: pipe closed
+2011-02-22 04:34:14		perl scripts loaded: buffers
+2011-02-22 04:34:14		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-22 04:45:40		perl: scripts unloaded
+2011-02-22 04:45:40		fifo: pipe closed
+2011-02-22 04:46:12		perl scripts loaded: buffers
+2011-02-22 04:46:12		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-22 04:57:22		perl: scripts unloaded
+2011-02-22 04:57:22		fifo: pipe closed
+2011-02-22 21:57:56		perl scripts loaded: buffers
+2011-02-22 21:57:56		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-22 21:58:08		weeget: downloading list of scripts...
+2011-02-22 21:58:10		weeget: scripts downloaded
+2011-02-22 21:58:10	↮	weeget: unknown action "help"
+2011-02-22 21:58:14		[python]  /weeget  list|listinstalled [<text>] || show <script> || install|remove <script> [<script>...] || check|update|upgrade
+2011-02-22 21:58:14		WeeChat scripts manager
+2011-02-22 21:58:14		         list: list scripts (search text if given)
+2011-02-22 21:58:14		listinstalled: list installed scripts (search text if given)
+2011-02-22 21:58:14		         show: show detailed information about a script (in repository)
+2011-02-22 21:58:14		      install: install/upgrade script(s)
+2011-02-22 21:58:14		        check: check if local scripts needs upgrade
+2011-02-22 21:58:14		       update: update local scripts cache
+2011-02-22 21:58:14		      upgrade: upgrade all local scripts if they are obsolete
+2011-02-22 21:58:14		       remove: remove script(s)
+2011-02-22 21:58:14		Indicators in lists (first column):
+2011-02-22 21:58:14		  i  script is installed
+2011-02-22 21:58:14		  ?  unknown script
+2011-02-22 21:58:14		  r  script is running (loaded)
+2011-02-22 21:58:14		  N  script is obsolete (new version available)
+2011-02-22 21:58:14		Examples:
+2011-02-22 21:58:14		  /weeget list            => list all scripts
+2011-02-22 21:58:14		  /weeget list game       => list all scripts with text/tag "game"
+2011-02-22 21:58:14		  /weeget install weetris => install script weetris.pl
+2011-02-22 21:58:14		  /weeget remove weetris  => remove script weetris.pl
+2011-02-22 21:58:29		weeget: downloading "colorize_lines.pl"...
+2011-02-22 21:58:30		perl: loading script "/home/daniel/.weechat/perl/colorize_lines.pl"
+2011-02-22 21:58:30		perl: registered script "colorize_lines", version 0.6 (colors text in chat area with according nick color. Highlight messages will be fully highlighted in chat area)
+2011-02-22 21:59:05		perl: scripts unloaded
+2011-02-22 21:59:05		fifo: pipe closed
+2011-02-22 21:59:07		perl scripts loaded: buffers, colorize_lines
+2011-02-22 21:59:07		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-23 00:00:24		perl: scripts unloaded
+2011-02-23 00:00:24		fifo: pipe closed
+2011-02-23 03:52:23		perl scripts loaded: buffers, colorize_lines
+2011-02-23 03:52:23		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-23 03:53:23		perl: scripts unloaded
+2011-02-23 03:53:23		fifo: pipe closed
+2011-02-23 03:55:57		perl scripts loaded: buffers, colorize_lines
+2011-02-23 03:55:57		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-23 03:56:17		perl: scripts unloaded
+2011-02-23 03:56:17		fifo: pipe closed
+2011-02-23 03:56:44		perl scripts loaded: buffers, colorize_lines
+2011-02-23 03:56:44		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-23 05:12:44		perl: scripts unloaded
+2011-02-23 05:12:44		fifo: pipe closed
+2011-02-23 08:28:06		perl scripts loaded: buffers, colorize_lines
+2011-02-23 08:28:06		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-23 16:15:32		perl: scripts unloaded
+2011-02-23 16:15:32		fifo: pipe closed
+2011-02-24 19:33:58		perl scripts loaded: buffers, colorize_lines
+2011-02-24 19:33:58		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-24 19:35:44		perl: scripts unloaded
+2011-02-24 19:35:44		fifo: pipe closed
+2011-02-24 20:26:03		perl scripts loaded: buffers, colorize_lines
+2011-02-24 20:26:03		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-02-25 01:14:41		perl: scripts unloaded
+2011-02-25 01:14:41		fifo: pipe closed
+2011-02-25 06:37:22		perl scripts loaded: buffers, colorize_lines
+2011-02-25 06:37:22		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-01 19:11:08		perl: scripts unloaded
+2011-03-01 19:11:16		fifo: pipe closed
+2011-03-01 19:12:41		perl scripts loaded: buffers, colorize_lines
+2011-03-01 19:12:41		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-02 02:01:10		perl: scripts unloaded
+2011-03-02 02:01:10		fifo: pipe closed
+2011-03-02 16:34:04		perl scripts loaded: buffers, colorize_lines
+2011-03-02 16:34:04		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-02 18:48:46		perl: scripts unloaded
+2011-03-02 18:48:46		fifo: pipe closed
+2011-03-02 22:17:15		perl scripts loaded: buffers, colorize_lines
+2011-03-02 22:17:15		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-03 04:35:48		Options reloaded from weechat.conf
+2011-03-03 04:35:48		Options reloaded from plugins.conf
+2011-03-03 04:35:48		Options reloaded from wg.conf
+2011-03-03 04:35:48		Options reloaded from alias.conf
+2011-03-03 04:35:48		Options reloaded from aspell.conf
+2011-03-03 04:35:48		Options reloaded from logger.conf
+2011-03-03 04:35:49		Options reloaded from irc.conf
+2011-03-03 04:35:49		Options reloaded from rmodifier.conf
+2011-03-03 04:35:49		Options reloaded from charset.conf
+2011-03-03 04:35:49		Options reloaded from relay.conf
+2011-03-03 04:35:49		Options reloaded from xfer.conf
+2011-03-03 04:35:49		perl: scripts unloaded
+2011-03-03 04:35:50		fifo: pipe closed
+2011-03-03 19:42:30		perl scripts loaded: buffers, colorize_lines
+2011-03-03 19:42:30		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-03 23:55:28		perl: scripts unloaded
+2011-03-03 23:55:28		fifo: pipe closed
+2011-03-04 13:23:27		perl scripts loaded: buffers, colorize_lines
+2011-03-04 13:23:27		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-05 20:37:39		perl: scripts unloaded
+2011-03-05 20:37:39		fifo: pipe closed
+2011-03-06 23:27:30		perl scripts loaded: buffers, colorize_lines
+2011-03-06 23:27:30		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-07 00:46:00		perl: scripts unloaded
+2011-03-07 00:46:00		fifo: pipe closed
+2011-03-07 00:47:54		perl scripts loaded: buffers, colorize_lines
+2011-03-07 00:47:54		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-07 04:17:42		perl: scripts unloaded
+2011-03-07 04:17:42		fifo: pipe closed
+2011-03-07 15:39:00		perl scripts loaded: buffers, colorize_lines
+2011-03-07 15:39:00		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-07 19:52:15		perl: scripts unloaded
+2011-03-07 19:52:15		fifo: pipe closed
+2011-03-08 20:09:16		perl scripts loaded: buffers, colorize_lines
+2011-03-08 20:09:16		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-08 23:45:34		perl: scripts unloaded
+2011-03-08 23:45:34		fifo: pipe closed
+2011-03-09 15:11:49		perl scripts loaded: buffers, colorize_lines
+2011-03-09 15:11:49		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-10 00:50:39		perl: scripts unloaded
+2011-03-10 00:50:39		fifo: pipe closed
+2011-03-10 16:40:52		perl scripts loaded: buffers, colorize_lines
+2011-03-10 16:40:52		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-10 17:18:16		perl: scripts unloaded
+2011-03-10 17:18:16		fifo: pipe closed
+2011-03-13 19:46:39		perl scripts loaded: buffers, colorize_lines
+2011-03-13 19:46:39		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-13 23:16:54		perl: scripts unloaded
+2011-03-13 23:16:54		fifo: pipe closed
+2011-03-14 17:45:34		perl scripts loaded: buffers, colorize_lines
+2011-03-14 17:45:34		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-14 22:14:04		perl: scripts unloaded
+2011-03-14 22:14:04		fifo: pipe closed
+2011-03-15 19:39:25		perl scripts loaded: buffers, colorize_lines
+2011-03-15 19:39:25		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-16 22:24:09		perl: scripts unloaded
+2011-03-16 22:24:10		fifo: pipe closed
+2011-03-18 17:48:01		perl scripts loaded: buffers, colorize_lines
+2011-03-18 17:48:01		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-20 02:45:40		perl: scripts unloaded
+2011-03-20 02:45:40		fifo: pipe closed
+2011-03-21 16:34:28		perl scripts loaded: buffers, colorize_lines
+2011-03-21 16:34:28		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-21 20:19:25		perl: scripts unloaded
+2011-03-21 20:19:25		fifo: pipe closed
+2011-03-22 03:04:53		perl scripts loaded: buffers, colorize_lines
+2011-03-22 03:04:53		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-22 04:41:19		perl: scripts unloaded
+2011-03-22 04:41:19		fifo: pipe closed
+2011-03-22 18:59:45		perl scripts loaded: buffers, colorize_lines
+2011-03-22 18:59:45		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-22 19:29:40		perl: scripts unloaded
+2011-03-22 19:29:40		fifo: pipe closed
+2011-03-25 03:05:20		perl scripts loaded: buffers, colorize_lines
+2011-03-25 03:05:20		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-25 06:21:44		perl: scripts unloaded
+2011-03-25 06:21:44		fifo: pipe closed
+2011-03-25 20:33:31		perl scripts loaded: buffers, colorize_lines
+2011-03-25 20:33:31		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-25 20:33:50	↮	irc: command "join" must be executed on connected irc server
+2011-03-25 20:55:26		perl: scripts unloaded
+2011-03-25 20:55:26		fifo: pipe closed
+2011-03-28 18:20:03		perl scripts loaded: buffers, colorize_lines
+2011-03-28 18:20:03		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-28 18:41:44		perl: scripts unloaded
+2011-03-28 18:41:44		fifo: pipe closed
+2011-03-28 21:49:35		perl scripts loaded: buffers, colorize_lines
+2011-03-28 21:49:35		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-29 08:06:45		perl: scripts unloaded
+2011-03-29 08:06:45		fifo: pipe closed
+2011-03-29 14:48:27		perl scripts loaded: buffers, colorize_lines
+2011-03-29 14:48:27		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-03-30 13:30:46		perl: scripts unloaded
+2011-03-30 13:30:46		fifo: pipe closed
+2011-04-05 19:22:39		perl scripts loaded: buffers, colorize_lines
+2011-04-05 19:22:39		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-04-05 23:23:48		perl: scripts unloaded
+2011-04-05 23:23:49		fifo: pipe closed
+2011-05-07 13:57:11		perl scripts loaded: buffers, colorize_lines
+2011-05-07 13:57:11		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-05-07 13:59:34		irc: server irc.oftc.net created (temporary server, NOT SAVED!)
+2011-05-07 16:51:15		perl: scripts unloaded
+2011-05-07 16:51:15		fifo: pipe closed
+2011-05-14 16:11:47		perl scripts loaded: buffers, colorize_lines
+2011-05-14 16:11:47		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-05-14 18:40:01		perl: scripts unloaded
+2011-05-14 18:40:02		fifo: pipe closed
+2011-05-15 16:02:13		perl scripts loaded: buffers, colorize_lines
+2011-05-15 16:02:13		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-05-15 22:16:41		perl: scripts unloaded
+2011-05-15 22:16:41		fifo: pipe closed
+2011-05-31 23:59:42		perl scripts loaded: buffers, colorize_lines
+2011-05-31 23:59:42		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-06-01 00:00:57		perl: scripts unloaded
+2011-06-01 00:00:57		fifo: pipe closed
+2011-06-27 19:32:23		perl scripts loaded: buffers, colorize_lines
+2011-06-27 19:32:23		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-06-28 19:37:54		perl: scripts unloaded
+2011-06-28 19:37:54		fifo: pipe closed
+2011-06-28 21:46:29		perl scripts loaded: buffers, colorize_lines
+2011-06-28 21:46:29		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-06-28 22:32:11		perl: scripts unloaded
+2011-06-28 22:32:11		fifo: pipe closed
+2011-06-29 11:12:01		perl scripts loaded: buffers, colorize_lines
+2011-06-29 11:12:01		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-06-29 21:08:48		perl: scripts unloaded
+2011-06-29 21:08:48		fifo: pipe closed
+2011-06-30 07:47:26		perl scripts loaded: buffers, colorize_lines
+2011-06-30 07:47:26		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-06-30 12:00:33		perl: scripts unloaded
+2011-06-30 12:00:34		fifo: pipe closed
+2011-07-01 05:09:54		perl scripts loaded: buffers, colorize_lines
+2011-07-01 05:09:54		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-01 05:10:34		perl: scripts unloaded
+2011-07-01 05:10:34		fifo: pipe closed
+2011-07-01 05:12:16		perl scripts loaded: buffers, colorize_lines
+2011-07-01 05:12:16		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-01 07:17:20		perl: scripts unloaded
+2011-07-01 07:17:21		fifo: pipe closed
+2011-07-01 08:29:44		perl scripts loaded: buffers, colorize_lines
+2011-07-01 08:29:44		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-01 15:49:36		perl: scripts unloaded
+2011-07-01 15:49:38		fifo: pipe closed
+2011-07-01 17:12:37		perl scripts loaded: buffers, colorize_lines
+2011-07-01 17:12:37		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-01 17:51:56		perl: scripts unloaded
+2011-07-01 17:51:58		fifo: pipe closed
+2011-07-02 09:13:34		perl scripts loaded: buffers, colorize_lines
+2011-07-02 09:13:34		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-02 09:55:55		perl: scripts unloaded
+2011-07-02 09:55:55		fifo: pipe closed
+2011-07-02 10:14:39		perl scripts loaded: buffers, colorize_lines
+2011-07-02 10:14:39		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-02 21:52:47		perl: scripts unloaded
+2011-07-02 21:52:47		fifo: pipe closed
+2011-07-05 07:28:28		perl scripts loaded: buffers, colorize_lines
+2011-07-05 07:28:29		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-05 07:32:08		perl: scripts unloaded
+2011-07-05 07:32:08		fifo: pipe closed
+2011-07-06 04:00:13		perl scripts loaded: buffers, colorize_lines
+2011-07-06 04:00:13		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-06 08:45:04		perl: scripts unloaded
+2011-07-06 08:45:04		fifo: pipe closed
+2011-07-06 10:39:48		perl scripts loaded: buffers, colorize_lines
+2011-07-06 10:39:48		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-06 19:34:37		perl: scripts unloaded
+2011-07-06 19:34:37		fifo: pipe closed
+2011-07-07 08:04:02		perl scripts loaded: buffers, colorize_lines
+2011-07-07 08:04:02		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-07 08:44:32		perl: scripts unloaded
+2011-07-07 08:44:32		fifo: pipe closed
+2011-07-07 13:05:49		perl scripts loaded: buffers, colorize_lines
+2011-07-07 13:05:49		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-07 23:02:30		perl: scripts unloaded
+2011-07-07 23:02:30		fifo: pipe closed
+2011-07-08 08:27:19		perl scripts loaded: buffers, colorize_lines
+2011-07-08 08:27:19		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-08 14:56:55		irc: server irc.oftc.net created (temporary server, NOT SAVED!)
+2011-07-08 14:58:27		irc: server irc.debian.org created (temporary server, NOT SAVED!)
+2011-07-08 17:49:26		perl: scripts unloaded
+2011-07-08 17:49:26		fifo: pipe closed
+2011-07-08 17:49:32		perl scripts loaded: buffers, colorize_lines
+2011-07-08 17:49:32		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-08 20:31:35		fifo: removing old fifo pipe "/home/dbb/.weechat/weechat_fifo_3768"
+2011-07-08 20:31:36		perl scripts loaded: buffers, colorize_lines
+2011-07-08 20:31:36		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-08 20:32:27		perl: scripts unloaded
+2011-07-08 20:32:27		fifo: pipe closed
+2011-07-08 20:32:42		perl scripts loaded: buffers, colorize_lines
+2011-07-08 20:32:42		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-09 00:11:47		perl: scripts unloaded
+2011-07-09 00:11:48		fifo: pipe closed
+2011-07-09 10:19:28		perl scripts loaded: buffers, colorize_lines
+2011-07-09 10:19:28		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-10 00:28:59		Options reloaded from weechat.conf
+2011-07-10 00:29:00		Options reloaded from plugins.conf
+2011-07-10 00:29:00		Options reloaded from wg.conf
+2011-07-10 00:29:01		Options reloaded from alias.conf
+2011-07-10 00:29:01		Options reloaded from aspell.conf
+2011-07-10 00:29:01		Options reloaded from logger.conf
+2011-07-10 00:29:01		Options reloaded from irc.conf
+2011-07-10 00:29:01		Options reloaded from rmodifier.conf
+2011-07-10 00:29:01		Options reloaded from charset.conf
+2011-07-10 00:29:01		Options reloaded from relay.conf
+2011-07-10 00:29:01		Options reloaded from xfer.conf
+2011-07-10 00:29:01		perl: scripts unloaded
+2011-07-10 00:29:03		fifo: pipe closed
+2011-07-10 08:41:56		perl scripts loaded: buffers, colorize_lines
+2011-07-10 08:41:56		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-10 19:51:40		perl: scripts unloaded
+2011-07-10 19:51:40		fifo: pipe closed
+2011-07-11 07:33:18		perl scripts loaded: buffers, colorize_lines
+2011-07-11 07:33:18		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-11 19:32:28		perl: scripts unloaded
+2011-07-11 19:32:29		fifo: pipe closed
+2011-07-11 20:59:03		perl scripts loaded: buffers, colorize_lines
+2011-07-11 20:59:03		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-11 23:40:04		perl: scripts unloaded
+2011-07-11 23:40:04		fifo: pipe closed
+2011-07-12 12:50:43		perl scripts loaded: buffers, colorize_lines
+2011-07-12 12:50:43		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-12 12:52:57		perl: scripts unloaded
+2011-07-12 12:52:57		fifo: pipe closed
+2011-07-12 12:52:59		perl scripts loaded: buffers, colorize_lines
+2011-07-12 12:52:59		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-12 12:53:40		perl: scripts unloaded
+2011-07-12 12:53:40		fifo: pipe closed
+2011-07-12 12:54:40		perl scripts loaded: buffers, colorize_lines
+2011-07-12 12:54:40		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-12 23:13:06		perl: scripts unloaded
+2011-07-12 23:13:09		fifo: pipe closed
+2011-07-13 08:32:16		perl scripts loaded: buffers, colorize_lines
+2011-07-13 08:32:16		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-13 08:50:26		perl: scripts unloaded
+2011-07-13 08:50:26		fifo: pipe closed
+2011-07-13 11:12:08		perl scripts loaded: buffers, colorize_lines
+2011-07-13 11:12:08		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-13 23:43:28		perl: scripts unloaded
+2011-07-13 23:43:32		fifo: pipe closed
+2011-07-14 13:05:03		perl scripts loaded: buffers, colorize_lines
+2011-07-14 13:05:03		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-14 17:51:02		perl: scripts unloaded
+2011-07-14 17:51:02		fifo: pipe closed
+2011-07-14 19:50:40		perl scripts loaded: buffers, colorize_lines
+2011-07-14 19:50:40		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-15 16:52:45		perl: scripts unloaded
+2011-07-15 16:52:46		fifo: pipe closed
+2011-07-16 09:57:46		perl scripts loaded: buffers, colorize_lines
+2011-07-16 09:57:46		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-16 18:10:49		perl: scripts unloaded
+2011-07-16 18:10:49		fifo: pipe closed
+2011-07-18 12:45:01		perl scripts loaded: buffers, colorize_lines
+2011-07-18 12:45:01		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-18 22:35:47		perl: scripts unloaded
+2011-07-18 22:35:48		fifo: pipe closed
+2011-07-19 13:01:08		perl scripts loaded: buffers, colorize_lines
+2011-07-19 13:01:08		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-19 23:53:02		perl: scripts unloaded
+2011-07-19 23:53:05		fifo: pipe closed
+2011-07-20 10:55:43		perl scripts loaded: buffers, colorize_lines
+2011-07-20 10:55:43		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-20 18:53:30		perl: scripts unloaded
+2011-07-20 18:53:31		fifo: pipe closed
+2011-07-20 22:14:54		perl scripts loaded: buffers, colorize_lines
+2011-07-20 22:14:54		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-20 23:50:54		perl: scripts unloaded
+2011-07-20 23:50:56		fifo: pipe closed
+2011-07-21 20:39:49		perl scripts loaded: buffers, colorize_lines
+2011-07-21 20:39:49		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-21 23:03:39		perl: scripts unloaded
+2011-07-21 23:03:39		fifo: pipe closed
+2011-07-22 11:16:58		perl scripts loaded: buffers, colorize_lines
+2011-07-22 11:16:58		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-22 21:46:31		perl: scripts unloaded
+2011-07-22 21:46:31		fifo: pipe closed
+2011-07-23 12:22:55		perl scripts loaded: buffers, colorize_lines
+2011-07-23 12:22:55		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-24 00:46:04		perl: scripts unloaded
+2011-07-24 00:46:05		fifo: pipe closed
+2011-07-24 13:29:04		perl scripts loaded: buffers, colorize_lines
+2011-07-24 13:29:04		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-24 19:32:31		perl: scripts unloaded
+2011-07-24 19:32:31		fifo: pipe closed
+2011-07-25 13:12:01		perl scripts loaded: buffers, colorize_lines
+2011-07-25 13:12:01		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-25 21:18:23		perl: scripts unloaded
+2011-07-25 21:18:24		fifo: pipe closed
+2011-07-26 13:00:59		perl scripts loaded: buffers, colorize_lines
+2011-07-26 13:00:59		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-26 13:01:04		perl: scripts unloaded
+2011-07-26 13:01:05		fifo: pipe closed
+2011-07-26 13:01:07		perl scripts loaded: buffers, colorize_lines
+2011-07-26 13:01:07		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-26 16:54:38		fifo: removing old fifo pipe "/home/dbb/.weechat/weechat_fifo_1849"
+2011-07-26 16:54:39		perl scripts loaded: buffers, colorize_lines
+2011-07-26 16:54:39		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-26 20:36:36		perl: scripts unloaded
+2011-07-26 20:36:36		fifo: pipe closed
+2011-07-27 08:46:39		perl scripts loaded: buffers, colorize_lines
+2011-07-27 08:46:39		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-27 15:15:01		perl: scripts unloaded
+2011-07-27 15:15:01		fifo: pipe closed
+2011-07-27 15:15:13		perl scripts loaded: buffers, colorize_lines
+2011-07-27 15:15:13		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-27 15:16:17		perl: scripts unloaded
+2011-07-27 15:16:17		fifo: pipe closed
+2011-07-28 17:00:58		perl scripts loaded: buffers, colorize_lines
+2011-07-28 17:00:59		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-28 18:01:22		perl: scripts unloaded
+2011-07-28 18:01:22		fifo: pipe closed
+2011-07-29 10:37:07		perl scripts loaded: buffers, colorize_lines
+2011-07-29 10:37:07		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-29 21:55:53	↮	Error: unknown command "qui" (type /help for help)
+2011-07-29 21:56:02		perl: scripts unloaded
+2011-07-29 21:56:03		fifo: pipe closed
+2011-07-30 09:37:34		perl scripts loaded: buffers, colorize_lines
+2011-07-30 09:37:34		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-30 18:11:39		perl: scripts unloaded
+2011-07-30 18:11:40		fifo: pipe closed
+2011-07-31 12:08:25		perl scripts loaded: buffers, colorize_lines
+2011-07-31 12:08:25		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-31 18:09:09		perl: scripts unloaded
+2011-07-31 18:09:10		fifo: pipe closed
+2011-07-31 19:05:38		perl scripts loaded: buffers, colorize_lines
+2011-07-31 19:05:38		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-07-31 23:14:27		Options reloaded from weechat.conf
+2011-07-31 23:14:28		Options reloaded from plugins.conf
+2011-07-31 23:14:28		Options reloaded from wg.conf
+2011-07-31 23:14:28		Options reloaded from alias.conf
+2011-07-31 23:14:28		Options reloaded from aspell.conf
+2011-07-31 23:14:28		Options reloaded from logger.conf
+2011-07-31 23:14:28		Options reloaded from irc.conf
+2011-07-31 23:14:28		Options reloaded from rmodifier.conf
+2011-07-31 23:14:28		Options reloaded from charset.conf
+2011-07-31 23:14:28		Options reloaded from relay.conf
+2011-07-31 23:14:28		Options reloaded from xfer.conf
+2011-07-31 23:14:28		perl: scripts unloaded
+2011-07-31 23:14:29		fifo: pipe closed
+2011-08-01 12:37:44		perl scripts loaded: buffers, colorize_lines
+2011-08-01 12:37:44		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-02 00:00:21		perl: scripts unloaded
+2011-08-02 00:00:23		fifo: pipe closed
+2011-08-02 08:33:33		perl scripts loaded: buffers, colorize_lines
+2011-08-02 08:33:33		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-02 08:46:35		perl: scripts unloaded
+2011-08-02 08:46:35		fifo: pipe closed
+2011-08-02 12:28:07		perl scripts loaded: buffers, colorize_lines
+2011-08-02 12:28:07		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-02 21:17:39		perl: scripts unloaded
+2011-08-02 21:17:39		fifo: pipe closed
+2011-08-02 21:58:47		perl scripts loaded: buffers, colorize_lines
+2011-08-02 21:58:47		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-02 23:40:27		perl: scripts unloaded
+2011-08-02 23:40:27		fifo: pipe closed
+2011-08-03 10:36:18		perl scripts loaded: buffers, colorize_lines
+2011-08-03 10:36:18		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-03 21:57:31		perl: scripts unloaded
+2011-08-03 21:57:31		fifo: pipe closed
+2011-08-04 10:42:06		perl scripts loaded: buffers, colorize_lines
+2011-08-04 10:42:06		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-04 23:37:28		perl: scripts unloaded
+2011-08-04 23:37:31		fifo: pipe closed
+2011-08-05 07:13:22		perl scripts loaded: buffers, colorize_lines
+2011-08-05 07:13:22		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-06 01:36:04		perl: scripts unloaded
+2011-08-06 01:36:05		fifo: pipe closed
+2011-08-06 10:45:46	↮	Warning: /home/dbb/.weechat/irc.conf, line 55: option "nick_prefix_halfop" unknown for section "color"
+2011-08-06 10:45:46	↮	Warning: /home/dbb/.weechat/irc.conf, line 56: option "nick_prefix_op" unknown for section "color"
+2011-08-06 10:45:46	↮	Warning: /home/dbb/.weechat/irc.conf, line 57: option "nick_prefix_user" unknown for section "color"
+2011-08-06 10:45:46	↮	Warning: /home/dbb/.weechat/irc.conf, line 58: option "nick_prefix_voice" unknown for section "color"
+2011-08-06 10:45:47		perl scripts loaded: buffers, colorize_lines
+2011-08-06 10:45:47		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-06 12:47:38		perl: scripts unloaded
+2011-08-06 12:47:38		fifo: pipe closed
+2011-08-06 12:51:03		perl scripts loaded: buffers, colorize_lines
+2011-08-06 12:51:03		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-06 17:51:08		Options reloaded from weechat.conf
+2011-08-06 17:51:09		Options reloaded from plugins.conf
+2011-08-06 17:51:09		Options reloaded from wg.conf
+2011-08-06 17:51:09		Options reloaded from alias.conf
+2011-08-06 17:51:09		Options reloaded from aspell.conf
+2011-08-06 17:51:09		Options reloaded from logger.conf
+2011-08-06 17:51:09		Options reloaded from irc.conf
+2011-08-06 17:51:09		Options reloaded from rmodifier.conf
+2011-08-06 17:51:09		Options reloaded from charset.conf
+2011-08-06 17:51:09		Options reloaded from relay.conf
+2011-08-06 17:51:09		Options reloaded from xfer.conf
+2011-08-06 17:51:09		perl: scripts unloaded
+2011-08-06 17:51:09		fifo: pipe closed
+2011-08-06 18:57:11		perl scripts loaded: buffers, colorize_lines
+2011-08-06 18:57:11		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-06 23:15:03		perl: scripts unloaded
+2011-08-06 23:15:03		fifo: pipe closed
+2011-08-07 11:15:22		perl scripts loaded: buffers, colorize_lines
+2011-08-07 11:15:22		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-07 14:49:30		perl: scripts unloaded
+2011-08-07 14:49:30		fifo: pipe closed
+2011-08-07 15:32:13		perl scripts loaded: buffers, colorize_lines
+2011-08-07 15:32:13		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-07 15:35:50		perl: scripts unloaded
+2011-08-07 15:35:50		fifo: pipe closed
+2011-08-07 15:35:51		perl scripts loaded: buffers, colorize_lines
+2011-08-07 15:35:51		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-07 15:35:56		perl: scripts unloaded
+2011-08-07 15:35:56		fifo: pipe closed
+2011-08-07 15:36:02		perl scripts loaded: buffers, colorize_lines
+2011-08-07 15:36:02		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-07 15:36:08		perl: scripts unloaded
+2011-08-07 15:36:08		fifo: pipe closed
+2011-08-07 15:36:15		perl scripts loaded: buffers, colorize_lines
+2011-08-07 15:36:15		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-07 15:36:25		Options reloaded from weechat.conf
+2011-08-07 15:36:25		Options reloaded from plugins.conf
+2011-08-07 15:36:25		Options reloaded from wg.conf
+2011-08-07 15:36:25		Options reloaded from alias.conf
+2011-08-07 15:36:25		Options reloaded from aspell.conf
+2011-08-07 15:36:25		Options reloaded from logger.conf
+2011-08-07 15:36:25		Options reloaded from irc.conf
+2011-08-07 15:36:25		Options reloaded from rmodifier.conf
+2011-08-07 15:36:25		Options reloaded from charset.conf
+2011-08-07 15:36:25		Options reloaded from relay.conf
+2011-08-07 15:36:25		Options reloaded from xfer.conf
+2011-08-07 15:36:25		perl: scripts unloaded
+2011-08-07 15:36:25		fifo: pipe closed
+2011-08-07 15:36:49		perl scripts loaded: buffers, colorize_lines
+2011-08-07 15:36:49		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-07 15:37:02		perl: scripts unloaded
+2011-08-07 15:37:02		fifo: pipe closed
+2011-08-07 15:37:37		perl scripts loaded: buffers, colorize_lines
+2011-08-07 15:37:37		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-07 15:37:43		Options reloaded from weechat.conf
+2011-08-07 15:37:43		Options reloaded from plugins.conf
+2011-08-07 15:37:43		Options reloaded from wg.conf
+2011-08-07 15:37:43		Options reloaded from alias.conf
+2011-08-07 15:37:43		Options reloaded from aspell.conf
+2011-08-07 15:37:43		Options reloaded from logger.conf
+2011-08-07 15:37:43		Options reloaded from irc.conf
+2011-08-07 15:37:43		Options reloaded from rmodifier.conf
+2011-08-07 15:37:43		Options reloaded from charset.conf
+2011-08-07 15:37:43		Options reloaded from relay.conf
+2011-08-07 15:37:43		Options reloaded from xfer.conf
+2011-08-07 15:37:43		perl: scripts unloaded
+2011-08-07 15:37:43		fifo: pipe closed
+2011-08-07 15:39:00		perl scripts loaded: buffers, colorize_lines
+2011-08-07 15:39:00		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-07 15:39:03		perl: scripts unloaded
+2011-08-07 15:39:03		fifo: pipe closed
+2011-08-07 15:40:09		perl scripts loaded: buffers, colorize_lines
+2011-08-07 15:40:09		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-07 15:40:14		perl: scripts unloaded
+2011-08-07 15:40:14		fifo: pipe closed
+2011-08-07 15:47:18		perl scripts loaded: buffers, colorize_lines
+2011-08-07 15:47:18		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-07 15:47:29		perl: scripts unloaded
+2011-08-07 15:47:29		fifo: pipe closed
+2011-08-07 15:58:17		perl scripts loaded: buffers, colorize_lines
+2011-08-07 15:58:17		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-07 15:58:35		perl: scripts unloaded
+2011-08-07 15:58:35		fifo: pipe closed
+2011-08-07 17:16:07		perl scripts loaded: buffers, colorize_lines
+2011-08-07 17:16:07		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2011-08-07 23:22:25		perl: scripts unloaded
+2011-08-07 23:22:25		fifo: pipe closed
+2011-08-08 09:35:29		perl scripts loaded: buffers, colorize_lines
+2011-08-08 09:35:29		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer

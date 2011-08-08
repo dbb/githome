@@ -1,0 +1,72 @@
+2010-06-17 00:02:25	-->	dbbolton (~daniel@pool-72-84-51-7.clrkwv.east.verizon.net) has joined #firefox
+2010-06-17 00:02:25	--	Topic for #firefox is "Mozilla Firefox community support on Freenode | For other Mozilla software, or if no one is active, go to: irc.mozilla.org #firefox #thunderbird #chatzilla and more | http://support.mozilla.com/kb/Basic+Troubleshooting | Use http://pastebin.mozilla.org/ for pasting | Firefox 3.6.3 released http://getfirefox.com/"
+2010-06-17 00:02:25	--	Topic set by kbrosnan (~kbrosnan@ip24-250-54-36.ri.ri.cox.net) on Wed, 26 May 2010 11:32:07
+2010-06-17 00:02:25	--	Nicks #firefox: [@[reed] @dolske @gavin @gavin_ @kbrosnan @Peng _bt ahuemer alienvenom Appetite Argafal Azalyn benf Best Bleak cire clever CompanionCube coolkehon Cork Cork[home] d1b dbbolton decoder defn detr devhen dionoea dust-- edoceo eduardo_ emma evil_gordita EvilDin felipe` fragalot Froolap ghoti Guest45780 gunsofbrixton Hypnosekroete infojunky jarlen jiffe Jinx JodaZ_ JoeSomebody joeytwiddle johnath jwm Kivi Kovensky lauri Malmis_ Marchal matt1s mavhc mconnor merriam mzz naquad nb new_ Nitrox-Linux Nitrox22 OneFix_Work ph8 phr0z3n Plasmastar pompy quizme rapha RickyWh1 riot robotti^ sdwilsh sejo shadowie shiretoko smeea SQlvpapir ss sshc sysdoc szbalint TannerF techMiles Tenhi the-dude The_Pot TheLine tholl583xx tomalak tripelb xbskid XDS2010 Yahweh]
+2010-06-17 00:02:25	--	Channel #firefox: 97 nicks (6 ops, 0 halfops, 0 voices, 91 normals)
+2010-06-17 00:02:27	--	Channel created on Sun, 26 Nov 2006 01:42:46
+2010-06-17 00:03:19	dbbolton	approximately how long does it usually take to clone mozilla-central with mercurial?
+2010-06-17 00:03:38	@kbrosnan	depends on the os and your connection
+2010-06-17 00:03:51	<--	gavin_ (~gavin@firefox/developer/gavin) has quit (Ping timeout: 265 seconds)
+2010-06-17 00:04:20	dbbolton	debian testing, 2.33 ghz core2, around 150-300 KB/s
+2010-06-17 00:04:22	-->	gavin_ (~gavin@firefox/developer/gavin) has joined #firefox
+2010-06-17 00:04:23	--	Mode #firefox [+o gavin_] by ChanServ
+2010-06-17 00:04:48	dbbolton	it appeared to hang on "adding file changes"
+2010-06-17 00:04:56	dbbolton	i waited for 15 minutes or so
+2010-06-17 00:05:00	@kbrosnan	i've cloned it on Linux in 5-10 min
+2010-06-17 00:05:48	dbbolton	any idea what the problem could be?
+2010-06-17 00:05:50	@kbrosnan	what version of mercurial?
+2010-06-17 00:06:22	dbbolton	1.5.2
+2010-06-17 00:08:44	dbbolton	ok, this time i actually got an error message: abort: connection ended unexpectedly
+2010-06-17 00:08:57	dbbolton	my connection seems fine every where else though.
+2010-06-17 00:09:07	dbbolton	e.g., IRC
+2010-06-17 00:11:32	@kbrosnan	don't really have a better suggestion then retry
+2010-06-17 00:11:53	@kbrosnan	might be worth checking if hg pull -u will work
+2010-06-17 00:13:14	-->	chromenewb (~thomas@c-71-202-154-251.hsd1.ca.comcast.net) has joined #firefox
+2010-06-17 00:13:35	dbbolton	ok. i'm going to try from a wired machine first, to determine whether my wireless is cutting out
+2010-06-17 00:22:35	-->	zpao (~zpao@c-76-102-196-78.hsd1.ca.comcast.net) has joined #firefox
+2010-06-17 00:22:47	<--	Froolap (~Froolap@pool-72-64-149-34.tampfl.fios.verizon.net) has quit (Quit: When two people dream the same dream, it ceases to be an illusion. KVIrc 3.4.2 Shiny http://www.kvirc.net)
+2010-06-17 00:26:56	-->	jhojho (~jh@c-24-5-170-210.hsd1.ca.comcast.net) has joined #firefox
+2010-06-17 00:34:48	<--	The_Pot (~The_Pot@unaffiliated/chinmay) has quit (Read error: Connection reset by peer)
+2010-06-17 01:10:32	-->	joako (~joako@opensuse/member/joak0) has joined #firefox
+2010-06-17 01:19:17	<--	Malmis_ (~malmis@cl-301.sto-01.se.sixxs.net) has quit (Ping timeout: 248 seconds)
+2010-06-17 01:25:21	-->	Malmis (~malmis@cl-301.sto-01.se.sixxs.net) has joined #firefox
+2010-06-17 01:33:37	XDS2010	flock devs can eat me
+2010-06-17 01:37:07	-->	evaluser (~evaluser_@184-96-62-124.hlrn.qwest.net) has joined #firefox
+2010-06-17 01:45:36	<--	XDS2010 (~XDS2010@unaffiliated/xds2010) has left #firefox
+2010-06-17 02:02:27	chromenewb	o_0
+2010-06-17 02:07:51	<--	joako (~joako@opensuse/member/joak0) has quit (Ping timeout: 264 seconds)
+2010-06-17 02:11:02	<--	zpao (~zpao@c-76-102-196-78.hsd1.ca.comcast.net) has quit (Quit: Leaving...)
+2010-06-17 02:13:18	-->	Froolap (~Froolap@pool-72-64-149-34.tampfl.fios.verizon.net) has joined #firefox
+2010-06-17 02:14:01	<--	chromenewb (~thomas@c-71-202-154-251.hsd1.ca.comcast.net) has quit (Ping timeout: 265 seconds)
+2010-06-17 02:16:53	-->	Froolad (~Froolap@pool-72-64-149-34.tampfl.fios.verizon.net) has joined #firefox
+2010-06-17 02:20:09	<--	Froolap (~Froolap@pool-72-64-149-34.tampfl.fios.verizon.net) has quit (Ping timeout: 265 seconds)
+2010-06-17 02:20:34	-->	chromenewb (~thomas@c-71-202-154-251.hsd1.ca.comcast.net) has joined #firefox
+2010-06-17 02:26:24	-->	mosno (~mosno@unaffiliated/mosno) has joined #firefox
+2010-06-17 02:33:01	<--	mosno (~mosno@unaffiliated/mosno) has quit (Quit: mosno)
+2010-06-17 02:33:53	-->	mosno (~mosno@unaffiliated/mosno) has joined #firefox
+2010-06-17 02:34:16	<--	quizme (~quizme@c-24-5-189-239.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2010-06-17 02:39:12	<--	chromenewb (~thomas@c-71-202-154-251.hsd1.ca.comcast.net) has quit (Ping timeout: 240 seconds)
+2010-06-17 03:04:50	<--	mosno (~mosno@unaffiliated/mosno) has quit (Quit: mosno)
+2010-06-17 03:07:06	-->	yak (~yak@86.110.227.49) has joined #firefox
+2010-06-17 03:11:34		irc: disconnected from server
+2010-06-17 03:12:18	-->	dbbolton1 (~daniel@pool-72-84-48-93.clrkwv.east.verizon.net) has joined #firefox
+2010-06-17 03:12:19	--	Topic for #firefox is "Mozilla Firefox community support on Freenode | For other Mozilla software, or if no one is active, go to: irc.mozilla.org #firefox #thunderbird #chatzilla and more | http://support.mozilla.com/kb/Basic+Troubleshooting | Use http://pastebin.mozilla.org/ for pasting | Firefox 3.6.3 released http://getfirefox.com/"
+2010-06-17 03:12:19	--	Topic set by kbrosnan (~kbrosnan@ip24-250-54-36.ri.ri.cox.net) on Wed, 26 May 2010 11:32:07
+2010-06-17 03:12:19	--	Nicks #firefox: [@[reed] @dolske @gavin @gavin_ @kbrosnan @Peng _bt ahuemer alienvenom Appetite Argafal Azalyn benf Best Bleak cire clever CompanionCube coolkehon Cork Cork[home] d1b dbbolton dbbolton1 decoder defn detr devhen dionoea dust-- edoceo eduardo_ emma evaluser evil_gordita EvilDin felipe` fragalot Froolad ghoti Guest45780 gunsofbrixton Hypnosekroete infojunky jarlen jhojho jiffe Jinx JodaZ_ JoeSomebody joeytwiddle johnath jwm Kivi Kovensky lauri Malmis Marchal matt1s mavhc mconnor merriam mzz naquad nb new_ Nitrox-Linux Nitrox22 OneFix_Work ph8 phr0z3n Plasmastar pompy rapha RickyWh1 riot robotti^ sdwilsh sejo shadowie shiretoko smeea SQlvpapir ss sshc sysdoc szbalint TannerF techMiles Tenhi the-dude TheLine tholl583xx tomalak tripelb xbskid Yahweh yak]
+2010-06-17 03:12:19	--	Channel #firefox: 98 nicks (6 ops, 0 halfops, 0 voices, 92 normals)
+2010-06-17 03:12:19	--	Channel created on Sun, 26 Nov 2006 01:42:46
+2010-06-17 03:14:09		irc: disconnected from server
+2010-06-17 03:14:53	-->	dbbolton2 (~daniel@pool-72-84-46-227.clrkwv.east.verizon.net) has joined #firefox
+2010-06-17 03:14:54	--	Topic for #firefox is "Mozilla Firefox community support on Freenode | For other Mozilla software, or if no one is active, go to: irc.mozilla.org #firefox #thunderbird #chatzilla and more | http://support.mozilla.com/kb/Basic+Troubleshooting | Use http://pastebin.mozilla.org/ for pasting | Firefox 3.6.3 released http://getfirefox.com/"
+2010-06-17 03:14:54	--	Topic set by kbrosnan (~kbrosnan@ip24-250-54-36.ri.ri.cox.net) on Wed, 26 May 2010 11:32:07
+2010-06-17 03:14:54	--	Nicks #firefox: [@[reed] @dolske @gavin @gavin_ @kbrosnan @Peng _bt ahuemer alienvenom Appetite Argafal Azalyn benf Best Bleak cire clever CompanionCube coolkehon Cork Cork[home] d1b dbbolton1 dbbolton2 decoder defn detr devhen dionoea dust-- edoceo eduardo_ emma evaluser evil_gordita EvilDin felipe` fragalot Froolad ghoti Guest45780 gunsofbrixton Hypnosekroete infojunky jarlen jhojho jiffe Jinx JodaZ_ JoeSomebody joeytwiddle johnath jwm Kivi Kovensky lauri Malmis Marchal matt1s mavhc mconnor merriam mzz naquad nb new_ Nitrox-Linux Nitrox22 OneFix_Work ph8 phr0z3n Plasmastar pompy rapha RickyWh1 riot robotti^ sdwilsh sejo shadowie shiretoko smeea SQlvpapir ss sshc sysdoc szbalint TannerF techMiles Tenhi the-dude TheLine tholl583xx tomalak tripelb xbskid Yahweh yak]
+2010-06-17 03:14:54	--	Channel #firefox: 98 nicks (6 ops, 0 halfops, 0 voices, 92 normals)
+2010-06-17 03:14:54	--	Channel created on Sun, 26 Nov 2006 01:42:46
+2010-06-17 03:16:51	<--	dbbolton1 (~daniel@pool-72-84-48-93.clrkwv.east.verizon.net) has quit (Ping timeout: 265 seconds)
+2010-06-17 03:17:00	-->	Yustme (~fasdfa@83.98.249.87) has joined #firefox
+2010-06-17 03:18:07	<--	shiretoko (~shiretoko@219.sub-70-221-3.myvzw.com) has quit (Quit: Leaving)
+2010-06-17 03:18:24	-->	shiretoko (~shiretoko@219.sub-70-221-3.myvzw.com) has joined #firefox
+2010-06-17 03:22:19	-->	EvilDin_ (~chatzilla@BSN-77-83-28.dsl.siol.net) has joined #firefox
+2010-06-17 03:23:30	<--	EvilDin (~chatzilla@BSN-77-83-28.dsl.siol.net) has quit (Ping timeout: 240 seconds)
+2010-06-17 03:23:32	--	EvilDin_ is now known as EvilDin
+2010-06-17 03:35:15		irc: disconnected from server

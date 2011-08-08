@@ -1,0 +1,270 @@
+2010-05-04 01:19:15	-->	dbbolton (~daniel@c-67-163-171-209.hsd1.wv.comcast.net) has joined #kde
+2010-05-04 01:19:15	--	Topic for #kde is "KDE SC 4.4.2 is out! See www.kde.org | http://userbase.kde.org | http://forum.kde.org | Don't flood the channel, use http://pastebin.ca | Distro related questions go in your distro channel | Offtopic in #kde-chat | State your distribution and KDE version when asking questions | Don't delete ~/.kde or ~/.kde4"
+2010-05-04 01:19:15	--	Topic set by pinotree (~pino@kde/pino) on Tue, 30 Mar 2010 15:02:34
+2010-05-04 01:19:15	--	Nicks #kde: [@ChanServ [Lazydog] _CitizenKane__ aanderse ABCD abner Adaptee Aikawa Aishiko_ Aji-Dahaka alainl AlexElliott_ alienBOB alisonken1home alisonken1noc amazon10x Anarky AndrewX192 Animeking annew_away Aorimn apexo Apis_PS apokryphos apt armands_ aseigo BadMagic Barbadillo_ barraponto bastiandg beasty bfrog biohazrd bipolar bittin bluesceada boris64 boubbin BP{k} brik brot caligula_ caotic Cap_J_L_Picard chakie choc chuckf cire clarkda cleary cnu colyte CompanionCube ComradeHaz` crurik curious cvandonderen cwatson cyndis da3v daff_ dani_l Danio dansushi Darkfoe DarkwingDuck_ DaZ dbbolton DeathWolf Deformative Derega desti detrate devilsadvocate Dhraakellian Digital_Pioneer dijonyummy dimbulb DJCapelis DjMadness dolio drdanz Dunedan dziadu ealexp Egyptian[Home] einar77 EisNerd ekkis__ eliasp eljefe_ elmargol emma Ender2070 enhydra ewoerner_ eycel factor feindbild felipe_ firephoto fishsponge FL1SK fLoOd` fred freddy freeedrich| gabrielo gardintrapp gavlee gdebure Genolo Gentle Gerwin gigasoft gkiagia gmartyn GNU\colo1sus gnumdk Goliath23 gorgonzola gospch GraveDigger GrueMaster GungaDin hagabaka Happenstance harjot harry_ hateball Heiki herby hermier hnsz2002 hrna hsch human_blip ian| ikonia ilj ironfroggy Ironnads IrquiM ivanich|wrk j-peg jaafar JackWinter jaggz- Janno javier__ jayne jazka jdk2588 jhutchins_lt jmho joeytwiddle johnyb jrdnyquist jrgp jthomas_sb Jucato junkDawgie jussi k1lumin4t1 karl_ karsten kc8hfi_ kc8hfi_away kde_pepo kennyz kernelpanic_ khindenburg Killsudo KingTarquin kjartanb knstqq Kolia Kottizen krege KRF KrzaQ kushou Lazy^ lenscape lfranchi loonyphoenix Lord_Deathscythe LowKey lubyou lupine_85 m_goku Macer Mamarok manu_hack marcan mario martinhex mastertheknife mauricek maybeWTF megaTherion MetalDust MetaMucil miasma milian MinceR mischasworld MoDaX monkeyiq mrec mrnice1 MrRat muep N0xTrUm nacer Nakkel Nate_Grey Natenom nawk_ neptunepink neverendingo NewWorld Nikoli nilsht nixternal o_a oget ogetw olaf123 omeow oneforall Ormaaj Ozy_work padde paja Parkotron pbunbun pete phrag pinotree polz pprkut Praise Prof_Frink promulo PuffTheMagic qelo QwertyM Ramblurr Rasi rauz rawler rdieter_work Rede rellig rgreening_ rhodan RichiH Richlv roerich rohanpm RoozbehOnline roto rrix RurouniJones rushfan RushPL_ ryanakca sadsfae Sanitoeter Scorcerer scorpius_ seezer Seji shnee__ Sho_ Simkin Sinister sirus skelet slavenode slummer smithjd soa2ii Solefald_ Solitary_Scar spectral Sput sshc stuffcorpse sungami_ svuorela swo szal Tanktalus taras tbeadle tdn tgurr TheGroove TheWoozle thiago Thoradin_ tictric titatest Tm_T Tomasu tomdavidson Torch toure|afk troy_ tsb_ tsukasa tuxick txwikinger Typosu UnderTaLker urkud usett valerio vblazquez virsys wahooooo Walzmyn WarHitex WindPower Xand3r xdje XwZ yahwa Ycarene Zaister zanoi Zaran zegenie zeke Zetbo Zhwazi zizzfizzix Zorael {41444d494e} |me262|]
+2010-05-04 01:19:15	--	Channel #kde: 343 nicks (1 op, 0 halfops, 0 voices, 342 normals)
+2010-05-04 01:19:16	--	URL for #kde: http://www.kde.org
+2010-05-04 01:19:17	--	Channel created on Sun, 26 Nov 2006 01:42:41
+2010-05-04 01:19:58	dbbolton	when i try to set a keyboard shortcut involving the windows/mod4/meta key, it just shows up in the dialog as four squares
+2010-05-04 01:20:34	biohazrd	anyone know why kontact would startup but just sits there inactive?
+2010-05-04 01:21:12	<--	gdebure (~gdebure@7.143.73-86.rev.gaoland.net) has quit (Ping timeout: 260 seconds)
+2010-05-04 01:21:18	biohazrd	kontact(30760)/kdeui (kdelibs): No such XML file ......kde4/share/apps/kontact/local-.rc
+2010-05-04 01:21:46	biohazrd	all the apps seem to work standalone
+2010-05-04 01:21:50	<--	gospch (~gospch@p5088F4FB.dip.t-dialin.net) has quit (Ping timeout: 265 seconds)
+2010-05-04 01:22:16	<--	virsys (~virsys@or-71-50-12-248.dhcp.embarqhsd.net) has quit (Ping timeout: 276 seconds)
+2010-05-04 01:23:54	-->	FoxBlitzz (~blitzzybo@cpe-184-57-136-224.cinci.res.rr.com) has joined #kde
+2010-05-04 01:24:26	-->	eternaleye (~quassel@unaffiliated/eternaleye) has joined #kde
+2010-05-04 01:29:09	<--	bastiandg (~bastian@leer-4db74a71.pool.mediaWays.net) has quit (Ping timeout: 246 seconds)
+2010-05-04 01:29:58	-->	bastiandg (~bastian@leer-4db74a71.pool.mediaWays.net) has joined #kde
+2010-05-04 01:30:56	-->	cristianonet (~cristi@79.114.67.45) has joined #kde
+2010-05-04 01:31:46	<--	jdk2588 (~jaideep@117.199.114.132) has quit (Read error: Connection reset by peer)
+2010-05-04 01:33:19	<--	QwertyM (~doop@kde/developer/harshj) has quit (Remote host closed the connection)
+2010-05-04 01:34:15	<--	Lord_Deathscythe (~chris@h44.181.20.98.dynamic.ip.windstream.net) has quit (Quit: I am called onward)
+2010-05-04 01:34:24	<--	mischasworld (~quassel@g228013026.adsl.alicedsl.de) has quit (Remote host closed the connection)
+2010-05-04 01:35:58	-->	virsys (~virsys@or-71-50-12-248.dhcp.embarqhsd.net) has joined #kde
+2010-05-04 01:38:00	-->	Dice-Man (~quassel@unaffiliated/dice-man) has joined #kde
+2010-05-04 01:39:13	-->	hax0r1 (~nfm@c-71-201-7-44.hsd1.il.comcast.net) has joined #kde
+2010-05-04 01:39:38	<--	gorgonzola (~gorgonzol@216-165-3-5.DYNAPOOL.NYU.EDU) has quit (Remote host closed the connection)
+2010-05-04 01:40:58	-->	cjae (~quassel@142-165-27-242.estv.hsdb.sasknet.sk.ca) has joined #kde
+2010-05-04 01:41:46	-->	jdk2588 (~jaideep@117.207.85.10) has joined #kde
+2010-05-04 01:42:24	-->	martin_hex (~mjc@93-97-29-243.zone5.bethere.co.uk) has joined #kde
+2010-05-04 01:42:25	<--	martinhex (~mjc@93-97-29-243.zone5.bethere.co.uk) has quit (Ping timeout: 276 seconds)
+2010-05-04 01:42:31	-->	||arifaX (~Commodore@inetpop1.witron.de) has joined #kde
+2010-05-04 01:42:32	<--	||arifaX (~Commodore@inetpop1.witron.de) has quit (Changing host)
+2010-05-04 01:42:32	-->	||arifaX (~Commodore@unaffiliated/arifax/x-427475) has joined #kde
+2010-05-04 01:42:37	<--	khindenburg (~quassel@adsl-69-208-129-75.dsl.ipltin.ameritech.net) has quit (Ping timeout: 265 seconds)
+2010-05-04 01:43:09	||arifaX	how can I manually refresh content of kde menu. I am used to not to reboot all the time since linux now runs so smooth on my netbook. I really need to refresh somehow the menu?
+2010-05-04 01:43:32	--	martin_hex is now known as martinhex
+2010-05-04 01:44:01	Sho_	||arifaX: normally you should not have to do this manually - but you can force it by running "kbuildsycoca4"
+2010-05-04 01:44:07	alisonken1noc	||arifaX, hmmm - mine autorefreshes anytime I make changes to the application directory
+2010-05-04 01:45:20	||arifaX	alisonken1noc:  and Sho_: it does not automatically (kubuntu). but kbuildsycoca4 did it - thanks very much
+2010-05-04 01:45:34	-->	_abhishek (~abhishek@59.90.10.46) has joined #kde
+2010-05-04 01:45:42	Sho_	something's broken on kubuntu, then
+2010-05-04 01:46:05	||arifaX	Sho_: or some packages do not initiate it at install end?
+2010-05-04 01:47:14	Sho_	||arifaX: even if they didn't, kded usually watches the relevant folders and refreshes the SYstem COnfiguration CAche (-> sycoca) when their contents change
+2010-05-04 01:47:28	-->	gorgonzola (~gorgonzol@216-165-3-5.DYNAPOOL.NYU.EDU) has joined #kde
+2010-05-04 01:48:42	<--	gorgonzola (~gorgonzol@216-165-3-5.DYNAPOOL.NYU.EDU) has quit (Remote host closed the connection)
+2010-05-04 01:48:54	-->	lunaticare (~quassel@95.221.3.211) has joined #kde
+2010-05-04 01:49:30	alisonken1noc	kubuntu possibly, they have been known to make some tweaks. I use slackware and haven't had that issue
+2010-05-04 01:50:37	||arifaX	alisonken1noc: I think they will fix that. I love it.
+2010-05-04 01:52:54	<--	dolio (~quassel@nr27-69-61-225-205.fuse.net) has quit (Ping timeout: 246 seconds)
+2010-05-04 01:55:27	-->	Evelynn (~quassel@smas.alcad.si) has joined #kde
+2010-05-04 01:56:39	<--	junkDawgie (~blkdragon@adsl-99-106-225-236.dsl.rcsntx.sbcglobal.net) has left #kde ("meep meep!")
+2010-05-04 01:58:06	<--	manu_hack (~manu_hack@137.189.75.146) has quit (Ping timeout: 268 seconds)
+2010-05-04 02:00:31	-->	manu_hack (~manu_hack@137.189.75.146) has joined #kde
+2010-05-04 02:01:22	<--	lunaticare (~quassel@95.221.3.211) has quit (Ping timeout: 245 seconds)
+2010-05-04 02:01:48	<--	smithjd (~quassel@d199-126-159-46.abhsia.telus.net) has quit (Read error: Connection reset by peer)
+2010-05-04 02:01:50	<--	cristianonet (~cristi@79.114.67.45) has quit (Remote host closed the connection)
+2010-05-04 02:02:19	-->	sheytan (~sheytan@aejv221.neoplus.adsl.tpnet.pl) has joined #kde
+2010-05-04 02:03:17	-->	gorgonzola (~gorgonzol@216-165-3-5.DYNAPOOL.NYU.EDU) has joined #kde
+2010-05-04 02:04:42	-->	mmalek (~michal@rev-188-50.ramtel.pl) has joined #kde
+2010-05-04 02:05:35	<--	manu_hack (~manu_hack@137.189.75.146) has quit (Remote host closed the connection)
+2010-05-04 02:05:39	-->	manu_hack (~manu_hack@137.189.75.146) has joined #kde
+2010-05-04 02:05:46	--	Tomasu is now known as TomasuDlrrp
+2010-05-04 02:06:00	-->	rnovacek (~radek@nat/redhat/x-lxgbnlkgxymgykph) has joined #kde
+2010-05-04 02:06:35	<--	tgurr (~tgurr@gentoo/developer/tgurr) has quit (Remote host closed the connection)
+2010-05-04 02:06:54	<--	Typosu (~moose@S010600195b863efb.ed.shawcable.net) has quit (Read error: Connection reset by peer)
+2010-05-04 02:11:47	<--	Happenstance (~Eccentric@ip68-104-205-60.ph.ph.cox.net) has quit (Remote host closed the connection)
+2010-05-04 02:14:10	-->	thomasj (~thomasj@fedora/thomasj) has joined #kde
+2010-05-04 02:16:15	-->	tackat (~trahn@p5B08F496.dip.t-dialin.net) has joined #kde
+2010-05-04 02:16:29	-->	Zhenya (~quassel@cpe-70-116-134-9.tx.res.rr.com) has joined #kde
+2010-05-04 02:18:36	-->	Happenstance (~Eccentric@ip68-104-205-60.ph.ph.cox.net) has joined #kde
+2010-05-04 02:18:49	k1lumin4t1	so
+2010-05-04 02:18:51	<--	urkud (~urkud@212.192.251.49) has quit (Ping timeout: 246 seconds)
+2010-05-04 02:18:53	k1lumin4t1	any news on quanta?
+2010-05-04 02:19:45	zegenie	kdevelop4 is doing a good job with web development afaict :)
+2010-05-04 02:20:05	k1lumin4t1	yes, but not as complete as quanta
+2010-05-04 02:20:58	svuorela	k1lumin4t1: follow milian wolff's blog.
+2010-05-04 02:21:19	k1lumin4t1	svuorela, could you share an url?
+2010-05-04 02:22:21	Jucato	there is a Google Summer of Code student who will be working on it I think
+2010-05-04 02:22:46	-->	chittoor (~chittoor@listertech.in) has joined #kde
+2010-05-04 02:22:54	svuorela	k1lumin4t1: I*m trying to find it ,)
+2010-05-04 02:23:03	svuorela	Jucato: guess what the name of that student is ... ;)
+2010-05-04 02:23:20	<--	sheytan (~sheytan@aejv221.neoplus.adsl.tpnet.pl) has quit (Remote host closed the connection)
+2010-05-04 02:23:47	k1lumin4t1	Jucato, on quanta you mean?
+2010-05-04 02:23:48	Jucato	svuorela: Sune Vuorela?
+2010-05-04 02:23:52	-->	_me262_ (~me262@103.194.118.70.cfl.res.rr.com) has joined #kde
+2010-05-04 02:24:01	Jucato	k1lumin4t1: yep
+2010-05-04 02:24:02	svuorela	Jucato: nope. I'm not gsoc student
+2010-05-04 02:24:05	k1lumin4t1	Jucato, nice
+2010-05-04 02:24:18	Jucato	svuorela: I'm sarcastic :)
+2010-05-04 02:24:21	svuorela	Jucato: and I_really dislike doing webdevelopment stuff
+2010-05-04 02:24:40	svuorela	k1lumin4t1: http://milianw.de/taxonomy/term/4/0
+2010-05-04 02:24:45	k1lumin4t1	Jucato, I'd like to help KDE with some spanish translation
+2010-05-04 02:25:02	svuorela	k1lumin4t1: then you should contact albert
+2010-05-04 02:25:18	k1lumin4t1	svuorela, who's albert?
+2010-05-04 02:26:12	k1lumin4t1	KDE 4.4. is hot!
+2010-05-04 02:26:14	k1lumin4t1	:D
+2010-05-04 02:26:51	<--	tackat (~trahn@p5B08F496.dip.t-dialin.net) has quit (Ping timeout: 276 seconds)
+2010-05-04 02:27:16	<--	|me262| (~me262@103.194.118.70.cfl.res.rr.com) has quit (Ping timeout: 276 seconds)
+2010-05-04 02:27:59	svuorela	k1lumin4t1: http://i18n.kde.org/team-infos.php?teamcode=es
+2010-05-04 02:28:42	-->	thiago_home (~thiago@kde/thiago) has joined #kde
+2010-05-04 02:29:51	-->	thpar (~thpar@hunapu.psb.ugent.be) has joined #kde
+2010-05-04 02:29:54	<--	Happenstance (~Eccentric@ip68-104-205-60.ph.ph.cox.net) has quit (Remote host closed the connection)
+2010-05-04 02:31:35	-->	KIAaze (~KIAaze@p4FF66C70.dip.t-dialin.net) has joined #kde
+2010-05-04 02:31:51	-->	esperegu (~quassel@145.116.15.244) has joined #kde
+2010-05-04 02:32:03	<--	rushfan (~rushfan@cpe-98-155-86-34.san.res.rr.com) has quit (Ping timeout: 240 seconds)
+2010-05-04 02:32:10	-->	Dark_Wizard (~konversat@89.104.115.102) has joined #kde
+2010-05-04 02:33:33	-->	cb400f (~cb400f@opensuse/member/Cb400f) has joined #kde
+2010-05-04 02:37:12	<--	eternaleye (~quassel@unaffiliated/eternaleye) has quit (Ping timeout: 245 seconds)
+2010-05-04 02:37:21	-->	daminetreg (~quassel@LMontsouris-156-24-29-56.w80-14.abo.wanadoo.fr) has joined #kde
+2010-05-04 02:38:37	-->	st4n (~quassel@ter75-4-88-170-218-60.fbx.proxad.net) has joined #kde
+2010-05-04 02:38:39	-->	larsivi (~quassel@114.28.213.193.static.cust.telenor.com) has joined #kde
+2010-05-04 02:40:08	-->	Simon_Wang (~linfves@111.167.207.23) has joined #kde
+2010-05-04 02:40:08	-->	ROSHA (~rosha@91.99.234.236) has joined #kde
+2010-05-04 02:40:09	-->	Cybertinus (~Cybertinu@tunnel3304.ipv6.xs4all.nl) has joined #kde
+2010-05-04 02:40:27	<--	RoozbehOnline (~rosha@91.99.237.215) has quit (Ping timeout: 240 seconds)
+2010-05-04 02:40:47	<--	cjae (~quassel@142-165-27-242.estv.hsdb.sasknet.sk.ca) has quit (Remote host closed the connection)
+2010-05-04 02:41:52	-->	Niek-work (~niek@kantoor.oxilion.nl) has joined #kde
+2010-05-04 02:45:39	-->	eternaleye (~quassel@unaffiliated/eternaleye) has joined #kde
+2010-05-04 02:47:20	<--	Dice-Man (~quassel@unaffiliated/dice-man) has quit (Remote host closed the connection)
+2010-05-04 02:47:23	-->	tinoutinou (~tony@ks363567.kimsufi.com) has joined #kde
+2010-05-04 02:47:35	<--	daminetreg (~quassel@LMontsouris-156-24-29-56.w80-14.abo.wanadoo.fr) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2010-05-04 02:47:51	-->	daminetreg (~quassel@LMontsouris-156-24-29-56.w80-14.abo.wanadoo.fr) has joined #kde
+2010-05-04 02:47:52	<--	rellig (~quassel@vs1191017.vserver.de) has quit (Remote host closed the connection)
+2010-05-04 02:47:52	-->	Dice-Man (~quassel@unaffiliated/dice-man) has joined #kde
+2010-05-04 02:47:52	<--	brot (~quassel@vs1191017.vserver.de) has quit (Read error: Connection reset by peer)
+2010-05-04 02:50:15	<--	daminetreg (~quassel@LMontsouris-156-24-29-56.w80-14.abo.wanadoo.fr) has quit (Client Quit)
+2010-05-04 02:51:05	-->	daminetreg-at-eX (~quassel@LMontsouris-156-24-29-56.w80-14.abo.wanadoo.fr) has joined #kde
+2010-05-04 02:52:24	-->	ForgeAus (~forgeaus@112.141.88.115) has joined #kde
+2010-05-04 02:52:28	-->	Schorfi (~schorfi@unaffiliated/schorfi) has joined #kde
+2010-05-04 02:52:28	<--	mmalek (~michal@rev-188-50.ramtel.pl) has quit (Read error: Connection reset by peer)
+2010-05-04 02:52:34	<--	daminetreg-at-eX (~quassel@LMontsouris-156-24-29-56.w80-14.abo.wanadoo.fr) has quit (Client Quit)
+2010-05-04 02:52:40	-->	daminetregeXia (~quassel@LMontsouris-156-24-29-56.w80-14.abo.wanadoo.fr) has joined #kde
+2010-05-04 02:52:40	-->	daminetreg (~quassel@LMontsouris-156-24-29-56.w80-14.abo.wanadoo.fr) has joined #kde
+2010-05-04 02:52:49	<--	daminetreg (~quassel@LMontsouris-156-24-29-56.w80-14.abo.wanadoo.fr) has quit (Client Quit)
+2010-05-04 02:53:02	ForgeAus	just thought I'd ask on behalf of someone else in #Kbuuntu (not getting a response) Question: how can I make Yakuake to be able to use left/right/up/down key in insert mode?
+2010-05-04 02:53:08	-->	CMoH-notebook (~cipi@95.76.71.81) has joined #kde
+2010-05-04 02:53:37	<--	chittoor (~chittoor@listertech.in) has quit (Read error: No route to host)
+2010-05-04 02:54:22	-->	progesterone (~progester@office.squiz.net) has joined #kde
+2010-05-04 02:55:52	<--	Rede (~shawn@S010600131096809c.vs.shawcable.net) has quit (Ping timeout: 276 seconds)
+2010-05-04 02:55:59	-->	Stalafin (~janis@212.201.44.245) has joined #kde
+2010-05-04 02:56:55	<--	progesterone (~progester@office.squiz.net) has left #kde
+2010-05-04 02:58:41	-->	carl- (~carl@fw01d.snowmen.se) has joined #kde
+2010-05-04 02:59:35	-->	illissius` (~illissius@lg.vezer.elte.hu) has joined #kde
+2010-05-04 02:59:41	-->	saLOUt (~rriemann@s69dyn32.ifh.de) has joined #kde
+2010-05-04 03:00:22	<--	rnovacek (~radek@nat/redhat/x-lxgbnlkgxymgykph) has quit (Remote host closed the connection)
+2010-05-04 03:00:41	-->	boris64_ (~boris64@p4FC68387.dip0.t-ipconnect.de) has joined #kde
+2010-05-04 03:00:49	<--	boris64 (~boris64@p4FC68B6B.dip0.t-ipconnect.de) has quit (Ping timeout: 246 seconds)
+2010-05-04 03:01:13	-->	selevt (~s_t@p4FFF70E4.dip.t-dialin.net) has joined #kde
+2010-05-04 03:01:36	<--	_CitizenKane__ (~quassel@li50-90.members.linode.com) has quit (Quit: No Ping reply in 180 seconds.)
+2010-05-04 03:01:40	-->	chittoor (~chittoor@listertech.in) has joined #kde
+2010-05-04 03:01:50	<--	daminetregeXia (~quassel@LMontsouris-156-24-29-56.w80-14.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2010-05-04 03:01:52	-->	gomoran (~gomoran@p5491A886.dip0.t-ipconnect.de) has joined #kde
+2010-05-04 03:01:54	<--	Dice-Man (~quassel@unaffiliated/dice-man) has quit (Read error: Connection reset by peer)
+2010-05-04 03:02:15	-->	daminetregeXia (~quassel@LMontsouris-156-24-29-56.w80-14.abo.wanadoo.fr) has joined #kde
+2010-05-04 03:02:54	-->	rnovacek (~radek@nat/redhat/x-uqmrkcblqzdvccis) has joined #kde
+2010-05-04 03:03:33	-->	_CitizenKane_ (~quassel@li50-90.members.linode.com) has joined #kde
+2010-05-04 03:05:11	<--	m_goku (~m_goku@110.138.252.140) has quit (Remote host closed the connection)
+2010-05-04 03:07:30	-->	brot (~quassel@vs1191017.vserver.de) has joined #kde
+2010-05-04 03:09:33	-->	nhn (~quassel@h59ec06b9.dkkobye.dyn.perspektivbredband.net) has joined #kde
+2010-05-04 03:09:36	-->	xerox1 (~no@kraus-laptop.informatik.uni-augsburg.de) has joined #kde
+2010-05-04 03:10:18	-->	gaugino (~Christian@gentoo.weisenau.wohnheim.uni-mainz.de) has joined #kde
+2010-05-04 03:10:21	-->	tsimpson (~tsimpson@ubuntu/member/stdin) has joined #kde
+2010-05-04 03:11:10	-->	mischasworld (~quassel@193.174.158.110) has joined #kde
+2010-05-04 03:12:23	-->	MadAGu (~madagu@ppp079166095022.dsl.hol.gr) has joined #kde
+2010-05-04 03:12:26	-->	tinoutinou_ (~tony@tinou.fr) has joined #kde
+2010-05-04 03:13:03	<--	tinoutinou (~tony@ks363567.kimsufi.com) has quit (Ping timeout: 245 seconds)
+2010-05-04 03:14:29	-->	rdale (~richardd@74.Red-88-24-22.staticIP.rima-tde.net) has joined #kde
+2010-05-04 03:15:07	-->	Kame2 (~manuel@port-92-196-41-18.dynamic.qsc.de) has joined #kde
+2010-05-04 03:15:23	<--	barraponto (~aleph@201.82.134.83) has quit (Read error: Connection reset by peer)
+2010-05-04 03:16:55	<--	st4n (~quassel@ter75-4-88-170-218-60.fbx.proxad.net) has quit (Remote host closed the connection)
+2010-05-04 03:17:19	<--	jaafar (~jet@adsl-76-200-165-8.dsl.pltn13.sbcglobal.net) has quit (Remote host closed the connection)
+2010-05-04 03:17:32	-->	urkud (~urkud@pantagruel.mccme.ru) has joined #kde
+2010-05-04 03:17:38	<--	Zhenya (~quassel@cpe-70-116-134-9.tx.res.rr.com) has quit (Remote host closed the connection)
+2010-05-04 03:18:14	<--	ivanich|wrk (~ivanich@office.TeNeT.Odessa.UA) has quit (Remote host closed the connection)
+2010-05-04 03:18:29	<--	nawk_ (~nawk@CPE0021910db498-CM0012c99ea812.cpe.net.cable.rogers.com) has quit (Excess Flood)
+2010-05-04 03:18:53	-->	nawk_ (~nawk@CPE0021910db498-CM0012c99ea812.cpe.net.cable.rogers.com) has joined #kde
+2010-05-04 03:19:07	-->	ivanich|wrk (~ivanich@office.TeNeT.Odessa.UA) has joined #kde
+2010-05-04 03:19:36	<--	factor (~factor@ip70-177-95-241.ok.ok.cox.net) has quit (Read error: Connection reset by peer)
+2010-05-04 03:20:19	<--	Dark_Wizard (~konversat@89.104.115.102) has quit (Remote host closed the connection)
+2010-05-04 03:20:38	-->	alediaferia (~alediafer@host211-182-dynamic.17-87-r.retail.telecomitalia.it) has joined #kde
+2010-05-04 03:20:38	<--	alediaferia (~alediafer@host211-182-dynamic.17-87-r.retail.telecomitalia.it) has quit (Changing host)
+2010-05-04 03:20:38	-->	alediaferia (~alediafer@kde/developer/adiaferia) has joined #kde
+2010-05-04 03:21:07	-->	Coke (~coke@85.224.190.179) has joined #kde
+2010-05-04 03:21:17	<--	hermier (~hermier@frugalware/developer/hermier) has quit (Remote host closed the connection)
+2010-05-04 03:21:18	Coke	Hello. How can I turn off the session menu and system menu in KDM?
+2010-05-04 03:22:17	-->	bushwakko (~bushwakko@34.0.92.62.static.cust.telenor.com) has joined #kde
+2010-05-04 03:23:08	<--	ForgeAus (~forgeaus@112.141.88.115) has quit (Ping timeout: 265 seconds)
+2010-05-04 03:23:17	<--	eternaleye (~quassel@unaffiliated/eternaleye) has quit (Read error: Connection reset by peer)
+2010-05-04 03:23:26	-->	mzanetti (~mzanetti@p5B30016E.dip0.t-ipconnect.de) has joined #kde
+2010-05-04 03:24:16	-->	cjae (~quassel@142-165-27-242.estv.hsdb.sasknet.sk.ca) has joined #kde
+2010-05-04 03:24:19	-->	hw (~hw@p578b3905.dip0.t-ipconnect.de) has joined #kde
+2010-05-04 03:25:20	<--	nawk_ (~nawk@CPE0021910db498-CM0012c99ea812.cpe.net.cable.rogers.com) has quit (Ping timeout: 240 seconds)
+2010-05-04 03:26:09	-->	nawk_ (~nawk@CPE0021910db498-CM0012c99ea812.cpe.net.cable.rogers.com) has joined #kde
+2010-05-04 03:27:59	-->	Worf (~worf@84-119-66-162.dynamic.xdsl-line.inode.at) has joined #kde
+2010-05-04 03:28:50	-->	Greenery (~quassel@61.6.232.2) has joined #kde
+2010-05-04 03:28:50	<--	Greenery (~quassel@61.6.232.2) has quit (Changing host)
+2010-05-04 03:28:50	-->	Greenery (~quassel@unaffiliated/greenery) has joined #kde
+2010-05-04 03:29:37	-->	hermier (~hermier@frugalware/developer/hermier) has joined #kde
+2010-05-04 03:29:54	<--	bastiandg (~bastian@leer-4db74a71.pool.mediaWays.net) has quit (Ping timeout: 265 seconds)
+2010-05-04 03:30:25	-->	arkub (~arkub@195.7.104.248) has joined #kde
+2010-05-04 03:30:32	<--	jdk2588 (~jaideep@117.207.85.10) has quit (Ping timeout: 245 seconds)
+2010-05-04 03:30:36	<--	feindbild (~poison@HSI-KBW-078-043-131-081.hsi4.kabel-badenwuerttemberg.de) has quit (Quit: leaving)
+2010-05-04 03:31:27	-->	jdk2588 (~jaideep@117.207.80.139) has joined #kde
+2010-05-04 03:31:54	-->	bastiandg (~bastian@leer-4db74a71.pool.mediaWays.net) has joined #kde
+2010-05-04 03:32:50	<--	vblazquez (~vic@181.154.221.87.dynamic.jazztel.es) has quit (Remote host closed the connection)
+2010-05-04 03:34:02	-->	eternaleye (~quassel@unaffiliated/eternaleye) has joined #kde
+2010-05-04 03:34:05	-->	vblazquez (~vic@181.154.221.87.dynamic.jazztel.es) has joined #kde
+2010-05-04 03:34:09	<--	bipolar (~bipolar@offsitesysadmin.com) has quit (Excess Flood)
+2010-05-04 03:34:09	-->	RoozbehOnline (~rosha@91.99.236.71) has joined #kde
+2010-05-04 03:34:15	<--	thiago_home (~thiago@kde/thiago) has quit (Ping timeout: 265 seconds)
+2010-05-04 03:34:41	-->	bipolar (~bipolar@offsitesysadmin.com) has joined #kde
+2010-05-04 03:35:45	<--	ROSHA (~rosha@91.99.234.236) has quit (Ping timeout: 240 seconds)
+2010-05-04 03:36:12	<--	bastiandg (~bastian@leer-4db74a71.pool.mediaWays.net) has quit (Ping timeout: 246 seconds)
+2010-05-04 03:37:22	-->	matleh (~quassel@g229041178.adsl.alicedsl.de) has joined #kde
+2010-05-04 03:38:05	-->	DaZ^ (~lolwut@87-205-171-13.adsl.inetia.pl) has joined #kde
+2010-05-04 03:39:05	<--	xerox1 (~no@kraus-laptop.informatik.uni-augsburg.de) has quit (Read error: Connection reset by peer)
+2010-05-04 03:39:05	<--	DaZ (~lolwut@87.205.148.110) has quit (Ping timeout: 265 seconds)
+2010-05-04 03:41:44	-->	Moult (~quassel@115.134.32.92) has joined #kde
+2010-05-04 03:42:23	-->	DaZ (~lolwut@77-254-191-125.adsl.inetia.pl) has joined #kde
+2010-05-04 03:43:26	<--	DaZ^ (~lolwut@87-205-171-13.adsl.inetia.pl) has quit (Ping timeout: 265 seconds)
+2010-05-04 03:43:32	<--	Stalafin (~janis@212.201.44.245) has quit (Ping timeout: 260 seconds)
+2010-05-04 03:45:41	<--	jdk2588 (~jaideep@117.207.80.139) has quit (Read error: Connection reset by peer)
+2010-05-04 03:46:15	-->	tackat (~trahn@pd95bc258.dip0.t-ipconnect.de) has joined #kde
+2010-05-04 03:48:40	-->	chaoxifer (~chaoxifer@211.106.32.108) has joined #kde
+2010-05-04 03:48:40	<--	dansushi (~dan@147.4.211.193) has quit (Remote host closed the connection)
+2010-05-04 03:48:51	-->	factor (~factor@ip70-177-95-241.ok.ok.cox.net) has joined #kde
+2010-05-04 03:49:10	<--	vblazquez (~vic@181.154.221.87.dynamic.jazztel.es) has quit (Read error: No route to host)
+2010-05-04 03:49:13	<--	eternaleye (~quassel@unaffiliated/eternaleye) has quit (Read error: Connection reset by peer)
+2010-05-04 03:49:32	-->	dansushi (~dan@147.4.211.193) has joined #kde
+2010-05-04 03:52:04	-->	jdk2588 (~jaideep@117.207.82.224) has joined #kde
+2010-05-04 03:52:34	-->	rcc (~quassel@252.Red-88-23-82.staticIP.rima-tde.net) has joined #kde
+2010-05-04 03:53:36	-->	bastiandg (~bastian@leer-4db74a71.pool.mediaWays.net) has joined #kde
+2010-05-04 03:55:51	<--	hax0r1 (~nfm@c-71-201-7-44.hsd1.il.comcast.net) has quit (Quit: Leaving.)
+2010-05-04 03:56:45	-->	qdesert (~qdesert@orangevallee.GW.opentransit.net) has joined #kde
+2010-05-04 03:57:27	-->	skizorager (~quassel@115.170-66-87.adsl-dyn.isp.belgacom.be) has joined #kde
+2010-05-04 03:59:51	-->	toure|af1 (~toure@nat/redhat/x-usadkdjbjkdmoyqx) has joined #kde
+2010-05-04 04:01:02	-->	Shirakawasuna (~Shirakawa@97-113-148-13.tukw.qwest.net) has joined #kde
+2010-05-04 04:01:43	<--	gomoran (~gomoran@p5491A886.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2010-05-04 04:02:11	<--	bastiandg (~bastian@leer-4db74a71.pool.mediaWays.net) has quit (Ping timeout: 264 seconds)
+2010-05-04 04:02:38	-->	eternaleye (~quassel@unaffiliated/eternaleye) has joined #kde
+2010-05-04 04:02:45	-->	bastiandg (~bastian@leer-4db74a71.pool.mediaWays.net) has joined #kde
+2010-05-04 04:02:49	<--	tackat (~trahn@pd95bc258.dip0.t-ipconnect.de) has quit (Ping timeout: 276 seconds)
+2010-05-04 04:03:33	-->	Pensacola (~quassel@131.155.97.112) has joined #kde
+2010-05-04 04:03:42	<--	toure|afk (~toure@nat/redhat/x-rdqvwlsdppbubjuz) has quit (Ping timeout: 276 seconds)
+2010-05-04 04:04:50	<--	bipolar (~bipolar@offsitesysadmin.com) has quit (Excess Flood)
+2010-05-04 04:04:56	-->	toure|afk (~toure@nat/redhat/x-mbfolnmblievprss) has joined #kde
+2010-05-04 04:05:20	-->	Pinaraf (~pierre@195.190.27.92) has joined #kde
+2010-05-04 04:05:35	-->	bipolar (~bipolar@offsitesysadmin.com) has joined #kde
+2010-05-04 04:07:06	<--	caotic (~caotic@189.157.127.171) has quit (Remote host closed the connection)
+2010-05-04 04:07:52	<--	toure|af1 (~toure@nat/redhat/x-usadkdjbjkdmoyqx) has quit (Ping timeout: 252 seconds)
+2010-05-04 04:09:31	-->	caotic (~caotic@189.157.127.171) has joined #kde
+2010-05-04 04:09:48	<--	alediaferia (~alediafer@kde/developer/adiaferia) has quit (Ping timeout: 248 seconds)
+2010-05-04 04:10:00	-->	toure|af1 (~toure@nat/redhat/x-pqbroiwcmgjjkwqq) has joined #kde
+2010-05-04 04:11:11	-->	CMoH (~cipi@95.76.71.81) has joined #kde
+2010-05-04 04:12:00	-->	taraskostiak (~taras@unaffiliated/taraskostiak) has joined #kde
+2010-05-04 04:12:03	<--	toure|afk (~toure@nat/redhat/x-mbfolnmblievprss) has quit (Ping timeout: 264 seconds)
+2010-05-04 04:12:04	-->	mzanetti_ (~mzanetti@p5B30016E.dip0.t-ipconnect.de) has joined #kde
+2010-05-04 04:12:09	<--	taras (~taras@unaffiliated/taraskostiak) has quit (Ping timeout: 276 seconds)
+2010-05-04 04:12:44	<--	chaoxifer (~chaoxifer@211.106.32.108) has quit (Quit: Leaving)
+2010-05-04 04:14:36	<--	toure|af1 (~toure@nat/redhat/x-pqbroiwcmgjjkwqq) has quit (Ping timeout: 248 seconds)
+2010-05-04 04:14:48	-->	caotic_ (~caotic@189.157.127.171) has joined #kde
+2010-05-04 04:14:51	<--	mzanetti (~mzanetti@p5B30016E.dip0.t-ipconnect.de) has quit (Ping timeout: 265 seconds)
+2010-05-04 04:14:55	-->	toure|afk (~toure@nat/redhat/x-eirgfrrffxosttav) has joined #kde
+2010-05-04 04:15:03	<--	caotic (~caotic@189.157.127.171) has quit (Remote host closed the connection)
+2010-05-04 04:16:04	-->	d3x (d3x@vilo.eu.org) has joined #kde
+2010-05-04 04:16:05	-->	zaki (~zaki@nor75-32-78-237-172-37.fbx.proxad.net) has joined #kde
+2010-05-04 04:17:02	-->	ForgeAus (~forgeaus@112.141.88.115) has joined #kde
+2010-05-04 04:17:26	-->	pucko- (~aj@c83-250-152-191.bredband.comhem.se) has joined #kde
+2010-05-04 04:17:38	d3x	ok, that's strange - i'm installing 4.4.3 from debian sid right now. when was it released? there is no release note, this # says "4.4.2 is out". what's going on? :)

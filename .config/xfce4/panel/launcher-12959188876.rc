@@ -1,0 +1,12 @@
+[Global]
+MoveFirst=false
+ArrowPosition=0
+
+[Entry 0]
+Name=Urxvt
+Icon=/home/daniel/.icons/Drakfire Evolution/scalable/apps/utilities-terminal.png
+Exec=urxvt
+Path=/home/daniel
+Terminal=false
+StartupNotify=false
+

@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<separator label="Applications"/>
+		<item label="Browser">
+			<action name="Execute">
+				<execute>
+					iceweasel
+				</execute>
+			</action>
+		</item>
+		<item label="Editor">
+			<action name="Execute">
+				<execute>
+					gvim
+				</execute>
+			</action>
+		</item>
+		<item label="Terminal">
+			<action name="Execute">
+				<execute>
+					uxterm
+				</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'menu' package to work -->
+		<separator/>
+		<menu id="accessories-menu" label="Accessories">
+			<item label="Calculator">
+				<action name="Execute">
+					<execute>
+						gcalctool
+					</execute>
+				</action>
+			</item>
+			<item label="Kalarm">
+				<action name="Execute">
+					<execute>
+						kalarm
+					</execute>
+				</action>
+			</item>
+			<item label="Take Screenshot">
+				<action name="Execute">
+					<execute>
+						scrot -d 5
+					</execute>
+				</action>
+			</item>
+			<item label="Tint2">
+				<action name="Execute">
+					<execute>
+						tint2
+					</execute>
+				</action>
+			</item>
+			<item label="UXTerm">
+				<action name="Execute">
+					<execute>
+						uuxterm
+					</execute>
+				</action>
+			</item>
+			<item label="System Settings">
+				<action name="Execute">
+					<execute>
+						systemsettings
+					</execute>
+				</action>
+			</item>
+			<item label="VirtualBox">
+				<action name="Execute">
+					<execute>
+						VirtualBox
+					</execute>
+				</action>
+			</item>
+			<item label="xcompmgr">
+				<action name="Execute">
+					<execute>
+						xcompmgr -c -t-5 -l-6 -r4.7 -o.65
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="Debian"/>
+		<menu id="root-menu-191514" label="Games">
+			<item label="Assault Cube">
+				<action name="Execute">
+					<execute>
+						/usr/games/assaultcube
+					</execute>
+				</action>
+			</item>
+			<item label="DosBox">
+				<action name="Execute">
+					<execute>
+						dosbox
+					</execute>
+				</action>
+			</item>
+			<item label="Enemy Territory">
+				<action name="Execute">
+					<execute>
+						/home/daniel/games/ET/et-sdl-sound
+					</execute>
+				</action>
+			</item>
+			<item label="FCEU">
+				<action name="Execute">
+					<execute>
+						gfceu
+					</execute>
+				</action>
+			</item>
+			<item label="Nexuiz">
+				<action name="Execute">
+					<execute>
+						/usr/games/nexuiz
+					</execute>
+				</action>
+			</item>
+			<item label="Open Arena">
+				<action name="Execute">
+					<execute>
+						/usr/games/openarena
+					</execute>
+				</action>
+			</item>
+			<item label="RTCW">
+				<action name="Execute">
+					<execute>
+						/home/daniel/bin/rtcw
+					</execute>
+				</action>
+			</item>
+			<item label="Sauerbraten">
+				<action name="Execute">
+					<execute>
+						/usr/games/sauerbraten
+					</execute>
+				</action>
+			</item>
+			<item label="Urban Terror">
+				<action name="Execute">
+					<execute>
+						/usr/games/urbanterror
+					</execute>
+				</action>
+			</item>
+			<item label="Tetris">
+				<action name="Execute">
+					<execute>
+						uxterm -e '/usr/games/tint'
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-89397" label="Graphics">
+			<item label="Agave">
+				<action name="Execute">
+					<execute>
+						agave
+					</execute>
+				</action>
+			</item>
+			<item label="Gcolor">
+				<action name="Execute">
+					<execute>
+						gcolor2
+					</execute>
+				</action>
+			</item>
+			<item label="Gimp">
+				<action name="Execute">
+					<execute>
+						gimp
+					</execute>
+				</action>
+			</item>
+			<item label="Image Viewer">
+				<action name="Execute">
+					<execute>
+						eog
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-1377" label="Media">
+			<item label="Amarok">
+				<action name="Execute">
+					<execute>
+						amarok
+					</execute>
+				</action>
+			</item>
+			<item label="Audacity">
+				<action name="Execute">
+					<execute>
+						audacity
+					</execute>
+				</action>
+			</item>
+			<item label="K3B">
+				<action name="Execute">
+					<execute>
+						k3b
+					</execute>
+				</action>
+			</item>
+			<item label="Quod Libet">
+				<action name="Execute">
+					<execute>
+						quodlibet
+					</execute>
+				</action>
+			</item>
+			<item label="Totem">
+				<action name="Execute">
+					<execute>
+						totem
+					</execute>
+				</action>
+			</item>
+			<item label="Volume Control">
+				<action name="Execute">
+					<execute>
+						gnome-volume-control
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="network-menu" label="Network">
+			<item label="Check Gmail">
+				<action name="Execute">
+					<execute>
+						checkgmail
+					</execute>
+				</action>
+			</item>
+			<item label="Kmail">
+				<action name="Execute">
+					<execute>
+						kmail
+					</execute>
+				</action>
+			</item>
+			<item label="Konqueror">
+				<action name="Execute">
+					<execute>
+						konqueror
+					</execute>
+				</action>
+			</item>
+			<item label="Konversation">
+				<action name="Execute">
+					<execute>
+						konversation
+					</execute>
+				</action>
+			</item>
+			<item label="Kopete">
+				<action name="Execute">
+					<execute>
+						kopete
+					</execute>
+				</action>
+			</item>
+			<item label="Ktorrent">
+				<action name="Execute">
+					<execute>
+						ktorrent
+					</execute>
+				</action>
+			</item>
+			<item label="Pidgin">
+				<action name="Execute">
+					<execute>
+						pidgin
+					</execute>
+				</action>
+			</item>
+			<item label="Skype">
+				<action name="Execute">
+					<execute>
+						skype
+					</execute>
+				</action>
+			</item>
+			<item label="Xchat">
+				<action name="Execute">
+					<execute>
+						xchat
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-935641" label="Office">
+			<item label="Address book">
+				<action name="Execute">
+					<execute>
+						gfa
+					</execute>
+				</action>
+			</item>
+			<item label="OOffice Calc">
+				<action name="Execute">
+					<execute>
+						localc
+					</execute>
+				</action>
+			</item>
+			<item label="OOffice Impress">
+				<action name="Execute">
+					<execute>
+						loimpress
+					</execute>
+				</action>
+			</item>
+			<item label="OOffice Writer">
+				<action name="Execute">
+					<execute>
+						lowriter
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<separator label="Computer"/>
+		<item label="Home">
+			<action name="Execute">
+				<execute>
+					thunar
+				</execute>
+			</action>
+		</item>
+		<item label="Desktop">
+			<action name="Execute">
+				<execute>
+					thunar ~/Desktop
+				</execute>
+			</action>
+		</item>
+		<item label="Downloads">
+			<action name="Execute">
+				<execute>
+					thunar ~/downloads
+				</execute>
+			</action>
+		</item>
+		<menu execute="/home/daniel/bin/thunar-bookmarks.pl" id="pipe-41951" label="Bookmarks"/>
+		<menu id="root-menu-282557" label="Files">
+			<item label=".gtkrc.mine">
+				<action name="Execute">
+					<execute>
+						kate ~/.gtkrc.mine
+					</execute>
+				</action>
+			</item>
+			<item label=".Xdefaults">
+				<action name="Execute">
+					<execute>
+						kate ~/.Xdefaults
+					</execute>
+				</action>
+			</item>
+			<item label=".zshrc">
+				<action name="Execute">
+					<execute>
+						kate ~/.zshrc
+					</execute>
+				</action>
+			</item>
+			<item label="tint2rc">
+				<action name="Execute">
+					<execute>
+						kate ~/.config/tint2/tint2rc
+					</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="autostart.sh">
+				<action name="Execute">
+					<execute>
+						kate ~/.config/openbox/autostart.sh
+					</execute>
+				</action>
+			</item>
+			<item label="menu.xml">
+				<action name="Execute">
+					<execute>
+						kate ~/.config/openbox/menu.xml
+					</execute>
+				</action>
+			</item>
+			<item label="rc.xml">
+				<action name="Execute">
+					<execute>
+						kate ~/.config/openbox/rc.xml
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<separator label="System"/>
+		<menu id="root-menu-723414" label="Admin">
+			<item label="Sys Guard">
+				<action name="Execute">
+					<execute>
+						ksysguard
+					</execute>
+				</action>
+			</item>
+			<item label="Synaptic">
+				<action name="Execute">
+					<execute>
+						gksu synaptic
+					</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Restart">
+				<action name="Execute">
+					<execute>
+						gksu 'shutdown -r now'
+					</execute>
+				</action>
+			</item>
+			<item label="Shutdown">
+				<action name="Execute">
+					<execute>
+						gksu 'shutdown -h now'
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu execute="/home/daniel/bin/obsysinfo" id="pipe-452631" label="Info"/>
+		<menu id="root-menu-163147" label="Openbox">
+			<item label="Configure">
+				<action name="Execute">
+					<execute>
+						obconf
+					</execute>
+				</action>
+			</item>
+			<item label="Menu">
+				<action name="Execute">
+					<execute>
+						obmenu
+					</execute>
+				</action>
+			</item>
+			<item label="Reconfigure">
+				<action name="Reconfigure"/>
+			</item>
+			<item label="Restart">
+				<action name="Restart"/>
+			</item>
+			<separator/>
+			<item label="Exit">
+				<action name="Exit"/>
+			</item>
+		</menu>
+	</menu>
+</openbox_menu>

@@ -1,0 +1,49 @@
+2010-05-21 19:38:22	-->	dbbolton1 (~daniel@pool-72-84-45-37.clrkwv.east.verizon.net) has joined #nvidia
+2010-05-21 19:38:22	--	Topic for #nvidia is "UNOFFICIAL NVIDIA Linux/FreeBSD/Solaris Graphics Driver Support | Releases: beta: 256.25, official: 195.36.24, legacy: 173.14.25, 96.43.17, 71.86.13 | ftp://download.nvidia.com | DO NOT FLOOD! (use http://pastebin.com) | try to use your distribution's driver packages | Have you tried nvidia-settings?"
+2010-05-21 19:38:22	--	Topic set by aaronp (~aaron@Aaron2-1-pt.tunnel.tserv3.fmt2.ipv6.he.net) on Fri, 21 May 2010 16:48:27
+2010-05-21 19:38:22	--	Nicks #nvidia: [`Spy aaronp andreax Azalyn bagpuss_thecat banshee clee CybrFyre d3x darktama dbbolton1 derrida Dibbler dizko DjMadness drago01 dreadchicken factor faffi felipe` gavriels ghostcube Hadaka ivanich ivanich|wrk JackWinter javagamer javashin jetscreamer jupiter15 kassah Keruspe knittl KraMer Lenny_ LordHavoc magglass1 maligor Mercury mikebabcock mlampard mo___ musca Nephyrin nitram nucleo peper Plagman pode Primer Prissy rcrit skydrome stroyan t\zz TCW Tenhi terranova Thrae toresbe up365 Viper1432 vivid Vorg vrodic war9407 wng- xaver xororand yofel Zambezi Zider zinx]
+2010-05-21 19:38:22	--	Channel #nvidia: 73 nicks (0 ops, 0 halfops, 0 voices, 73 normals)
+2010-05-21 19:38:24	--	Channel created on Sun, 26 Nov 2006 01:42:45
+2010-05-21 19:38:56	dbbolton1	i need help diagnosing this error: http://paste.debian.net/74289/
+2010-05-21 19:43:51	-->	CrimsonIdol (~norman@78.118.205.68.cfl.res.rr.com) has joined #nvidia
+2010-05-21 19:46:35	<--	javashin (~javashin@unaffiliated/javashin) has quit (Ping timeout: 265 seconds)
+2010-05-21 19:47:13	<--	kassah (~kassah@Warlock/Developer/Kassah) has quit (Quit: Leaving)
+2010-05-21 19:50:50	<--	CrimsonIdol (~norman@78.118.205.68.cfl.res.rr.com) has quit (Quit: Leaving)
+2010-05-21 19:58:42	-->	javashin (~javashin@unaffiliated/javashin) has joined #nvidia
+2010-05-21 19:59:05	<--	drago01 (~linux@chello062178124135.3.13.univie.teleweb.at) has quit (Quit: Verlassend)
+2010-05-21 20:03:26	-->	javashin_ (~javashin@201.229.166.7) has joined #nvidia
+2010-05-21 20:03:34	<--	factor (~factor@ip70-177-95-241.ok.ok.cox.net) has quit (Quit: Leaving)
+2010-05-21 20:03:56	<--	javashin (~javashin@unaffiliated/javashin) has quit (Ping timeout: 248 seconds)
+2010-05-21 20:06:18	-->	xaver__ (~xaver@pD9ED57B8.dip.t-dialin.net) has joined #nvidia
+2010-05-21 20:10:39	<--	xaver (~xaver@pD9ED6B11.dip.t-dialin.net) has quit (Ping timeout: 265 seconds)
+2010-05-21 20:10:55	<--	rcrit (~rcrit@zippy.greyoak.com) has quit (Ping timeout: 258 seconds)
+2010-05-21 20:17:46	-->	rcrit (~rcrit@zippy.greyoak.com) has joined #nvidia
+2010-05-21 20:17:56	-->	darkdelusions (~delusion@pool-71-164-229-161.dllstx.fios.verizon.net) has joined #nvidia
+2010-05-21 20:17:57	<--	darkdelusions (~delusion@pool-71-164-229-161.dllstx.fios.verizon.net) has quit (Changing host)
+2010-05-21 20:17:57	-->	darkdelusions (~delusion@unaffiliated/darkdelusions) has joined #nvidia
+2010-05-21 20:22:38	-->	eGe (~eugene@77.49.21.34.dsl.dyn.forthnet.gr) has joined #nvidia
+2010-05-21 20:23:08	eGe	any news for nvidia crash inti black screen . 10.4 ubuntu
+2010-05-21 20:38:58	<--	xaver__ (~xaver@pD9ED57B8.dip.t-dialin.net) has quit (Remote host closed the connection)
+2010-05-21 20:46:03	-->	archis (~archis@unaffiliated/archis) has joined #nvidia
+2010-05-21 20:46:25	<--	archis (~archis@unaffiliated/archis) has quit (Remote host closed the connection)
+2010-05-21 20:53:46	<--	andreax (~andreaz@p57B968DA.dip.t-dialin.net) has quit (Quit: Leaving.)
+2010-05-21 20:54:38	<--	eGe (~eugene@77.49.21.34.dsl.dyn.forthnet.gr) has quit (Quit: #Xchat)
+2010-05-21 21:20:06	<--	JackWinter (~jack@vodsl-8187.vo.lu) has quit (Remote host closed the connection)
+2010-05-21 21:20:20	-->	JackWinter (~jack@vodsl-8187.vo.lu) has joined #nvidia
+2010-05-21 22:25:03	<--	ghostcube (~ghostcube@unaffiliated/ghostcube) has quit (Quit: Verlassend)
+2010-05-21 22:33:16	<--	rcrit (~rcrit@zippy.greyoak.com) has quit (Ping timeout: 240 seconds)
+2010-05-21 22:38:08	-->	Holborn (~holborn@unaffiliated/holborn) has joined #nvidia
+2010-05-21 22:42:27	-->	rcrit (~rcrit@rcrit.qis.net) has joined #nvidia
+2010-05-21 23:04:53	<--	nucleo (nucleo@fedora/nucleo) has quit (Quit: KVIrc Insomnia - rev: 4255)
+2010-05-21 23:09:16	-->	RedBear (~Red@cpe-67-241-20-232.twcny.res.rr.com) has joined #nvidia
+2010-05-21 23:17:26	<--	rcrit (~rcrit@rcrit.qis.net) has quit (Ping timeout: 264 seconds)
+2010-05-21 23:19:11	<--	darkdelusions (~delusion@unaffiliated/darkdelusions) has quit (Read error: Operation timed out)
+2010-05-21 23:24:40	-->	nucleo (nucleo@fedora/nucleo) has joined #nvidia
+2010-05-21 23:29:43	-->	rcrit (~rcrit@rcrit.qis.net) has joined #nvidia
+2010-05-21 23:30:52	-->	darkdelusions (~delusion@pool-71-164-229-161.dllstx.fios.verizon.net) has joined #nvidia
+2010-05-21 23:30:52	<--	darkdelusions (~delusion@pool-71-164-229-161.dllstx.fios.verizon.net) has quit (Changing host)
+2010-05-21 23:30:53	-->	darkdelusions (~delusion@unaffiliated/darkdelusions) has joined #nvidia
+2010-05-21 23:53:04	<--	RedBear (~Red@cpe-67-241-20-232.twcny.res.rr.com) has quit (Ping timeout: 260 seconds)
+2010-05-22 00:48:00	<--	ivanich|wrk (~ivanich@office.TeNeT.Odessa.UA) has quit (Remote host closed the connection)
+2010-05-22 01:25:00	<--	jetscreamer (~jetscream@unaffiliated/jetscreamer) has quit (Ping timeout: 248 seconds)
+2010-05-22 02:21:57	<--	Holborn (~holborn@unaffiliated/holborn) has quit (Quit: Lost terminal)

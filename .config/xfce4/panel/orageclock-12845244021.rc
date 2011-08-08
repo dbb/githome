@@ -1,0 +1,15 @@
+show_frame=false
+fg_set=true
+bg_set=false
+timezone=
+width_set=false
+height_set=false
+show0=true
+data0=%a %d %b\ 
+font0=DIN 1451 Mittelschrift 9
+show1=false
+show2=false
+tooltip=%A %d %B %Y/%V
+hib_timing=false
+fg=54398R 19916G 8422B
+

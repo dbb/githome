@@ -1,0 +1,105 @@
+[header_maps]
+
+[rename]
+windows = true
+spaces = false
+ascii = false
+
+[settings]
+ratings = 4
+repeat = false
+scan = /mnt/media_files/music
+jump = true
+headers = ~#track ~title~version ~album~discsubtitle artist ~#length
+disable_hints = false
+default_rating = 0.5
+eager_search = true
+round = true
+
+[plugins]
+write_cover = /home/dbb/.quodlibet/current.cover
+icon_window_visible = true
+gajim_status_pattern = <artist> - <title>
+gajim_status_statuses = online chat
+gajim_status_paused = True
+animosd_delay = 10000
+icon_tooltip = <album|<album~discnumber~part~tracknumber~title~version>|<artist~title~version>>
+active_editingplugins = Convert Encodings
+gajim_status_accounts = 
+scrobbler_password = PASSWORD
+active_playorderplugins = 
+active_eventplugins = Equalizer
+	QLScrobbler
+	mpris
+	DBusMMKey
+	Notify
+	Automatic Rating
+	Tray Icon
+wikipedia = en
+scrobbler_username = USER
+scrobbler_service = Last.fm
+k3b = Brasero
+browsefolders = thunar
+active_songsmenuplugins = Browse Folders
+
+[library]
+exclude = 
+refresh_on_start = true
+
+[player]
+fallback_gain = 0.0
+gst_pipeline = 
+replaygain = true
+pre_amp_gain = 0.0
+time_remaining = false
+backend = gstbe
+
+[tagsfrompath]
+add = false
+underscores = false
+split = false
+titlecase = false
+
+[browsers]
+panes = artist	album	~year
+playlist = misc
+playlists_pos = 0.399477806789
+panedbrowser_pos = 0.459595959596
+rating_click = true
+color = true
+pane_selection = 0	The Mars Volta	.
+	0	De-Loused In The Comatorium	.
+	0		.
+rating_confirm_multiple = false
+album_covers = 1
+background = 
+album_substrings = 1
+albums = 
+query_text = lous
+album_sort = 0
+
+[memory]
+shufflequeue = false
+queue = True
+exfalso_size = 700 500
+browser = PanedBrowser
+exfalso_maximized = 0
+song = /mnt/media_files/music/MarsVolta/de_loused/10_take_the_veil_cerpin_taxt.flac
+volume = 0.95
+sortby = 0~#track
+maximized = 0
+browser_size = 500 300
+position = 210 9
+size = 894 735
+seek = 255140
+order = shuffle
+songlist = True
+
+[editing]
+split_on = / & ,
+save_to_songs = true
+save_email = EMAIL
+id3encoding = 
+alltags = true
+human_title_case = true
+

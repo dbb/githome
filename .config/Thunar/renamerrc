@@ -1,0 +1,25 @@
+[Configuration]
+LastActiveMode=THUNAR_RENAMER_MODE_BOTH
+LastActiveRenamer=ThunarSbrReplaceRenamer
+
+[ThunarSbrRemoveRenamer]
+EndOffset=66
+StartOffsetMode=THUNAR_SBR_OFFSET_MODE_LEFT
+EndOffsetMode=THUNAR_SBR_OFFSET_MODE_LEFT
+StartOffset=0
+
+[ThunarSbrCaseRenamer]
+Mode=THUNAR_SBR_CASE_RENAMER_MODE_LOWER
+
+[ThunarSbrInsertRenamer]
+Mode=THUNAR_SBR_INSERT_MODE_INSERT
+OffsetMode=THUNAR_SBR_OFFSET_MODE_LEFT
+Offset=0
+Text=0
+
+[ThunarSbrReplaceRenamer]
+Regexp=FALSE
+Replacement=S06E
+CaseSensitive=FALSE
+Pattern=Season 6 Episode\ 
+

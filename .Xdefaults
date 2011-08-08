@@ -1,0 +1,145 @@
+URxvt.perl-ext-common:  default,tabbed,matcher,searchable-scrollback
+URxvt*cutchars:         "()*,<>[]{}|'
+URxvt*termName:         rxvt-unicode
+URxvt*urlLauncher:      iceweasel
+URxvt*matcher.button:   1
+
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress: true
+!URxvt*secondaryScroll: false
+
+!URxvt*keysym.S-Prior:   ^[[5;2~
+!URxvt*keysym.S-Next:    ^[[6;2~
+
+URxvt*geometry:      96x30
+URxvt*highlightSelection: true
+URxvt*transparent: true
+URxvt*shading: 3
+!URxvt*tintColor: #000000
+!URxvt*blurRadius: 5
+
+URxvt.scrollstyle:      plain
+URxvt.secondaryScroll:  true
+
+
+! gohufont, small
+*font: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
+*boldFont: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
+
+! gohufont, large
+!*font: -*-gohufont-medium-*-*-*-14-*-*-*-*-*-*-*
+
+! MonteCarlo
+!*font: -*-montecarlo-medium-r-normal-*-11-110-72-72-c-60-*-*
+!*boldFont: -*-montecarlo-medium-r-normal-*-11-110-72-72-c-60-*-*
+
+! proggy
+!*font: -*-proggysquare-medium-r-normal-*-11-80-96-96-c-70-iso8859-1
+!*boldFont: -*-proggysquare-medium-r-normal-*-11-80-96-96-c-70-iso8859-1
+
+! xft fonts
+!Xft.antialias:			true
+!URxvt*font:             xft:Mensch:pixelsize=12
+!URxvt*boldFont:             xft:Mensch:pixelsize=11
+
+!URxvt*font:		xft:DejaVu Sans Mono:pixelsize=13
+!URxvt*boldFont:		xft:DejaVu Sans Mono:style=Bold:pixelsize=13
+
+!URxvt*font:			xft:Monaco:pixelsize=11
+!URxvt*boldFont:			xft:Monaco:pixelsize=11
+
+!URxvt*font:			xft:ProggySquareTTSZ:pixelsize=16
+!URxvt*boldFont:			xft:ProggySquareTTSZ:pixelsize=16
+
+!URxvt*font:			xft:Consolas:pixelsize=14
+
+! small terminus fonts
+!URxvt*font:     -xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1
+!URxvt*boldfont: -xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1
+
+! big terminus fonts
+!URxvt*font:     -xos4-terminus-medium-r-normal-*-14-140-72-72-c-80-iso10646-1
+!URxvt*boldfont: -xos4-terminus-medium-r-normal-*-14-140-72-72-c-80-iso10646-1
+
+URxvt*cursorColor:  #ff4f00
+URxvt*cursorBlink:   off
+URxvt*pointerColor: #00ff00
+URxvt*background:   #000000
+URxvt*boldMode:      on
+URxvt*colorMode:     on
+URxvt*colorBDMode:   on
+URxvt*colorULMode:   on
+URxvt*underLine:     on
+
+! colors --------------------------------------------------------------------
+URxvt*foreground:   #d4d4d4
+!  black
+URxvt*color0:		#000000
+URxvt*color8:		#202020
+!  red: sangria, lava
+URxvt*color1:		#92000a
+URxvt*color9:		#c80815
+!  green: india green, neon green
+URxvt*color2:		#138808
+URxvt*color10:		#39ff14
+!  yellow: dark goldenrod, gamboge
+URxvt*color3:		#b8860b
+URxvt*color11:		#ef9b0f
+!  blue: egyptian blue, palatinate blue
+URxvt*color4:		#1034a6
+URxvt*color12:		#273be2
+!  magenta: regalia, amethyst
+URxvt*color5:		#533d80
+URxvt*color13:		#9966cc
+!  cyan: cerulean, electric blue
+URxvt*color6:		#007ba7
+URxvt*color14:		#7df9ff
+!  white: titanium, white
+URxvt*color7:		#e5e4e2
+URxvt*color15:		#D4D2CF
+
+! intl orange
+URxvt*colorBD:		#ff4f00
+! azure
+URxvt*colorUL:		#007fff
+
+! end colors ----------------------------------------------------------------
+
+!URxvt.underlineColor:   white
+URxvt*scrollColor:   #212121
+URxvt.pastableTabs:     false
+URxvt.tabbed.tabbar-fg: 7
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg:    15
+URxvt.tabbed.tab-bg:    12
+
+! xterm
+xterm*geometry:      80x25
+xterm*foreground: #b2b2b2
+xterm*background: #000000
+
+!  black
+xterm*color0:		#000000
+xterm*color8:		#686868
+!  red
+xterm*color1:		#b21717
+xterm*color9:		#ff5454
+!  green
+xterm*color2:		#17b217
+xterm*color10:		#54ff54
+!  yellow
+xterm*color3:		#b26717
+xterm*color11:		#ffff54
+!  blue
+xterm*color4:		#1717b2
+xterm*color12:		#5454ff
+!  magenta
+xterm*color5:		#b217b2
+xterm*color13:		#ff54ff
+!  cyan
+xterm*color6:		#17b2b2
+xterm*color14:		#54ffff
+!  white
+xterm*color7:		#b2b2b2
+xterm*color15:		#ffffff

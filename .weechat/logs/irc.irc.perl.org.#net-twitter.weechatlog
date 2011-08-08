@@ -1,0 +1,23 @@
+2010-06-22 19:57:17	-->	dbbolton (~daniel@pool-72-65-90-90.clrk.east.verizon.net) has joined #net-twitter
+2010-06-22 19:57:17	--	Topic for #net-twitter is "Topic for #net-twitter: Topic for #net-twitter: Latest: Net::Twitter 3.13006, Net::Twitter::Lite 0.10003 | repos: git://github.com/semifor/Net-Twitter.git, git://github.com/semifor/net-twitter-lite.git | With or without antlers, take your pick. All hail the hypnomoose! http://is.gd/1ig7Z | follow perl_api on Twitter"
+2010-06-22 19:57:17	--	Topic set by semifor (~marc@c-67-185-222-36.hsd1.wa.comcast.net) on Fri, 18 Jun 2010 22:27:21
+2010-06-22 19:57:17	--	Nicks #net-twitter: [@Bender @dhoss @drags @go|dfish @mwalling @perigrin @semifor @zigdon CIA-1 ct dbbolton dhoss_gone jsut Mizar rhh01]
+2010-06-22 19:57:17	--	Channel #net-twitter: 15 nicks (8 ops, 0 halfops, 0 voices, 7 normals)
+2010-06-22 19:57:19	--	Channel created on Wed, 07 Jan 2009 10:18:48
+2010-06-22 19:58:10	dbbolton	is it possible to use Net::Twitter to get a user's current status without providing any login info?
+2010-06-22 20:15:39	@semifor	dbbolton: sure.
+2010-06-22 20:16:27	@semifor	$nt = Net::Twitter->new(legacy => 0); $status = $nt->show_user({ screen_name => 'perl_api' })->{status}
+2010-06-22 20:16:30	@semifor	That's one way.
+2010-06-22 20:17:01	@semifor	$nt->user_timeline({ screen_name => $name, count => 1 })  # should do it, too
+2010-06-22 21:03:06	ct	so
+2010-06-22 21:03:08	ct	at YAPC
+2010-06-22 21:03:12	ct	I twatled once
+2010-06-22 21:03:15	ct	and then lost track
+2010-06-22 21:12:17	dbbolton	semifor: thanks
+2010-06-22 21:22:00	dbbolton	the first one returned "Not found", and the second "ARRAY(0x263b810)"
+2010-06-22 21:22:28	dbbolton	how do i get the text as I would via 
+2010-06-22 21:22:40	dbbolton	$nt->show_user($status_name)->{status}->{text};
+2010-06-22 21:22:48	dbbolton	with a login name and password?
+2010-06-22 23:24:34	@semifor	dbbolton: user_timeline returns an array, so: $r = $nt->user_timeline(...); $r->[0]{text}
+2010-06-22 23:25:31	@semifor	The Not Found error likely means the screen_name you used does not exist. ??
+2010-06-23 01:50:54		irc: disconnected from server

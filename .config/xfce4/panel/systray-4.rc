@@ -1,0 +1,11 @@
+[Global]
+ShowFrame=false
+Rows=1
+
+[Applications]
+pidgin=false
+orage=false
+quod libet=false
+kmix=false
+gwibber=false
+

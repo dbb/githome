@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=GVim Text Editor
+Comment=Edit text files
+Icon=/home/dbb/.icons/vim-icons/vim.svg
+Exec=gvim
+Path=
+Terminal=false
+StartupNotify=false

@@ -1,0 +1,145 @@
+2010-05-02 01:26:35	-->	dbbolton (~daniel@pool-72-84-59-202.clrkwv.east.verizon.net) has joined #openbsd
+2010-05-02 01:26:35	--	Topic for #openbsd is "ChannelFAQ: http://tinyurl.com/y9xx2rr | LATEST PATCH: 4.6#10 on 4/14 4.5#16 on 4/14 | forget about google, use duckduckgo mkay."
+2010-05-02 01:26:35	--	Topic set by Bink (bink@unaffiliated/bink) on Tue, 20 Apr 2010 17:51:54
+2010-05-02 01:26:35	--	Nicks #openbsd: [[mutex]_ _marix addeboy alip AnMaster Apsu ArcAngel ArchGT bbee beardy bgran Bink bone Bradipo brougham Bryanstein bslashx1a4 cads carmel CaZe cdidier cjcopi CoOolBreeze crakrjak crashlady crazygir CryptoCrack d1b dasilvj dayid dbatbold dbbolton delewis djw dubium dvere dwhess dxtr emboss engrxyz eviljames Falcon| felipe FenderQ Fish-Work flips_and_rails freakazoid0223 FSB_1 ft funky Gabe_G23 gakkun galdor Ganlron Gio^ griffin Gumboot hachiya haesbaert Han Helio hhw IcePic ivenkys J4nus jaj jareth_ jayne jdoe jimby jimmyz2_ joe-mac johnny-o johns juub K-birth kaii karasu keith4141 knightblader ktch kutio l0rd_hex lemonchicken Lexus45 liamjfoy lsxq lt_kije lToro magyar makenoob Maliuta manymore marex martian67 marvin2 mduller metasyntax Meths MilkmanDan mischief MissionCritical MrWGW mvanbaak_ mwilson myke n0use n4te nae newt0n NicM nighty^ nimred nox`` obcecado Obilan oenone openbsdeurope panos pea pgurumur Phenox_ Philonous phobus pinnen piroko pitrh plundra prodriver progma puc quax Raptelan ras0ir remiel ruskie ryan ryanakca ryanc saltmiser samulihs sektorNBA silverraindog SirPuffy sjoos Slippery slon Stealth Strog superbofh superx sysrq taleon tcunha tenthirteen Thrae tobiasu tomageeni tp76 TrickFinlay2 Tristam tvaalen twiggz unclewerner unixfg ventz viq virtualroot Visual` Wicked workbench WormDrink x03 xAyiDe xumpi yogi z0ran zaarg zakame zarock zeist Zhwazi zmyrgel zoc zparta zzuf]
+2010-05-02 01:26:35	--	Channel #openbsd: 186 nicks (0 ops, 0 halfops, 0 voices, 186 normals)
+2010-05-02 01:26:37	--	Channel created on Sun, 03 Aug 2003 17:30:42
+2010-05-02 01:27:28	dbbolton	i want to install 4.7, but none of the mirrors i've checked seem to have a "pub/OpenBSD/4.7/" directory
+2010-05-02 01:30:48	dbbolton	referring to the instructions as openbsd.org/46.html
+2010-05-02 01:31:01	dbbolton	s/6/7
+2010-05-02 01:36:16	-->	chilicuil (~chilicuil@unaffiliated/chilicuil) has joined #openbsd
+2010-05-02 01:37:11	-->	e1mer (~erivera@unaffiliated/e1mer) has joined #openbsd
+2010-05-02 01:37:20	<--	e1mer (~erivera@unaffiliated/e1mer) has quit (Remote host closed the connection)
+2010-05-02 01:38:26	-->	arenics (1000@unaffiliated/arenics) has joined #openbsd
+2010-05-02 01:42:46	myke	dbbolton: 4.7 isn't released yet
+2010-05-02 01:52:59	taleon	Moin. :-)
+2010-05-02 01:56:27	-->	Romeo- (~romi@unaffiliated/romeo/x-000000001) has joined #openbsd
+2010-05-02 01:58:33	tobiasu	myke: autoconf should have nothing to do with make
+2010-05-02 02:00:43	-->	Azhax (~MyAzhax@60.51.93.9) has joined #openbsd
+2010-05-02 02:01:11	dbbolton	i guess google now caches pages from the future
+2010-05-02 02:09:32	<--	Azhax (~MyAzhax@60.51.93.9) has quit (Ping timeout: 265 seconds)
+2010-05-02 02:18:48	myke	tobiasu: when i run ./configure it finds the standard bsd make, decides it doesn't have the features it needs, and bails
+2010-05-02 02:19:04	myke	all i need to do is change what to get it to use gmake?
+2010-05-02 02:19:16	tobiasu	do you have a link?
+2010-05-02 02:19:56	tobiasu	automake cares about this, and if the author didn't fuck up, it generates bsd make compatible files
+2010-05-02 02:20:55	myke	http://pastebin.com/AWKZq2ac
+2010-05-02 02:21:02	myke	it's libsigc++
+2010-05-02 02:21:19	myke	yes i know there's a port, but this is an old 4.0 machine, and i can't find any mirrors that still have the binary packages for it
+2010-05-02 02:23:22	tobiasu	ftp.eu.openbsd.org has pretty much everything ever
+2010-05-02 02:24:24	myke	ah, thanks
+2010-05-02 02:24:25	myke	didn't know
+2010-05-02 02:28:50	-->	Slugs_ (~yeah@c-76-97-217-69.hsd1.ga.comcast.net) has joined #openbsd
+2010-05-02 02:30:20	tobiasu	http://www.google.com/search?q=MM_CHECK_GNU_MAKE
+2010-05-02 02:31:23	myke	thanks, not familiar enough with autoconf to be able to find that
+2010-05-02 02:32:56	tobiasu	it appears that this is a local idiocy from the gnome c++ developers
+2010-05-02 02:33:10	tobiasu	surprise surprise
+2010-05-02 02:33:24	tobiasu	of course there is zero need for that crap
+2010-05-02 02:34:14	Slugs_	angelorum
+2010-05-02 02:34:35	myke	thanks for your very knowledgable advice, it's like the good old days of irc when channels like this were a prime resource
+2010-05-02 02:34:50	myke	sometimes google doesn't cut it
+2010-05-02 02:36:07	-->	AmberJ (~amber@117.196.217.198) has joined #openbsd
+2010-05-02 02:53:44	<--	ktch (~ktch@ws-23-194.laitilanpuhelin.fi) has quit (Ping timeout: 240 seconds)
+2010-05-02 02:56:27	-->	ktch (~ktch@ws-23-194.laitilanpuhelin.fi) has joined #openbsd
+2010-05-02 03:02:34	-->	BBHoss (~bbhoss@97-82-19-35.static.leds.al.charter.com) has joined #openbsd
+2010-05-02 03:04:04	-->	dv- (~dv@unaffiliated/dv-) has joined #openbsd
+2010-05-02 03:12:37	-->	nyshtyak (~nyshtyak@79.170.105.170) has joined #openbsd
+2010-05-02 03:14:20	<--	arenics (1000@unaffiliated/arenics) has left #openbsd
+2010-05-02 03:24:30	-->	johnwilliam (~johnwilli@pD95492ED.dip0.t-ipconnect.de) has joined #openbsd
+2010-05-02 03:29:43	-->	arenics (1000@unaffiliated/arenics) has joined #openbsd
+2010-05-02 03:29:53	arenics	where is the openbsd /proc ?
+2010-05-02 03:29:57	arenics	^^
+2010-05-02 03:32:08	arenics	ls
+2010-05-02 03:34:16	Obilan	Moin Moin
+2010-05-02 03:34:27	tobiasu	did you hear that linux is trying to get rid of /proc?
+2010-05-02 03:35:17	Obilan	arenics: try the url in topic
+2010-05-02 03:36:45	tobiasu	or just forget about proc
+2010-05-02 03:37:08	myke	linux is a bit nuts about that stuff
+2010-05-02 03:37:35	myke	i count no less than 6 (!) virtual specialty filesystems on this ubuntu box
+2010-05-02 03:39:50	-->	Stellar (~Stellar@unaffiliated/stellar) has joined #openbsd
+2010-05-02 03:39:57	arenics	im kidding guys
+2010-05-02 03:40:00	arenics	?D
+2010-05-02 03:40:04	arenics	:D
+2010-05-02 03:40:47	arenics	tobiasu: why the linux would get rid of it ?
+2010-05-02 03:40:52	myke	hmm i'm a noob, didn't realize openbsd had gotten rid of /proc entirely
+2010-05-02 03:41:05	myke	guess i never needed it on openbsd
+2010-05-02 03:41:10	<--	Stellar (~Stellar@unaffiliated/stellar) has quit (Client Quit)
+2010-05-02 03:41:23	tobiasu	proc comes from plan9
+2010-05-02 03:41:37	tobiasu	but of course linux added everything and their dog to proc
+2010-05-02 03:41:48	myke	my freebsd systems have it
+2010-05-02 03:41:51	myke	yea
+2010-05-02 03:42:05	tobiasu	they kept doing it until they realised that they created a giant mess
+2010-05-02 03:42:33	myke	seems like in the early days there was this attitude of "let's do everything different from bsd just to not be bsd"
+2010-05-02 03:42:39	tobiasu	so then, they invented sysfs to create something clean and simple
+2010-05-02 03:43:09	tobiasu	and now they make a mess of sysfs, i'm waiting for the sysfs-ng patchset already
+2010-05-02 03:43:42	tobiasu	there is proc in openbsd
+2010-05-02 03:43:56	tobiasu	it's just that sysctl offers a much better interface
+2010-05-02 03:44:17	myke	dovii% df | cut -d ' ' -f 1 | egrep -v 'Filesystem|sda' | sort | uniq
+2010-05-02 03:44:17	myke	lrm
+2010-05-02 03:44:17	myke	tmpfs
+2010-05-02 03:44:17	myke	udev
+2010-05-02 03:44:17	myke	varlock
+2010-05-02 03:44:21	myke	varrun
+2010-05-02 03:44:21	myke	is that really necessary?
+2010-05-02 03:44:32	tobiasu	of course ;)
+2010-05-02 03:45:26	myke	hmm no /proc on this 4.0 box
+2010-05-02 03:45:40	tobiasu	you have to mount it
+2010-05-02 03:45:45	myke	ah ok
+2010-05-02 03:46:18	myke	openbsd is definitely solid
+2010-05-02 03:46:22	myke	rig% uptime
+2010-05-02 03:46:22	myke	 4:10AM  up 1116 days, 18:27, 1 user, load averages: 0.23, 0.17, 0.17
+2010-05-02 03:46:28	myke	i think that's my lifetime best
+2010-05-02 03:46:36	myke	beating the 486 that died at 1063
+2010-05-02 03:46:42	<--	AmberJ (~amber@117.196.217.198) has quit (Ping timeout: 268 seconds)
+2010-05-02 03:47:13	myke	not an idle system either, that box has 2 sites with six figures yearly of google paid links pointing at it
+2010-05-02 03:50:07	<--	johnwilliam (~johnwilli@pD95492ED.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2010-05-02 03:50:48	mvanbaak_	myke: time to upgrade :)
+2010-05-02 03:50:57	myke	yeah i know
+2010-05-02 03:52:16	-->	Azhax (~MyAzhax@60.51.93.9) has joined #openbsd
+2010-05-02 03:54:21	<--	ArcAngel (arcangel@unaffiliated/arcangel) has quit (Read error: Connection reset by peer)
+2010-05-02 03:58:24	-->	AmberJ (~amber@117.196.211.103) has joined #openbsd
+2010-05-02 03:58:42	<--	dbatbold (~irc@209.17.191.58) has quit (Quit: leaving)
+2010-05-02 04:04:04	-->	Stellar (~Stellar@unaffiliated/stellar) has joined #openbsd
+2010-05-02 04:07:45	<--	arenics (1000@unaffiliated/arenics) has quit (Quit: leaving)
+2010-05-02 04:07:55	<--	nyshtyak (~nyshtyak@79.170.105.170) has quit (Read error: Connection reset by peer)
+2010-05-02 04:08:15	-->	dbatbold (~irc@209.17.191.58) has joined #openbsd
+2010-05-02 04:09:44	<--	dbatbold (~irc@209.17.191.58) has quit (Client Quit)
+2010-05-02 04:09:56	-->	dbatbold (~irc@209.17.191.58) has joined #openbsd
+2010-05-02 04:21:51	<--	Slugs_ (~yeah@c-76-97-217-69.hsd1.ga.comcast.net) has quit (Changing host)
+2010-05-02 04:21:51	-->	Slugs_ (~yeah@unaffiliated/slugs-/x-6594848) has joined #openbsd
+2010-05-02 04:23:36	<--	cads (~Max@75.139.140.247) has left #openbsd
+2010-05-02 04:24:46	-->	nyshtyak (~nyshtyak@79.170.105.170) has joined #openbsd
+2010-05-02 04:25:44	<--	Slugs_ (~yeah@unaffiliated/slugs-/x-6594848) has left #openbsd
+2010-05-02 04:27:51	-->	Blaize (~Blaize@host81-151-212-46.range81-151.btcentralplus.com) has joined #openbsd
+2010-05-02 04:31:03	<--	AmberJ (~amber@117.196.211.103) has quit (Quit: brb)
+2010-05-07 06:56:47	-->	dbbolton (~daniel@c-67-163-171-209.hsd1.wv.comcast.net) has joined #openbsd
+2010-05-07 06:56:47	--	Topic for #openbsd is "ChannelFAQ: http://tinyurl.com/y9xx2rr | LATEST PATCH: 4.6#10 on 4/14 4.5#16 on 4/14 | forget about google, use duckduckgo mkay."
+2010-05-07 06:56:47	--	Topic set by Bink (bink@unaffiliated/bink) on Tue, 20 Apr 2010 17:51:46
+2010-05-07 06:56:47	--	Nicks #openbsd: [[mutex] _c_ _marc` _marix _obook `jatan addeboy alexdj alip AnMaster Apsu ArcAngel ArchGT artis astra-x Azhax bbee beardy belenus bgran billitch Bink Blaize blueshoes bluet bodie bone Bradipo brougham Bryanstein caim CaZe cdidier cjcopi CoOolBreeze crashlady crazygir CryptoCrack dasilvj dayid dbatbold dbbolton dermiste djw dubium dv- dvere dwhess dxtr emboss eviljames eyal eye69 f0rpaxe Falcon| fedt felipe FenderQ Fish-Work flips_and_rails freakazoid0223 FSB_1 ft funky Gabe_G23 gakkun Ganlron gchudyk Gio^ griffin Gumboot hachiya Han Helio hhw IcePic ivenkys J4nus jaj jareth_ jayne jdoe jimby jimmyz2_ joakim_tosteberg joe-mac johnny-o johns juub K-birth karasu keith4141 kerbe kutio l0rd_hex lemonchicken Lexus45 lost_sou1 LotusBleu lsxq lt_kije lToro magyar makenoob Maliuta manymore marex martian67 matteo1983 mduller medum metasyntax Meths milobit mischief MissionCritical MrWGW mvanbaak mwilson n4te nae newt0n NicM nighty^ nimred obcecado Obilan openbsdeurope panos pea pgurumur Phenox_ Philonous phobus pinnen piroko pitrh pl4yer0ne plundra primeministerp prodriver puc pytl quax Raptelan ras0ir remiel rgbj rgouveia richart ruskie ryan ryanc samulihs sektorNBA sepen Shirkdog silverraindog SirPuffy sjoos sjoos_ Slippery slon smtms snk Stealth Strog superx Syllopsium sysrq system_X taleon tcpdumb tcunha tenthirteen Thrae tobiasu tomageeni TrickFinlay2 Tristam ttz tvaalen unclewerner unixfg ventz vext01 viq Visual` vortexx Wicked wino workbench WormDrink x03 xAyiDe yix yogi zaarg zakame zarock zcram zeeby zeist Zhwazi zoc zparta zzuf]
+2010-05-07 06:56:48	--	Channel #openbsd: 207 nicks (0 ops, 0 halfops, 0 voices, 207 normals)
+2010-05-07 06:56:49	--	Channel created on Sun, 03 Aug 2003 17:30:42
+2010-05-07 06:58:37	-->	vieq (~vieq@metabug/vieq) has joined #openbsd
+2010-05-07 06:59:58	dbbolton	i am getting this error when trying to build vim: http://xs.to/image-FAB0_4BE3F278.jpg
+2010-05-07 07:00:33	dbbolton	"make show=FLAVORS" => huge no_x11 perl
+2010-05-07 07:01:13	IcePic	dbbolton: you wouldnt happen to have a half-installed gtk or so?
+2010-05-07 07:01:22	<--	alexdj (~alexdj@80.85.152.152) has left #openbsd
+2010-05-07 07:02:26	IcePic	seems weird that a no_x11 version of wim wants gtk
+2010-05-07 07:02:46	dbbolton	IcePic: well, the first time i tried to build vim, i stopped once i realized i forgot to edit the flavors
+2010-05-07 07:02:59	dbbolton	but i thought i had cleaned since then
+2010-05-07 07:03:28	-->	zograk (~Phil@unaffiliated/zograk) has joined #openbsd
+2010-05-07 07:03:35	dbbolton	is there a way i can purge any existing gtk stuff?
+2010-05-07 07:04:11	IcePic	why not pkg_add it from the mirrors btw?
+2010-05-07 07:04:31	dbbolton	i just have a habit of building locally 
+2010-05-07 07:07:56	dbbolton	this is in a VM so i'm not too concerned about breakage 
+2010-05-07 07:08:56	IcePic	I'm not concerned about your VM breaking either, I'm more concerned about wasting time on non-problems
+2010-05-07 07:09:46	dbbolton	try /help ignore
+2010-05-07 07:10:37	IcePic	that wont prevent you from saying "I want to take the hard road even though the simple road is laid out in front of me and I want your attention span directed at fixing the things I broke"
+2010-05-07 07:13:04	dbbolton	yeah, i can see how busy this channel is
+2010-05-07 07:13:24	smtms	dbbolton, move your attitude elsewhere
+2010-05-07 07:13:40	-->	adelfino (~username@201-212-160-19.net.prima.net.ar) has joined #openbsd
+2010-05-07 07:14:12	adelfino	Hi, guys; I think I have missed something, why are there so many commits regarding gcc4?
+2010-05-07 07:16:03	IcePic	adelfino: many ports need gcc4, so eventually all gcc3 arches will move to the last GPLv2 gcc4
+2010-05-07 07:17:34	zcram	:(
+2010-05-07 07:18:03	IcePic	I think stuff like fontconfig or whatever it was from Xorg soon will require gcc4 also.
+2010-05-07 07:18:37	zcram	..because the idiots can't be bothered to write portable code?
+2010-05-07 07:19:50	IcePic	I'd guess "the idiots" sit on x86-Linux all day and think "runs on x86_64 means 'portable'#
+2010-05-07 07:19:58	dbbolton	smtms: yeah, i can see how the person who gets defensive in response to condescending censure has a bad attitude. my bad.

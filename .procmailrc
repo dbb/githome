@@ -1,0 +1,4 @@
+MAILDIR=$HOME/.maildir/
+LOGFILE=$HOME/.procmaillog
+VERBOSE=no
+

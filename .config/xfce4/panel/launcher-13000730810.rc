@@ -1,0 +1,12 @@
+[Entry 0]
+Name=New Item
+Icon=/home/daniel/.icons/iceweasel_tangoish.png
+Exec=iceweasel
+Path=/home/daniel
+Terminal=false
+StartupNotify=false
+
+[Global]
+MoveFirst=false
+ArrowPosition=0
+

@@ -1,0 +1,109 @@
+# dbbolton's zsh functions
+# github.com/dbbolton
+apn(){
+#    su -lc 'aptitude -P install '"$@"' ' root
+#     su -lc 'echo'  root
+    cmd="su -lc 'aptitude -P install $@' root"
+    print "$cmd"
+    eval "$cmd"
+}
+
+# guitar pro 5
+gp5 () {
+    cd '/home/dbb/.wine/drive_c/Program Files/Guitar Pro 5'
+    wine 'GP5.exe' &
+    cd -
+}
+
+# kernel building shortcut
+dbb-build () {
+    MAKEFLAGS=''
+    appendage='-dbb-deb'
+    revision=$(date +"%Y%m%d")
+
+    make-kpkg clean
+
+    time fakeroot make-kpkg --append-to-version "$appendage" --revision \
+        "$revision" kernel_image kernel_headers
+}
+
+# Padawan's graph.
+graph () {
+    cd '/home/dbb/.wine/drive_c/Program Files/Graph'
+    wine '/home/dbb/.wine/drive_c/Program Files/Graph/Graph.exe' &
+    cd -
+}
+
+# Make a PDF from a man page.
+man2pdf () { # [page name]
+    man -t $1 | ps2pdf - > $1.pdf
+}
+
+# Make a basic patch file.
+mkpatch () { # [orig file] [new file] [output file]
+	diff -u "$1" "$2" > "$3"'.patch'
+
+}
+
+# instantiate a perl document and open it for editing
+newpl () {
+    cp "$HOME/Templates/perl" "./$1"
+    chmod +x "./$1"
+    vim "$1" +4
+}
+
+# ninja gaiden!
+ng () {
+    mednafen "$HOME/games/nes/Ninja_Gaiden_$1.nes"
+}
+
+# perl global substitution
+pgs() { # [find] [replace] [filename]
+    perl -i.bak -pe 's/'"$1"'/'"$2"'/g' "$3"
+}
+
+
+# Perl grep, because 'grep -P' is terrible
+prep() { # [pattern] [filename unless STDOUT]
+    perl -nle 'print if /'"$1"'/;' $2
+}
+
+# sagi - a find shortcut
+sagi() { # [where] [what]
+    [[ -n $1 && -n $2  ]] && find "$1" -iname "*$2*"
+}
+
+# say - append a newline to 'print'
+say() {
+    print "$1\n"
+}
+
+# to - makes it easier to cd to a variable that contains a path, e.g.
+#   p="$HOME/some/long/ridiculous/path/name"
+#   to p
+to () {
+    eval dir=\$$1; cd "$dir";
+}
+
+# vimprobable with tabs
+#vpb () {
+#    tabbed=$(tabbed -d); vimprobable2 -e $tabbed $*
+#}
+
+# Quick Find
+qf () { 
+	find . -maxdepth 2 -iname "*$1*" 
+}
+
+# unzip
+uz () { # [archive] [dir]
+	unzip -x $1 -d $2
+}
+
+# zsh calculator
+zc() {
+	for exp in $argv ; do
+		print "$exp = $(( exp ))"
+	done
+}
+

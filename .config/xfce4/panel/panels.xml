@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE config SYSTEM "config.dtd">
+<panels>
+	<panel>
+		<properties>
+			<property name="size" value="24"/>
+			<property name="monitor" value="0"/>
+			<property name="screen-position" value="11"/>
+			<property name="fullwidth" value="1"/>
+			<property name="xoffset" value="0"/>
+			<property name="yoffset" value="775"/>
+			<property name="handlestyle" value="0"/>
+			<property name="autohide" value="0"/>
+			<property name="transparency" value="20"/>
+			<property name="activetrans" value="0"/>
+		</properties>
+		<items>
+			<item name="xfce4-menu" id="5"/>
+			<item name="places" id="12845840772"/>
+			<item name="separator" id="6"/>
+			<item name="separator" id="12959187662"/>
+			<item name="separator" id="12845841484"/>
+			<item name="launcher" id="12959188876"/>
+			<item name="launcher" id="12959190097"/>
+			<item name="launcher" id="13000730810"/>
+			<item name="showdesktop" id="1"/>
+			<item name="separator" id="12845841443"/>
+			<item name="tasklist" id="128458550119"/>
+			<item name="separator" id="12845841586"/>
+			<item name="systray" id="4"/>
+			<item name="separator" id="12845841617"/>
+			<item name="orageclock" id="12845244021"/>
+			<item name="clock" id="14"/>
+			<item name="separator" id="13"/>
+		</items>
+	</panel>
+</panels>

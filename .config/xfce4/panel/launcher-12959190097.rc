@@ -1,0 +1,12 @@
+[Entry 0]
+Name=GVim
+Icon=/home/daniel/.icons/vim2.svg
+Exec=gvim
+Path=/home/daniel
+Terminal=false
+StartupNotify=false
+
+[Global]
+MoveFirst=false
+ArrowPosition=0
+

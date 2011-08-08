@@ -1,0 +1,26 @@
+" ==obsidian_Color_Scheme (based on Zenburn)==
+" name: obsidian2
+" ==obsidian_Colorscheme_Settings==
+
+" InfoMsg shows up underneath /foo
+hi InfoMsg				color: #ff0000; background: #00ff00; 
+hi LineNr				color: #00ff00; 
+hi ModeMsg				color: #0000ff; 
+hi MoreMsg				color: #ffff00; 
+hi NonText				color: #ff00ff; 
+hi Normal				color: #00ffff; background: #000000;
+hi Null					color: #8BCAEA;
+hi Number				color: #8BCAEA;
+hi Object				color: #543973;
+hi Preview				color: gray;
+hi Question				color: #70B751; background: #302F2F; font-weight: bold;
+hi Search				font-size: inherit;  color: #293324; background-color: #ff0000;
+hi StatusLine				color: #70B751; background: #201F1F;
+hi StatusLineBroken			color: #70B751; background: #201F1F;
+hi String				color: #70B751;
+hi TabNumber				font-weight: bold; margin: 0; 
+hi Tag					color: #8BCAEA;
+hi Title				color: #70B751; background: #302F2F; font-weight: bold;
+hi URL					text-decoration: none; color: #70B751; background: inherit;
+hi URL:hover				text-decoration: underline; cursor: pointer;
+hi WarningMsg				color: #70B751; background: #302F2F;

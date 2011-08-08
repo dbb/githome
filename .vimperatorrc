@@ -1,0 +1,35 @@
+"2.1 (created: 2009/05/21 13:13:06)
+
+"set gui=m
+set gui=noaddons,nobookmarks,menu,nonavigation,tabs
+set runtimepath=/home/dbb/.vimperator
+source! /home/dbb/.vimperatorrc.local
+
+colorscheme default
+
+set editor="gvim -f "
+" custom keybindings
+map c <C-o>
+map e ":open wt 
+map s ":tabopen g 
+map v gt
+map w ":tabopen w 
+map W ":open w 
+" map y Y
+" map Y y
+map z F
+
+"map C
+"map E
+"map I
+"map Q
+map S ":source ~/.vimperatorrc<C-r>
+"map U
+map V gT
+"map X
+"map Y
+
+map < gT
+map > gt
+
+" vim: set ft=vim:

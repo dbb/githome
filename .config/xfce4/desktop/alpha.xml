@@ -1,0 +1,52 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+  "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+
+<Menu>
+    <Name>Xfce</Name>
+    
+    <DefaultAppDirs/>
+    <DefaultDirectoryDirs/>
+    
+    <Include>
+        <Category>X-Xfce-Toplevel</Category>
+    </Include>
+
+    <Layout>
+        <Filename>xfce4-run-program.desktop</Filename>
+        <Separator/>
+        <Filename>xfce4-term.desktop</Filename>
+        <Filename>xfce4-file-manager.desktop</Filename>
+        <Filename>xfce4-web-browser.desktop</Filename>
+        <Separator/>
+        <Menuname>Settings</Menuname>
+        <Separator/>
+        <Merge type="all"/>
+        <Separator/>
+        <Filename>xfce4-help.desktop</Filename>
+        <Filename>xfce4-about-xfce.desktop</Filename>
+        <Filename>xfce4-logout.desktop</Filename>
+    </Layout>
+    
+
+    
+    <Menu>
+        <Name>Accessories</Name>
+        <Directory>xfce-accessories.directory</Directory>
+        <Include>
+            <Or>
+                <Category>Accessibility</Category>
+                <Category>Core</Category>
+                <Category>Legacy</Category>
+                <Category>Utility</Category>
+            </Or>
+        </Include>
+    </Menu>
+
+    <Menu>
+        <Name>TEST</Name>
+            <Include>
+                <Category>X-Debian</Category>
+                <Category>Utility</Category>
+            </Include>
+    </Menu>
+</Menu>

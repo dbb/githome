@@ -1,0 +1,7 @@
+use_default_menu=true
+menu_file=/home/daniel/.config/xfce4/desktop/xfce-applications.menu
+icon_file=/home/daniel/images/deb/deb_swirl_sunken_padded.png
+show_menu_icons=true
+button_title=Menu\ 
+show_button_title=true
+
