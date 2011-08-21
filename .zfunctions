@@ -1,11 +1,22 @@
 # dbbolton's zsh functions
 # github.com/dbbolton
-apn(){
+apn () {
 #    su -lc 'aptitude -P install '"$@"' ' root
 #     su -lc 'echo'  root
     cmd="su -lc 'aptitude -P install $@' root"
     print "$cmd"
     eval "$cmd"
+}
+
+# test your font
+font_test () {
+    print "Letters:\tAaBbCcDdEeFfGgHhIiJjKkLlMm"
+    print "\t\tNnOoPpQqRrSsTtUuVvWwXxYyZz"
+    print "Digits:\t\t0123456789"
+    print "Brackets:\t( ) [ ] { } < > "
+    print "Quotes:\t\t\"foo\" 'bar' "
+    print "Punctuation: \t, . ? : ; _ ! "
+    print "Symbols:\t\` ~  @ # $ % ^ & * - + = | / \\"
 }
 
 # guitar pro 5
@@ -34,22 +45,37 @@ graph () {
     cd -
 }
 
+# is.gd url creator
+isgd () { # [URL]
+    url='http://is.gd/create.php?format=simple&url='"$1"
+    curl "$url"
+    printf "\n"
+}
+
 # Make a PDF from a man page.
 man2pdf () { # [page name]
     man -t $1 | ps2pdf - > $1.pdf
 }
 
+# Make a dir and cd into it
+md () { mkdir -p "$@"; if [[ -d "$@" ]]; then cd "$@"; fi  }
+
+
 # Make a basic patch file.
-mkpatch () { # [orig file] [new file] [output file]
+mkpatch () { # [new file] [old file] [output file]
 	diff -u "$1" "$2" > "$3"'.patch'
 
 }
 
-# instantiate a perl document and open it for editing
-newpl () {
-    cp "$HOME/Templates/perl" "./$1"
-    chmod +x "./$1"
-    vim "$1" +4
+# My "development environment"
+myde () { # [DIRECTORY]
+    if [[ ! -d $1 ]]; then
+        print "Bad dir name: '$1'" 
+    else
+        cd "$1"
+        gvim +":cd $1" &
+        [[ -d '.git' ]] && git status
+    fi
 }
 
 # ninja gaiden!
@@ -57,25 +83,42 @@ ng () {
     mednafen "$HOME/games/nes/Ninja_Gaiden_$1.nes"
 }
 
+# Perl stuff ################################################################
+
+# print the latest stable version of Perl
+latest_perl () {
+    curl -s http://www.perl.org/get.html | \
+        perl -wlne 'if (/perl\-([\d\.]+)\.tar\.gz/) { print $1; exit;}'
+}
+
+# create a perl document and open it for editing
+newpl () {
+    cp "$HOME/Templates/perl" "./$1"
+    chmod +x "./$1"
+    vim "$1" +4
+}
+
 # perl global substitution
-pgs() { # [find] [replace] [filename]
+pgs () { # [find] [replace] [filename]
     perl -i.bak -pe 's/'"$1"'/'"$2"'/g' "$3"
 }
 
 
-# Perl grep, because 'grep -P' is terrible
-prep() { # [pattern] [filename unless STDOUT]
-    perl -nle 'print if /'"$1"'/;' $2
+# Perl grep-- because 'grep -P' is terrible
+prep () { # [pattern] [filename unless STDOUT]
+    perl -nle 'print if '"$1"';' $2
 }
 
+# End Perl stuff ############################################################
+
 # sagi - a find shortcut
-sagi() { # [where] [what]
+sagi () { # [where] [what]
     [[ -n $1 && -n $2  ]] && find "$1" -iname "*$2*"
 }
 
 # say - append a newline to 'print'
-say() {
-    print "$1\n"
+say () {
+    print "$@\n"
 }
 
 # to - makes it easier to cd to a variable that contains a path, e.g.
@@ -101,7 +144,7 @@ uz () { # [archive] [dir]
 }
 
 # zsh calculator
-zc() {
+zc () {
 	for exp in $argv ; do
 		print "$exp = $(( exp ))"
 	done
