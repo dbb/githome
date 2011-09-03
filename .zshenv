@@ -7,13 +7,14 @@ export CDPATH=".:~:~/src"
 export gh="$HOME/src/github"
 export gc="$HOME/src/github/configs"
 export gs="$HOME/src/github/scripts"
+export nes="$HOME/games/nes"
+export n64="$HOME/games/n64"
 export ob="$HOME/.config/openbox"
-export nes="/mnt/media_files/games/nes"
 export pd="$HOME/perl"
 
 # files
 export HISTFILE="$HOME/.zhistory"
-export WWW_HOME='/home/dbb/Documents/home.html'
+export WWW_HOME="$HOME/Documents/home.html"
 
 # grep
 #export GREP_OPTIONS='--perl-regexp'
@@ -28,7 +29,7 @@ export LESS='-GRJx4P?f[%f]:[STDIN].?pB - [%pB\%]:\.\.\..'
 
 # mail
 export EMAIL='dan@dbbo.us'
-export MAIL='/var/spool/mail/daniel'
+export MAIL='/var/spool/mail/dbb'
 
 # make
 #export CFLAGS="-march=core2 -O3 -pipe -m64 -mfpmath=sse -msse -msse2 -mssse3"
@@ -49,9 +50,10 @@ done
 export PERLBREW_ROOT="$HOME/perl"
 
 # programs
-export EDITOR=vim
-export PAGER=less
-export VISUAL=vim
+export EDITOR='vim'
+export VIMRUNTIME='/usr/share/vim/vim73'
+export PAGER='less'
+export VISUAL='vim'
 
 # characters that are not part of a word
 export WORDCHARS=${WORDCHARS//[-]}

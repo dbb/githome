@@ -8,6 +8,13 @@ apn () {
     eval "$cmd"
 }
 
+# make a bzipped backup
+bak () { # [input dir] [output file]
+    # note the order of args
+    print "tar cjf \"$2\" \"$1\""
+    tar cjf "$2" "$1"
+}
+
 # test your font
 font_test () {
     print "Letters:\tAaBbCcDdEeFfGgHhIiJjKkLlMm"
@@ -17,6 +24,7 @@ font_test () {
     print "Quotes:\t\t\"foo\" 'bar' "
     print "Punctuation: \t, . ? : ; _ ! "
     print "Symbols:\t\` ~  @ # $ % ^ & * - + = | / \\"
+    print "Ambiguity:\tIllegal1 = O0"
 }
 
 # guitar pro 5
@@ -52,6 +60,12 @@ isgd () { # [URL]
     printf "\n"
 }
 
+# When Iceweasel goes rabid
+kiw () {
+    kill $( pidof firefox-bin )
+    killall firefox-bin
+}
+
 # Make a PDF from a man page.
 man2pdf () { # [page name]
     man -t $1 | ps2pdf - > $1.pdf
@@ -76,6 +90,11 @@ myde () { # [DIRECTORY]
         gvim +":cd $1" &
         [[ -d '.git' ]] && git status
     fi
+}
+
+# mupen64plus
+m64 () {
+    mupen64plus --osd --resolution 800x600 "$n64/$1" > /dev/null &
 }
 
 # ninja gaiden!

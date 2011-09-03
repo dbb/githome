@@ -23,6 +23,9 @@ setopt list_packed
 setopt magic_equal_subst
 setopt nonomatch
 
+# URL quote magic
+autoload -U url-quote-magic
+zle -N self-insert url-quote-magic
 
 
 # completion
@@ -101,13 +104,22 @@ bindkey '^o' accept-and-infer-next-history
 
 #############################################################################
 
+# host symbols
+if [ $HOST == 'ganymed' ]; then
+    HOST_SYM='♃'
+elif [ $HOST == 'reddevil']; then
+    HOST_SYM='♆'
+else
+    HOST_SYM='*'
+fi
+
 chpwd () {
     local -a files
     files=( *(N) )
     FILECOUNT="$#files"
 }
 # call the above function to set $FILECOUNT on login
-chpwd
+#chpwd
 
 
 function precmd {
@@ -140,6 +152,22 @@ function precmd {
 	else
 		PR_ACPI='?'
     fi
+
+    if [[ -d .git ]]; then
+        GIT_BRANCH=`git branch | perl -ne 'print if s{\*\s*}{}'`
+    else
+        GIT_BRANCH=''
+    fi
+
+    count=$( print $PWD | wc -c )
+
+    if [[ $count -lt 30 ]]; then
+        PR_DIR='%~'
+        PR_RDIR=''
+    else
+        PR_DIR='.../%c'
+    fi
+
 }
 
 
@@ -244,36 +272,39 @@ setprompt () {
 #╚═ ${PR_LIGHT_YELLOW}%h ${VIMODE} %#${PR_NO_COLOR} '
 
 #    RPROMPT='%l, ${PR_RED}%@${PR_NO_COLOR}'
-
+# ↬»↬ ♄
 
 if [ $TERM == 'linux' ] ; then
     PROMPT='$PR_BLUE%n$PR_WHITE@$PR_RED%m$PR_WHITE:$PR_YELLOW%c$PR_WHITE%%$PR_NO_COLOR '
     RPROMPT='tty%l,%?? ${PR_RED}%D{%l:%M:%S %p}${PR_NO_COLOR}'
 
 else
-    PROMPT='
-$PR_SET_CHARSET$PR_STITLE${(e)PR_TITLEBAR}\
-$PR_BLACK$PR_SHIFT_IN$PR_ULCORNER$PR_BLACK$PR_HBAR$PR_SHIFT_OUT(\
-${PR_BLUE}%n${PR_NO_COLOR}@$PR_RED%m${PR_NO_COLOR}:%l\
-$PR_BLACK)$PR_SHIFT_IN$PR_HBAR$PR_BLACK$PR_HBAR${(e)PR_FILLBAR}$PR_BLACK$PR_HBAR$PR_SHIFT_OUT(\
-$PR_MAGENTA%$PR_PWDLEN<...<"%~"${PR_NO_COLOR}, ${PR_CYAN}${FILECOUNT}L%<<\
-$PR_BLACK)$PR_SHIFT_IN$PR_HBAR$PR_BLACK$PR_URCORNER$PR_SHIFT_OUT\
-
-$PR_BLACK$PR_SHIFT_IN$PR_LLCORNER$PR_BLACK$PR_HBAR$PR_SHIFT_OUT(\
-%(?..$PR_LIGHT_RED%?$PR_BLACK:)\
-${PR_YELLOW}%h${PR_BLACK} | ${PR_NO_COLOR}VI:${PR_YELLOW}${VIMODE}\
-$PR_LIGHT_BLACK%(!.$PR_RED.$PR_WHITE)$PR_BLACK)$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
-$PR_BLACK$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
-$PR_NO_COLOR%# '
-
-    RPROMPT=' $PR_BLACK$PR_SHIFT_IN$PR_BLACK$PR_SHIFT_OUT\
-(${PR_GREEN}${PR_ACPI}${PR_NO_COLOR},${PR_RED}%D{%l:%M%p}$PR_BLACK)$PR_SHIFT_IN$PR_HBAR$PR_BLACK$PR_LRCORNER$PR_SHIFT_OUT$PR_NO_COLOR'
-
-    PS2='$PR_BLACK$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
-$PR_BLACK$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT(\
-$PR_LIGHT_GREEN%_$PR_BLACK)$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
-$PR_BLACK$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT$PR_NO_COLOR '
-
+     PROMPT='
+${PR_BLUE}${HOST_SYM} ${PR_MAGENTA}${PR_DIR} ${PR_RED}»${PR_NO_COLOR} '
+    RPROMPT='${PR_YELLOW}${GIT_BRANCH}${PR_NO_COLOR}'
+#    PROMPT='
+#$PR_SET_CHARSET$PR_STITLE${(e)PR_TITLEBAR}\
+#$PR_BLACK$PR_SHIFT_IN$PR_ULCORNER$PR_BLACK$PR_HBAR$PR_SHIFT_OUT(\
+#${PR_BLUE}%n${PR_NO_COLOR}@$PR_RED%m${PR_NO_COLOR}:%l\
+#$PR_BLACK)$PR_SHIFT_IN$PR_HBAR$PR_BLACK$PR_HBAR${(e)PR_FILLBAR}$PR_BLACK$PR_HBAR$PR_SHIFT_OUT(\
+#$PR_MAGENTA%$PR_PWDLEN<...<"%~"${PR_NO_COLOR}, ${PR_CYAN}${FILECOUNT}L%<<\
+#$PR_BLACK)$PR_SHIFT_IN$PR_HBAR$PR_BLACK$PR_URCORNER$PR_SHIFT_OUT\
+#
+#$PR_BLACK$PR_SHIFT_IN$PR_LLCORNER$PR_BLACK$PR_HBAR$PR_SHIFT_OUT(\
+#%(?..$PR_LIGHT_RED%?$PR_BLACK:)\
+#${PR_YELLOW}%h${PR_BLACK} | ${PR_NO_COLOR}VI:${PR_YELLOW}${VIMODE}\
+#$PR_LIGHT_BLACK%(!.$PR_RED.$PR_WHITE)$PR_BLACK)$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
+#$PR_BLACK$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
+#$PR_NO_COLOR%# '
+#
+#    RPROMPT=' $PR_BLACK$PR_SHIFT_IN$PR_BLACK$PR_SHIFT_OUT\
+#(${PR_GREEN}${PR_ACPI}${PR_NO_COLOR},${PR_RED}%D{%l:%M%p}$PR_BLACK)$PR_SHIFT_IN$PR_HBAR$PR_BLACK$PR_LRCORNER$PR_SHIFT_OUT$PR_NO_COLOR'
+#
+#    PS2='$PR_BLACK$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
+#$PR_BLACK$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT(\
+#$PR_LIGHT_GREEN%_$PR_BLACK)$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
+#$PR_BLACK$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT$PR_NO_COLOR '
+#
 fi
     #######################################################################
 

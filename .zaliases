@@ -92,12 +92,13 @@ alias mi='su -c "make install"'
 # misc
 alias clear-hosts='rm -v '"$HOME"'/.ssh/known_hosts'
 alias duh='du -hs'
-alias kiw='kill '"$(pidof firefox-bin)"
 alias gov='su root -c "'"$HOME"'/bin/cpu-gov"'
 alias q='exit'
 alias :q='exit'
 alias quit='exit'
+alias rsp="rename 's/(\s+)/_/g' "
 alias temp='sensors'
+alias td="date +'%l:%M %p, %d %b %Y'"
 alias xsr='xsetroot -solid "#303030"'
 
 # net
@@ -124,6 +125,7 @@ alias netif='su root -c "vim /etc/network/interfaces"'
 alias s='su --login root'
 alias shn='su -c "shutdown -h now"'
 alias srn='su -c "shutdown -r now"'
+alias sus='su -c "pm-suspend"'
 alias wrs='su -c "ifdown wlan0 ; sleep 2s ; ifup wlan0"'
 
 # rm
