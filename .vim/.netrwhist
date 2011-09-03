@@ -1,6 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/mnt/media_files/source/github/oh-my-zsh/plugins/deb'
 let g:netrw_dirhist_2='/home/dbb/.themes/MurrinaLeoOrange'
 let g:netrw_dirhist_3='/home/dbb/.themes/MurrinaLeoOrange/gtk-2.0'
 let g:netrw_dirhist_4='/mnt/media_files/source/github/oh-my-zsh/plugins/debian'
+let g:netrw_dirhist_5='/home/dbb/test'
+let g:netrw_dirhist_6='/home/dbb/sandbox/filefind'
+let g:netrw_dirhist_7='/home/dbb/logs'
+let g:netrw_dirhist_8='/home/dbb/test'

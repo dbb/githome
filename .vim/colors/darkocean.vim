@@ -14,6 +14,7 @@ let g:colors_name="darkocean"
 
 hi Cursor         gui=None            guibg=#add8e6    guifg=#000000
 hi CursorIM       gui=None            guibg=#add8e6    guifg=#000000
+hi CursorLine                         guibg=#101010    
 hi Directory      gui=None            guibg=bg         guifg=#20b2aa
 hi DiffAdd        gui=Bold            guibg=#7e354d    guifg=fg
 hi DiffChange     gui=Bold            guibg=#103040    guifg=#cc3300

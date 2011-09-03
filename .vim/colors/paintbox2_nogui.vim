@@ -31,21 +31,21 @@ let colors_name = "paintbox"
 " diff*
 " pmenu
 
-hi Comment		guifg=#5a5a5a	guibg=#17171a	gui=italic
-hi Cursor 		guifg=#17171a	guibg=#dddddd	gui=bold
+hi Comment		guifg=#5a5a5a	guibg=#17171a	gui=none
+hi Cursor 		guifg=#17171a	guibg=#dddddd	gui=none
 hi Constant 	guifg=#24b39b	guibg=#17171a	gui=none
 hi CursorLine		          	guibg=#343434	gui=none
-hi Folded 		guifg=#dddddd	guibg=#5a5a5a	gui=italic
+hi Folded 		guifg=#dddddd	guibg=#5a5a5a	gui=none
 hi MatchParen	guifg=#bd0d74	guibg=#17171a	gui=reverse
-hi ModeMsg		guifg=#bd0d74	guibg=#17171a	gui=bold
+hi ModeMsg		guifg=#bd0d74	guibg=#17171a	gui=none
 hi Normal 		guifg=#dddddd	guibg=#17171a	gui=none
 hi PreProc		guifg=#bd0d74	guibg=#17171a	gui=none
 hi Search		guifg=#17171a	guibg=#d9ba21	gui=none
-hi Special		guifg=#ff9500	guibg=#17171a	gui=bold
-hi Statement	guifg=#cc2a14	guibg=#17171a	gui=bold
-hi StatusLine 	guifg=#bd0d74	guibg=#dddddd	gui=bold
-hi StatusLineNC guifg=#dddddd	guibg=#585858	gui=bold
-hi Todo 		guifg=#cf310c	guibg=#17171a	gui=bold
+hi Special		guifg=#ff9500	guibg=#17171a	gui=none
+hi Statement	guifg=#cc2a14	guibg=#17171a	gui=none
+hi StatusLine 	guifg=#bd0d74	guibg=#dddddd	gui=none
+hi StatusLineNC guifg=#dddddd	guibg=#585858	gui=none
+hi Todo 		guifg=#cf310c	guibg=#17171a	gui=none
 hi Type 		guifg=#e08a1f	guibg=#17171a	gui=none
 hi Underlined	guifg=#00ff00	guibg=#17171a	gui=underline
 hi Visual		guifg=#17171a	guibg=#d9ba21	gui=none
@@ -53,7 +53,7 @@ hi Visual		guifg=#17171a	guibg=#d9ba21	gui=none
 hi! link Boolean		Constant
 hi! link Character		Constant
 "hi! link Conditional	Statement
-hi Conditional guifg=#8a36b3 gui=bold
+hi Conditional guifg=#8a36b3 gui=none
 hi! link CursorColumn	CursorLine
 hi! link Debug			Special	
 hi! link Define			PreProc
@@ -101,7 +101,7 @@ hi Delimiter		guifg=#00ff00
 hi Function			guifg=#e64588
 hi Identifier		guifg=#9fc439
 hi LineNr			guibg=#212126 guifg=#44444f
-hi Operator			guifg=#801980 gui=bold
+hi Operator			guifg=#801980 gui=none
 hi SpecialKey		guifg=#44444f
 hi Tag				guifg=#ff0000
 

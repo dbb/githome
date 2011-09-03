@@ -429,3 +429,7 @@ if !exists("g:Perl_Ctrl_j") || ( exists("g:Perl_Ctrl_j") && g:Perl_Ctrl_j != 'of
   imap    <buffer>  <silent>  <C-j>     <C-R>=Perl_JumpCtrlJ()<CR>
 endif
 " ----------------------------------------------------------------------------
+
+set formatoptions=lnq
+setlocal formatoptions=lnq
+

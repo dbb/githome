@@ -8,7 +8,7 @@ set nocompatible
 set diffopt=vertical,iwhite,filler
 set noscrollbind
 
-command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 	 	\ | wincmd p | diffthis
 
 " diable auto-commenting
@@ -28,7 +28,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set backspace=eol,start,indent
 
 " keep x commands/search patterns
-set history=20
+set history=50
 
 set hlsearch " highlight search results
 
@@ -69,6 +69,7 @@ syntax on
 au BufNewFile,BufRead .vimperatorrc setf vim
 au BufNewFile,BufRead *.md set filetype=md
 au BufNewFile,BufRead *.cf set filetype=configfile
+au BufNewFile,BufRead *.z* set filetype=zsh
 
 " extra bindings ------------------------------------------------------------
 let mapleader = ","
@@ -78,6 +79,7 @@ nmap <leader>a A
 nmap <leader>c 0i#<Esc>
 nmap <leader>d :close<CR>
 nmap <leader>e :colo 
+nmap <leader>f :set guifont=*<CR>
 nmap <leader>h iprint <<'EOF';<Esc>^
 nmap <leader>o iopen(my $,  "<",  "");<Esc>^f$a
 nmap <leader>r @:
@@ -139,9 +141,9 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 " turn filetype back on
-filetype on
-filetype plugin on
-filetype indent on
+"filetype on
+"filetype plugin on " turn off to disable auto-commenting
+filetype indent plugin on
 
 " custom function
 "function DarkDefault()
@@ -160,6 +162,158 @@ function! SetExecutableBit()
 endfunction
 command! Xbit call SetExecutableBit()
 
+function! FixCSS()
+    let pos = line( "." )
+    silent :%s/{/\ {\r/g
+    silent :%s/}/\r}\r\r/g
+    silent :%s/;/;\r/g
+    exe pos
+endfunction
+command! Fixcss call FixCSS()
 
-set formatoptions=lnq
+if !exists("*ReloadConfigs")
+  function ReloadConfigs()
+      :source ~/.vimrc
+      if has("gui_running")
+          :source ~/.gvimrc
+      endif
+  endfunction
+  command! Recfg call ReloadConfigs()
+endif
 
+" some stuff from Damian Conway's vimrc #####################################
+
+"====[ I'm sick of typing :%s/.../.../g ]=======
+nmap S  :%s//g<LEFT><LEFT>
+vmap S  :s//g<LEFT><LEFT>
+
+"====[ Set up smarter search behaviour ]=======================
+set incsearch                       "Lookahead as search pattern specified
+set ignorecase                      "Ignore case in all searches...
+set smartcase                       "...unless uppercase letters used
+set hlsearch                        "Highlight all search matches
+
+"Delete in normal mode to switch off highlighting till next search and clear messages...
+nmap <silent> <BS> :nohlsearch <BAR> call Toggle_CursorColumn('off')<CR>
+
+"Double-delete to remove search highlighting *and* trailing whitespace...
+nmap <silent> <BS><BS>  mz:%s/\s\+$//g<CR>`z:nohlsearch<CR>
+
+"======[ Magically build interim directories if necessary ]===================
+
+function! AskQuit (msg, options, quit_option)
+    if confirm(a:msg, a:options) == a:quit_option
+        exit
+    endif
+endfunction
+
+function! EnsureDirExists ()
+    let required_dir = expand("%:h")
+    if !isdirectory(required_dir)
+        call AskQuit("Parent directory '" . required_dir . "' doesn't exist.",
+             \       "&Create it\nor &Quit?", 2)
+
+        try
+            call mkdir( required_dir, 'p' )
+        catch
+            call AskQuit("Can't create '" . required_dir . "'",
+            \            "&Quit\nor &Continue anyway?", 1)
+        endtry
+    endif
+endfunction
+
+augroup AutoMkdir
+    autocmd!
+    autocmd  BufNewFile  *  :call EnsureDirExists()
+augroup END
+
+
+"=====[ Make Visual modes work better ]==================
+
+" Visual Block mode is far more useful that Visual mode (so swap the commands)...
+nnoremap v <C-V>
+nnoremap <C-V> v
+
+vnoremap v <C-V>
+vnoremap <C-V> v
+
+" Make BS/DEL work as expected in visual modes (i.e. delete elected)...
+vmap <BS> x
+
+" Make vaa select the entire file...
+vmap aa VGo1G
+
+"Square up visual selections...
+set virtualedit=block
+
+" When shifting, retain selection over multiple shifts...
+vmap <expr> > KeepVisualSelection(">")
+vmap <expr> < KeepVisualSelection("<")
+
+function! KeepVisualSelection(cmd)
+    if mode() ==# "V"
+        return a:cmd . "gv"
+    else
+        return a:cmd
+    endif
+endfunction
+
+" Temporarily add a column indicator when inserting or appending in visual mode...
+" (Should use <C-O> instead, but it doesn't seem to work)
+vnoremap <silent>  I  I<C-R>=TemporaryColumnMarkerOn()<CR>
+vnoremap <silent>  A  A<C-R>=TemporaryColumnMarkerOn()<CR>
+
+function! TemporaryColumnMarkerOn ()
+    let g:prev_cursorcolumn_state = g:cursorcolumn_visible ? 'on' : 'off'
+    call Toggle_CursorColumn('on')
+    inoremap <silent>  <ESC>  <ESC>:call TemporaryColumnMarkerOff(g:prev_cursorcolumn_state)<CR>
+    return ""
+endfunction
+
+function! TemporaryColumnMarkerOff (newstate)
+    call Toggle_CursorColumn(a:newstate)
+    iunmap <ESC>
+endfunction
+
+
+"=====[ Configure % key ]==============================
+
+" Match angle brackets
+set matchpairs+=<:>
+
+let TO = ':'
+let OR = ','
+
+" Match double-angles, XML tags and Perl keywords
+let b:match_words =
+\
+\                          '<<' .TO. '>>'
+\
+\.OR.     '<\@<=\(\w\+\)[^>]*>' .TO. '<\@<=/\1>'
+\
+\.OR. '\<if\>' .TO. '\<elsif\>' .TO. '\<else\>'
+
+" Engage debugging mode to overcome bug in matchpairs matching...
+let b:match_debug = 1
+
+
+"=====[ Miscellaneous features (mainly options) ]=====================
+
+set fileformats=unix,mac,dos        "Handle Mac and DOS line-endings
+                                    "but prefer Unix endings
+
+"Adjust keyword characters for Perlish identifiers...
+set iskeyword+=$
+set iskeyword+=%
+set iskeyword+=@
+set iskeyword-=,
+
+set scrolloff=2                     "Scroll when 2 lines from top/bottom
+
+
+"=====[ Remap various keys to something more useful ]========================
+
+" Use space to jump down a page (like browsers do)...
+nnoremap <Space> <PageDown>
+
+nmap e :e 
