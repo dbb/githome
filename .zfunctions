@@ -46,6 +46,71 @@ dbb-build () {
         "$revision" kernel_image kernel_headers
 }
 
+### github stuff ######################
+# empty_gh [NAME_OF_REPO]
+#
+# Use this when creating a new repo from scratch.
+empty_gh() { # [NAME_OF_REPO]
+    repo=$1
+    ghuser=$( git config github.user )
+
+    [[ ! -d $repo ]] && mkdir "$repo"
+    cd "$repo"
+    git init
+    print '.*'"\n"'*~' >> .gitignore
+    [[ ! -f README.md ]] && readme
+    git add ^.*
+    git commit -m 'Initial commit.'
+    git remote add origin git@github.com:${ghuser}/${repo}.git
+    git push -u origin master
+}
+
+# new_gh [DIRECTORY]
+#
+# Use this when you have a directory that is not yet set up for git.
+# This function will add all non-hidden files to git.
+new_gh() { # [DIRECTORY]
+    repo=$1
+    [[ ! -d $repo ]] && print "No such directory: '$repo'\nMaybe you meant to "\
+        "use\n\nempty_gh()\n" && exit 1
+    cd "$repo"
+    ghuser=$( git config github.user )
+
+    git init
+    # add all non-dot files
+    print '.*'"\n"'*~' >> .gitignore
+    [[ ! -f README.md ]] && readme
+    git add ^.*
+    git commit -m 'Initial commit.'
+    git remote add origin git@github.com:${ghuser}/${repo}.git
+    git push -u origin master
+}
+
+# exist_gh [DIRECTORY]
+#
+# Use this when you have a git repo that's ready to go and you want to add it
+# to your GitHub.
+exist_gh() { # [DIRECTORY]
+    repo=$1
+    [[ ! -d $repo ]] && print "No such directory: '$repo'\nMaybe you meant to "\
+        "use\n\nempty_gh()\n" && exit 1
+    cd "$repo"
+    ghuser=$( git config github.user )
+
+    git remote add origin git@github.com:${ghuser}/${repo}.git
+    git push -u origin master
+}
+
+# generate a basic readme in the current dir
+readme () {
+    repo=$( basename $PWD )
+    user=$( git config github.user )
+    print "# $repo \n\n<http://github.com/${user}/${repo}>\n\n##"\
+        "Description\n" >> README.md
+    vim README.md
+}
+### end github stuff ##################
+
 # Padawan's graph.
 graph () {
     cd '/home/dbb/.wine/drive_c/Program Files/Graph'
@@ -56,8 +121,9 @@ graph () {
 # is.gd url creator
 isgd () { # [URL]
     url='http://is.gd/create.php?format=simple&url='"$1"
-    curl "$url"
-    printf "\n"
+    curl -s "$url" | xsel -i
+    xsel -o
+    print "\n"
 }
 
 # When Iceweasel goes rabid
