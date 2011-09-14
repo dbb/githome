@@ -8,11 +8,30 @@ apn () {
     eval "$cmd"
 }
 
+apdep () {
+    cmd="su -lc 'aptitude -P build-dep $@' root"
+    print "$cmd"
+    eval "$cmd"
+}
+
 # make a bzipped backup
 bak () { # [input dir] [output file]
     # note the order of args
     print "tar cjf \"$2\" \"$1\""
     tar cjf "$2" "$1"
+}
+
+# print a character from ordinal
+chr () {
+    for i in $@; {
+        print ${(#):-$i}
+    }
+}
+
+ord () {
+    for i in $@; {
+        print $(( [#16] ##$i ))
+    }
 }
 
 # test your font
