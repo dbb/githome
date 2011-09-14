@@ -24,7 +24,7 @@ bak () { # [input dir] [output file]
 # print a character from ordinal
 chr () {
     for i in $@; {
-        print ${(#):-$i}
+        print ${(#)1}
     }
 }
 
