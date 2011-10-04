@@ -7,7 +7,7 @@ for i in ${(f)"$( git ls-files )"}; {
     cp -r ~/$i . 
 }
 
-git add ./^.*
+git add ./^.*~
 
 git commit -m "Update $( date +'c' )"
 git push -u origin master
