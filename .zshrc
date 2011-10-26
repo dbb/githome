@@ -105,19 +105,20 @@ bindkey '^o' accept-and-infer-next-history
 #############################################################################
 
 # host symbols
-if [ $HOST == 'ganymed' ]; then
-    HOST_SYM='♃'
-elif [ $HOST == 'reddevil']; then
-    HOST_SYM='♆'
+if [ $TERM == 'rxvt-unicode' ]; then
+    if [ $HOST == 'ganymed' ]; then
+        HOST_SYM='♃'
+    elif [ $HOST == 'reddevil' ]; then
+        HOST_SYM='♆'
+    fi
 else
-    HOST_SYM='*'
+    HOST_SYM='%%'
 fi
-
-chpwd () {
-    local -a files
-    files=( *(N) )
-    FILECOUNT="$#files"
-}
+# chpwd () {
+#     local -a files
+#     files=( *(N) )
+#     FILECOUNT="$#files"
+# }
 # call the above function to set $FILECOUNT on login
 #chpwd
 
@@ -135,24 +136,26 @@ function precmd {
     local filesize=${#${(%):-$FILECOUNT}}
     
     if [[ "$promptsize + $pwdsize" -gt $TERMWIDTH ]]; then
-	    ((PR_PWDLEN=$TERMWIDTH - $promptsize))
+        ((PR_PWDLEN=$TERMWIDTH - $promptsize))
     else
-	PR_FILLBAR="\${(l.(($TERMWIDTH - ($promptsize + $pwdsize + $filesize + 5)))..${PR_HBAR}.)}"
+    PR_FILLBAR="\${(l.(($TERMWIDTH - ($promptsize + $pwdsize + $filesize + 5)))..${PR_HBAR}.)}"
     fi
 
     # note: the 5 is for extra characters added: two double-quotes, a comma,
     # a space, and an L
 
-    # battery info
-    if which acpi > /dev/null; then
-        #PR_ACPI=`acpi -b | awk '{print $4}'`
-        charge_pct=`acpi -b | perl -ne 'print $1."%%" if /(\d+)%/;'`
-		pwr_src=`acpi -a | perl -ne 'if (/off-line/) { print "Bat"; } elsif (/on-line/) { print "AC"; } else { print "?"; }'`
-		PR_ACPI="$charge_pct $pwr_src"
-	else
-		PR_ACPI='?'
-    fi
+## battery info ##
+    # if which acpi > /dev/null; then
+    #     #PR_ACPI=`acpi -b | awk '{print $4}'`
+    #     charge_pct=`acpi -b | perl -ne 'print $1."%%" if /(\d+)%/;'`
+        # pwr_src=`acpi -a | perl -ne 'if (/off-line/) { print "Bat"; } elsif (/on-line/) { print "AC"; } else { print "?"; }'`
+        # PR_ACPI="$charge_pct $pwr_src"
+    # else
+        # PR_ACPI='?'
+    # fi
+## end battery info ##
 
+## git branch ##
     if [[ -d .git ]]; then
         GIT_BRANCH=`git branch | perl -ne 'print if s{\*\s*}{}'`
     else
@@ -167,26 +170,27 @@ function precmd {
     else
         PR_DIR='.../%c'
     fi
+## end git branch ##
 
 }
 
 
-preexec () {
-    if [[ "$TERM" == "screen" ]]; then
-	local CMD=${1[(wr)^(*=*|sudo|-*)]}
-	echo -n "\ek$CMD\e\\"
-    fi
-}
+# preexec () {
+#     if [[ "$TERM" == "screen" ]]; then
+#     local CMD=${1[(wr)^(*=*|sudo|-*)]}
+#     echo -n "\ek$CMD\e\\"
+#     fi
+# }
 
 setcolors () {
     autoload colors zsh/terminfo
     if [[ "$terminfo[colors]" -ge 8 ]]; then
-	colors
+    colors
     fi
     for color in RED GREEN YELLOW BLUE MAGENTA CYAN WHITE BLACK; do
-	eval PR_$color='%{$terminfo[bold]$fg[${(L)color}]%}'
-	eval PR_LIGHT_$color='%{$fg[${(L)color}]%}'
-	(( count = $count + 1 ))
+    eval PR_$color='%{$terminfo[bold]$fg[${(L)color}]%}'
+    eval PR_LIGHT_$color='%{$fg[${(L)color}]%}'
+    (( count = $count + 1 ))
     done
     PR_NO_COLOR="%{$terminfo[sgr0]%}"
 }
@@ -195,22 +199,21 @@ setcolors
 
 # set $VIMODE to a default value ############################################
 #VIMODE="$PR_RED-- INSERT --$PR_NO_COLOR"
-VIMODE='I'
-function zle-keymap-select {
-#	VIMODE="${${KEYMAP/main/$PR_RED-- INSERT --$PR_NO_COLOR}/vicmd/$PR_LIGHT_WHITE   NORMAL   $PR_NO_COLOR}"
-	VIMODE="${${KEYMAP/main/I}/vicmd/N}"
-	zle reset-prompt
-}
-zle -N zle-keymap-select
+# VIMODE='I'
+# function zle-keymap-select {
+# #   VIMODE="${${KEYMAP/main/$PR_RED-- INSERT --$PR_NO_COLOR}/vicmd/$PR_LIGHT_WHITE   NORMAL   $PR_NO_COLOR}"
+#     VIMODE="${${KEYMAP/main/I}/vicmd/N}"
+#     zle reset-prompt
+# }
+# zle -N zle-keymap-select
 
-function zle-cursor {
-    CURSNUM=${CURSOR}
-    zle reset-prompt
-}
-zle -N zle-cursor
+# function zle-cursor {
+#     CURSNUM=${CURSOR}
+#     zle reset-prompt
+# }
+# zle -N zle-cursor
 
 setprompt () {
-
     # box-drawing characters
     typeset -A altchar
     set -A altchar ${(s..)terminfo[acsc]}
@@ -223,30 +226,27 @@ setprompt () {
     PR_LRCORNER=${altchar[j]:--}
     PR_URCORNER=${altchar[k]:--}
 
-
-
-
     setopt prompt_subst
 
     case $TERM in
-	xterm*)
-	    PR_TITLEBAR=$'%{\e]0;%(!.-=*[ROOT]*=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\a%}'
-	    ;;
-	screen)
-	    PR_TITLEBAR=$'%{\e_screen \005 (\005t) | %(!.-=[ROOT]=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\e\\%}'
-	    ;;
-	rxvt-unicode*)
-	    PR_TITLEBAR=$'%{\e]0;%(!.-=*[ROOT]*=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\a%}'
-	    ;;
-	*)
-	    PR_TITLEBAR=$'%n@%m:%~'
-	    ;;
+    xterm*)
+        PR_TITLEBAR=$'%{\e]0;%(!.-=*[ROOT]*=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\a%}'
+        ;;
+    screen)
+        PR_TITLEBAR=$'%{\e_screen \005 (\005t) | %(!.-=[ROOT]=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\e\\%}'
+        ;;
+    rxvt-unicode*)
+        PR_TITLEBAR=$'%{\e]0;%(!.-=*[ROOT]*=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\a%}'
+        ;;
+    *)
+        PR_TITLEBAR=$'%n@%m:%~'
+        ;;
     esac
     
     if [[ "$TERM" == "screen" ]]; then
-	PR_STITLE=$'%{\ekzsh\e\\%}'
+    PR_STITLE=$'%{\ekzsh\e\\%}'
     else
-	PR_STITLE=''
+    PR_STITLE=''
     fi
 
 # a smaller prompt
@@ -315,7 +315,6 @@ fi
 #fi
 
 }
-
 
 setprompt
 
