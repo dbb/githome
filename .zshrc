@@ -105,15 +105,15 @@ bindkey '^o' accept-and-infer-next-history
 #############################################################################
 
 # host symbols
-if [ $TERM == 'rxvt-unicode' ]; then
-    if [ $HOST == 'ganymed' ]; then
-        HOST_SYM='♃'
-    elif [ $HOST == 'reddevil' ]; then
-        HOST_SYM='♆'
-    fi
+# if [ $TERM == 'rxvt-unicode' ]; then
+if [ $HOST == 'ganymed' ]; then
+    HOST_SYM='♃'
+elif [ $HOST == 'reddevil' ]; then
+    HOST_SYM='♆'
 else
     HOST_SYM='%%'
 fi
+
 # chpwd () {
 #     local -a files
 #     files=( *(N) )
