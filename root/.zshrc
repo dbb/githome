@@ -10,7 +10,7 @@ setopt correct
 
 setopt extended_glob
 setopt glob_dots
-setopt nullglob
+setopt nullglob 
 setopt equals
 #setopt glob_subst
 
@@ -104,6 +104,26 @@ bindkey '^o' accept-and-infer-next-history
 
 #############################################################################
 
+# host symbols
+# if [ $TERM == 'rxvt-unicode' ]; then
+if [ $HOST == 'ganymed' ]; then
+    HOST_SYM='♃'
+elif [ $HOST == 'reddevil' ]; then
+    HOST_SYM='♆'
+elif [ $HOST == 'persephone' ]; then
+    HOST_SYM='♇'
+else
+    HOST_SYM='%%'
+fi
+
+# chpwd () {
+#     local -a files
+#     files=( *(N) )
+#     FILECOUNT="$#files"
+# }
+# call the above function to set $FILECOUNT on login
+#chpwd
+
 
 function precmd {
 
@@ -118,57 +138,43 @@ function precmd {
     local filesize=${#${(%):-$FILECOUNT}}
     
     if [[ "$promptsize + $pwdsize" -gt $TERMWIDTH ]]; then
-	    ((PR_PWDLEN=$TERMWIDTH - $promptsize))
+        ((PR_PWDLEN=$TERMWIDTH - $promptsize))
     else
-	PR_FILLBAR="\${(l.(($TERMWIDTH - ($promptsize + $pwdsize + $filesize + 5)))..${PR_HBAR}.)}"
+    PR_FILLBAR="\${(l.(($TERMWIDTH - ($promptsize + $pwdsize + $filesize + 5)))..${PR_HBAR}.)}"
     fi
 
     # note: the 5 is for extra characters added: two double-quotes, a comma,
     # a space, and an L
 
-}
 
 
-preexec () {
-    if [[ "$TERM" == "screen" ]]; then
-	local CMD=${1[(wr)^(*=*|sudo|-*)]}
-	echo -n "\ek$CMD\e\\"
+## git branch ##
+    if [[ -d .git ]]; then
+        GIT_BRANCH=`git branch | perl -ne 'print if s{\*\s*}{}'`
+    else
+        GIT_BRANCH=''
     fi
+
+## end git branch ##
+
 }
 
 setcolors () {
     autoload colors zsh/terminfo
     if [[ "$terminfo[colors]" -ge 8 ]]; then
-	colors
+    colors
     fi
     for color in RED GREEN YELLOW BLUE MAGENTA CYAN WHITE BLACK; do
-	eval PR_$color='%{$terminfo[bold]$fg[${(L)color}]%}'
-	eval PR_LIGHT_$color='%{$fg[${(L)color}]%}'
-	(( count = $count + 1 ))
+    eval PR_$color='%{$terminfo[bold]$fg[${(L)color}]%}'
+    eval PR_LIGHT_$color='%{$fg[${(L)color}]%}'
+    (( count = $count + 1 ))
     done
     PR_NO_COLOR="%{$terminfo[sgr0]%}"
 }
 
 setcolors
 
-# set $VIMODE to a default value ############################################
-#VIMODE="$PR_RED-- INSERT --$PR_NO_COLOR"
-VIMODE='I'
-function zle-keymap-select {
-#	VIMODE="${${KEYMAP/main/$PR_RED-- INSERT --$PR_NO_COLOR}/vicmd/$PR_LIGHT_WHITE   NORMAL   $PR_NO_COLOR}"
-	VIMODE="${${KEYMAP/main/I}/vicmd/N}"
-	zle reset-prompt
-}
-zle -N zle-keymap-select
-
-function zle-cursor {
-    CURSNUM=${CURSOR}
-    zle reset-prompt
-}
-zle -N zle-cursor
-
 setprompt () {
-
     # box-drawing characters
     typeset -A altchar
     set -A altchar ${(s..)terminfo[acsc]}
@@ -184,42 +190,40 @@ setprompt () {
     setopt prompt_subst
 
     case $TERM in
-	xterm*)
-	    PR_TITLEBAR=$'%{\e]0;%(!.-=*[ROOT]*=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\a%}'
-	    ;;
-	screen)
-	    PR_TITLEBAR=$'%{\e_screen \005 (\005t) | %(!.-=[ROOT]=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\e\\%}'
-	    ;;
-	rxvt-unicode*)
-	    PR_TITLEBAR=$'%{\e]0;%(!.-=*[ROOT]*=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\a%}'
-	    ;;
-	*)
-	    PR_TITLEBAR=$'%n@%m:%~'
-	    ;;
+    xterm*)
+        PR_TITLEBAR=$'%{\e]0;%(!.-=*[ROOT]*=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\a%}'
+        ;;
+    screen)
+        PR_TITLEBAR=$'%{\e_screen \005 (\005t) | %(!.-=[ROOT]=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\e\\%}'
+        ;;
+    rxvt-unicode*)
+        PR_TITLEBAR=$'%{\e]0;%(!.-=*[ROOT]*=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\a%}'
+        ;;
+    *)
+        PR_TITLEBAR=$'%n@%m:%~'
+        ;;
     esac
     
     if [[ "$TERM" == "screen" ]]; then
-	PR_STITLE=$'%{\ekzsh\e\\%}'
+    PR_STITLE=$'%{\ekzsh\e\\%}'
     else
-	PR_STITLE=''
+    PR_STITLE=''
     fi
 
 if [ $TERM == 'linux' ] ; then
-    PROMPT='$PR_GREEN%n$PR_WHITE@${PR_BLUE}%m$PR_WHITE:$PR_YELLOW%c$PR_WHITE%%$PR_NO_COLOR '
+    PROMPT='$PR_BLUE%n$PR_WHITE@$PR_RED%m$PR_WHITE:$PR_YELLOW%c$PR_WHITE%%$PR_NO_COLOR '
     RPROMPT='tty%l,%?? ${PR_RED}%D{%l:%M:%S %p}${PR_NO_COLOR}'
 
 else
      PROMPT='
-${PR_GREEN}%m${PR_NO_COLOR} %c ${PR_GREEN}%#${PR_NO_COLOR} ' 
-    RPROMPT='${PR_BLUE}%~$PR_NO_COLOR'
+${PR_GREEN}root! ${PR_BLUE}${HOST_SYM}  ${PR_MAGENTA}%~ ${PR_RED}»${PR_NO_COLOR} '
+    RPROMPT='${PR_YELLOW}${GIT_BRANCH}${PR_NO_COLOR}'
 fi
 }
-
 
 setprompt
 
 source "$HOME/.zaliases"
 source "$HOME/.zshenv"
 source "$HOME/.zfunctions"
-#source "$HOME/perl/etc/bashrc"
 

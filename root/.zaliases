@@ -45,25 +45,22 @@ alias cx='chmod u+x'
 
 # debian
 alias afs='apt-file search --regexp'
-alias apin='aptitude install'
 alias aps='aptitude search'
 alias apsh='aptitude show'
 alias apsrc='apt-get source'
 alias apv='apt-cache policy'
+
+alias apin="aptitude install"
+alias apdg="aptitude update && aptitude safe-upgrade"
 alias aprm='aptitude remove'
+alias apud="aptitude update"
+alias apug="aptitude safe-upgrade"
+alias update="aptitude update"
+alias upgrade="aptitude safe-upgrade"
 
-
-alias apdg='aptitude update && aptitude safe-upgrade'
-alias apud='aptitude update'
-alias apug='aptitude safe-upgrade'
-alias update='aptitude update'
-alias upgrade='aptitude safe-upgrade'
-
-alias di='dpkg -i ./*.deb'
+alias di='su -c "dpkg -i ./*.deb"'
 
 alias quikdeb='/usr/bin/time -p dpkg-buildpackage -rfakeroot -us -uc'
-
-alias sources='vim /etc/apt/sources.list'
 
 # cd shortcuts
 alias up='cd ..'
@@ -77,7 +74,7 @@ alias sz='source "'"$HOME"'/.zshrc"'
 alias va='vim '"$HOME"'/.zaliases ; source '"$HOME"'/.zaliases'
 alias vz='vim '"$HOME"'/.zshrc ; source '"$HOME"'/.zshrc'
 alias xdef='vim '"$HOME"'/.Xdefaults ; xrdb -load '"$HOME"'/.Xdefaults'
-alias xconf='vim /etc/X11/xorg.conf'
+alias xconf='su -c "vim /etc/X11/xorg.conf"'
 
 # find
 alias fh='find . -maxdepth 1 -iname'
@@ -91,12 +88,12 @@ alias ngrep='egrep -in'
 alias hdoc='cat << EOF >'
 
 # make
-alias mi='make install'
+alias mi='su -c "make install"'
 
 # misc
 alias clear-hosts='rm -v '"$HOME"'/.ssh/known_hosts'
 alias duh='du -hs'
-alias gov='/home/dbb/bin/cpu-gov'
+alias gov='su root -c "'"$HOME"'/bin/cpu-gov"'
 alias q='exit'
 alias :q='exit'
 alias quit='exit'
@@ -111,6 +108,8 @@ alias pingr='ping -c 2 192.168.1.1'
 alias pingc='ping -c 2 comcast.com'
 alias pingv='ping -c 2 verizon.net'
 
+alias sr='ssh reddevil'
+
 # octave
 alias oct='octave --silent'
 alias o='octave --silent --eval'
@@ -121,13 +120,14 @@ alias o='octave --silent --eval'
 alias pse='ps -e'
 
 # ROOT OPERATIONS ###############################
-alias mntvid='mount /dev/disk/by-label/VIDEOS /mnt/VIDEOS'
-alias net-if='vim /etc/network/interfaces'
-alias netif='vim /etc/network/interfaces'
-alias shn='shutdown -h now'
-alias srn='shutdown -r now'
-alias sus='pm-suspend'
-alias wrs='ifdown wlan0 ; sleep 2s ; ifup wlan0'
+alias mntvid='su root -c "mount /dev/disk/by-label/VIDEOS /mnt/VIDEOS"'
+alias net-if='su root -c "vim /etc/network/interfaces"'
+alias netif='su root -c "vim /etc/network/interfaces"'
+alias s='su --login root'
+alias shn='su -c "shutdown -h now"'
+alias srn='su -c "shutdown -r now"'
+alias sus='su -c "pm-suspend"'
+alias wrs='su -c "ifdown wlan0 ; sleep 2s ; ifup wlan0"'
 
 # rm
 alias rf='rm -fr'
@@ -136,6 +136,19 @@ alias rf='rm -fr'
 alias sw='/usr/bin/time -f "\n----\n\nElapsed time: %E\n" cat'
 alias t='/usr/bin/time -p'
 
+# translation
+alias deen='tw translate.google.com.de-en'
+alias esen='tw translate.google.com.es-en'
+alias fren='tw translate.google.com.fr-en'
+
+alias ende='tw translate.google.com.en-de'
+alias enes='tw translate.google.com.en-es'
+alias enfr='tw translate.google.com.en-fr'
+
+# web
+alias websync='rsync -e ssh -av --exclude=".*" ~/web/dbbolton.us dbbolton@graffias.dreamhost.com:~/'
+alias demus='rsync -e ssh -av --exclude=".*" ~/web/demus.co dbbolton@graffias.dreamhost.com:~/'
+alias dbbo='rsync -e ssh -av --exclude=".*" ~/web/dbbo.co dbbolton@graffias.dreamhost.com:~/'
 
 # zsh stuff
 alias sa='source '"$HOME"'/.zaliases'
