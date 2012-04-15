@@ -1,40 +1,57 @@
 # dbbolton's zsh functions
-# github.com/dbbolton
+# github.com/dbb
+
+# A ---------------------------------- A --------------------------------- A #
+
+## use apitude as a regular user
 apn () {
-#    su -lc 'aptitude -P install '"$@"' ' root
-#     su -lc 'echo'  root
     cmd="su -lc 'aptitude -P install $@' root"
     print "$cmd"
     eval "$cmd"
 }
 
+## build dependencies through aptitude
 apdep () {
     cmd="su -lc 'aptitude -P build-dep $@' root"
     print "$cmd"
     eval "$cmd"
 }
 
-# make a bzipped backup
+# B ---------------------------------- B --------------------------------- B #
+## make a bzipped backup
 bak () { # [input dir] [output file]
     # note the order of args
     print "tar cjf \"$2\" \"$1\""
     tar cjf "$2" "$1"
 }
 
-# print a character from ordinal
+
+# C ---------------------------------- C --------------------------------- C #
+## print a character from ordinal
 chr () {
     for i in $@; {
         print ${(#)1}
     }
 }
 
-ord () {
-    for i in $@; {
-        print $(( [#16] ##$i ))
-    }
+## custom kernel build
+ckb () {
+    MAKEFLAGS=''
+    appendage='-dbb-deb'
+    revision=$(date +"%Y%m%d")
+
+    make-kpkg clean
+
+    time fakeroot make-kpkg --append-to-version "$appendage" --revision \
+        "$revision" kernel_image kernel_headers
 }
 
-# test your font
+# D ---------------------------------- D --------------------------------- D #
+
+# E ---------------------------------- E --------------------------------- E #
+
+# F ---------------------------------- F --------------------------------- F #
+## test your font
 font_test () {
     print "Letters:\tAaBbCcDdEeFfGgHhIiJjKkLlMm"
     print "\t\tNnOoPpQqRrSsTtUuVvWwXxYyZz"
@@ -46,6 +63,8 @@ font_test () {
     print "Ambiguity:\tIllegal1 = O0"
 }
 
+
+# G ---------------------------------- G --------------------------------- G #
 # guitar pro 5
 gp5 () {
     cd '/home/dbb/.wine/drive_c/Program Files/Guitar Pro 5'
@@ -53,22 +72,19 @@ gp5 () {
     cd -
 }
 
-# kernel building shortcut
-dbb-build () {
-    MAKEFLAGS=''
-    appendage='-dbb-deb'
-    revision=$(date +"%Y%m%d")
+### git ################################
 
-    make-kpkg clean
-
-    time fakeroot make-kpkg --append-to-version "$appendage" --revision \
-        "$revision" kernel_image kernel_headers
+## commit and push
+gcp () {
+    git commit -m "$1"
+    git push -u origin master
 }
 
-### github stuff ######################
-# empty_gh [NAME_OF_REPO]
-#
-# Use this when creating a new repo from scratch.
+### github stuff ###
+
+## empty_gh [NAME_OF_REPO]
+##
+## Use this when creating a new repo from scratch.
 empty_gh() { # [NAME_OF_REPO]
     repo=$1
     ghuser=$( git config github.user )
@@ -84,10 +100,10 @@ empty_gh() { # [NAME_OF_REPO]
     git push -u origin master
 }
 
-# new_gh [DIRECTORY]
-#
-# Use this when you have a directory that is not yet set up for git.
-# This function will add all non-hidden files to git.
+## new_gh [DIRECTORY]
+##
+## Use this when you have a directory that is not yet set up for git.
+## This function will add all non-hidden files to git.
 new_gh() { # [DIRECTORY]
     repo=$1
     [[ ! -d $repo ]] && print "No such directory: '$repo'\nMaybe you meant to "\
@@ -105,10 +121,10 @@ new_gh() { # [DIRECTORY]
     git push -u origin master
 }
 
-# exist_gh [DIRECTORY]
-#
-# Use this when you have a git repo that's ready to go and you want to add it
-# to your GitHub.
+## exist_gh [DIRECTORY]
+##
+## Use this when you have a git repo that's ready to go and you want to add it
+## to your GitHub.
 exist_gh() { # [DIRECTORY]
     repo=$1
     [[ ! -d $repo ]] && print "No such directory: '$repo'\nMaybe you meant to "\
@@ -120,7 +136,7 @@ exist_gh() { # [DIRECTORY]
     git push -u origin master
 }
 
-# generate a basic readme in the current dir
+## generate a basic readme in the current dir
 readme () {
     repo=$( basename $PWD )
     user=$( git config github.user )
@@ -128,7 +144,8 @@ readme () {
         "Description\n" >> README.md
     vim README.md
 }
-### end github stuff ##################
+
+### end git ############################
 
 # Padawan's graph.
 graph () {
@@ -137,6 +154,10 @@ graph () {
     cd -
 }
 
+
+# H ---------------------------------- H --------------------------------- H #
+
+# I ---------------------------------- I --------------------------------- I #
 # is.gd url creator
 isgd () { # [URL]
     url='http://is.gd/create.php?format=simple&url='"$1"
@@ -145,24 +166,36 @@ isgd () { # [URL]
     print "\n"
 }
 
+
+# J ---------------------------------- J --------------------------------- J #
+
+# K ---------------------------------- K --------------------------------- K #
 # When Iceweasel goes rabid
 kiw () {
     kill $( pidof firefox-bin )
     killall firefox-bin
 }
 
+
+
+# L ---------------------------------- L --------------------------------- L #
+
+
+# M ---------------------------------- M --------------------------------- M #
 # Make a PDF from a man page.
 man2pdf () { # [page name]
     man -t $1 | ps2pdf - > $1.pdf
 }
 
 # Make a dir and cd into it
-md () { mkdir -p "$@"; if [[ -d "$@" ]]; then cd "$@"; fi  }
-
-
+md () { mkdir -p "'$@'"
+    if [[ -d "$@" ]]; then 
+        cd "$@"
+    fi
+}
 # Make a basic patch file.
 mkpatch () { # [new file] [old file] [output file]
-	diff -u "$1" "$2" > "$3"'.patch'
+    diff -u "$1" "$2" > "$3"'.patch'
 
 }
 
@@ -177,54 +210,81 @@ myde () { # [DIRECTORY]
     fi
 }
 
+
 # mupen64plus
 m64 () {
     mupen64plus --osd --resolution 800x600 "$n64/$1" > /dev/null &
 }
 
+
+# N ---------------------------------- N --------------------------------- N #
 # ninja gaiden!
 ng () {
     mednafen "$HOME/games/nes/Ninja_Gaiden_$1.nes"
 }
 
-# Perl stuff ################################################################
 
-# print the latest stable version of Perl
+# O ---------------------------------- O --------------------------------- O #
+## given a char, print its ordinal
+ord () {
+    for i in $@; {
+        print $(( [#16] ##$i ))
+    }
+}
+
+
+# P ---------------------------------- P --------------------------------- P #
+
+## Perl stuff ###########################
+## print the latest stable version of Perl
 latest_perl () {
     curl -s http://www.perl.org/get.html | \
         perl -wlne 'if (/perl\-([\d\.]+)\.tar\.gz/) { print $1; exit;}'
 }
 
-# create a perl document and open it for editing
+## create a perl document and open it for editing
 newpl () {
     cp "$HOME/Templates/perl" "./$1"
     chmod +x "./$1"
     vim "$1" +4
 }
 
-# perl global substitution
+## perl global substitution
 pgs () { # [find] [replace] [filename]
     perl -i.bak -pe 's/'"$1"'/'"$2"'/g' "$3"
 }
 
 
-# Perl grep-- because 'grep -P' is terrible
+## Perl grep-- because 'grep -P' is terrible
 prep () { # [pattern] [filename unless STDOUT]
     perl -nle 'print if '"$1"';' $2
 }
 
-# End Perl stuff ############################################################
+# End Perl stuff #######################
 
-# sagi - a find shortcut
+
+# Q ---------------------------------- Q --------------------------------- Q #
+
+## quick find
+qf () { 
+    find . -maxdepth 2 -iname "*$1*" 
+}
+
+# R ---------------------------------- R --------------------------------- R #
+
+# S ---------------------------------- S --------------------------------- S #
+## sagi - a find shortcut
 sagi () { # [where] [what]
     [[ -n $1 && -n $2  ]] && find "$1" -iname "*$2*"
 }
 
-# say - append a newline to 'print'
+## say - append a newline to 'print'
 say () {
     print "$@\n"
 }
 
+
+# T ---------------------------------- T --------------------------------- T #
 # to - makes it easier to cd to a variable that contains a path, e.g.
 #   p="$HOME/some/long/ridiculous/path/name"
 #   to p
@@ -232,25 +292,31 @@ to () {
     eval dir=\$$1; cd "$dir";
 }
 
+
+# U ---------------------------------- U --------------------------------- U #
+# unzip
+uz () { # [archive] [dir]
+    unzip -x $1 -d $2
+}
+
+# V ---------------------------------- V --------------------------------- V #
 # vimprobable with tabs
 #vpb () {
 #    tabbed=$(tabbed -d); vimprobable2 -e $tabbed $*
 #}
 
-# Quick Find
-qf () { 
-	find . -maxdepth 2 -iname "*$1*" 
-}
 
-# unzip
-uz () { # [archive] [dir]
-	unzip -x $1 -d $2
-}
+# W ---------------------------------- W --------------------------------- W #
 
-# zsh calculator
+# X ---------------------------------- X --------------------------------- X #
+
+# Y ---------------------------------- Y --------------------------------- Y #
+
+# Z ---------------------------------- Z --------------------------------- Z #
+## zsh calculator
 zc () {
-	for exp in $argv ; do
-		print "$exp = $(( exp ))"
-	done
+    for exp in $argv ; do
+        print "$exp = $(( exp ))"
+    done
 }
 

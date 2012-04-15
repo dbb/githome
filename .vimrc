@@ -39,7 +39,7 @@ set mouse=a " mouse support"
 set number
 
 " create .un~ file
-set undofile
+"set undofile
 
 
 " ruler with clock
@@ -81,6 +81,7 @@ nmap <leader>d :close<CR>
 nmap <leader>e :colo 
 nmap <leader>f :set guifont=*<CR>
 nmap <leader>h iprint <<'EOF';<Esc>^
+nmap <leader>i o<Esc>p
 nmap <leader>o iopen(my $,  "<",  "");<Esc>^f$a
 nmap <leader>r @:
 nmap <leader>s ddpk
@@ -194,7 +195,8 @@ set smartcase                       "...unless uppercase letters used
 set hlsearch                        "Highlight all search matches
 
 "Delete in normal mode to switch off highlighting till next search and clear messages...
-nmap <silent> <BS> :nohlsearch <BAR> call Toggle_CursorColumn('off')<CR>
+" nmap <silent> <BS> :nohlsearch <BAR> call Toggle_CursorColumn('off')<CR>
+nmap <silent> <BS> :nohlsearch <CR>
 
 "Double-delete to remove search highlighting *and* trailing whitespace...
 nmap <silent> <BS><BS>  mz:%s/\s\+$//g<CR>`z:nohlsearch<CR>
@@ -230,12 +232,6 @@ augroup END
 
 "=====[ Make Visual modes work better ]==================
 
-" Visual Block mode is far more useful that Visual mode (so swap the commands)...
-nnoremap v <C-V>
-nnoremap <C-V> v
-
-vnoremap v <C-V>
-vnoremap <C-V> v
 
 " Make BS/DEL work as expected in visual modes (i.e. delete elected)...
 vmap <BS> x
@@ -258,22 +254,6 @@ function! KeepVisualSelection(cmd)
     endif
 endfunction
 
-" Temporarily add a column indicator when inserting or appending in visual mode...
-" (Should use <C-O> instead, but it doesn't seem to work)
-vnoremap <silent>  I  I<C-R>=TemporaryColumnMarkerOn()<CR>
-vnoremap <silent>  A  A<C-R>=TemporaryColumnMarkerOn()<CR>
-
-function! TemporaryColumnMarkerOn ()
-    let g:prev_cursorcolumn_state = g:cursorcolumn_visible ? 'on' : 'off'
-    call Toggle_CursorColumn('on')
-    inoremap <silent>  <ESC>  <ESC>:call TemporaryColumnMarkerOff(g:prev_cursorcolumn_state)<CR>
-    return ""
-endfunction
-
-function! TemporaryColumnMarkerOff (newstate)
-    call Toggle_CursorColumn(a:newstate)
-    iunmap <ESC>
-endfunction
 
 
 "=====[ Configure % key ]==============================
