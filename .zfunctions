@@ -25,7 +25,18 @@ bak () { # [input dir] [output file]
     tar cjf "$2" "$1"
 }
 
-
+## pretend to be busy
+busy () {
+    j=0;
+    while true; do
+        NUMBER=$RANDOM # I think 32,000 is large enough
+        let j=$j+1;
+        for i in $(seq 0 20 100); do 
+            echo $i;
+            sleep 1; done | 
+            dialog --gauge "Install part $j : `sed $(perl -e "print int rand(99999)")"q;d" /usr/share/dict/words`" 6 40;
+        done
+}
 # C ---------------------------------- C --------------------------------- C #
 ## print a character from ordinal
 chr () {
@@ -89,6 +100,8 @@ empty_gh() { # [NAME_OF_REPO]
     repo=$1
     ghuser=$( git config github.user )
 
+    curl -F login=${ghuser} -F token=$( git config github.token ) \
+        https://github.com/api/v2/yaml/repos/create -F name=${repo}
     [[ ! -d $repo ]] && mkdir "$repo"
     cd "$repo"
     git init
@@ -106,10 +119,18 @@ empty_gh() { # [NAME_OF_REPO]
 ## This function will add all non-hidden files to git.
 new_gh() { # [DIRECTORY]
     repo=$1
+    ghuser=$( git config github.user )
+
     [[ ! -d $repo ]] && print "No such directory: '$repo'\nMaybe you meant to "\
         "use\n\nempty_gh()\n" && exit 1
     cd "$repo"
-    ghuser=$( git config github.user )
+
+    repo_status=$( curl -sL http://github.com/${ghuser}/${repo} | grep '<title>404' )
+    if [[ -n $repo_status ]]; then
+        curl -F login=${ghuser} -F token=$( git config github.token ) \
+            https://github.com/api/v2/yaml/repos/create -F name=${repo}
+        print "Repo created"
+    fi
 
     git init
     # add all non-dot files
@@ -140,7 +161,7 @@ exist_gh() { # [DIRECTORY]
 readme () {
     repo=$( basename $PWD )
     user=$( git config github.user )
-    print "# $repo \n\n<http://github.com/${user}/${repo}>\n\n##"\
+    print "# $repo \n\n<https://github.com/${user}/${repo}>\n\n##"\
         "Description\n" >> README.md
     vim README.md
 }
@@ -188,11 +209,11 @@ man2pdf () { # [page name]
 }
 
 # Make a dir and cd into it
-md () { mkdir -p "'$@'"
-    if [[ -d "$@" ]]; then 
-        cd "$@"
-    fi
+md () {
+    mkdir -p $1
+    cd $1
 }
+
 # Make a basic patch file.
 mkpatch () { # [new file] [old file] [output file]
     diff -u "$1" "$2" > "$3"'.patch'

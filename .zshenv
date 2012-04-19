@@ -4,7 +4,7 @@ export DEBFULLNAME="Daniel Bolton"
 
 # directories
 export CDPATH=".:~:~/src"
-export gh="$HOME/src/github"
+export gh="$HOME/src/gh"
 export gc="$HOME/src/github/configs"
 export gs="$HOME/src/github/scripts"
 export nes="$HOME/games/nes"
