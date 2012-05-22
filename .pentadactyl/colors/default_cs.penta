@@ -1,0 +1,255 @@
+highlight Addon /* An add-on in the :addons manager */ display: table-row;
+highlight Addon>* AddonCell
+highlight AddonBar /* The Add-on Bar */ padding-left: 0 !important; min-height: 18px !important; -moz-appearance: none !important;
+highlight AddonButton /* An Add-on Bar button */ -moz-appearance: none !important; padding: 0 !important; border-width: 0px !important; min-width: 0 !important; color: inherit !important;
+highlight AddonButton:not(:hover) background: transparent;
+highlight AddonButtons 
+highlight AddonCell /* A cell in tell :addons manager */ display: table-cell; padding: 0 1ex;
+highlight AddonDescription 
+highlight AddonHead CompTitle/* A heading in the :addons manager */ display: table-row;
+highlight AddonHead>* AddonCell
+highlight AddonName max-width: 48ex; overflow: hidden;
+highlight Addon:not([active]) color: #888;
+highlight Addon:nth-child(2n+1) background: rgba(0, 0, 0, .04);
+highlight Addons /* The :addons manager */ display: table; margin: 0; padding: 0;
+highlight AddonStatus 
+highlight AddonVersion 
+highlight Bell /* &dactyl.appName;’s visual bell */ background-color: black !important;
+highlight Boolean /* JavaScript booleans */ color: red;
+highlight Button /* A button widget */ display: inline-block; font-weight: bold; cursor: pointer; color: black; text-decoration: none;
+highlight Button::after content: "]"; color: gray; text-decoration: none !important;
+highlight Button::before content: "["; color: gray; text-decoration: none !important;
+highlight Button[collapsed]visibility: collapse; width: 0;
+highlight Button[collapsed]visibility: 
+highlight Button:hover text-decoration: underline;
+highlight Button:not([collapsed]) 
+highlight Button:not([collapsed]) ~ Button:not([collapsed])::before content: "/[";
+highlight Buttons /* A group of buttons */ 
+highlight CmdCmdLine 
+highlight CmdErrorMsg 
+highlight CmdInfoMsg 
+highlight CmdInput 
+highlight CmdLine FontFixed/* The command line */ padding: 1px !important;
+highlight CmdModeMsg 
+highlight CmdMoreMsg 
+highlight CmdNormal 
+highlight CmdOutput /* The output of commands executed by <ex>:run</ex> */ white-space: pre;
+highlight CmdPrompt /* The default styling form the command prompt */ 
+highlight CmdQuestion 
+highlight CmdWarningMsg 
+highlight Comment /* JavaScriptor CSS comments */ color: gray;
+highlight Comp FontFixed,Normal/* The completion window */ margin: 0; border-top: 1px solid black;
+highlight CompDesc /* The description column of the completion list */ color: gray; width: 62%; padding-left: 1em;
+highlight CompGroup /* Item group in completion output */ 
+highlight CompGroup:last-of-type padding-bottom: 1.5ex;
+highlight CompGroup:not(:first-of-type) margin-top: .5em;
+highlight CompIcon /* The favicon of a completion row */ width: 16px; min-width: 16px; display: inline-block; margin-right: .5ex;
+highlight CompIcon>img max-width: 16px; max-height: 16px; vertical-align: middle;
+highlight CompItem /* A single row of output in the completion list */ 
+highlight CompItem>* padding: 0 .5ex;
+highlight CompItem HelpXMLTagStart white-space: pre;
+highlight CompItem:nth-child(2n+1) background: rgba(0, 0, 0, .04);
+highlight CompItem[selected] /* A selected row of completion list */ background: yellow;
+highlight CompLess /* The indicator shown when completions may be scrolled up */ text-align: center; height: 0; line-height: .5ex; padding-top: 1ex;
+highlight CompLess::after /* The character of indicator shown when completions may be scrolled up */ content: "⌃";
+highlight CompMore /* The indicator shown when completions may be scrolled down */ text-align: center; height: .5ex; line-height: .5ex; margin-bottom: -.5ex;
+highlight CompMore::after /* The character of indicator shown when completions may be scrolled down */ content: "⌄";
+highlight CompMsg /* The message which may appear at the top of a group of completion results */ font-style: italic; margin-left: 16px;
+highlight CompResult /* The result column of the completion list */ width: 36%; padding-right: 1%; overflow: hidden;
+highlight CompTitle /* Completion row titles */ color: magenta; background: white; font-weight: bold;
+highlight CompTitle>* padding: 0 .5ex;
+highlight CompTitleSep /* The element which separates the completion title from its results */ height: 1px; background: -moz-linear-gradient(60deg, magenta, white);
+highlight Dense /* Arbitrary elements which should be packed densely together */ margin-top: 0; margin-bottom: 0;
+highlight Disabled /* Disabled items */ color: gray    !important;
+highlight Download /* A download in the :downloads manager */ display: table-row;
+highlight Download>* DownloadCell
+highlight DownloadButtons /* A button group in the :downloads manager */ 
+highlight DownloadCell /* A table cell in the :downloads manager */ display: table-cell; padding: 0 1ex;
+highlight DownloadHead CompTitle/* A heading in the :downloads manager */ display: table-row;
+highlight DownloadHead>* DownloadCell
+highlight Download:not([active]) color: gray;
+highlight Download:nth-child(2n+1) background: rgba(0, 0, 0, .04);
+highlight DownloadPercent /* The percentage column for a download */ 
+highlight DownloadProgress /* The progress column for a download */ 
+highlight DownloadProgressHave /* The completed portion of the progress column */ 
+highlight DownloadProgressTotal /* The remaining portion of the progress column */ 
+highlight Downloads /* The :downloads manager */ display: table; margin: 0; padding: 0;
+highlight DownloadSource /* The download source column for a download */ 
+highlight DownloadState /* The download state column for a download */ 
+highlight DownloadTime /* The time remaining column for a download */ 
+highlight DownloadTitle /* The title column for a download */ 
+highlight DownloadTitle>Link>a max-width: 48ex; overflow: hidden; display: inline-block;
+highlight EditorBlink1 /* Text fields briefly after successfully running the external editor, alternated with EditorBlink2 */ background: yellow !important;
+highlight EditorBlink2 /* Text fields briefly after successfully running the external editor, alternated with EditorBlink1 */ 
+highlight EditorEditing /* Text fields for which an external editor is open */ -moz-user-input: none !important; -moz-user-modify: read-only !important; background-color: #bbb !important;
+highlight EditorEditing>* background-color: #bbb !important;
+highlight EditorError /* Text fields briefly after an error has occurred running the external editor */ background: red !important;
+highlight Enabled /* Enabled item indicator text */ color: blue;
+highlight ErrorMsg /* Error messages */ color: white   !important; background: red         !important; font-weight: bold !important;
+highlight ErrorMsg HelpEx color: inherit; background: inherit; text-decoration: underline;
+highlight ErrorMsg HelpKey color: inherit; background: inherit; text-decoration: underline;
+highlight ErrorMsg HelpOption color: inherit; background: inherit; text-decoration: underline;
+highlight ErrorMsg HelpTopic color: inherit; background: inherit; text-decoration: underline;
+highlight Filter /* The matching text in a completion list */ font-weight: bold;
+highlight Find 
+highlight FontCode /* The font used for code listings */ font-size: 9pt; font-family: monospace !important;
+highlight FontFixed /* The font used for fixed-width text */ font-family: monospace !important;
+highlight FontProportional /* The font used for proportionally spaced text */ font-size: 10pt; font-family: "Droid Sans", "Helvetica LT Std", Helvetica, "DejaVu Sans", Verdana, sans-serif !important;
+highlight FrameIndicator /* The styling applied to briefly indicate the active frame */ background-color: red; opacity: 0.5; z-index: 999999; position: fixed; top: 0; bottom: 0; left: 0; right: 0;
+highlight Function /* JavaScript functions */ color: navy;
+highlight Gradient 
+highlight GradientLeft 
+highlight GradientRight 
+highlight Help FontProportional/* A help page */ line-height: 1.4em;
+highlight HelpArg FontCode/* A required command argument indicator */ color: #6A97D4;
+highlight HelpBody /* The body of a help page */ display: block; margin: 1em auto; max-width: 100ex; padding-bottom: 1em; margin-bottom: 4em; border-bottom-width: 1px;
+highlight HelpBorder /* The styling of bordered elements */ border-color: silver; border-width: 0px; border-style: solid;
+highlight HelpCode FontCode/* Code listings */ display: block; white-space: pre; margin-left: 2em;
+highlight HelpDefault FontCode/* The default value of a help item */ display: inline-block; margin: -1px 1ex 0 0; white-space: pre; vertical-align: text-top;
+highlight HelpDescription /* The description of a help item */ display: block; clear: right;
+highlight HelpDescription[short] clear: none;
+highlight HelpEm /* Emphasized text */ font-weight: bold; font-style: normal;
+highlight HelpEx FontCode/* An Ex command */ display: inline-block; color: #527BBD;
+highlight HelpExample /* An example */ display: block; margin: 1em 0;
+highlight HelpExample::before content: "Example: "; font-weight: bold;
+highlight HelpHead /* Any help heading */ font-weight: bold; color: #527BBD; clear: both;
+highlight HelpHead1 /* A first-level help heading */ margin: 2em 0 1em; padding-bottom: .2ex; border-bottom-width: 1px; font-size: 2em;
+highlight HelpHead2 /* A second-level help heading */ margin: 2em 0 1em; padding-bottom: .2ex; border-bottom-width: 1px; font-size: 1.2em;
+highlight HelpHead3 /* A third-level help heading */ margin: 1em 0; padding-bottom: .2ex; font-size: 1.1em;
+highlight HelpHead4 /* A fourth-level help heading */ 
+highlight HelpInclude /* A help page included in the consolidated help listing */ margin: 2em 0;
+highlight HelpInfo /* Arbitrary information about a help item */ display: block; width: 20em; margin-left: auto;
+highlight HelpInfoLabel /* The label for a HelpInfo item */ display: inline-block; width: 6em; color: magenta; font-weight: bold; vertical-align: text-top;
+highlight HelpInfoValue /* The details for a HelpInfo item */ display: inline-block; width: 14em; text-decoration: none; vertical-align: text-top;
+highlight HelpItem /* A help item */ display: block; margin: 1em 1em 1em 10em; clear: both;
+highlight HelpKey FontCode/* A keyboard key specification */ color: #102663;
+highlight HelpKeyword /* A keyword */ font-weight: bold; color: navy;
+highlight HelpLink /* A hyperlink */ text-decoration: none !important;
+highlight HelpLink[href]:hover text-decoration: underline !important;
+highlight HelpLink[href^="mailto:"]::after content: "✉"; padding-left: .2em;
+highlight HelpLink[href^=mailto:]::after 
+highlight HelpLink[rel=external] /* A hyperlink to an external resource */ background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAFVBMVEVmmcwzmcyZzP8AZswAZv////////9E6giVAAAAB3RSTlP///////8AGksDRgAAADhJREFUGFcly0ESAEAEA0Ei6/9P3sEcVB8kmrwFyni0bOeyyDpy9JTLEaOhQq7Ongf5FeMhHS/4AVnsAZubxDVmAAAAAElFTkSuQmCC) no-repeat scroll right center; padding-right: 13px;
+highlight HelpList /* An unordered list */ display: block; list-style-position: outside; margin: 1em 0;
+highlight HelpListItem /* A list item, ordered or unordered */ display: list-item;
+highlight HelpNews /* A news item */ position: relative;
+highlight HelpNewsNew /* A new news item */ font-style: italic;
+highlight HelpNewsOld /* An old news item */ opacity: .7;
+highlight HelpNewsTag /* The version tag for a news item */ font-style: normal; position: absolute; left: 100%; padding-left: 1em; color: #527BBD; opacity: .6; white-space: pre;
+highlight HelpNote /* The indicator for a note */ color: red; font-weight: bold;
+highlight HelpOpt FontCode/* An option name */ color: #106326;
+highlight HelpOptInfo FontCode/* Information about the type and default values for an option entry */ display: block; margin-bottom: 1ex; padding-left: 4em;
+highlight HelpOptionalArg FontCode/* An optional command argument indicator */ color: #6A97D4;
+highlight HelpOrderedList /* Any ordered list */ margin: 1em 0;
+highlight HelpOrderedList1 /* A first-level ordered list */ list-style: outside decimal; display: block;
+highlight HelpOrderedList2 /* A second-level ordered list */ list-style: outside upper-alpha;
+highlight HelpOrderedList3 /* A third-level ordered list */ list-style: outside lower-roman;
+highlight HelpOrderedList4 /* A fourth-level ordered list */ list-style: outside decimal;
+highlight HelpParagraph /* An ordinary paragraph */ display: block; margin: 1em 0em;
+highlight HelpParagraph:first-child margin-top: 0;
+highlight HelpParagraph:last-child margin-bottom: 0;
+highlight HelpSpec FontCode/* The specification for a help entry */ display: block; margin-left: -10em; float: left; clear: left; color: #527BBD; margin-right: 1em;
+highlight HelpString FontCode/* A quoted string */ color: green; font-weight: normal;
+highlight HelpString::after content: '"';
+highlight HelpString::before content: '"';
+highlight HelpString[delim]::after content: attr(delim);
+highlight HelpString[delim]::before content: attr(delim);
+highlight HelpTab /* A description table */ display: table; width: 100%; margin: 1em 0; border-bottom-width: 1px; border-top-width: 1px; padding: .5ex 0; table-layout: fixed;
+highlight HelpTabColumn display: table-column;
+highlight HelpTabColumn:first-child width: 25%;
+highlight HelpTabDescription /* The description column of description tables */ display: table-cell; padding: .3ex 1em; text-indent: -1em; border-width: 0px;
+highlight HelpTabDescription>* text-indent: 0;
+highlight HelpTabRow /* Entire rows in description tables */ display: table-row;
+highlight HelpTabTitle FontCode/* The title column of description tables */ display: table-cell; padding: .1ex 1ex; font-weight: bold;
+highlight HelpTag FontCode/* A help tag */ display: inline-block; color: #527BBD; margin-left: 1ex; font-weight: normal;
+highlight HelpTags /* A group of help tags */ display: block; float: right; clear: right;
+highlight HelpTOC /* The Table of Contents for a help page */ 
+highlight HelpTOC>ol 
+highlight HelpTOC>ol ol margin-left: -1em;
+highlight HelpTopic FontCode/* A link to a help topic */ color: #102663;
+highlight HelpTT FontCode/* Teletype text */ 
+highlight HelpType FontCode/* An option type */ color: #102663 !important; margin-right: 2ex;
+highlight HelpWarning /* The indicator for a warning */ color: red; font-weight: bold;
+highlight HelpXML HelpXMLBase/* Highlighted XML */ display: inline-block; border: 1px dashed #aaaaaa;
+highlight HelpXMLAttribute color: #C5F779;
+highlight HelpXMLAttribute::after color: #E5E5E5; content: "=";
+highlight HelpXMLBase FontCodewhite-space: pre; color: #C5F779; background-color: #444444; font-family: Terminus, Fixed, monospace;
+highlight HelpXMLBlock HelpXMLBasedisplay: block; margin-left: 2em; border: 1px dashed #aaaaaa;
+highlight HelpXMLComment color: #444444;
+highlight HelpXMLComment::after content: "-->";
+highlight HelpXMLComment::before content: "<!--";
+highlight HelpXMLNamespace color: #FFF796;
+highlight HelpXMLNamespace::after color: #777777; content: ":";
+highlight HelpXMLProcessing color: #C5F779;
+highlight HelpXMLProcessing::after color: #444444; content: "?>";
+highlight HelpXMLProcessing::before color: #444444; content: "<?";
+highlight HelpXMLString color: #C5F779; white-space: pre;
+highlight HelpXMLString::after content: '"';
+highlight HelpXMLString::before content: '"';
+highlight HelpXMLTagEnd color: #71BEBE;
+highlight HelpXMLTagStart color: #FFF796; white-space: normal; display: inline-block; text-indent: -1.5em; padding-left: 1.5em;
+highlight HelpXMLText color: #E5E5E5;
+highlight Hint /* A hint indicator. See <ex>:help hints</ex> */ font: bold 10px "Droid Sans Mono", monospace !important; margin: -.2ex; padding: 0 0 0 1px; outline: 1px solid rgba(0, 0, 0, .5); background: rgba(255, 248, 231, .8); color: black;
+highlight Hint[active] background: rgba(255, 253, 208, .8);
+highlight HintActive /* The hint element of link which will be followed by <k name="CR" link="false"/> */ background-color: #88FF00 !important; color: black !important;
+highlight Hint::after content: attr(text) !important;
+highlight HintElem /* The hintable element */ background-color: yellow  !important; color: black !important;
+highlight HintImage /* The indicator which floats above hinted images */ opacity: .5 !important;
+highlight Indicator /* The <em>#</em> and  <em>%</em> in the <ex>:buffers</ex> list */ color: blue; width: 1.5em; text-align: center;
+highlight InfoMsg /* Information messages */ color: black   !important; background: white       !important;
+highlight InlineHelpLink /* A help link shown in the command line or multi-line output area */ font-size: inherit !important; font-family: inherit !important;
+highlight Key /* Keywords */ font-weight: bold;
+highlight Keyword /* A bookmark keyword for a URL */ color: red;
+highlight LineNr /* The line number of an error */ color: orange  !important; background: white       !important;
+highlight Link /* A link with additional information shown on hover */ position: relative; padding-right: 2em;
+highlight LinkInfo /* Information shown when hovering over a link */ color: black; position: absolute; left: 100%; padding: 1ex; margin: -1ex -1em; background: rgba(255, 255, 255, .8); border-radius: 1ex;
+highlight Link:not(:hover)>LinkInfo opacity: 0; left: 0; width: 1px; height: 1px; overflow: hidden;
+highlight Logo display: inline-block; background: url(resource://dactyl-local-content/logo.png); width: 345px; height: 29px;
+highlight Message /* A message as displayed in <ex>:messages</ex> */ white-space: pre-wrap !important; min-width: 100%; width: 100%; padding-left: 4em; text-indent: -4em; display: block;
+highlight Message String /* A message as displayed in <ex>:messages</ex> */ white-space: pre-wrap;
+highlight ModeMsg /* The mode indicator */ color: black   !important; background: white       !important;
+highlight MoreMsg /* The indicator that there is more text to view */ color: green   !important; background: white       !important;
+highlight MOW FontFixed,Normal/* The Multiline Output Window */ margin: 0; white-space: pre;
+highlight MOW :-moz-any(td, th) padding: 0px 2px;
+highlight MOW table white-space: inherit; border-spacing: 0px;
+highlight NonText /* The <em>~</em> indicators which mark blank lines in the completion list */ color: blue; background: transparent !important;
+highlight Normal /* Normal text */ color: black   !important; background: white       !important; font-weight: normal !important;
+highlight Null /* JavaScript null values */ color: blue;
+highlight Number /* JavaScript numbers */ color: blue;
+highlight Object /* JavaScript objects */ color: maroon;
+highlight Preview /* The completion preview displayed in the &tag.command-line; */ color: gray;
+highlight Question /* A prompt for a decision */ color: green   !important; background: white       !important; font-weight: bold !important;
+highlight REPL /* Read-Eval-Print-Loop output */ overflow: auto; max-height: 40em;
+highlight REPL-E /* Evaled input in REPL mode */ white-space: pre-wrap;
+highlight REPL-P /* Evaled output in REPL mode */ white-space: pre-wrap; margin-bottom: 1em;
+highlight REPL-R Question/* Prompts in REPL mode */ 
+highlight Search 
+highlight StatusCmdLine 
+highlight StatusErrorMsg 
+highlight StatusInfoMsg /* Information messages in the status line */ color: inherit !important; background: transparent !important;
+highlight StatusLine FontFixed/* The status bar */ -moz-appearance: none !important; font-weight: bold; background: transparent !important; border: 0px !important; padding-right: 0px !important; min-height: 18px !important; text-shadow: none !important;
+highlight StatusLineBroken /* The status bar for a broken web page */ color: black !important; background: #FFa0a0 !important;
+highlight StatusLineExtended /* The status bar for a secure web page with an Extended Validation (EV) certificate */ color: black !important; background: #a0FFa0 !important;
+highlight StatusLineNormal /* The status bar for an ordinary web page */ color: white !important; background: black   !important;
+highlight StatusLineSecure /* The status bar for a secure web page */ color: black !important; background: #a0a0FF !important;
+highlight StatusModeMsg /* The mode indicator in the status line */ color: inherit !important; background: transparent !important; padding-right: 1em;
+highlight StatusMoreMsg background: transparent !important;
+highlight StatusNormal /* Normal text in the status line */ color: inherit !important; background: transparent !important;
+highlight StatusQuestion /* A prompt for a decision in the status line */ color: green   !important; background: transparent !important;
+highlight StatusWarningMsg /* A warning message in the status line */ color: red     !important; background: transparent !important;
+highlight String /* String values */ color: green; white-space: pre;
+highlight TabClose /* The close button of a browser tab */ 
+highlight TabIcon /* The icon of a browser tab */ 
+highlight TabIconNumber /* The number of a browser tab, over its icon */ cursor: default; width: 16px; margin: 0 2px 0 -18px !important; font-weight: bold; color: white; text-align: center; text-shadow: black -1px 0 1px, black 0 1px 1px, black 1px 0 1px, black 0 -1px 1px;
+highlight TabNumber /* The number of a browser tab, next to its icon */ font-weight: bold; margin: 0px; padding-right: .8ex; cursor: default;
+highlight TabText /* The text of a browser tab */ 
+highlight Tag /* A bookmark tag for a URL */ color: blue;
+highlight Title /* The title of a listing, including <ex>:pageinfo</ex>, <ex>:jumps</ex> */ color: magenta; font-weight: bold;
+highlight URL /* A URL */ text-decoration: none; color: green; background: inherit;
+highlight URLExtra /* Extra information about a URL */ color: gray;
+highlight URL:hover text-decoration: underline; cursor: pointer;
+highlight Usage /* Output from the :*usage commands */ width: 100%;
+highlight UsageBody /* The body of listings in output from the :*usage commands */ 
+highlight UsageHead /* Headings in output from the :*usage commands */ 
+highlight UsageItem /* Individual items in output from the :*usage commands */ 
+highlight UsageItem:nth-of-type(2n) background: rgba(0, 0, 0, .04);
+highlight WarningMsg /* A warning message */ color: red     !important; background: white       !important;

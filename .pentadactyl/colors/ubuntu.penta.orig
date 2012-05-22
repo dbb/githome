@@ -6,7 +6,7 @@
 "#363946
 "NOTE: status line color
 hi -a StatusLine						       background: -moz-linear-gradient(bottom, #3c3b37, #54534f) repeat scroll 0 0 transparent;
-hi -a StatusLine                   color: #e0e0e0; font-weight: normal; font-family: monospace; text-shadow: none; font-size: 15px; 
+hi -a StatusLine                   color: #e0e0e0; font-weight: normal; font-family: Arial,Verdana,Ubuntu,Georgia; text-shadow: none; font-size: 16px; 
 hi -a StatusLine                   padding-top: 2px !important; padding-bottom: 2px !important;
 hi -a StatusCmdLine								 color: #e0e0e0; 
 "hi -a StatusLine[selected]				 
@@ -18,8 +18,8 @@ hi -a StatusCmdLine								 color: #e0e0e0;
 
 hi -a Title												 color: #e0e0e0; background-color: transparent; 
 hi -a Title												 padding: 0px 5px;
-hi -a Title												 font-weight: normal; font-family: monospace; 
-hi -a Title												 text-shadow: none; font-size: 14px;
+hi -a Title												 font-weight: normal; font-family: Ubuntu,Verdana; 
+hi -a Title												 text-shadow: none; font-size: 16px;
 
 hi -a Preview											 color: gray;
 
@@ -38,10 +38,10 @@ hi -a StatusModeMsg                padding-left: 28px !important;
 
 hi -a CmdCmdLine									 background: #2f2f2f; 
 hi -a CmdCmdLine									 border: 1px solid #3c3b37;
-hi -a CmdCmdLine                   font-weight: normal ; font-family: monospace; font-size: 14px;
+hi -a CmdCmdLine                   font-weight: normal ; font-family: Ubuntu, Verdana;font-size: 18px;
 hi -a CmdCmdLine									 color: #e0e0e0; text-shadow: none ;
 
-"hi -a CmdNormal                   font-weight: normal; font-family: monospace; 
+"hi -a CmdNormal                   font-weight: normal; font-family: Ubuntu,Verdana; 
 "hi -a CmdInput										 
 "hi -a CmdOutput										 color: #e0e0e0;
 
@@ -74,7 +74,7 @@ hi -a CompTitle>*                  padding-left: 40px;
 hi -a CompTitleSep								 height: 0px;
 
 hi -a CompItem										 color: #d0d0d0;
-hi -a CompItem                     text-shadow: none; font-weight: normal; font-size: 14px; font-family: monospace;
+hi -a CompItem                     text-shadow: none; font-weight: normal; font-size: 18px; font-family: Ubuntu,Verdana,Arial;
 hi -a CompItem:nth-child(2n+1)     background: inherit;
 
 hi -a CompItem[selected]					 color: #e0e0e0;
@@ -88,7 +88,7 @@ hi -a CompItem[selected]           -moz-border-radius: 2px;
 hi -a CompIcon                     display: inline-block; width: 16px; min-width: 16px;
 hi -a CompIcon                     margin-right: 2ex; margin-left: 2px;
 
-hi -a CompDesc										 color: #e0e0e0; width: 50%; font-family: monospace;
+hi -a CompDesc										 color: #e0e0e0; width: 50%; font-family: Ubuntu,Arial,Verdana;
 hi -a CompResult									 width: 50%; overfloaw: hidden;
 "separator content rule
 hi -a CompResult									 border-right: 5px solid;
@@ -103,7 +103,7 @@ hi -a CompGroup                    border-right: 2px solid #3c3b37; -moz-border-
 hi -a CompLess										 text-align: center; height: 0; line-height: .5ex; padding-top: 1ex;
 hi -a CompMore										 text-align: center; height: .5ex; line-height: .5ex; margin-bottom: -.5ex;
 hi -a CompMsg											 background: transparent;
-hi -a CompMsg											 font-style: Ubuntu,Verdana;font-size: 14px;
+hi -a CompMsg											 font-style: Ubuntu,Verdana;font-size: 18px;
 "hi -a CompMore::after		
 "hi -a CompLess::after                  
 "hi -a CompIcon>img
@@ -122,7 +122,7 @@ hi -a Message                   color: #e0e0e0 !important;
 hi -a Message\ String           color: #e0e0e0 !important;
 hi -a LinkInfo		              color: #e0e0e0 !important;
 
-hi -a URL				    text-decoration: none !important; color: #e0e0e0; background: inherit; font-weight:normal !important; font-family: monospace; text-shadow: none !important;
+hi -a URL				    text-decoration: none !important; color: #e0e0e0; background: inherit; font-weight:normal !important; font-family: Verdana; text-shadow: none !important;
 hi -a URL:hover			text-decoration: underline; cursor: pointer;
 "NOTE: other
 "hi -a Disabled
@@ -169,7 +169,7 @@ hi -a NonText					color: #2f2f2f;
 hi -a Indicator				color: #2bef4s;
 hi -a Search          font-size: inherit; padding: 0; color: #ff7400 !important; background-color: transparent !important; padding: 0 !important;
 "NOTE: hint color 
-hi -a Hint						font-family: monospace !important; font-size: 15px !important; font-weight: bold !important; color: #fff !important; background-color: #6DA0DD !important; padding: 4px; border: none !important;
+hi -a Hint						font-family: Ubuntu, Comic Sans MS !important; font-size: 15px !important; font-weight: bold !important; color: #fff !important; background-color: #6DA0DD !important; padding: 4px; border: none !important;
 hi -a Hint[active]		background: #73BDBB !important; 
 hi -a HintActive			background: #D7D8DB !important; 
 hi -a Hint::after			content: attr(text) !important;
