@@ -10,7 +10,7 @@ setopt correct
 
 setopt extended_glob
 setopt glob_dots
-setopt nullglob 
+setopt nullglob
 setopt equals
 #setopt glob_subst
 
@@ -107,9 +107,9 @@ bindkey '^o' accept-and-infer-next-history
 # host symbols
 # if [ $TERM == 'rxvt-unicode' ]; then
 if [ $HOST == 'ganymed' ]; then
-    HOST_SYM='♃'
+    HOST_SYM='♃ '
 elif [ $HOST == 'reddevil' ]; then
-    HOST_SYM='♆'
+    HOST_SYM='♆ '
 else
     HOST_SYM='%%'
 fi
@@ -127,14 +127,14 @@ function precmd {
 
     local TERMWIDTH
     (( TERMWIDTH = ${COLUMNS} - 1 ))
-    
+
     PR_FILLBAR=""
     PR_PWDLEN=""
-    
+
     local promptsize=${#${(%):---(%n@%m:%l)---()--}}
     local pwdsize=${#${(%):-%~}}
     local filesize=${#${(%):-$FILECOUNT}}
-    
+
     if [[ "$promptsize + $pwdsize" -gt $TERMWIDTH ]]; then
         ((PR_PWDLEN=$TERMWIDTH - $promptsize))
     else
@@ -155,23 +155,31 @@ function precmd {
     # fi
 ## end battery info ##
 
-## git branch ##
-    if [[ -d .git ]]; then
-        GIT_BRANCH=`git branch | perl -ne 'print if s{\*\s*}{}'`
-    else
-        GIT_BRANCH=''
+## git stuff ##
+    GIT_STAT=''
+    GIT_BRANCH=''
+if [[ -d .git ]]; then
+    if [[ -z $( git status | grep "nothing to commit" ) ]]; then
+        GIT_STAT='+'
     fi
 
+
+    if [[ -d .git ]]; then
+        GIT_BRANCH=`git branch | perl -ne 'print if s{\*\s*}{}'`
+    fi
+
+    GIT_PROMPT="${GIT_STAT} ${GIT_BRANCH}"
+fi
+
+## dir name
     count=$( print $PWD | wc -c )
 
     if [[ $count -lt 30 ]]; then
         PR_DIR='%~'
         PR_RDIR=''
     else
-        PR_DIR='.../%c'
+        PR_DIR='…/%c'
     fi
-## end git branch ##
-
 }
 
 
@@ -242,7 +250,7 @@ setprompt () {
         PR_TITLEBAR=$'%n@%m:%~'
         ;;
     esac
-    
+
     if [[ "$TERM" == "screen" ]]; then
     PR_STITLE=$'%{\ekzsh\e\\%}'
     else
@@ -260,7 +268,7 @@ setprompt () {
 # vim-like prompt
 
 #   PROMPT='
-#╔═ "${PR_BLUE}%~${PR_NO_COLOR}" ${FILECOUNT}, %? ${PR_BLUE}%n${PR_NO_COLOR}@${PR_RED}%M${PR_NO_COLOR} 
+#╔═ "${PR_BLUE}%~${PR_NO_COLOR}" ${FILECOUNT}, %? ${PR_BLUE}%n${PR_NO_COLOR}@${PR_RED}%M${PR_NO_COLOR}
 #╚═ ${PR_LIGHT_YELLOW}%h ${VIMODE} %#${PR_NO_COLOR} '
 #
 #    RPROMPT='%l, ${PR_RED}%@${PR_NO_COLOR}'
@@ -274,14 +282,20 @@ setprompt () {
 #    RPROMPT='%l, ${PR_RED}%@${PR_NO_COLOR}'
 # ↬»↬ ♄
 
+# Some interesting prompt chars
+# ≻ ≽ ≿ ⊃ ⊇ ⋟ ⌘ ▶ ▷ ▸ ▹ ► ▻ ⚡ ❩ ❫ ❭ ❯ ❱ ➔ ➙ ➛ ➜ ➝ ➞ ➟
+# ➠ ➡ ➢ ➣ ➤ ➥ ➳ ➵ ➸ ➺ ➻ ➼ ⇋ ⇌ ∫ ∬ ∭ ∴ ∵ ≍
+
+PROMPT_CHAR='≻ '
+
 if [ $TERM == 'linux' ] ; then
     PROMPT='$PR_BLUE%n$PR_WHITE@$PR_RED%m$PR_WHITE:$PR_YELLOW%c$PR_WHITE%%$PR_NO_COLOR '
     RPROMPT='tty%l,%?? ${PR_RED}%D{%l:%M:%S %p}${PR_NO_COLOR}'
 
 else
      PROMPT='
-${PR_BLUE}${HOST_SYM} ${PR_MAGENTA}${PR_DIR} ${PR_RED}»${PR_NO_COLOR} '
-    RPROMPT='${PR_YELLOW}${GIT_BRANCH}${PR_NO_COLOR}'
+${PR_BLUE}${HOST_SYM} ${PR_MAGENTA}${PR_DIR} ${PR_RED}${PROMPT_CHAR}${PR_NO_COLOR} '
+        RPROMPT='${PR_YELLOW}${GIT_PROMPT}${PR_NO_COLOR}'
 #    PROMPT='
 #$PR_SET_CHARSET$PR_STITLE${(e)PR_TITLEBAR}\
 #$PR_BLACK$PR_SHIFT_IN$PR_ULCORNER$PR_BLACK$PR_HBAR$PR_SHIFT_OUT(\

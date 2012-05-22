@@ -1,0 +1,8 @@
+hi CompDesc font-family:monospace; font-size:11pt; color: #ff0000; background: #000055;
+hi CompGroup font-family:monospace; font-size:11pt; color: #00ff00; background: #550000;
+hi CompIcon font-family:monospace; font-size:11pt; color: #0000ff; background: #005500; 
+hi CompItem font-family:monospace; font-size:11pt; color: #ffff00; background: #555500;
+hi CompMsg font-family:monospace; font-size:11pt; color: #00ffff; background: #005555;
+hi CompResult font-family:monospace; font-size:11pt; color: #ff0000; background: #550000;
+hi CompTitle font-family:monospace; font-size:11pt; color: #00ff00; background: #000055;
+hi CompItem[selected] background:#000000;color:#ffffff

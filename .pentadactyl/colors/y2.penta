@@ -1,0 +1,20 @@
+" ==Vimperator_Color_Scheme==
+"   name:ywgx
+" ==ywgx_Color_Scheme==
+hi Normal background:#202020;color:#dfdfdf;font-size:11px;font-family:monospace
+hi CmdLine background:#202020;color:#00cc22;font-size:11px;font-family:monospace;font-weight:normal;padding:0px 3px
+hi CompGroup background:#202020;color:#afafaf; font-size:11px;font-family:monospace
+hi CompTitle background:#202020;color:#2C100E;font-weight:bold; font-size:11px;font-family:monospace
+hi CompItem background:#202020;color:#afafaf;padding:0px 3px; font-size:11px;font-family:monospace
+hi CompItem[selected] background:#c0a25f;color:#202020; font-size:11px;font-family:monospace
+hi CompDesc background:#0boe13;color:#00cc22; font-size:11px;font-family:monospace
+hi CompDesc[selected] background:#2C001E;color:#00cc22; font-size:11px;font-family:monospace
+hi CompMsg background:#0boe13;color:#afafaf; font-size:11px;font-family:monospace
+hi ErrorMsg background:#ff6565;color:#202020; font-size:11px;font-family:monospace
+hi Filter color:#202020;font-weight:bold; font-size:11px;font-family:monospace
+hi StatusLine  font-family: monospace; font-size: 11px; font-weight: normal; color: #FFFFFF; background: #202020;
+hi Hint font-family:monospace;font-size:11px;font-weight:bold;color:white; background-color:rgba(0, 0, 0, 0.5);border:solid 1px LightGray;
+style -name statusbar chrome://* <<EOM
+#status-bar statusbarpanel {padding:0 1px !important;}
+statusbarpanel > * { margin:0 !important; padding:0 2px 0 0 !important; }
+EOM
