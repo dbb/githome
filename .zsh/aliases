@@ -1,0 +1,159 @@
+# applications
+alias jd='java -jar '"$HOME"'/downloads/JDownloader/JDownloader.jar'
+alias n='fceux --xscale 3 --yscale 3'
+alias v='vim'
+alias we='weechat-curses'
+alias x='startx'
+
+# archives
+alias tx='tar xf'
+alias bx='tar xjf'
+alias bz='tar cjf' # OUT IN
+
+# colors
+eval "`dircolors -b`"
+alias ls='ls --color=auto'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# cp and scp
+alias cpr='cp -r'
+alias scpr='scp -r'
+
+# games
+alias ng1='mednafen '"$HOME"'/games/nes/Ninja_Gaiden_1.nes'
+alias ng2='mednafen '"$HOME"'/games/nes/Ninja_Gaiden_2.nes'
+alias ng3='mednafen '"$HOME"'/games/nes/Ninja_Gaiden_3.nes'
+
+alias sc='mednafen '"$HOME"'/games/nes/Super_C.nes'
+
+# git
+alias gp='git push -u origin master'
+alias gc='git commit -m'
+
+# ls
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+
+# chmod 
+alias cx='chmod u+x'
+
+# debian
+alias afs='apt-file search --regexp'
+alias aps='aptitude search'
+alias apsh='aptitude show'
+alias apsrc='apt-get source'
+alias apv='apt-cache policy'
+
+
+alias apdg='su -c "aptitude update && aptitude safe-upgrade"'
+alias apud='su -c "aptitude update"'
+alias apug='su -c "aptitude safe-upgrade"'
+alias update='su -c "aptitude update"'
+alias upgrade='su -c "aptitude safe-upgrade"'
+
+alias di='su -c "dpkg -i ./*.deb"'
+
+alias quikdeb='/usr/bin/time -p dpkg-buildpackage -rfakeroot -us -uc'
+
+# cd shortcuts
+alias ..='cd ..'
+alias ...='cd ../..'
+alias up='cd ..'
+alias back='cd -'
+
+# files
+alias gtk='vim '"$HOME"'/.gtkrc.mine'
+alias ob-as='vim '"$HOME"'/.config/openbox/autostart.sh'
+alias ob-rc='vim '"$HOME"'/.config/openbox/rc.xml'
+alias sz='source "'"$HOME"'/.zshrc"'
+alias va='vim '"$HOME"'/.zaliases ; source '"$HOME"'/.zaliases'
+alias vz='vim '"$HOME"'/.zshrc ; source '"$HOME"'/.zshrc'
+alias xdef='vim '"$HOME"'/.Xdefaults ; xrdb -load '"$HOME"'/.Xdefaults'
+alias xconf='su -c "vim /etc/X11/xorg.conf"'
+
+# find
+alias fh='find . -maxdepth 1 -iname'
+alias fd='find . -iname'
+
+# grep
+alias igrep='egrep -i'
+alias ngrep='egrep -in'
+
+# heredocs
+alias hdoc='cat << EOF >'
+
+# make
+alias mi='su -c "make install"'
+
+# misc
+alias clear-hosts='rm -v '"$HOME"'/.ssh/known_hosts'
+alias duh='du -hs'
+alias gov='su root -c "'"$HOME"'/bin/cpu-gov"'
+alias pd='plpdl'
+alias q='exit'
+alias :q='exit'
+alias quit='exit'
+alias rsp="rename 's/(\s+)/_/g' "
+alias temp='sensors'
+alias td="date +'%l:%M %p, %d %b %Y'"
+alias xsr='xsetroot -solid "#303030"'
+
+# net
+alias png='ping -c2'
+alias pingr='ping -c 2 192.168.1.1'
+alias pingc='ping -c 2 comcast.com'
+alias pingv='ping -c 2 verizon.net'
+
+alias sr='ssh reddevil'
+
+# octave
+alias oct='octave --silent'
+alias o='octave --silent --eval'
+
+# perl
+
+# ps
+alias pse='ps -e'
+
+# ROOT OPERATIONS ###############################
+alias mntvid='su root -c "mount /dev/disk/by-label/VIDEOS /mnt/VIDEOS"'
+alias net-if='su root -c "vim /etc/network/interfaces"'
+alias netif='su root -c "vim /etc/network/interfaces"'
+alias s='su --login root'
+alias shn='su -c "shutdown -h now"'
+alias srn='su -c "shutdown -r now"'
+alias sus='su -c "pm-suspend"'
+alias wrs='su -c "ifdown wlan0 ; sleep 2s ; ifup wlan0"'
+
+# rm
+alias rf='rm -fr'
+
+# time
+alias sw='/usr/bin/time -f "\n----\n\nElapsed time: %E\n" cat'
+alias t='/usr/bin/time -p'
+
+# translation
+alias deen='tw translate.google.com.de-en'
+alias esen='tw translate.google.com.es-en'
+alias fren='tw translate.google.com.fr-en'
+
+alias ende='tw translate.google.com.en-de'
+alias enes='tw translate.google.com.en-es'
+alias enfr='tw translate.google.com.en-fr'
+
+# web
+alias websync='rsync -e ssh -av --exclude=".*" ~/web/dbbolton.us dbbolton@graffias.dreamhost.com:~/'
+alias demus='rsync -e ssh -av --exclude=".*" ~/web/demus.co dbbolton@graffias.dreamhost.com:~/'
+alias dbbo='rsync -e ssh -av --exclude=".*" ~/web/dbbo.co dbbolton@graffias.dreamhost.com:~/'
+
+# zsh stuff
+alias sa='source '"$HOME"'/.zaliases'
+alias rh='rehash'
+alias za='vim '"$HOME"'/.zaliases ; source '"$HOME"'/.zaliases'
+

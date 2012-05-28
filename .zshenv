@@ -51,7 +51,7 @@ export PERLBREW_ROOT="$HOME/perl"
 
 # programs
 export EDITOR='vim'
-export VIMRUNTIME='/usr/share/vim/vim73'
+##export VIMRUNTIME='/usr/share/vim/vim73'
 export PAGER='less'
 export VISUAL='vim'
 

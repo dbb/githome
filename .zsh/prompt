@@ -1,0 +1,156 @@
+# host symbols
+# if [ $TERM == 'rxvt-unicode' ]; then
+if [ $HOST == 'ganymed' ]; then
+    HOST_SYM='♃ '
+elif [ $HOST == 'reddevil' ]; then
+    HOST_SYM='♆ '
+elif [ $HOST == 'barrett' ]; then
+    HOST_SYM='☉'
+else
+    HOST_SYM='%%'
+fi
+
+
+setcolors () {
+    autoload colors zsh/terminfo
+    if [[ "$terminfo[colors]" -ge 8 ]]; then
+    colors
+    fi
+    for color in RED GREEN YELLOW BLUE MAGENTA CYAN WHITE BLACK; do
+    eval PR_$color='%{$terminfo[bold]$fg[${(L)color}]%}'
+    eval PR_LIGHT_$color='%{$fg[${(L)color}]%}'
+    (( count = $count + 1 ))
+    done
+    PR_NO_COLOR="%{$terminfo[sgr0]%}"
+}
+
+setcolors
+
+
+# set $VIMODE to a default value ############################################
+#VIMODE="$PR_RED-- INSERT --$PR_NO_COLOR"
+# VIMODE='I'
+# function zle-keymap-select {
+# #   VIMODE="${${KEYMAP/main/$PR_RED-- INSERT --$PR_NO_COLOR}/vicmd/$PR_LIGHT_WHITE   NORMAL   $PR_NO_COLOR}"
+#     VIMODE="${${KEYMAP/main/I}/vicmd/N}"
+#     zle reset-prompt
+# }
+# zle -N zle-keymap-select
+
+# function zle-cursor {
+#     CURSNUM=${CURSOR}
+#     zle reset-prompt
+# }
+# zle -N zle-cursor
+
+
+setprompt () {
+    # box-drawing characters
+    typeset -A altchar
+    set -A altchar ${(s..)terminfo[acsc]}
+    PR_SET_CHARSET="%{$terminfo[enacs]%}"
+    PR_SHIFT_IN="%{$terminfo[smacs]%}"
+    PR_SHIFT_OUT="%{$terminfo[rmacs]%}"
+    PR_HBAR=${altchar[q]:--}
+    PR_ULCORNER=${altchar[l]:--}
+    PR_LLCORNER=${altchar[m]:--}
+    PR_LRCORNER=${altchar[j]:--}
+    PR_URCORNER=${altchar[k]:--}
+
+    setopt prompt_subst
+
+    case $TERM in
+    xterm*)
+        PR_TITLEBAR=$'%{\e]0;%(!.-=*[ROOT]*=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\a%}'
+        ;;
+    screen)
+        PR_TITLEBAR=$'%{\e_screen \005 (\005t) | %(!.-=[ROOT]=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\e\\%}'
+        ;;
+    rxvt-unicode*)
+        PR_TITLEBAR=$'%{\e]0;%(!.-=*[ROOT]*=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\a%}'
+        ;;
+    *)
+        PR_TITLEBAR=$'%n@%m:%~'
+        ;;
+    esac
+
+    if [[ "$TERM" == "screen" ]]; then
+    PR_STITLE=$'%{\ekzsh\e\\%}'
+    else
+    PR_STITLE=''
+    fi
+
+# a smaller prompt
+#   PROMPT='--- $PR_RED%c$PR_BLUE %%$PR_NO_COLOR '
+
+# older prompt, with blue user, red host, and yellow directory
+#     PROMPT='$PR_BLUE%n$PR_WHITE@$PR_RED%m$PR_WHITE:$PR_YELLOW%c$PR_WHITE%%$PR_NO_COLOR '
+
+#PROMPT='${(e)PR_TITLEBAR}$PR_BLUE%n$PR_WHITE@$PR_RED%m$PR_WHITE:$PR_YELLOW%c$PR_WHITE%%$PR_NO_COLOR '
+
+# vim-like prompt
+
+#   PROMPT='
+#╔═ "${PR_BLUE}%~${PR_NO_COLOR}" ${FILECOUNT}, %? ${PR_BLUE}%n${PR_NO_COLOR}@${PR_RED}%M${PR_NO_COLOR}
+#╚═ ${PR_LIGHT_YELLOW}%h ${VIMODE} %#${PR_NO_COLOR} '
+#
+#    RPROMPT='%l, ${PR_RED}%@${PR_NO_COLOR}'
+
+#if [ $TERM == 'rxvt-unicode' ] ; then ########################################
+
+  # PROMPT='
+#╔═ "${PR_BLUE}%~${PR_NO_COLOR}" ${FILECOUNT}, %? ${PR_BLUE}%n${PR_NO_COLOR}@${PR_RED}%M${PR_NO_COLOR}$PR_HBAR${(e)PR_FILLBAR}
+#╚═ ${PR_LIGHT_YELLOW}%h ${VIMODE} %#${PR_NO_COLOR} '
+
+#    RPROMPT='%l, ${PR_RED}%@${PR_NO_COLOR}'
+# ↬»↬ ♄
+
+# Some interesting prompt chars
+# ≻ ≽ ≿ ⊃ ⊇ ⋟ ⌘ ▶ ▷ ▸ ▹ ► ▻ ⚡ ❩ ❫ ❭ ❯ ❱ ➔ ➙ ➛ ➜ ➝ ➞ ➟
+# ➠ ➡ ➢ ➣ ➤ ➥ ➳ ➵ ➸ ➺ ➻ ➼ ⇋ ⇌ ∫ ∬ ∭ ∴ ∵ ≍
+
+PROMPT_CHAR='≻≻'
+
+if [ $TERM == 'linux' ] ; then
+    PROMPT='$PR_BLUE%n$PR_WHITE@$PR_RED%m$PR_WHITE:$PR_YELLOW%c$PR_WHITE%%$PR_NO_COLOR '
+    RPROMPT='tty%l,%?? ${PR_RED}%D{%l:%M:%S %p}${PR_NO_COLOR}'
+
+else
+     PROMPT='
+${PR_BLUE}${HOST_SYM} ${PR_MAGENTA}${PR_DIR} ${PR_RED}${PROMPT_CHAR}${PR_NO_COLOR} '
+        RPROMPT='${PR_YELLOW}${GIT_PROMPT}${PR_NO_COLOR} '
+#    PROMPT='
+#$PR_SET_CHARSET$PR_STITLE${(e)PR_TITLEBAR}\
+#$PR_BLACK$PR_SHIFT_IN$PR_ULCORNER$PR_BLACK$PR_HBAR$PR_SHIFT_OUT(\
+#${PR_BLUE}%n${PR_NO_COLOR}@$PR_RED%m${PR_NO_COLOR}:%l\
+#$PR_BLACK)$PR_SHIFT_IN$PR_HBAR$PR_BLACK$PR_HBAR${(e)PR_FILLBAR}$PR_BLACK$PR_HBAR$PR_SHIFT_OUT(\
+#$PR_MAGENTA%$PR_PWDLEN<...<"%~"${PR_NO_COLOR}, ${PR_CYAN}${FILECOUNT}L%<<\
+#$PR_BLACK)$PR_SHIFT_IN$PR_HBAR$PR_BLACK$PR_URCORNER$PR_SHIFT_OUT\
+#
+#$PR_BLACK$PR_SHIFT_IN$PR_LLCORNER$PR_BLACK$PR_HBAR$PR_SHIFT_OUT(\
+#%(?..$PR_LIGHT_RED%?$PR_BLACK:)\
+#${PR_YELLOW}%h${PR_BLACK} | ${PR_NO_COLOR}VI:${PR_YELLOW}${VIMODE}\
+#$PR_LIGHT_BLACK%(!.$PR_RED.$PR_WHITE)$PR_BLACK)$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
+#$PR_BLACK$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
+#$PR_NO_COLOR%# '
+#
+#    RPROMPT=' $PR_BLACK$PR_SHIFT_IN$PR_BLACK$PR_SHIFT_OUT\
+#(${PR_GREEN}${PR_ACPI}${PR_NO_COLOR},${PR_RED}%D{%l:%M%p}$PR_BLACK)$PR_SHIFT_IN$PR_HBAR$PR_BLACK$PR_LRCORNER$PR_SHIFT_OUT$PR_NO_COLOR'
+#
+#    PS2='$PR_BLACK$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
+#$PR_BLACK$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT(\
+#$PR_LIGHT_GREEN%_$PR_BLACK)$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
+#$PR_BLACK$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT$PR_NO_COLOR '
+#
+fi
+    #######################################################################
+
+#
+#else
+#    PROMPT='%% '
+#    RPROMPT=''
+#fi
+
+}
+
+setprompt
