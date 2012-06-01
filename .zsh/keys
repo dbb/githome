@@ -1,4 +1,5 @@
-# keys ######################################################################
+# vim: set ft=zsh :
+
 autoload zkbd
 function zkbd_file() {
     [[ -f ~/.zsh/kbd/${TERM}-${VENDOR}-${OSTYPE} ]] && printf '%s' ~/".zsh/kbd/${TERM}-${VENDOR}-${OSTYPE}" && return 0
@@ -7,6 +8,16 @@ function zkbd_file() {
 }
 
 [[ ! -d ~/.zsh/kbd ]] && mkdir ~/.zsh/kbd
+if [[ -d ~/.zkbd ]]; then
+    mv ~/.zkbd/* ~/.zsh/kbd
+    rm -rf ~/.zkbd
+fi
+
+if [[ ! -h ~/.zkbd ]]; then
+    rm -rf ~/.zkbd
+    ln -s ~/.zsh/kbd ~/.zkbd
+fi
+
 keyfile=$(zkbd_file)
 ret=$?
 if [[ ${ret} -ne 0 ]]; then
