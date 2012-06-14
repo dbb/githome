@@ -71,7 +71,7 @@ function precmd {
     if [[ "$promptsize + $pwdsize" -gt $TERMWIDTH ]]; then
         ((PR_PWDLEN=$TERMWIDTH - $promptsize))
     else
-    PR_FILLBAR="\${(l.(($TERMWIDTH - ($promptsize + $pwdsize + $filesize + 5)))..${PR_HBAR}.)}"
+        PR_FILLBAR="\${(l.(($TERMWIDTH - ($promptsize + $pwdsize + $filesize + 5)))..${PR_HBAR}.)}"
     fi
 
     # note: the 5 is for extra characters added: two double-quotes, a comma,
@@ -92,11 +92,12 @@ function precmd {
     GIT_STAT=''
     GIT_BRANCH=''
 if [[ -d .git ]]; then
-        GIT_BRANCH=`git branch | perl -ne 'print if s{\*\s*}{}'`
+    GIT_BRANCH=$( git branch | perl -ne 'print if s{\*\s*}{}' )
+    GIT_SHA=$( git rev-parse --short HEAD )
     if [[ -z $( git status | grep "nothing to commit" ) ]]; then
         GIT_STAT='+'
     fi
-    GIT_PROMPT="${GIT_STAT} ${GIT_BRANCH}"
+    GIT_PROMPT="${GIT_STAT} ${GIT_BRANCH} ${GIT_SHA}"
 else
         GIT_BRANCH=''
         GIT_STAT=''
@@ -128,7 +129,6 @@ fi
 ext_dir="$HOME/.zsh"
 ext_files=( aliases functions keys prompt )
 for file in $ext_files; do
-    #[[ -f $ext_dir/$ext_files ]] && source $ext_dir/$ext_files
-    source "${ext_dir}/${file}"
+    [[ -f ${ext_dir}/${file} ]] && source ${ext_dir}/${file}
 done
 
