@@ -8,12 +8,9 @@ function zkbd_file() {
 }
 
 [[ ! -d ~/.zsh/kbd ]] && mkdir ~/.zsh/kbd
-if [[ -d ~/.zkbd ]]; then
-    mv ~/.zkbd/* ~/.zsh/kbd
-    rm -rf ~/.zkbd
-fi
 
 if [[ ! -h ~/.zkbd ]]; then
+    [[ -d ~/.zkbd ]] && mv ~/.zkbd/* ~/.zsh/kbd/
     rm -rf ~/.zkbd
     ln -s ~/.zsh/kbd ~/.zkbd
 fi
