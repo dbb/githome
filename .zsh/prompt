@@ -1,9 +1,9 @@
 # host symbols
 # if [ $TERM == 'rxvt-unicode' ]; then
 if [ $HOST == 'ganymed' ]; then
-    HOST_SYM='♃ '
+    HOST_SYM='♃'
 elif [ $HOST == 'reddevil' ]; then
-    HOST_SYM='♆ '
+    HOST_SYM='♆'
 elif [ $HOST == 'barrett' ]; then
     HOST_SYM='☉'
 else
