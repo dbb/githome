@@ -55,7 +55,7 @@ alias aprm='sudo aptitude remove'
 alias appg='sudo aptitude purge'
 alias apcl='sudo aptitude clean'
 
-alias apdg='sudo aptitude update && aptitude safe-upgrade'
+alias apdg='sudo aptitude update && sudo aptitude safe-upgrade'
 alias apud='sudo aptitude update'
 alias apug='sudo aptitude safe-upgrade'
 
