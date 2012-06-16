@@ -4,17 +4,17 @@ export DEBFULLNAME="Daniel Bolton"
 
 # directories
 export CDPATH=".:~:~/src"
-export gh="$HOME/src/gh"
-export gc="$HOME/src/github/configs"
-export gs="$HOME/src/github/scripts"
-export nes="$HOME/games/nes"
-export n64="$HOME/games/n64"
-export ob="$HOME/.config/openbox"
-export pd="$HOME/perl"
+export gh="~/src/gh"
+export gc="~/src/github/configs"
+export gs="~/src/github/scripts"
+export nes="~/games/nes"
+export n64="~/games/n64"
+export ob="~/.config/openbox"
+export pd="~/perl"
 
 # files
-export HISTFILE="$HOME/.zhistory"
-export WWW_HOME="$HOME/Documents/home.html"
+export HISTFILE="~/.zsh/history"
+export WWW_HOME="~/Documents/home.html"
 
 # grep
 #export GREP_OPTIONS='--perl-regexp'
@@ -47,7 +47,7 @@ for dir in ~/bin ~/games ~/perl/bin ; do
 done
 
 # perlbrew
-export PERLBREW_ROOT="$HOME/perl"
+export PERLBREW_ROOT="~/perl"
 
 # programs
 export EDITOR='vim'

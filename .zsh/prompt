@@ -6,10 +6,11 @@ elif [ $HOST == 'reddevil' ]; then
     HOST_SYM='♆'
 elif [ $HOST == 'barrett' ]; then
     HOST_SYM='☉'
+elif [ $HOST == 'persephone' ]; then
+    HOST_SYM='♇'
 else
     HOST_SYM='%%'
 fi
-
 
 setcolors () {
     autoload colors zsh/terminfo
