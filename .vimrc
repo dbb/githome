@@ -52,6 +52,7 @@ set showmode
 set ls=2        " always show status bar
 "set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
 set statusline=%<%1*───\ %5*%f%1*%(\ ───\ %4*%h%1*%)%(\ ───\ %4*%m%1*%)%(\ ───\ %4*%r%1*%)\ ───%=───\ %2*%b(0x%B)%1*\ ───\ %3*%l,%c%V%1*\ ───\ %5*%P%1*\ ───%0*
+"set statusline=%<%1*--\ %5*%f%1*%(\ --\ %4*%h%1*%)%(\ --\ %4*%m%1*%)%(\ --\ %4*%r%1*%)\ --%=--\ %2*%b(0x%B)%1*\ --\ %3*%l,%c%V%1*\ --\ %5*%P%1*\ --%0*
 
 set showcmd " show partially entered commands
 set showmode " display INSERT when in i mode
