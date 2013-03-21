@@ -6,11 +6,10 @@ elif [ $HOST == 'reddevil' ]; then
     HOST_SYM='♆'
 elif [ $HOST == 'barrett' ]; then
     HOST_SYM='☉'
-elif [ $HOST == 'persephone' ]; then
-    HOST_SYM='♇'
 else
     HOST_SYM='%%'
 fi
+
 
 setcolors () {
     autoload colors zsh/terminfo
@@ -110,7 +109,6 @@ setprompt () {
 # ≻ ≽ ≿ ⊃ ⊇ ⋟ ⌘ ▶ ▷ ▸ ▹ ► ▻ ⚡ ❩ ❫ ❭ ❯ ❱ ➔ ➙ ➛ ➜ ➝ ➞ ➟
 # ➠ ➡ ➢ ➣ ➤ ➥ ➳ ➵ ➸ ➺ ➻ ➼ ⇋ ⇌ ∫ ∬ ∭ ∴ ∵ ≍
 
-PROMPT_CHAR='≻≻'
 
 if [ $TERM == 'linux' ] ; then
     PROMPT='$PR_BLUE%n$PR_WHITE@$PR_RED%m$PR_WHITE:$PR_YELLOW%c$PR_WHITE%%$PR_NO_COLOR '
@@ -118,7 +116,7 @@ if [ $TERM == 'linux' ] ; then
 
 else
      PROMPT='
-${PR_BLUE}${HOST_SYM} ${PR_MAGENTA}${PR_DIR} ${PR_RED}${PROMPT_CHAR}${PR_NO_COLOR} '
+${PR_GREEN}${ROOT_NAME}${PR_BLUE}${HOST_SYM} ${PR_MAGENTA}${PR_DIR} ${PR_RED}${PROMPT_CHAR}${PR_NO_COLOR} '
         RPROMPT='${PR_YELLOW}${GIT_PROMPT}${PR_NO_COLOR} '
 #    PROMPT='
 #$PR_SET_CHARSET$PR_STITLE${(e)PR_TITLEBAR}\

@@ -116,6 +116,19 @@ fi
     fi
 }
 
+## root
+# Some interesting prompt chars
+# %% » › > │
+# ≻  ≽≿ ⊃ ⊇ ⋟ ⌘ ▶ ▷ ▸ ▹ ► ▻ ⚡ ❩ ❫ ❭ ❯ ❱ ➔ ➙ ➛ ➜ ➝ ➞ ➟
+# ➠ ➡ ➢ ➣ ➤ ➥ ➳ ➵ ➸ ➺ ➻ ➼ ⇋ ⇌ ∫ ∬ ∭ ∴ ∵ ≍
+PROMPT_CHAR='»'
+if [[ $UID -eq 0 ]]; then
+    ROOT_NAME='(root) '
+    PROMPT_CHAR='%#'
+else
+    ROOT_NAME=''
+    PROMPT_CHAR='»'
+fi
 
 # preexec () {
 #     if [[ "$TERM" == "screen" ]]; then

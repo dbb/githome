@@ -55,13 +55,14 @@ alias aprm='sudo aptitude remove'
 alias appg='sudo aptitude purge'
 alias apcl='sudo aptitude clean'
 
-alias apdg='sudo aptitude update && sudo aptitude safe-upgrade'
+alias apdg='sudo aptitude update; sudo aptitude safe-upgrade'
 alias apud='sudo aptitude update'
+alias apfr='sudo aptitude safe-upgrade --full-resolver'
 alias apug='sudo aptitude safe-upgrade'
 
 alias di='sudo dpkg -i ./*.deb'
-
 alias quikdeb='/usr/bin/time -p dpkg-buildpackage -rfakeroot -us -uc'
+alias sources='sudo vim /etc/apt/sources.list'
 
 ## cd shortcuts
 alias ..='cd ..'
@@ -84,6 +85,7 @@ alias fh='find . -maxdepth 1 -iname'
 alias fd='find . -iname'
 
 ## grep
+alias ack='ack-grep'
 alias igrep='egrep -i'
 alias ngrep='egrep -in'
 
@@ -97,6 +99,7 @@ alias mi='su -c "make install"'
 alias clear-hosts='rm -v '"$HOME"'/.ssh/known_hosts'
 alias duh='du -hs'
 alias gov='su root -c "'"$HOME"'/bin/cpu-gov"'
+alias mountiso='sudo mount -o loop -t iso9660'
 alias pd='plpdl'
 alias q='exit'
 alias :q='exit'
