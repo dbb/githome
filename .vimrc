@@ -17,6 +17,22 @@ autocmd FileType * set formatoptions=lnq
 autocmd FileType * set formatoptions-=c formatoptions-=r formatoptions-=o
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+autocmd FileType gtkrc set commentstring=#\ %s
+
+" web stuff ---------------------------------------------------------
+autocmd FileType css        setlocal sw=2 ts=2 sts=2 textwidth=79
+autocmd FileType html       setlocal sw=2 ts=2 sts=2 textwidth=0
+autocmd FileType javascript setlocal sw=4 ts=4 sts=4 textwidth=79
+autocmd FileType xhtml      setlocal sw=2 ts=2 sts=2 textwidth=0
+autocmd FileType xml        setlocal sw=2 ts=2 sts=2 textwidth=0
+
+autocmd FileType css        set omnifunc=csscomplete#CompleteCSS
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html       set omnifunc=htmlcomplete#CompleteTags
+
+" end web stuff -----------------------------------------------------
+
+
 " break long lines in plain text files
 " use gqq
 "set textwidth=78
@@ -39,8 +55,10 @@ set mouse=a " mouse support"
 set number
 
 " create .un~ file
-"set undofile
+" set undofile
 
+" use a somewhat secure crypt method
+set cryptmethod=blowfish
 
 " ruler with clock
 " set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
@@ -52,7 +70,6 @@ set showmode
 set ls=2        " always show status bar
 "set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
 set statusline=%<%1*───\ %5*%f%1*%(\ ───\ %4*%h%1*%)%(\ ───\ %4*%m%1*%)%(\ ───\ %4*%r%1*%)\ ───%=───\ %2*%b(0x%B)%1*\ ───\ %3*%l,%c%V%1*\ ───\ %5*%P%1*\ ───%0*
-"set statusline=%<%1*--\ %5*%f%1*%(\ --\ %4*%h%1*%)%(\ --\ %4*%m%1*%)%(\ --\ %4*%r%1*%)\ --%=--\ %2*%b(0x%B)%1*\ --\ %3*%l,%c%V%1*\ --\ %5*%P%1*\ --%0*
 
 set showcmd " show partially entered commands
 set showmode " display INSERT when in i mode
@@ -76,33 +93,60 @@ au BufNewFile,BufRead *.z* set filetype=zsh
 let mapleader = ","
 let g:mapleader = ","
 
-nmap <leader>a A 
-nmap <leader>c 0i#<Esc>
-nmap <leader>d :close<CR>
-nmap <leader>e :colo 
-nmap <leader>f :set guifont=*<CR>
-nmap <leader>h iprint <<'EOF';<Esc>^
-nmap <leader>i o<Esc>p
-nmap <leader>o iopen(my $,  "<",  "");<Esc>^f$a
-nmap <leader>r @:
-nmap <leader>s ddpk
-nmap <leader>t :source ~/.vim/scripts/tidydiff.vim
-nmap <leader>v "+gP<CR>
-nmap <leader>w :w!<CR>
+" classic cut/copy/paste
+noremap <leader>a ggVG
+noremap <leader>c "+y
+noremap <leader>v "+gP
+noremap <leader>x "+x
 
-nmap <leader>I ^i <Esc>i
+"append with a space
+nnoremap <leader>A A 
+" alt. to commentary's binding
+nnoremap <leader>C \\\<Esc>
+" close tab/windows
+nnoremap <leader>d :close<CR>
+" search
+nnoremap <leader>f /
+" cd to where most of my editing takes place
+nnoremap <leader>g cd ~/src/gh
+" Perl heredoc
+nnoremap <leader>h iprint <<'EOF';<CR>EOF<Esc>O
+" go to the tab on the right
+nnoremap <leader>n :tabnext<cr>
+" Perl open file for reading
+nnoremap <leader>o iopen( my $,  "<",  "" );<Esc>F$a
+" go to the tab on the left
+nnoremap <leader>p :tabprevious<cr>
+" repeat last ex command
+nnoremap <leader>r @:
+" swap current line with one below it
+nnoremap <leader>s ddpk
+" toggle the NERDTree window
+nnoremap <leader>t :NERDTreeToggle<CR>
+" write
+nnoremap <leader>w :w!<CR>
 
-nmap <leader>$ f$li
-nmap <leader>@ f@li
-nmap <leader>; A;<Esc>^
+" add to beginning of line with a space
+nnoremap <leader>I ^i <Esc>i
+" open a NERDTree in the dir where the current file is
+nnoremap <leader>N :NERDTree %<CR>
+
+" change a scalar name
+nnoremap <leader>$ f$lcw
+" change array name
+nnoremap <leader>@ f@lcw
+" append a semicolon
+nnoremap <leader>; A;<Esc>^
 
 
-nmap <leader># i#!/usr/bin/env perl<CR>use strict;
+nnoremap <leader># i#!/usr/bin/env perl<CR>use strict;
     \<CR>use warnings;<CR>use 5.010;<cr><esc>:set filetype=perl<ENTER>i<CR>
 
 " maps that override default commands
-nmap t :tabnew 
+nnoremap e :e 
+nnoremap t :tabnew 
 "map <leader>e :e! ~/.vimrc<cr>
+
 autocmd! bufwritepost vimrc source ~/.vimrc
 " ---------------------------------------------------------------------------
 
@@ -116,8 +160,6 @@ set list " make tabs visible
 set listchars=tab:>-,trail:-
 
 " the other kind of tabs
-nmap <leader>n :tabnext<cr>
-nmap <leader>p :tabprevious<cr>
 
 " Smart way to move btw. windows
 map <C-j> <C-W>j
@@ -154,6 +196,11 @@ filetype indent plugin on
 "    hi Normal guibg=black guifg=white
 "endfunction
 
+function! Cdhere()
+    :cd %:p:h
+endfunction
+command! Cd call Cdhere()
+
 function! SetExecutableBit()
   let fname = expand("%:p")
   checktime
@@ -183,6 +230,10 @@ if !exists("*ReloadConfigs")
   command! Recfg call ReloadConfigs()
 endif
 
+function! Gpush()
+    :Git push origin master
+endfunction
+
 " some stuff from Damian Conway's vimrc #####################################
 
 "====[ I'm sick of typing :%s/.../.../g ]=======
@@ -196,8 +247,8 @@ set smartcase                       "...unless uppercase letters used
 set hlsearch                        "Highlight all search matches
 
 "Delete in normal mode to switch off highlighting till next search and clear messages...
-" nmap <silent> <BS> :nohlsearch <BAR> call Toggle_CursorColumn('off')<CR>
-nmap <silent> <BS> :nohlsearch <CR>
+"nmap <silent> <BS> :nohlsearch <BAR> call Toggle_CursorColumn('off')<CR>
+nmap <silent> <BS> :nohlsearch<CR>
 
 "Double-delete to remove search highlighting *and* trailing whitespace...
 nmap <silent> <BS><BS>  mz:%s/\s\+$//g<CR>`z:nohlsearch<CR>
@@ -233,28 +284,50 @@ augroup END
 
 "=====[ Make Visual modes work better ]==================
 
+" Visual Block mode is far more useful that Visual mode (so swap the commands)...
+" nnoremap v <C-V>
+" nnoremap <C-V> v
 
-" Make BS/DEL work as expected in visual modes (i.e. delete elected)...
-vmap <BS> x
+" vnoremap v <C-V>
+" vnoremap <C-V> v
 
-" Make vaa select the entire file...
-vmap aa VGo1G
+" " Make BS/DEL work as expected in visual modes (i.e. delete elected)...
+" vmap <BS> x
 
-"Square up visual selections...
-set virtualedit=block
+" " Make vaa select the entire file...
+" vmap aa VGo1G
 
-" When shifting, retain selection over multiple shifts...
-vmap <expr> > KeepVisualSelection(">")
-vmap <expr> < KeepVisualSelection("<")
+" "Square up visual selections...
+" set virtualedit=block
 
-function! KeepVisualSelection(cmd)
-    if mode() ==# "V"
-        return a:cmd . "gv"
-    else
-        return a:cmd
-    endif
-endfunction
+" " When shifting, retain selection over multiple shifts...
+" vmap <expr> > KeepVisualSelection(">")
+" vmap <expr> < KeepVisualSelection("<")
 
+" function! KeepVisualSelection(cmd)
+"     if mode() ==# "V"
+"         return a:cmd . "gv"
+"     else
+"         return a:cmd
+"     endif
+" endfunction
+
+" " Temporarily add a column indicator when inserting or appending in visual mode...
+" " (Should use <C-O> instead, but it doesn't seem to work)
+" vnoremap <silent>  I  I<C-R>=TemporaryColumnMarkerOn()<CR>
+" vnoremap <silent>  A  A<C-R>=TemporaryColumnMarkerOn()<CR>
+
+" function! TemporaryColumnMarkerOn ()
+"     let g:prev_cursorcolumn_state = g:cursorcolumn_visible ? 'on' : 'off'
+"     call Toggle_CursorColumn('on')
+"     inoremap <silent>  <ESC>  <ESC>:call TemporaryColumnMarkerOff(g:prev_cursorcolumn_state)<CR>
+"     return ""
+" endfunction
+
+" function! TemporaryColumnMarkerOff (newstate)
+"     call Toggle_CursorColumn(a:newstate)
+"     iunmap <ESC>
+" endfunction
 
 
 "=====[ Configure % key ]==============================
@@ -295,6 +368,5 @@ set scrolloff=2                     "Scroll when 2 lines from top/bottom
 "=====[ Remap various keys to something more useful ]========================
 
 " Use space to jump down a page (like browsers do)...
-nnoremap <Space> <PageDown>
+" nnoremap <Space> <PageDown>
 
-nmap e :e 

@@ -3,18 +3,18 @@ export DEBEMAIL="dan@dbbo.us"
 export DEBFULLNAME="Daniel Bolton"
 
 # directories
-export CDPATH=".:~:~/src"
-export gh="~/src/gh"
-export gc="~/src/github/configs"
-export gs="~/src/github/scripts"
-export nes="~/games/nes"
-export n64="~/games/n64"
-export ob="~/.config/openbox"
-export pd="~/perl"
+#export CDPATH=".:~:~/src"
+export gh="$HOME/src/githome"
+export gc="$HOME/src/configs"
+export gs="$HOME/src/scripts"
+export nes="$HOME/games/nes"
+export n64="$HOME/games/n64"
+export ob="$HOME/.config/openbox"
+export pd="$HOME/perl"
 
 # files
-export HISTFILE="~/.zsh/history"
-export WWW_HOME="~/Documents/home.html"
+export HISTFILE="$HOME/.zhistory"
+export WWW_HOME="$HOME/Documents/home.html"
 
 # grep
 #export GREP_OPTIONS='--perl-regexp'
@@ -40,14 +40,14 @@ export MAKEFLAGS='-j 2'
 
 # path
 typeset -U path
-for dir in ~/bin ~/games ~/perl/bin ; do
+for dir in ~/bin ~/games ~/perl/bin /usr/lib/git-core/ ; do
     if [[ -z ${path[(r)$dir]} ]]; then
         path=($dir $path)
     fi
 done
 
 # perlbrew
-export PERLBREW_ROOT="~/perl"
+export PERLBREW_ROOT="$HOME/perl"
 
 # programs
 export EDITOR='vim'
