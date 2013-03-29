@@ -1,20 +1,14 @@
+
 # vim: set ft=zsh :
 
 autoload zkbd
 function zkbd_file() {
-    [[ -f ~/.zsh/kbd/${TERM}-${VENDOR}-${OSTYPE} ]] && printf '%s' ~/".zsh/kbd/${TERM}-${VENDOR}-${OSTYPE}" && return 0
-    [[ -f ~/.zsh/kbd/${TERM}-${DISPLAY}          ]] && printf '%s' ~/".zsh/kbd/${TERM}-${DISPLAY}"          && return 0
+    [[ -f ~/.zkbd/${TERM}-${VENDOR}-${OSTYPE} ]] && printf '%s' ~/".zkbd/${TERM}-${VENDOR}-${OSTYPE}" && return 0
+    [[ -f ~/.zkbd/${TERM}-${DISPLAY}          ]] && printf '%s' ~/".zkbd/${TERM}-${DISPLAY}"          && return 0
     return 1
 }
 
-[[ ! -d ~/.zsh/kbd ]] && mkdir ~/.zsh/kbd
-
-if [[ ! -h ~/.zkbd ]]; then
-    [[ -d ~/.zkbd ]] && mv ~/.zkbd/* ~/.zsh/kbd/
-    rm -rf ~/.zkbd
-    ln -s ~/.zsh/kbd ~/.zkbd
-fi
-
+[[ ! -d ~/.zkbd ]] && mkdir ~/.zkbd
 keyfile=$(zkbd_file)
 ret=$?
 if [[ ${ret} -ne 0 ]]; then

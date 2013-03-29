@@ -71,14 +71,22 @@ alias up='cd ..'
 alias back='cd -'
 
 ## files
-alias gtk='vim '"$HOME"'/.gtkrc.mine'
-alias ob-as='vim '"$HOME"'/.config/openbox/autostart.sh'
-alias ob-rc='vim '"$HOME"'/.config/openbox/rc.xml'
-alias sz='source "'"$HOME"'/.zshrc"'
-alias va='vim '"$HOME"'/.zaliases ; source '"$HOME"'/.zaliases'
-alias vz='vim '"$HOME"'/.zshrc ; source '"$HOME"'/.zshrc'
-alias xdef='vim '"$HOME"'/.Xdefaults ; xrdb -load '"$HOME"'/.Xdefaults'
-alias xconf='su -c "vim /etc/X11/xorg.conf"'
+alias gtk="vim ${HOME}/.gtkrc.mine"
+alias obas="vim ${HOME}/.config/openbox/autostart.sh"
+alias obrc="vim ${HOME}/.config/openbox/rc.xml"
+alias xdef="vim ${HOME}/.Xdefaults; xrdb -load ${HOME}/.Xdefaults"
+alias xconf="sudo vim /etc/X11/xorg.conf"
+
+# zsh specific files
+alias srca="source ${ZSH_DIR}/aliases"
+alias srcf="source ${ZSH_DIR}/functions"
+alias srcp="source ${ZSH_DIR}/prompt"
+alias srcz="source ${HOME}/.zshrc"
+alias via="vim ${ZSH_DIR}/aliases; source ${HOME}/aliases"
+alias vif="vim ${ZSH_DIR}/functions; source ${HOME}/functions"
+alias vip="vim ${ZSH_DIR}/prompt; source ${HOME}/prompt"
+alias viz="vim ${HOME}/.zshrc; source ${HOME}/.zshrc"
+
 
 ## find
 alias fh='find . -maxdepth 1 -iname'

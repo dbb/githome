@@ -91,6 +91,14 @@ gcp () {
     git push -u origin master
 }
 
+## "generic update file"
+guf () {
+    file=$1
+    git add $file
+    git commit -m "Update ${file}"
+    git push -u origin master
+}
+
 ### github stuff ###
 
 ## empty_gh [NAME_OF_REPO]
