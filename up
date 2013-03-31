@@ -3,8 +3,11 @@
 # dbbolton
 # https://github.com/dbb
 
+## This script is for "uploading" a local file-- i.e. copy it from ~ to the 
+## proper git dir.
+
 input="$1"
-found=( ${(f)"$( find . -iname "*$1" )"} )
+found=( ${(f)"$( find . -iname "*$1i*" )"} )
 
 if [[ -e $1 ]]; then
     if [[ -n $( diff ~/$1 ./$1 ) ]]; then
