@@ -31,6 +31,9 @@ zle -N self-insert url-quote-magic
 autoload -U compinit
 compinit
 
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
+
 which dircolors >/dev/null && eval "$(dircolors -b)"
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
@@ -40,8 +43,20 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' menu select
 
-zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path ~/.zsh/cache
+zstyle ':completion:*' completer _complete _match _approximate
+zstyle ':completion:*:match:*' original only
+zstyle -e ':completion:*:approximate:*' \
+        max-errors 'reply=($((($#PREFIX+$#SUFFIX)/3))numeric)'
+
+zstyle ':completion:*:functions' ignored-patterns '_*'
+
+zstyle ':completion:*:*:kill:*' menu yes select
+zstyle ':completion:*:kill:*'   force-list always
+
+zstyle ':completion:*' squeeze-slashes true
+
+zstyle ':completion:*:cd:*' ignore-parents parent pwd
+
 
 # setopt correctall
 
