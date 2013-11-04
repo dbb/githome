@@ -92,15 +92,27 @@ au BufNewFile,BufRead *.md set filetype=md
 au BufNewFile,BufRead *.cf set filetype=configfile
 au BufNewFile,BufRead *.z* set filetype=zsh
 
-" extra bindings ------------------------------------------------------------
+" Extra bindings ------------------------------------------------------------
 let mapleader = ","
 let g:mapleader = ","
 
-" classic cut/copy/paste
+" Classic cut/copy/paste
 noremap <leader>a ggVG
 noremap <leader>c "+y
 noremap <leader>v "+gP
 noremap <leader>x "+x
+
+" Pentadactyl style
+noremap <C-v><C-a> ggVG
+noremap <C-v><C-c> "+y
+noremap <C-v><C-v> "+gP
+noremap <C-v><C-x> "+x
+
+" Now this is just sinful.
+vnoremap <C-a> ggVG 
+vnoremap <C-c> "+y 
+vnoremap <C-v> "+go 
+vnoremap <C-x> "+x 
 
 "append with a space
 nnoremap <leader>A A 
