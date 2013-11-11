@@ -107,6 +107,10 @@ noremap <C-v><C-a> ggVG
 noremap <C-v><C-c> "+y
 noremap <C-v><C-v> "+gP
 noremap <C-v><C-x> "+x
+inoremap <C-v><C-a> <Esc>ggVGi
+inoremap <C-v><C-c> <Esc>"+yi
+inoremap <C-v><C-v> <Esc>"+gPi
+inoremap <C-v><C-x> <Esc>"+xi
 
 " Now this is just sinful.
 vnoremap <C-a> ggVG 
