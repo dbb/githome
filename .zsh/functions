@@ -71,7 +71,7 @@ font_test () {
     print "Quotes:\t\t\"foo\" 'bar' "
     print "Punctuation: \t, . ? : ; _ ! "
     print "Symbols:\t\` ~  @ # $ % ^ & * - + = | / \\"
-    print "Ambiguity:\tIllegal1 = O0"
+    print "Ambiguity:\t1Il ao DO0Q B8 ``''\" ({ ,. ;: "
 }
 
 
