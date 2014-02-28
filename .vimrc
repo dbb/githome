@@ -59,6 +59,7 @@ set number
 
 " use a somewhat secure crypt method
 set cryptmethod=blowfish
+" use :X to encrypt
 
 " ruler with clock
 " set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
@@ -92,31 +93,15 @@ au BufNewFile,BufRead *.md set filetype=md
 au BufNewFile,BufRead *.cf set filetype=configfile
 au BufNewFile,BufRead *.z* set filetype=zsh
 
-" Extra bindings ------------------------------------------------------------
+" extra bindings ------------------------------------------------------------
 let mapleader = ","
 let g:mapleader = ","
 
-" Classic cut/copy/paste
+" classic cut/copy/paste
 noremap <leader>a ggVG
 noremap <leader>c "+y
 noremap <leader>v "+gP
 noremap <leader>x "+x
-
-" Pentadactyl style
-noremap <C-v><C-a> ggVG
-noremap <C-v><C-c> "+y
-noremap <C-v><C-v> "+gP
-noremap <C-v><C-x> "+x
-inoremap <C-v><C-a> <Esc>ggVGi
-inoremap <C-v><C-c> <Esc>"+yi
-inoremap <C-v><C-v> <Esc>"+gPi
-inoremap <C-v><C-x> <Esc>"+xi
-
-" Now this is just sinful.
-vnoremap <C-a> ggVG 
-vnoremap <C-c> "+y 
-vnoremap <C-v> "+go 
-vnoremap <C-x> "+x 
 
 "append with a space
 nnoremap <leader>A A 
@@ -159,12 +144,15 @@ nnoremap <leader>; A;<Esc>^
 
 
 nnoremap <leader># i#!/usr/bin/env perl<CR>use strict;
-    \<CR>use warnings;<CR>use 5.010;<cr><esc>:set filetype=perl<ENTER>i<CR>
+    \<CR>use warnings;<CR>use 5.014;<cr><esc>:set filetype=perl<ENTER>i<CR>
 
 " maps that override default commands
 nnoremap e :e 
 nnoremap t :tabnew 
 "map <leader>e :e! ~/.vimrc<cr>
+
+" command maps
+cnoremap w!! w !sudo tee > /dev/null %
 
 autocmd! bufwritepost vimrc source ~/.vimrc
 " ---------------------------------------------------------------------------
@@ -177,6 +165,11 @@ set smarttab
 
 set list " make tabs visible
 set listchars=tab:>-,trail:-
+set nolist " Due to a list 'feature' that breaks breakat, we will only enable
+           " list as needed.
+
+set showbreak=\ \ \ 
+set linebreak
 
 " the other kind of tabs
 
