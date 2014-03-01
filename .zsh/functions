@@ -2,6 +2,10 @@
 # github.com/dbb
 
 # A ---------------------------------- A --------------------------------- A #
+## search for packages containing two strings in the description
+apad () {
+    aptitude search '?and( ~d'"$1"' ~d'"$2"' )'
+}
 
 ## use apitude as a regular user
 apn () {
@@ -71,7 +75,7 @@ font_test () {
     print "Quotes:\t\t\"foo\" 'bar' "
     print "Punctuation: \t, . ? : ; _ ! "
     print "Symbols:\t\` ~  @ # $ % ^ & * - + = | / \\"
-    print "Ambiguity:\t1Il ao DO0Q B8 ``''\" ({ ,. ;: "
+    print "Ambiguity:\t1Il ao DO0Q B8 \`\`''\" ({ ,. ;: "
 }
 
 
