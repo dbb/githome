@@ -66,6 +66,12 @@ ckb () {
 # E ---------------------------------- E --------------------------------- E #
 
 # F ---------------------------------- F --------------------------------- F #
+
+file_list () {
+    eval 'files=${(f)"$('"$1"')"}'
+    # Doesn't actually work. Useful example:
+    # for i in ${(f)"$(find -maxdepth 1 -type f)"}; do echo "file: $i"; done 
+}
 ## test your font
 font_test () {
     print "Letters:\tAaBbCcDdEeFfGgHhIiJjKkLlMm"
@@ -75,7 +81,7 @@ font_test () {
     print "Quotes:\t\t\"foo\" 'bar' "
     print "Punctuation: \t, . ? : ; _ ! "
     print "Symbols:\t\` ~  @ # $ % ^ & * - + = | / \\"
-    print "Ambiguity:\t1Il ao DO0Q B8 \`\`''\" ({ ,. ;: "
+    print "Ambiguity:\t1Il ij ao DO0Q B8 \`\`''\" ({ ,. ;: "
 }
 
 
@@ -176,6 +182,11 @@ readme () {
     print "# $repo \n\n<https://github.com/${user}/${repo}>\n\n##"\
         "Description\n" >> README.md
     vim README.md
+}
+
+## make a generic gitignore
+gitig () {
+    print "*.swp\n*~*" >> .gitignore
 }
 
 ### end git ############################
