@@ -1,9 +1,20 @@
+# dbb's zsh aliases
+# https://github.com/dbb
+
+# vim: set ft=sh :
+
 ## applications
 alias jd='java -jar '"$HOME"'/downloads/JDownloader/JDownloader.jar'
 alias n='fceux --xscale 3 --yscale 3'
 alias v='vim'
 alias we='weechat-curses'
 alias x='startx'
+
+## arch linux
+alias pms='pacman -Ss'
+alias pmi='sudo pacman -S'
+alias pmud='sudo pacman -u'
+alias pmdg='sudo pacman -Syu'
 
 ## archives
 alias tx='tar xf'
@@ -23,6 +34,9 @@ alias egrep='egrep --color=auto'
 ## cp and scp
 alias cpr='cp -r'
 alias scpr='scp -r'
+
+## curl/wget
+alias clo='curl -LO'
 
 ## games
 alias ng1='mednafen '"$HOME"'/games/nes/Ninja_Gaiden_1.nes'
@@ -44,6 +58,7 @@ alias l='ls -CF'
 alias cx='chmod u+x'
 
 ## debian
+alias afl='apt-file list'
 alias afs='apt-file search --regexp'
 alias aps='aptitude search'
 alias apsh='aptitude show'
@@ -54,21 +69,30 @@ alias apin='sudo aptitude install'
 alias aprm='sudo aptitude remove'
 alias appg='sudo aptitude purge'
 alias apcl='sudo aptitude clean'
+alias apsid='sudo aptitude install -t sid'
 
 alias apdg='sudo aptitude update; sudo aptitude safe-upgrade'
 alias apud='sudo aptitude update'
 alias apfr='sudo aptitude safe-upgrade --full-resolver'
 alias apug='sudo aptitude safe-upgrade'
 
-alias di='sudo dpkg -i ./*.deb'
+alias dia='sudo dpkg -i ./*.deb'
+alias di='sudo dpkg -i'
+alias drc='sudo dpkg-reconfigure'
 alias quikdeb='/usr/bin/time -p dpkg-buildpackage -rfakeroot -us -uc'
 alias sources='sudo vim /etc/apt/sources.list'
+alias ua='sudo update-alternatives --config'
 
 ## cd shortcuts
 alias ..='cd ..'
 alias ...='cd ../..'
 alias up='cd ..'
 alias back='cd -'
+
+## editing
+alias sv='sudo vim'
+alias sgv='sudo gvim'
+
 
 ## files
 alias gtk="vim ${HOME}/.gtkrc.mine"
@@ -78,14 +102,16 @@ alias xdef="vim ${HOME}/.Xdefaults; xrdb -load ${HOME}/.Xdefaults"
 alias xconf="sudo vim /etc/X11/xorg.conf"
 
 # zsh specific files
+alias srcall="source ~/.zshenv; source ~/.zshrc; source ${ZSH_DIR}/aliases; \
+              source $ZSH_DIR/functions"
 alias srca="source ${ZSH_DIR}/aliases"
 alias srcf="source ${ZSH_DIR}/functions"
 alias srcp="source ${ZSH_DIR}/prompt"
 alias srcz="source ${HOME}/.zshrc"
-alias via="vim ${ZSH_DIR}/aliases; source ${HOME}/aliases"
-alias vif="vim ${ZSH_DIR}/functions; source ${HOME}/functions"
-alias vip="vim ${ZSH_DIR}/prompt; source ${HOME}/prompt"
-alias viz="vim ${HOME}/.zshrc; source ${HOME}/.zshrc"
+alias via="vim ${ZSH_DIR}/aliases; source ${ZSH_DIR}/aliases"
+alias vif="vim ${ZSH_DIR}/functions; source ${ZSH_DIR}/functions"
+alias vip="vim ${ZSH_DIR}/prompt; source ${ZSH_DIR}/prompt"
+alias viz="vim ${HOME}/.zshrc; source ${ZSH_DIR}/.zshrc"
 
 
 ## find
@@ -93,7 +119,7 @@ alias fh='find . -maxdepth 1 -iname'
 alias fd='find . -iname'
 
 ## grep
-alias ack='ack-grep'
+#alias ack='ack-grep'
 alias igrep='egrep -i'
 alias ngrep='egrep -in'
 
@@ -119,7 +145,7 @@ alias xsr='xsetroot -solid "#303030"'
 
 ## net
 alias png='ping -c2'
-alias pingr='ping -c 2 192.168.1.1'
+alias pngr='ping -c 2 192.168.0.1'
 alias pingc='ping -c 2 comcast.com'
 alias pingv='ping -c 2 verizon.net'
 
@@ -135,6 +161,12 @@ alias pl='perl -le'
 
 ## ps
 alias pse='ps -e'
+
+## redshift
+alias rs_tung='redshift -o -l 0:0 -m randr -t 2700:2700'
+alias rs_hal='redshift -o -l 0:0 -m randr -t 3400:3400'
+alias rs_fluor='redshift -o -l 0:0 -m randr -t 4200:4200'
+alias rs_sun='redshift -o -l 0:0 -m randr -t 5000:5000'
 
 ## ROOT OPERATIONS ###############################
 alias mntvid='sudo mount /dev/disk/by-label/VIDEOS /mnt/VIDEOS'
@@ -159,6 +191,7 @@ alias dbbo='rsync -e ssh -av --exclude=".*" ~/web/dbbo.co dbbolton@graffias.drea
 
 ## zsh stuff
 alias sa='source ~/.zsh/aliases'
+alias sz='source ~/.zshrc'
 alias rh='rehash'
 alias za='vim ~/.zsh/aliases ; source ~/.zsh/aliases'
 

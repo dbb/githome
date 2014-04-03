@@ -68,9 +68,11 @@ ckb () {
 # F ---------------------------------- F --------------------------------- F #
 
 file_list () {
-    eval 'files=${(f)"$('"$1"')"}'
-    # Doesn't actually work. Useful example:
-    # for i in ${(f)"$(find -maxdepth 1 -type f)"}; do echo "file: $i"; done 
+    if [[ -n $1 ]]; then
+        print '${(f)"$('"$1"')"}'
+    else
+        print '${(f)"$(COMMAND)"}'
+    fi
 }
 ## test your font
 font_test () {

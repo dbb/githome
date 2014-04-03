@@ -2422,7 +2422,7 @@ function! Perl_InitializePerlInterface( )
     perl <<INITIALIZE_PERL_INTERFACE
 		#
     use utf8;                                   # Perl pragma to enable/disable UTF-8 in source
-		use encoding ("utf8");
+    #use encoding ("utf8");
 
 		# ---------------------------------------------------------------
 		# find out the version of the Perl interface
