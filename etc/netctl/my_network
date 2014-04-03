@@ -1,0 +1,8 @@
+Description='A basic static ethernet connection'
+Interface=enp8s0
+Connection=ethernet
+IP=static
+Address=('192.168.0.9/24')
+Gateway='192.168.0.1'
+DNS=('192.168.0.1')
+

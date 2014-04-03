@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="xfce4-mixer" version="1.0">
+  <property name="active-card" type="string" value="HDAIntelAlsamixer"/>
+  <property name="volume-step-size" type="uint" value="5"/>
   <property name="sound-card" type="string" value="HDAIntelAlsamixer"/>
   <property name="sound-cards" type="empty">
     <property name="HDAIntelAlsamixer" type="array">
-      <value type="string" value="Master"/>
-      <value type="string" value="Headphone"/>
-      <value type="string" value="Speaker"/>
+      <value type="string" value="Internal Mic"/>
+      <value type="string" value="Mic Jack Mode"/>
+      <value type="string" value="Microphone"/>
       <value type="string" value="PCM"/>
-      <value type="string" value="Front Mic Boost"/>
-      <value type="string" value="Mic Boost"/>
-      <value type="string" value="Capture"/>
+      <value type="string" value="Speaker"/>
+      <value type="string" value="Headphone 1 (1)"/>
+      <value type="string" value="Headphone"/>
+      <value type="string" value="Master"/>
     </property>
   </property>
-  <property name="window-height" type="int" value="512"/>
-  <property name="window-width" type="int" value="600"/>
+  <property name="window-height" type="int" value="352"/>
+  <property name="window-width" type="int" value="501"/>
 </channel>

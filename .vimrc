@@ -33,6 +33,15 @@ autocmd FileType html       set omnifunc=htmlcomplete#CompleteTags
 " end web stuff -----------------------------------------------------
 
 
+" concealment
+if !has('conceal')
+    finish
+endif
+
+"syntax keyword string \t conceal
+
+" end concealment
+
 " break long lines in plain text files
 " use gqq
 "set textwidth=78
@@ -193,7 +202,7 @@ endif
 
 " pthogen
 filetype off
-call pathogen#runtime_append_all_bundles()
+call pathogen#incubate()
 call pathogen#helptags()
 
 " turn filetype back on

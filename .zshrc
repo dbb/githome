@@ -3,7 +3,7 @@
 umask 022
 
 # options
-bindkey -v
+bindkey -e
 setopt append_history
 setopt auto_list
 setopt correct
