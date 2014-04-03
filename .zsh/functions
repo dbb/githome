@@ -99,8 +99,8 @@ gp5 () {
 
 ghe () {
     file="$1"
-    gitfile="${file#${HOME}/}"
-    print $file $gitfile
+    fullpath=$( readlink -f $file )
+    gitfile="${fullpath#${HOME}/}"
     vim $file && cp -v $file "${GITHOME}/${gitfile}"
     cd $GITHOME
     git add $gitfile
