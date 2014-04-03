@@ -1,6 +1,8 @@
 # dbbolton's zsh functions
 # github.com/dbb
 
+# vim: set ft=zsh:
+
 # A ---------------------------------- A --------------------------------- A #
 ## search for packages containing two strings in the description
 apad () {
@@ -88,12 +90,24 @@ font_test () {
 
 
 # G ---------------------------------- G --------------------------------- G #
-# guitar pro 5
+## guitar pro 5
 gp5 () {
     cd '/home/dbb/.wine/drive_c/Program Files/Guitar Pro 5'
     wine 'GP5.exe' &
     cd -
+}  
+
+ghe () {
+    file="$1"
+    gitfile="${file#${HOME}/}"
+    print $file $gitfile
+    vim $file && cp -v $file "${GITHOME}/${gitfile}"
+    cd $GITHOME
+    git add $gitfile
+    git commit -m "Update ${gitfile}"
+    git push -u origin master
 }
+
 
 ### git ################################
 
