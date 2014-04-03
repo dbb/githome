@@ -4,18 +4,20 @@
 # vim: set ft=sh :
 
 ## applications
-alias jd='java -jar '"$HOME"'/downloads/JDownloader/JDownloader.jar'
+alias jd="java -jar $HOME/downloads/JDownloader/JDownloader.jar"
 alias n='fceux --xscale 3 --yscale 3'
 alias rsy='rsync --progress -ax'
 alias v='vim'
 alias we='weechat-curses'
 alias x='startx'
 
-## arch linux
+## arch linux ###############################################################
 alias pms='pacman -Ss'
 alias pmi='sudo pacman -S'
 alias pmud='sudo pacman -u'
 alias pmdg='sudo pacman -Syu'
+
+
 # Pacman alias examples
 alias pacupg='sudo pacman -Syu'		# Synchronize with repositories and then upgrade packages that are out of date on the local system.
 alias pacin='sudo pacman -S'		# Install specific package(s) from the repositories
@@ -39,7 +41,7 @@ alias pacro="pacman -Qtdq > /dev/null && sudo pacman -Rns \$(pacman -Qtdq | sed 
 alias pacupd='sudo pacman -Sy && sudo abs'         # Update and refresh the local package and ABS databases against repositories
 alias pacinsd='sudo pacman -S --asdeps'            # Install given package(s) as dependencies
 alias pacmir='sudo pacman -Syy'                    # Force refresh of all package lists after updating /etc/pacman.d/mirrorlist
-
+# end arch linux ############################################################
 ## archives
 alias tx='tar xf'
 alias bx='tar xjf'
@@ -63,11 +65,11 @@ alias scpr='scp -r'
 alias clo='curl -LO'
 
 ## games
-alias ng1='mednafen '"$HOME"'/games/nes/Ninja_Gaiden_1.nes'
-alias ng2='mednafen '"$HOME"'/games/nes/Ninja_Gaiden_2.nes'
-alias ng3='mednafen '"$HOME"'/games/nes/Ninja_Gaiden_3.nes'
+alias ng1="mednafen $HOME/games/nes/Ninja_Gaiden_1.nes"
+alias ng2="mednafen $HOME/games/nes/Ninja_Gaiden_2.nes"
+alias ng3="mednafen $HOME/games/nes/Ninja_Gaiden_3.nes"
 
-alias sc='mednafen '"$HOME"'/games/nes/Super_C.nes'
+alias sc="mednafen $HOME/games/nes/Super_C.nes"
 
 ## git
 alias gp='git push -u origin master'
@@ -81,7 +83,7 @@ alias l='ls -CF'
 ## chmod 
 alias cx='chmod u+x'
 
-## debian
+## debian ###################################################################
 alias afl='apt-file list'
 alias afs='apt-file search --regexp'
 alias aps='aptitude search'
@@ -106,6 +108,7 @@ alias drc='sudo dpkg-reconfigure'
 alias quikdeb='/usr/bin/time -p dpkg-buildpackage -rfakeroot -us -uc'
 alias sources='sudo vim /etc/apt/sources.list'
 alias ua='sudo update-alternatives --config'
+## end debian ###############################################################
 
 ## cd shortcuts
 alias ..='cd ..'
