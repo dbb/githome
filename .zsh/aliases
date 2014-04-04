@@ -203,6 +203,7 @@ alias shn='sudo shutdown -h now'
 alias srn='sudo shutdown -r now'
 alias sudos='su pm-suspend'
 alias wrs='sudo ifdown wlan0 ; sleep 2s ; ifup wlan0'
+alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 ## rm
 alias rf='rm -fr'
