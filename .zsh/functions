@@ -23,10 +23,16 @@ apdep () {
     eval "$cmd"
 }
 
-## arch linux stuff
+## arch linux stuff #########################################################
 
 pfs () {
     pkgfile -sdr '.*'"$1"'.*'
+}
+
+update-mirrors () {
+    timestamp=$( date '+%F' )
+    sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist_${timestamp}
+    sudo reflector --verbose --sort rate --save /etc/pacman.d/mirrorlist
 }
 
 # B ---------------------------------- B --------------------------------- B #
@@ -105,16 +111,20 @@ gp5 () {
 
 ghe () {
     file="$1"
-    fullpath=$( readlink -f $file )
+    fullpath=$( readlink -f "$file" )
     gitfile="${fullpath#${HOME}/}"
     # print "$file\n$fullpath\n$gitfile\n"
     # print "${GITHOME}/${gitfile}"
-    vim $file && cp -v $file "${GITHOME}/${gitfile}"
-    cd $GITHOME
-    git add $gitfile
-    git commit -m "Update ${gitfile}"
-    git push -u origin master
-    cd -
+    vim "$fullpath"
+
+    if [[ -n $( diff "$fullpath" "${GITHOME}/${gitfile}" ]]; then
+        cp -v "$file" "${GITHOME}/${gitfile}"
+        cd "$GITHOME"
+        git add "$gitfile"
+        git commit -m "Update ${gitfile}"
+        git push -u origin master
+        cd -
+    fi
 }
 
 
