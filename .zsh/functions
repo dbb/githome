@@ -23,6 +23,12 @@ apdep () {
     eval "$cmd"
 }
 
+## arch linux stuff
+
+pfs () {
+    pkgfile -sdr '.*'"$1"'.*'
+}
+
 # B ---------------------------------- B --------------------------------- B #
 ## make a bzipped backup
 bak () { # [input dir] [output file]
@@ -101,11 +107,14 @@ ghe () {
     file="$1"
     fullpath=$( readlink -f $file )
     gitfile="${fullpath#${HOME}/}"
+    # print "$file\n$fullpath\n$gitfile\n"
+    # print "${GITHOME}/${gitfile}"
     vim $file && cp -v $file "${GITHOME}/${gitfile}"
     cd $GITHOME
     git add $gitfile
     git commit -m "Update ${gitfile}"
     git push -u origin master
+    cd -
 }
 
 
