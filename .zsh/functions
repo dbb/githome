@@ -117,7 +117,7 @@ ghe () {
     # print "${GITHOME}/${gitfile}"
     vim "$fullpath"
 
-    if [[ -n $( diff "$fullpath" "${GITHOME}/${gitfile}" ]]; then
+    if [[ -n $( diff "$fullpath" "${GITHOME}/${gitfile}" ) ]]; then
         cp -v "$file" "${GITHOME}/${gitfile}"
         cd "$GITHOME"
         git add "$gitfile"
