@@ -17,6 +17,12 @@ alias pmi='sudo pacman -S'
 alias pmud='sudo pacman -u'
 alias pmdg='sudo pacman -Syu'
 
+alias auri='sudo aura -A'
+alias aurs='aura -As'
+alias auru='sudo aura -Ayu'
+
+alias akua='sudo aura -Akua'
+
 # Pacman alias examples
 alias pacupg='sudo pacman -Syu'		# Synchronize with repositories and then upgrade packages that are out of date on the local system.
 alias pacin='sudo pacman -S'		# Install specific package(s) from the repositories
