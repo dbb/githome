@@ -16,7 +16,6 @@ alias pms='pacman -Ss'
 alias pmi='sudo pacman -S'
 alias pmud='sudo pacman -u'
 alias pmdg='sudo pacman -Syu'
-alias update-mirrors="sudo cp /etc/pacman.d/mirrorlist_$(date '+%F') ; sudo reflector --verbose --sort rate --save /etc/pacman.d/mirrorlist"
 
 # Pacman alias examples
 alias pacupg='sudo pacman -Syu'		# Synchronize with repositories and then upgrade packages that are out of date on the local system.
