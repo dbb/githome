@@ -1,8 +1,11 @@
+Xcursor.theme: DMZ-Black
+
 URxvt.perl-ext-common:  default,tabbed,matcher,searchable-scrollback
-URxvt*cutchars:         "()*,<>[]{}|'
+URxvt*cutchars:         "()*,<>[]{}|'`
 URxvt*termName:         rxvt-unicode
-URxvt*urlLauncher:      iceweasel
+URxvt*urlLauncher:      firefox
 URxvt*matcher.button:   1
+URxvt.saveLines:        4096
 
 URxvt*scrollTtyOutput: false
 URxvt*scrollWithBuffer: true
@@ -24,11 +27,14 @@ URxvt.secondaryScroll:  true
 
 
 ! gohufont, small
-!*font: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
+!*font: -gohu-gohufont-medium-r-normal-*-11-80-100-100-c-60-iso10646-1
 !*boldFont: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
+!*boldFont: -gohu-gohufont-bold-r-normal-*-11-80-100-100-c-60-iso10646-1
 
 ! gohufont, large
-!*font: -*-gohufont-medium-*-*-*-14-*-*-*-*-*-*-*
+!*font: -gohu-gohufont-medium-r-normal-*-14-100-100-100-c-80-iso10646-1
+!*boldFont: -gohu-gohufont-medium-r-normal-*-14-100-100-100-c-80-iso10646-1
+!*boldFont: -gohu-gohufont-bold-r-normal-*-14-100-100-100-c-80-iso10646-1
 
 ! MonteCarlo
 !*font: -*-montecarlo-medium-r-normal-*-11-110-72-72-c-60-*-*
@@ -64,7 +70,7 @@ URxvt*boldfont: -xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1
 
 URxvt*cursorColor:  #ff4f00
 URxvt*cursorBlink:   off
-URxvt*pointerColor: #00ff00
+URxvt*pointerColor: #ff4f00
 URxvt*background:   #000000
 URxvt*boldMode:      on
 URxvt*colorMode:     on
