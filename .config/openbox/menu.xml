@@ -4,9 +4,7 @@
 		<separator label="Applications"/>
 		<item label="Browser">
 			<action name="Execute">
-				<execute>
-					iceweasel
-				</execute>
+				<execute>x-www-browser</execute>
 			</action>
 		</item>
 		<item label="Editor">
@@ -18,9 +16,7 @@
 		</item>
 		<item label="Terminal">
 			<action name="Execute">
-				<execute>
-					uxterm
-				</execute>
+				<execute>urxvt</execute>
 			</action>
 		</item>
 		<!-- This requires the presence of the 'menu' package to work -->
@@ -40,11 +36,14 @@
 					</execute>
 				</action>
 			</item>
-			<item label="Take Screenshot">
+			<item label="Gnome screenshot">
 				<action name="Execute">
-					<execute>
-						scrot -d 5
-					</execute>
+					<execute>gnome-screenshot -i</execute>
+				</action>
+			</item>
+			<item label="Scrot">
+				<action name="Execute">
+					<execute>scrot -d 5</execute>
 				</action>
 			</item>
 			<item label="Tint2">
@@ -56,9 +55,7 @@
 			</item>
 			<item label="UXTerm">
 				<action name="Execute">
-					<execute>
-						uuxterm
-					</execute>
+					<execute>uxterm</execute>
 				</action>
 			</item>
 			<item label="System Settings">
@@ -80,6 +77,16 @@
 					<execute>
 						xcompmgr -c -t-5 -l-6 -r4.7 -o.65
 					</execute>
+				</action>
+			</item>
+			<item label="Xfce settings">
+				<action name="Execute">
+					<execute>xfce4-appearance-settings</execute>
+				</action>
+			</item>
+			<item label="Xfsettingsd">
+				<action name="Execute">
+					<execute>xfsettingsd</execute>
 				</action>
 			</item>
 		</menu>
@@ -206,6 +213,11 @@
 					<execute>
 						k3b
 					</execute>
+				</action>
+			</item>
+			<item label="PS3 Media Server">
+				<action name="Execute">
+					<execute>ps3mediaserver</execute>
 				</action>
 			</item>
 			<item label="Quod Libet">
@@ -347,7 +359,7 @@
 				</execute>
 			</action>
 		</item>
-		<menu execute="/home/daniel/bin/thunar-bookmarks.pl" id="pipe-41951" label="Bookmarks"/>
+		<menu execute="/home/dbb/src/pipemenus/thunar-bookmarks.pl" id="pipe-41951" label="Bookmarks"/>
 		<menu id="root-menu-282557" label="Files">
 			<item label=".gtkrc.mine">
 				<action name="Execute">
@@ -432,7 +444,6 @@
 				</action>
 			</item>
 		</menu>
-		<menu execute="/home/daniel/bin/obsysinfo" id="pipe-452631" label="Info"/>
 		<menu id="root-menu-163147" label="Openbox">
 			<item label="Configure">
 				<action name="Execute">

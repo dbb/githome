@@ -19,6 +19,7 @@ sleep 1s && tint2 &
 kmix --keepvisibility &
 #klipper &
 #sleep 4s && korganizer &
+thunar --daemon &
 
 #syndaemon -i 2 -d -t -K
 $HOME/bin/middle-click

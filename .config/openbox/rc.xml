@@ -17,7 +17,7 @@
        under the mouse pointer. when followMouse is enabled -->
     <underMouse>no</underMouse>
     <!-- move focus under the mouse, even when the mouse is not moving -->
-    <focusDelay>500</focusDelay>
+    <focusDelay>800</focusDelay>
     <!-- when followMouse is enabled, the mouse must be inside the window for
        this many milliseconds (1000 = 1 sec) before moving focus to it -->
     <raiseOnFocus>yes</raiseOnFocus>
@@ -34,10 +34,11 @@
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is -->
+    <primaryMonitor/>
   </placement>
   <theme>
-    <name>MurrinaLeoOrange</name>
-    <titleLayout>CIMLN</titleLayout>
+    <name>Glow Lava Dark</name>
+    <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -51,8 +52,8 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Maven Pro</name>
-      <size>9</size>
+      <name>DejaVu Sans</name>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -60,8 +61,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Maven Pro</name>
-      <size>9</size>
+      <name>DejaVu Sans</name>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -69,8 +70,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Maven Pro</name>
-      <size>9</size>
+      <name>DejaVu Sans</name>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -78,22 +79,25 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Maven Pro</name>
-      <size>9</size>
+      <name>DejaVu Sans</name>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
-    <font place="OnScreenDisplay">
-      <name>Maven Pro</name>
-      <size>9</size>
-      <!-- font size in points -->
+    <font place="ActiveOnScreenDisplay">
+      <name>DejaVu Sans</name>
+      <size>8</size>
       <weight>Normal</weight>
-      <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
-      <!-- 'italic' or 'normal' -->
+    </font>
+    <font place="InactiveOnScreenDisplay">
+      <name>DejaVu Sans</name>
+      <size>8</size>
+      <weight>Normal</weight>
+      <slant>Normal</slant>
     </font>
   </theme>
   <desktops>
@@ -315,11 +319,35 @@
     <keybind key="W-Print">
       <!-- screenshot  -->
       <action name="Execute">
-        <execute>ksnapshot</execute>
+        <execute>gnome-screenshot -i</execute>
       </action>
     </keybind>
+    <!-- Application shortcuts ========================================== -->
     <!-- Chain begin -->
     <keybind key="W-g">
+      <keybind key="b">
+        <!-- browser -->
+        <action name="Execute">
+          <execute>firefox</execute>
+        </action>
+      </keybind>
+      <keybind key="c">
+        <action name="Execute">
+          <command>thunar ~/Documents</command>
+        </action>
+      </keybind>
+      <keybind key="e">
+        <!-- editor -->
+        <action name="Execute">
+          <execute>gvim</execute>
+        </action>
+      </keybind>
+      <keybind key="g">
+        <!-- gimp -->
+        <action name="Execute">
+          <execute>gimp</execute>
+        </action>
+      </keybind>
       <keybind key="h">
         <!-- file manager -->
         <action name="Execute">
@@ -328,34 +356,12 @@
       </keybind>
       <keybind key="k">
         <action name="Execute">
-          <command>thunar /home/dbb/Desktop</command>
+          <command>thunar ~/Desktop</command>
         </action>
       </keybind>
       <keybind key="n">
         <action name="Execute">
           <command>konqueror</command>
-        </action>
-      </keybind>
-      <keybind key="w">
-        <action name="Execute">
-          <command>thunar /home/dbb/downloads</command>
-        </action>
-      </keybind>
-      <keybind key="c">
-        <action name="Execute">
-          <command>thunar /home/dbb/Documents</command>
-        </action>
-      </keybind>
-      <keybind key="b">
-        <!-- browser -->
-        <action name="Execute">
-          <execute>iceweasel</execute>
-        </action>
-      </keybind>
-      <keybind key="e">
-        <!-- editor -->
-        <action name="Execute">
-          <execute>gvim</execute>
         </action>
       </keybind>
       <keybind key="p">
@@ -370,6 +376,11 @@
           <execute>quodlibet</execute>
         </action>
       </keybind>
+      <keybind key="w">
+        <action name="Execute">
+          <command>thunar ~/Downloads</command>
+        </action>
+      </keybind>
     </keybind>
     <!-- Chain end -->
     <!-- Openbox control keybindings ==================================== -->
@@ -378,6 +389,12 @@
       <keybind key="c">
         <!-- reconfigure -->
         <action name="Reconfigure"/>
+      </keybind>
+      <keybind key="m">
+        <!-- obconf -->
+        <action name="Execute">
+          <execute>obmenu</execute>
+        </action>
       </keybind>
       <keybind key="o">
         <!-- obconf -->
@@ -410,6 +427,9 @@
       <action name="ShowMenu">
         <menu>client-list-combined-menu</menu>
       </action>
+    </keybind>
+    <keybind key="W-f">
+
     </keybind>
   </keyboard>
   <mouse>
@@ -855,7 +875,7 @@
       <decor>no</decor>
       <position>
         <x>0</x>
-        <y>271</y>
+        <y>416</y>
       </position>
     </application>
     <application name="Quodlibet">
