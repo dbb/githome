@@ -29,6 +29,11 @@ pfs () {
     pkgfile -sdr '.*'"$1"'.*'
 }
 
+pmia () {
+    # "pacman install all"
+    pacman -Ssq "$1" | sudo pacman -S -
+}
+
 update-mirrors () {
     timestamp=$( date '+%F' )
     sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist_${timestamp}
@@ -124,7 +129,10 @@ ghe () {
         git commit -m "Update ${gitfile}"
         git push -u origin master
         cd -
+    else
+        print "No change; not adding file."
     fi
+
 }
 
 
