@@ -1,0 +1,52 @@
+
+Disk /dev/mmcblk0: 3.7 GiB, 3965190144 bytes, 7744512 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x00030fa3
+
+Device         Boot Start       End  Blocks  Id System
+/dev/mmcblk0p1 *     8192   7744511 3868160   b W95 FAT32
+
+
+Disk /dev/sda: 298.1 GiB, 320072933376 bytes, 625142448 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x00000080
+
+Device    Boot     Start       End    Blocks  Id System
+/dev/sda1           2048    411647    204800  83 Linux
+/dev/sda2         411648  41371647  20480000  83 Linux
+/dev/sda3       41371648  82331647  20480000  83 Linux
+/dev/sda4       82331648 625141759 271405056   5 Extended
+/dev/sda5       82333696  88477695   3072000  82 Linux swap / Solaris
+/dev/sda6       88479744 113055743  12288000  83 Linux
+/dev/sda7      113057792 625141759 256041984  83 Linux
+
+
+Disk /dev/sdb: 1.9 GiB, 2006974464 bytes, 3919872 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x3f4a529b
+
+Device    Boot Start       End Blocks  Id System
+/dev/sdb1 *        0    454655 227328   0 Empty
+/dev/sdb2       3392      4287    448  ef EFI (FAT-12/16/32)
+
+
+Disk /dev/sdb1: 1.2 GiB, 1257242624 bytes, 2455552 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x3f4a529b
+
+Device      Boot Start       End Blocks  Id System
+/dev/sdb1p1 *        0    454655 227328   0 Empty
+/dev/sdb1p2       3392      4287    448  ef EFI (FAT-12/16/32)
+

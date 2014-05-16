@@ -1,0 +1,26 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# /dev/sda2 LABEL=ROOT
+UUID=e638b502-3ba4-4c2f-b9d7-5b302ffe3980	/         	ext4      	rw,noatime,data=ordered	0 1
+
+# /dev/sda1 LABEL=BOOT
+UUID=2bc4be8d-efdb-49be-a9d9-f77aa385fa79	/boot     	ext2      	rw,noatime	0 2
+
+# /dev/sda3 LABEL=HOME
+UUID=4a3f0965-6c1a-41ce-a782-2d72fa970a05	/home     	reiserfs  	rw,noatime,notail	0 2
+
+# /dev/sda6 LABEL=VAR
+UUID=4b103a74-4b13-444f-a064-ac50c85810a2	/var      	reiserfs  	rw,noatime,notail	0 2
+
+# /dev/sda7 LABEL=DATA
+UUID=044a7bc7-1299-449f-9fe2-35b9ac15bf0a	/data     	ext4      	rw,noatime,data=ordered	0 2
+
+# tmpfs
+tmpfs   /media/ffcache    tmpfs   nodev,nosuid,size=400M,mode=777         0  0
+tmpfs     /home/dbb/.mozilla/firefox/mwad0hks.default/Cache tmpfs mode=1777,noatime 0 0
+
+# swap
+UUID=f596cb75-23ef-44c9-8185-e149013629bb none swap defaults 0 0
+
