@@ -1,0 +1,415 @@
+# dbbolton's zsh functions
+# github.com/dbb
+
+# vim: set ft=zsh:
+
+# A ---------------------------------- A --------------------------------- A #
+## search for packages containing two strings in the description
+apad () {
+    aptitude search '?and( ~d'"$1"' ~d'"$2"' )'
+}
+
+## use apitude as a regular user
+apn () {
+    cmd="su -lc 'aptitude -P install $@' root"
+    print "$cmd"
+    eval "$cmd"
+}
+
+## build dependencies through aptitude
+apdep () {
+    cmd="su -lc 'aptitude -P build-dep $@' root"
+    print "$cmd"
+    eval "$cmd"
+}
+
+## arch linux stuff #########################################################
+
+pfs () {
+    pkgfile -sdr '.*'"$1"'.*'
+}
+
+pmia () {
+    # "pacman install all"
+    pacman -Ssq "$1" | sudo pacman -S -
+}
+
+update-mirrors () {
+    timestamp=$( date '+%F' )
+    sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist_${timestamp}
+    sudo reflector --verbose --sort rate --save /etc/pacman.d/mirrorlist
+}
+
+# B ---------------------------------- B --------------------------------- B #
+## make a bzipped backup
+bak () { # [input dir] [output file]
+    # note the order of args
+    print "tar cjf \"$2\" \"$1\""
+    tar cjf "$2" "$1"
+}
+
+## pretend to be busy
+busy () {
+    j=0;
+    while true; do
+        NUMBER=$RANDOM # I think 32,000 is large enough
+        let j=$j+1;
+        for i in $(seq 0 20 100); do 
+            echo $i;
+            sleep 1; done | 
+            dialog --gauge "Install part $j : `sed $(perl -e "print int rand(99999)")"q;d" /usr/share/dict/words`" 6 40;
+        done
+}
+# C ---------------------------------- C --------------------------------- C #
+## print a character from ordinal
+chr () {
+    for i in $@; {
+        print ${(#)1}
+    }
+}
+
+## custom kernel build
+ckb () {
+    MAKEFLAGS=''
+    appendage='-dbb-deb'
+    revision=$(date +"%Y%m%d")
+
+    make-kpkg clean
+
+    time fakeroot make-kpkg --append-to-version "$appendage" --revision \
+        "$revision" kernel_image kernel_headers
+}
+
+# D ---------------------------------- D --------------------------------- D #
+
+# E ---------------------------------- E --------------------------------- E #
+
+# F ---------------------------------- F --------------------------------- F #
+
+file_list () {
+    if [[ -n $1 ]]; then
+        print '${(f)"$('"$1"')"}'
+    else
+        print '${(f)"$(COMMAND)"}'
+    fi
+}
+## test your font
+font_test () {
+    print "Letters:\tAaBbCcDdEeFfGgHhIiJjKkLlMm"
+    print "\t\tNnOoPpQqRrSsTtUuVvWwXxYyZz"
+    print "Digits:\t\t0123456789"
+    print "Brackets:\t( ) [ ] { } < > "
+    print "Quotes:\t\t\"foo\" 'bar' "
+    print "Punctuation: \t, . ? : ; _ ! "
+    print "Symbols:\t\` ~  @ # $ % ^ & * - + = | / \\"
+    print "Ambiguity:\t1Il ij ao DO0Q B8 \`\`''\" ({ ,. ;: "
+}
+
+
+# G ---------------------------------- G --------------------------------- G #
+## guitar pro 5
+gp5 () {
+    cd '/home/dbb/.wine/drive_c/Program Files/Guitar Pro 5'
+    wine 'GP5.exe' &
+    cd -
+}  
+
+ghe () {
+    file="$1"
+    fullpath=$( readlink -f "$file" )
+    gitfile="${fullpath#${HOME}/}"
+    # print "$file\n$fullpath\n$gitfile\n"
+    # print "${GITHOME}/${gitfile}"
+    vim "$fullpath"
+
+    if [[ -n $( diff "$fullpath" "${GITHOME}/${gitfile}" ) ]]; then
+        cp -v "$file" "${GITHOME}/${gitfile}"
+        cd "$GITHOME"
+        git add "$gitfile"
+        git commit -m "Update ${gitfile}"
+        git push -u origin master
+        cd -
+    else
+        print "No change; not adding file."
+    fi
+
+}
+
+
+### git ################################
+
+## commit and push
+gcp () {
+    git commit -m "$1"
+    git push -u origin master
+}
+
+## "generic update file"
+guf () {
+    file=$1
+    git add $file
+    git commit -m "Update ${file}"
+    git push -u origin master
+}
+
+### github stuff ###
+
+## empty_gh [NAME_OF_REPO]
+##
+## Use this when creating a new repo from scratch.
+empty_gh() { # [NAME_OF_REPO]
+    repo=$1
+    ghuser=$( git config github.user )
+
+    curl -F login=${ghuser} -F token=$( git config github.token ) \
+        https://github.com/api/v2/yaml/repos/create -F name=${repo}
+    [[ ! -d $repo ]] && mkdir "$repo"
+    cd "$repo"
+    git init
+    print '.*'"\n"'*~' >> .gitignore
+    [[ ! -f README.md ]] && readme
+    git add ^.*
+    git commit -m 'Initial commit.'
+    git remote add origin git@github.com:${ghuser}/${repo}.git
+    git push -u origin master
+}
+
+## new_gh [DIRECTORY]
+##
+## Use this when you have a directory that is not yet set up for git.
+## This function will add all non-hidden files to git.
+new_gh() { # [DIRECTORY]
+    repo=$1
+    ghuser=$( git config github.user )
+
+    [[ ! -d $repo ]] && print "No such directory: '$repo'\nMaybe you meant to "\
+        "use\n\nempty_gh()\n" && exit 1
+    cd "$repo"
+
+    repo_status=$( curl -sL http://github.com/${ghuser}/${repo} | grep '<title>404' )
+    if [[ -n $repo_status ]]; then
+        curl -F login=${ghuser} -F token=$( git config github.token ) \
+            https://github.com/api/v2/yaml/repos/create -F name=${repo}
+        print "Repo created"
+    fi
+
+    git init
+    # add all non-dot files
+    print '.*'"\n"'*~' >> .gitignore
+    [[ ! -f README.md ]] && readme
+    git add ^.*
+    git commit -m 'Initial commit.'
+    git remote add origin git@github.com:${ghuser}/${repo}.git
+    git push -u origin master
+}
+
+## exist_gh [DIRECTORY]
+##
+## Use this when you have a git repo that's ready to go and you want to add it
+## to your GitHub.
+exist_gh() { # [DIRECTORY]
+    repo=$1
+    [[ ! -d $repo ]] && print "No such directory: '$repo'\nMaybe you meant to "\
+        "use\n\nempty_gh()\n" && exit 1
+    cd "$repo"
+    ghuser=$( git config github.user )
+
+    git remote add origin git@github.com:${ghuser}/${repo}.git
+    git push -u origin master
+}
+
+## generate a basic readme in the current dir
+readme () {
+    repo=$( basename $PWD )
+    user=$( git config github.user )
+    print "# $repo \n\n<https://github.com/${user}/${repo}>\n\n##"\
+        "Description\n" >> README.md
+    vim README.md
+}
+
+## make a generic gitignore
+gitig () {
+    print "*.swp\n*~*" >> .gitignore
+}
+
+### end git ############################
+
+# Padawan's graph.
+graph () {
+    cd '/home/dbb/.wine/drive_c/Program Files/Graph'
+    wine '/home/dbb/.wine/drive_c/Program Files/Graph/Graph.exe' &
+    cd -
+}
+
+
+# H ---------------------------------- H --------------------------------- H #
+
+# I ---------------------------------- I --------------------------------- I #
+# is.gd url creator
+isgd () { # [URL]
+    url='http://is.gd/create.php?format=simple&url='"$1"
+    curl -s "$url" | xsel -i
+    xsel -o
+    print "\n"
+}
+
+
+# J ---------------------------------- J --------------------------------- J #
+
+# K ---------------------------------- K --------------------------------- K #
+# When Iceweasel goes rabid
+kiw () {
+    kill $( pidof firefox-bin )
+    killall firefox-bin
+}
+
+
+
+# L ---------------------------------- L --------------------------------- L #
+
+
+# M ---------------------------------- M --------------------------------- M #
+# Make a PDF from a man page.
+man2pdf () { # [page name]
+    man -t $1 | ps2pdf - > $1.pdf
+}
+
+# Make a dir and cd into it
+md () {
+    mkdir -p $1
+    cd $1
+}
+
+# Make a basic patch file.
+mkpatch () { # [new file] [old file] [output file]
+    diff -u "$1" "$2" > "$3"'.patch'
+
+}
+
+# My "development environment"
+myde () { # [DIRECTORY]
+    if [[ ! -d $1 ]]; then
+        print "Bad dir name: '$1'" 
+    else
+        cd "$1"
+        gvim +":cd $1" &
+        [[ -d '.git' ]] && git status
+    fi
+}
+
+
+# mupen64plus
+m64 () {
+    mupen64plus --osd --resolution 800x600 "$n64/$1" > /dev/null &
+}
+
+
+# N ---------------------------------- N --------------------------------- N #
+# ninja gaiden!
+ng () {
+    mednafen "$HOME/games/nes/Ninja_Gaiden_$1.nes"
+}
+
+
+# O ---------------------------------- O --------------------------------- O #
+## given a char, print its ordinal
+ord () {
+    for i in $@; {
+        print $(( [#16] ##$i ))
+    }
+}
+
+
+# P ---------------------------------- P --------------------------------- P #
+
+## Perl stuff ###########################
+## print the latest stable version of Perl
+latest_perl () {
+    curl -s http://www.perl.org/get.html | \
+        perl -wlne 'if (/perl\-([\d\.]+)\.tar\.gz/) { print $1; exit;}'
+}
+
+## create a perl document and open it for editing
+newpl () {
+    cp "$HOME/Templates/perl" "./$1"
+    chmod +x "./$1"
+    vim "$1" +4
+}
+
+## perl global substitution
+pgs () { # [find] [replace] [filename]
+    perl -i.bak -pe 's/'"$1"'/'"$2"'/g' "$3"
+}
+
+
+## Perl grep-- because 'grep -P' is terrible
+prep () { # [pattern] [filename unless STDOUT]
+    perl -nle 'print if '"$1"';' $2
+}
+
+# End Perl stuff #######################
+
+
+# Q ---------------------------------- Q --------------------------------- Q #
+
+## quick find
+qf () { 
+    find . -maxdepth 2 -iname "*$1*" 
+}
+
+# R ---------------------------------- R --------------------------------- R #
+
+# S ---------------------------------- S --------------------------------- S #
+## sagi - a find shortcut
+sagi () { # [where] [what]
+    [[ -n $1 && -n $2  ]] && find "$1" -iname "*$2*"
+}
+
+## say - append a newline to 'print'
+say () {
+    print "$@\n"
+}
+
+
+# T ---------------------------------- T --------------------------------- T #
+
+# a simple timestamp
+timestamp () {
+    date '+%Y-%m-%d'
+}
+
+# to - makes it easier to cd to a variable that contains a path, e.g.
+#   p="$HOME/some/long/ridiculous/path/name"
+#   to p
+to () {
+    eval dir=\$$1; cd "$dir";
+}
+
+
+# U ---------------------------------- U --------------------------------- U #
+# unzip
+uz () { # [archive] [dir]
+    unzip -x $1 -d $2
+}
+
+# V ---------------------------------- V --------------------------------- V #
+# vimprobable with tabs
+#vpb () {
+#    tabbed=$(tabbed -d); vimprobable2 -e $tabbed $*
+#}
+
+
+# W ---------------------------------- W --------------------------------- W #
+
+# X ---------------------------------- X --------------------------------- X #
+
+# Y ---------------------------------- Y --------------------------------- Y #
+
+# Z ---------------------------------- Z --------------------------------- Z #
+## zsh calculator
+zc () {
+    for exp in $argv ; do
+        print "$exp = $(( exp ))"
+    done
+}
+

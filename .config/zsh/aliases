@@ -1,0 +1,232 @@
+# dbb's zsh aliases
+# https://github.com/dbb
+
+# vim: set ft=sh :
+
+## applications
+alias jd="java -jar $HOME/downloads/JDownloader/JDownloader.jar"
+alias n='fceux --xscale 3 --yscale 3'
+alias rsy='rsync --progress -ax'
+alias v='vim'
+alias we='weechat-curses'
+alias x='startx'
+
+## arch linux ###############################################################
+alias pms='pacman -Ss'
+alias pmi='sudo pacman -S'
+alias pmud='sudo pacman -u'
+alias pmdg='sudo pacman -Syu'
+
+alias auri='sudo aura -A'
+alias aurs='aura -As'
+alias auru='sudo aura -Ayu'
+
+alias akua='sudo aura -Akua'
+
+# Pacman alias examples
+alias pacupg='sudo pacman -Syu'		# Synchronize with repositories and then upgrade packages that are out of date on the local system.
+alias pacin='sudo pacman -S'		# Install specific package(s) from the repositories
+alias pacins='sudo pacman -U'		# Install specific package not from the repositories but from a file 
+alias pacre='sudo pacman -R'		# Remove the specified package(s), retaining its configuration(s) and required dependencies
+alias pacrem='sudo pacman -Rns'		# Remove the specified package(s), its configuration(s) and unneeded dependencies
+alias pacrep='pacman -Si'		# Display information about a given package in the repositories
+alias pacreps='pacman -Ss'		# Search for package(s) in the repositories
+alias pacloc='pacman -Qi'		# Display information about a given package in the local database
+alias paclocs='pacman -Qs'		# Search for package(s) in the local database
+alias paclo="pacman -Qdt"		# List all packages which are orphaned
+alias pacc="sudo pacman -Scc"		# Clean cache - delete all not currently installed package files
+alias paclf="pacman -Ql"		# List all files installed by a given package
+alias pacexpl="pacman -D --asexp"	# Mark one or more installed packages as explicitly installed 
+alias pacimpl="pacman -D --asdep"	# Mark one or more installed packages as non explicitly installed
+
+# '[r]emove [o]rphans' - recursively remove ALL orphaned packages
+alias pacro="pacman -Qtdq > /dev/null && sudo pacman -Rns \$(pacman -Qtdq | sed -e ':a;N;$!ba;s/\n/ /g')"
+
+# Additional pacman alias examples
+alias pacupd='sudo pacman -Sy && sudo abs'         # Update and refresh the local package and ABS databases against repositories
+alias pacinsd='sudo pacman -S --asdeps'            # Install given package(s) as dependencies
+alias pacmir='sudo pacman -Syy'                    # Force refresh of all package lists after updating /etc/pacman.d/mirrorlist
+# end arch linux ############################################################
+## archives
+alias tx='tar xf'
+alias bx='tar xjf'
+alias bz='tar cjf' # OUT IN
+
+## colors
+eval "`dircolors -b`"
+alias ls='ls --color=auto'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+## cp and scp
+alias cpr='cp -r'
+alias scpr='scp -r'
+
+## curl/wget
+alias clo='curl -LO'
+
+## games
+alias ng1="mednafen $HOME/games/nes/Ninja_Gaiden_1.nes"
+alias ng2="mednafen $HOME/games/nes/Ninja_Gaiden_2.nes"
+alias ng3="mednafen $HOME/games/nes/Ninja_Gaiden_3.nes"
+
+alias sc="mednafen $HOME/games/nes/Super_C.nes"
+
+## git
+alias gp='git push -u origin master'
+alias gc='git commit -m'
+
+## ls
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+
+## chmod 
+alias cx='chmod u+x'
+
+## debian ###################################################################
+alias afl='apt-file list'
+alias afs='apt-file search --regexp'
+alias aps='aptitude search'
+alias apsh='aptitude show'
+alias apsrc='apt-get source'
+alias apv='apt-cache policy'
+
+alias apin='sudo aptitude install'
+alias aprm='sudo aptitude remove'
+alias appg='sudo aptitude purge'
+alias apcl='sudo aptitude clean'
+alias apsid='sudo aptitude install -t sid'
+
+alias apdg='sudo aptitude update; sudo aptitude safe-upgrade'
+alias apud='sudo aptitude update'
+alias apfr='sudo aptitude safe-upgrade --full-resolver'
+alias apug='sudo aptitude safe-upgrade'
+
+alias dia='sudo dpkg -i ./*.deb'
+alias di='sudo dpkg -i'
+alias drc='sudo dpkg-reconfigure'
+alias quikdeb='/usr/bin/time -p dpkg-buildpackage -rfakeroot -us -uc'
+alias sources='sudo vim /etc/apt/sources.list'
+alias ua='sudo update-alternatives --config'
+## end debian ###############################################################
+
+## cd shortcuts
+alias ..='cd ..'
+alias ...='cd ../..'
+alias up='cd ..'
+alias back='cd -'
+
+## editing
+alias sv='sudo vim'
+alias sgv='sudo gvim'
+
+
+## files
+alias gtk="vim ${HOME}/.gtkrc.mine"
+alias obas="vim ${HOME}/.config/openbox/autostart.sh"
+alias obrc="vim ${HOME}/.config/openbox/rc.xml"
+alias xdef="vim ${HOME}/.Xdefaults; xrdb -load ${HOME}/.Xdefaults"
+alias xconf="sudo vim /etc/X11/xorg.conf"
+
+# zsh specific files
+alias srcall="source ~/.zshenv; source ~/.zshrc; source ${ZSH_DIR}/aliases; \
+              source $ZSH_DIR/functions"
+alias srca="source ${ZSH_DIR}/aliases"
+alias srcf="source ${ZSH_DIR}/functions"
+alias srcp="source ${ZSH_DIR}/prompt"
+alias srcz="source ${HOME}/.zshrc"
+alias via="vim ${ZSH_DIR}/aliases; source ${ZSH_DIR}/aliases"
+alias vif="vim ${ZSH_DIR}/functions; source ${ZSH_DIR}/functions"
+alias vip="vim ${ZSH_DIR}/prompt; source ${ZSH_DIR}/prompt"
+alias viz="vim ${HOME}/.zshrc; source ${ZSH_DIR}/.zshrc"
+
+
+## find
+alias fh='find . -maxdepth 1 -iname'
+alias fd='find . -iname'
+
+## grep
+#alias ack='ack-grep'
+alias igrep='egrep -i'
+alias ngrep='egrep -in'
+
+## heredocs
+alias hdoc='cat << EOF >'
+
+## make
+alias mi='su -c "make install"'
+
+## misc
+alias clear-hosts='rm -v '"$HOME"'/.ssh/known_hosts'
+alias duh='du -hs'
+alias gov='su root -c "'"$HOME"'/bin/cpu-gov"'
+alias mountiso='sudo mount -o loop -t iso9660'
+alias pd='plpdl'
+alias q='exit'
+alias :q='exit'
+alias quit='exit'
+alias rsp="rename 's/(\s+)/_/g' "
+alias temp='sensors'
+alias td="date +'%l:%M %p, %d %b %Y'"
+alias xsr='xsetroot -solid "#303030"'
+
+## net
+alias png='ping -c2'
+alias pngr='ping -c 2 192.168.0.1'
+alias pingc='ping -c 2 comcast.com'
+alias pingv='ping -c 2 verizon.net'
+
+alias sr='ssh reddevil'
+
+## octave
+alias oct='octave --silent'
+alias o='octave --silent --eval'
+
+## perl
+alias pe='perl -E'
+alias pl='perl -le'
+
+## ps
+alias pse='ps -e'
+
+## redshift
+alias rs_tung='redshift -o -l 0:0 -m randr -t 2700:2700'
+alias rs_hal='redshift -o -l 0:0 -m randr -t 3400:3400'
+alias rs_fluor='redshift -o -l 0:0 -m randr -t 4200:4200'
+alias rs_sun='redshift -o -l 0:0 -m randr -t 5000:5000'
+
+## ROOT OPERATIONS ###############################
+alias mntvid='sudo mount /dev/disk/by-label/VIDEOS /mnt/VIDEOS'
+alias net-if='sudo vim /etc/network/interfaces'
+alias netif='sudo vim /etc/network/interfaces'
+alias shn='sudo shutdown -h now'
+alias srn='sudo shutdown -r now'
+alias sudos='su pm-suspend'
+alias wrs='sudo ifdown wlan0 ; sleep 2s ; ifup wlan0'
+alias arch-update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg && sudo mkinitcpio -c /etc/mkinitcpio.conf -k /boot/vmlinuz-linux -g /boot/initramfs-linux.img'
+
+## rm
+alias rf='rm -fr'
+
+## time
+alias sw='/usr/bin/time -f "\n----\n\nElapsed time: %E\n" cat'
+alias t='/usr/bin/time -p'
+
+## web
+alias bt-ssh='ssh beraexfn@beratyr.com -p 21098'
+alias bt-sync='rsync -e ssh --port=21098 -av --exclude=".*" ~/src/beratyr/* beraexfn@beratyr.com:~/public_html'
+alias websync='rsync -e ssh -av --exclude=".*" ~/web/dbbolton.us dbbolton@graffias.dreamhost.com:~/'
+alias demus='rsync -e ssh -av --exclude=".*" ~/web/demus.co dbbolton@graffias.dreamhost.com:~/'
+alias dbbo='rsync -e ssh -av --exclude=".*" ~/web/dbbo.co dbbolton@graffias.dreamhost.com:~/'
+
+## zsh stuff
+alias sa='source ~/.zsh/aliases'
+alias sz='source ~/.zshrc'
+alias rh='rehash'
+alias za='vim ~/.zsh/aliases ; source ~/.zsh/aliases'
+
