@@ -1,20 +1,24 @@
+# Applications
+export BROWSER="/usr/bin/iceweasel"
+
 # debian
 export DEBEMAIL="dbb008@gmail.com"
 export DEBFULLNAME="Daniel Bolton"
 
 # directories
 #export CDPATH=".:~:~/src"
-export ZSH_DIR="$HOME/.zsh"
+export ZSH_DIR="$HOME/.config/zsh"
 export gh="$HOME/src/githome"
 export gc="$HOME/src/configs"
 export gs="$HOME/src/scripts"
-export nes="$HOME/games/nes"
-export n64="$HOME/games/n64"
+export nes="$HOME/Games/nes"
+export n64="$HOME/Games/n64"
 export ob="$HOME/.config/openbox"
 export pd="$HOME/perl"
+export PERLBREW_ROOT="$HOME/src/perl"
 
 # files
-export HISTFILE="$HOME/.zsh/history"
+export HISTFILE="${ZDOTFIR}/history"
 export WWW_HOME="$HOME/Documents/home.html"
 
 # githome
@@ -33,7 +37,8 @@ export LESS='-GRJx4P?f[%f]:[STDIN].?pB - [%pB\%]:\.\.\..'
 
 # mail
 export EMAIL='dbb008@gmail.com'
-export MAIL='/var/spool/mail/dbb'
+export MAIL='/var/mail/dbb'
+export MAILPATH='/var/mail'
 
 # make
 #export CFLAGS="-march=core2 -O3 -pipe -m64 -mfpmath=sse -msse -msse2 -mssse3"
@@ -49,14 +54,11 @@ export CXXFLAGS="${CFLAGS}"
 
 # path
 typeset -U path
-for dir in ~/bin ~/src/perl/bin /usr/lib/git-core/ ; do
+for dir in ~/bin ${PERLBREW_ROOT}/bin /usr/lib/git-core/ ; do
     if [[ -z ${path[(r)$dir]} ]]; then
         path=($dir $path)
     fi
 done
-
-# perlbrew
-export PERLBREW_ROOT="$HOME/src/perl"
 
 # programs
 ## Set vim as the EDITOR unless it doesn't exist

@@ -1,207 +1,3 @@
-: 1396721966:0;sagi /lib/modules/3.13.7-1-lqx fat
-: 1396721974:0;sudo modprobe fat
-: 1396721984:0;sudo modprobe exfat
-: 1396721987:0;sudo modprobe vfat
-: 1396722375:0;fdisk -l
-: 1396722443:0;lsmod|grep fat
-: 1396722472:0;sudo rmmod vfat exfat
-: 1396722482:0;sudo rmmod fat
-: 1396722540:1;sagi /lib/modules/3.13.7-1-lqx ps3
-: 1396722575:0;sagi /lib/modules/3.13.7-1-lqx ds3
-: 1396722682:0;lsmod|grep joy
-: 1396722700:0;cd ~/src/pf-kernel
-: 1396722926:6;make localmodconfig
-: 1396723312:1;git clone git@github.com:dbb/math-scripts.git
-: 1396723315:0;cd math-scripts
-: 1396723325:0;./rpn_calc.pl '+ 2 1'
-: 1396723359:0;./rpn_calc.pl '+2 1'
-: 1396723373:0;./rpn_calc.pl '1 2 +'
-: 1396723388:0;./rpn_calc.pl '2 3 *'
-: 1396723111:345;time make
-: 1396724040:14;time make modules
-: 1396724065:1;sudo make modules_install
-: 1396724087:0;find /lib/modules/3.13.3-pf-dbb-pf+/ -type f
-: 1396724279:0;cd ../pf-kernel
-: 1396724288:0;mv .config .config-old
-: 1396724334:0;cat /proc/config.gz > .config
-: 1396724361:2;make 
-: 1396724376:9;make clean
-: 1396724406:703;make menuconfig
-: 1396725408:6;pmi hardinfo
-: 1396725418:5;pmi phoronix-test-suite
-: 1396726005:1;git clone https://github.com/tpope/vim-markdown.git
-: 1396726039:0;ls vim-markdown/syntax
-: 1396726096:0;cd /usr/share/vim/vimfiles/syntax
-: 1396726104:0;cd ...
-: 1396726105:0;...
-: 1396726111:0;sagi . markdown
-: 1396726132:2;sudo mv ./vim74/syntax/markdown.vim ./vim74/syntax/markdown-orig.vim
-: 1396726143:0;sudo mv ./vim74/ftplugin/markdown-orig.vim
-: 1396726152:0;sudo mv ./vim74/ftplugin/markdown.vim ./vim74/ftplugin/markdown-orig.vim
-: 1396726177:0;diff ./vim74/ftplugin/markdown.vim ~/.vim/bundle/vim-markdown/ftplugin/markdown.vim
-: 1396726186:0;diff ./vim74/ftplugin/markdown-orig.vim ~/.vim/bundle/vim-markdown/ftplugin/markdown.vim
-: 1396726545:0;cd ~/.vim/bundle
-: 1396726563:0;mv vim-markdown ~/src/vim/vim-markdown-tpope
-: 1396726568:1;git clone git@github.com:dbb/vim-markdown.git
-: 1396727057:0;cd -
-: 1396727066:0;cd vim-markdown
-: 1396727084:0;grep gitignore ~/.zsh/aliases
-: 1396727088:0;grep gitignore ~/.zsh/functions
-: 1396727109:0;which gitig
-: 1396727132:0;git add syntax/markdown.vim
-: 1396727144:1;gcp 'Add highlighting for code'
-: 1396727165:0;pms hardinfo
-: 1396727179:0;hardinfo --help
-: 1396727201:157;sudo hardinfo -a
-: 1396727372:0;phoronix-test-suite
-: 1396727447:1;pmi php-gtk
-: 1396727464:1;aura -As 'php-gtk'
-: 1396727485:15;sudo aura -M php-gtk
-: 1396727574:2;sudo aura -M aur/php-gtk
-: 1396727637:1;sudo aura -A php-gtk
-: 1396727829:0;aura --help
-: 1396727611:260;ghe .zsh/aliases
-: 1396751921:1;png twitter.com
-: 1396727842:0;man aura
-: 1396753942:3;pmi gksudo
-: 1396753948:0;gksudo
-: 1396753954:1;pfs
-: 1396753960:1;pfs gksudo
-: 1396753965:5;pmi gksu
-: 1396754151:0;uname
-: 1396754542:1;pfs glxgears
-: 1396754550:4;pmi mesa-demos
-: 1396754844:0;lsblk
-: 1396755759:1;gcc -o leibniz leibniz_pi.c
-: 1396755763:6;./leibniz
-: 1396755857:0;pms deluge
-: 1396755875:5;pmi rtorrent
-: 1396755884:2;pmi tmux
-: 1396755907:0;rtorrent --help
-: 1396755940:0;mkdir torrents
-: 1396755942:0;cd torrents
-: 1396755955:0;rtorrent magnet:?xt=urn:btih:6FBC1DFB0616E9937CF4C6713A5EADBFCA6B1716&dn=the+c+programming+language+4th+edition+a4&tr=http%3A%2F%2Fexodus.desync.com%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337
-: 1396756103:0;gcc -o leibniz leibniz_pi.c && ./leibniz
-: 1396756313:24;vim leibniz.pi
-: 1396756346:0;mv leibniz.pi leibniz.py
-: 1396756591:0;python --version
-: 1396757092:1;pms numpy
-: 1396757102:2;pmi python-numpi
-: 1396757106:7;pmi python-numpy
-: 1396757123:1;rm leibniz
-: 1396757130:0;./leibniz.py 1
-: 1396757133:0;./leibniz.py 2
-: 1396757144:0;./leibniz.py 100
-: 1396757151:0;./leibniz.py 1000
-: 1396757176:20;./leibniz.py 1000000
-: 1396757252:1;./leibniz.py 10000
-: 1396757699:2;./leibniz.py 100000
-: 1396757719:0;./leibniz.py 10
-: 1396757842:0;time ./leibniz.py 10
-: 1396757863:0;time ./leibniz.py 100
-: 1396757869:0;time ./leibniz.py 1000
-: 1396757873:0;time ./leibniz.py 10000
-: 1396757875:0;time ./leibniz.py 100000
-: 1396757878:2;time ./leibniz.py 1000000
-: 1396758393:0;git add leibniz.py
-: 1396769300:1;gcp 'Add leibniz.py'
-: 1396755713:0;vim leibniz_pi.c
-: 1396755963:0;rtorrent 'magnet:?xt=urn:btih:6FBC1DFB0616E9937CF4C6713A5EADBFCA6B1716&dn=the+c+programming+language+4th+edition+a4&tr=http%3A%2F%2Fexodus.desync.com%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337'
-: 1396769913:27;glxgears -info
-: 1396815142:1;pms ember
-: 1396815293:1;pms widget
-: 1396815304:1;pms twf
-: 1396815309:3;pfs twf
-: 1396815341:0;pms awf
-: 1396815349:2;aurs awf
-: 1396815376:4;auri awf
-: 1396815440:30;auri awf-git
-: 1396815502:0;awf-gtk
-: 1396815509:0;awf=gtk3
-: 1396815515:19;awf-gtk3
-: 1396815544:2;aurs twf
-: 1396815567:42;auri twf twf-unofficial
-: 1396815614:11;auri twf
-: 1396815629:434;twf
-: 1396816990:0;mkdir cms
-: 1396816992:0;cd cms
-: 1396816998:1;git clone https://github.com/picocms/Pico.git
-: 1396817029:2;git clone https://github.com/anchorcms/anchor-cms.git
-: 1396817440:69;gksudo hardinfo -a
-: 1396817518:0;cd src/math-scripts
-: 1396817533:17;time ./leibniz.py 10000000
-: 1396818289:0;cd ../cms/anchor-cms
-: 1396818314:0;which php
-: 1396818383:3;pmi mcrypt
-: 1396818392:0;pms mcrypt
-: 1396818402:3;pmi libmcrypt php-mcrypt
-: 1396818453:0;pms mysql
-: 1396818515:2;aurs mysql
-: 1396818548:14;pmi mariadb
-: 1396818571:22;pms gd |less
-: 1396818599:3;pmi gd
-: 1396818623:0;pms pdo
-: 1396818666:1;aurs pdo
-: 1396818698:0;which mysql
-: 1396818703:0;mysql --version
-: 1396818879:0;pms nginx
-: 1396818885:0;pms lighthttp
-: 1396818895:1;pms lighttp
-: 1396818903:4;pmi nginx
-: 1396818912:0;pmi lighttp
-: 1396818920:123;pmi lighttpd
-: 1396819046:0;pmi bauk
-: 1396819058:0;pms "http server"
-: 1396819090:3;pmi lighttpd nginx
-: 1396819212:0;ls /var
-: 1396819222:0;sudo mkdir /var/www
-: 1396819433:0;sudo chgrp -R dbb /var/www
-: 1396819444:0;sudo chmod g+rw /var/www
-: 1396819483:0;ll /var/www
-: 1396819487:0;which ll
-: 1396819494:0;ls -l /var/www
-: 1396819498:0;sudo ls -l /var/www
-: 1396819503:0;sudo ls -l /var/
-: 1396819524:0;touch /var/www/touch
-: 1396819527:0;rm $_
-: 1396818296:1258;vim readme.md
-: 1396819856:0;echo 'TestMe!' >> /var/www/index.html
-: 1396819951:1;cp -r src/cms/anchor-cms/ /var/www
-: 1396819986:0;ls -l anchor-cms
-: 1396820015:0;cd anchor-cms
-: 1396820077:0;chmod -R 0777 content
-: 1396820082:0;ll
-: 1396820431:0;man mariadb
-: 1396820436:1;man -k maria
-: 1396820441:0;man -k mysql
-: 1396820517:0;mysql --help
-: 1396820561:0;mysql --help | grep new
-: 1396820566:0;mysql --help | grep create
-: 1396820579:3;sudo mysql
-: 1396902050:0;sx
-: 1396902072:2;cat
-: 1396902082:16;time cat
-: 1396902635:8;pmi php
-: 1396902646:0;php --version
-: 1396902759:5;sudo vim /etc/httpd/conf/extra/php5_module.conf
-: 1396902796:0;which pecl
-: 1396902813:0;pms pecl
-: 1396902862:5;pmi php-cgi
-: 1396902884:0;php-cgi --version
-: 1396902900:0;sudo mkdir -p /etc/lighttpd/conf.d/
-: 1396902914:0;echo '# Make sure to install php and php-cgi. See:                                                             \
-# https://wiki.archlinux.org/index.php/Fastcgi_and_lighttpd\#PHP\
-\
-server.modules += ("mod_fastcgi")\
-\
-# FCGI server\
-# ===========\
-#\
-# Configure a FastCGI server which handles PHP requests.\
-#\
-index-file.names += ("index.php")\
-fastcgi.server = ( \
-    # Load-balance requests for this path...\
     ".php" => (\
         # ... among the following FastCGI servers. The string naming each\
         # server is just a label used in the logs to identify the server.\
@@ -289,7 +85,6 @@ fastcgi.server = ( \
 : 1396902774:547;sudo vim /etc/php/php.ini
 : 1396904432:0;cd src/cms
 : 1396904436:0;cd Pico
-: 1396904440:0;git pull
 : 1396905523:0;pms virtual
 : 1396905760:0;which deluge
 : 1396905797:0;man rtorrent
@@ -315,7 +110,6 @@ fastcgi.server = ( \
 : 1396907329:0;git clone git clone https://github.com/pythonhub/quokka 
 : 1396907336:0;git clone git clone https://github.com/pythonhub/quokka
 : 1396907340:1;git clone https://github.com/pythonhub/quokka
-: 1396907450:1;l
 : 1396907743:0;which gc
 : 1396907749:0;which gcl
 : 1396907753:20;git clone https://github.com/pyrocms/pyrocms.git
@@ -448,7 +242,6 @@ fastcgi.server = ( \
 : 1397285181:131;pychess --thread-debug
 : 1397285319:0;pychess --version
 : 1397285416:26;vim .config/pychess/config
-: 1397285448:0;cd .config
 : 1397285457:0;mv pychess pychess.orig
 : 1397285601:0;ls pychess*
 : 1397285614:0;diff pychess/config pychess.orig/config
@@ -518,7 +311,6 @@ fastcgi.server = ( \
 : 1397378034:0;cx script.sh
 : 1397378036:0;./script.sh
 : 1397460084:0; which fakebinar
-: 1397378051:10;bash
 : 1397378065:0;cat script.sh
 : 1397378155:0;lspci -n 
 : 1397378283:0;which sh
@@ -576,7 +368,6 @@ fastcgi.server = ( \
 : 1397707674:0;xbacklight 5
 : 1397707693:2;xbacklight -d $DISPLAY -set 50
 : 1397707714:2;xbacklight -d $DISPLAY -set 25
-: 1397707719:0;xbacklight -get
 : 1397753400:0; lsmod|grep usb
 : 1397753426:10;find /lib/modules -iname usb
 : 1397753446:0;find /lib/modules -iname '*hid*'
@@ -665,7 +456,6 @@ fastcgi.server = ( \
 : 1399399936:0;pacman --help
 : 1399400122:0;sudo mv /etc/fonts/conf.d/75-yes-terminus.conf /etc/fonts/conf.d/75-yes-terminus.conf.orig
 : 1399428240:3;sudo update-grub
-: 1399428392:0;srcall
 : 1399450867:0;cd src/urxvt-stuff/
 : 1399450907:0;cd .vim/bundle
 : 1399450919:1;git clone https://github.com/chriskempson/base16-vim.git
@@ -750,7 +540,6 @@ fastcgi.server = ( \
 : 1400218218:0;apin --without-recommends gtk2-engines-aurora gtk2-engines gtk2-engines-murrine
 : 1400218244:0;apin redshift
 : 1400218285:0;aprm gconf-service gconf2-common libgconf-2-4 libxcb-randr0
-: 1400218316:0;cd src
 : 1400218344:0;cat hosts_someonewhocares.org.txt
 : 1400218373:0;cat hosts_someonewhocares.org.txt | sudo tee -a /etc/hosts
 : 1400218507:0;vi .config/redshift.conf
@@ -802,7 +591,6 @@ fastcgi.server = ( \
 : 1400226290:0;aps keyring
 : 1400226322:0;apin deb-multimedia-keyring debian-ports-archive-keyring debian-keyring
 : 1400226359:0;which java
-: 1400226362:0;ps3ms
 : 1400226394:0;apin mencoder ffmpeg vlc
 : 1400226437:0;apin deb-multimedia-keyring
 : 1400226453:0;apsh xdg-utils
@@ -811,7 +599,6 @@ fastcgi.server = ( \
 : 1400226635:0;apin thunar-volman thunar-media-tags-plugin thunar-gtkhash thunar-archive-plugin
 : 1400226675:0;aps 7z
 : 1400226701:0;apin squeeze p7zip-full p7zip-rar unrar
-: 1400226764:0;sudo fdisk -l
 : 1400226782:0;sudo mkdir /media/mybook
 : 1400226801:0;sudo mount /dev/sdc1 /media/mybook
 : 1400227339:0;apsh libvisual-0.4-plugins
@@ -873,29 +660,22 @@ fastcgi.server = ( \
 : 1400313159:0;apin weechat-curses weechat-plugins weechat-scripts
 : 1400313819:0;weechat
 : 1400313835:0;weechat-curses
-: 1400313954:0;sudo zsh
 : 1400314398:0;vim .xinitrc
 : 1400314415:0;aps gcfs
 : 1400314419:0;aps gvfs
 : 1400314433:0;apin gvfs
 : 1400315970:0;apin gcolor2
-: 1400316000:0;aps gimp
 : 1400316481:0;aps rxvt
 : 1400316499:0;aprm rxvt-unicode && apin rxvt-unicode-256color
-: 1400316527:0;cd src/urxvt-stuff
-: 1400316532:0;cat README.md
-: 1400316538:0;<tabbed.patch sudo patch -d /usr/lib/urxvt/perl
 : 1400316547:0;vim .zshrc
 : 1400316591:0;cd .vim/bundle/base16-vim
 : 1400316598:0;cd colors
-: 1400316606:0;cd ..
 : 1400316611:0;..
 : 1400316834:0;aps dmz
 : 1400316839:0;apin dmz-cursor-theme
 : 1400316875:0;grep dpkg .config/zsh/aliases
 : 1400316895:0;grep alt .config/zsh/aliases
 : 1400316905:0;ua x-cursor-theme
-: 1400316917:0;ls
 : 1400316967:0;vim
 : 1400317075:0;xrdb -load ~/.Xdefaults
 : 1400317368:0;aps flash
@@ -903,10 +683,7 @@ fastcgi.server = ( \
 : 1400317398:0;apsh flashplugin-nonfree
 : 1400317414:0;apin $_
 : 1400377217:0;vim Documents/pwsafe.txt
-: 1400377411:0;apdg
-: 1400378725:0;shn
 : 1400461677:0;startx
-: 1400480092:0;sudo mount /media/mybook
 : 1400552518:0;cd src/githome
 : 1400552529:0;cd etc
 : 1400552531:0;mkdir apt
@@ -928,7 +705,6 @@ fastcgi.server = ( \
 : 1400561173:0;apin build-essential
 : 1400561233:0;apv iceweasel
 : 1400561239:0;srn
-: 1400561326:7;mail
 : 1400568920:24;xev
 : 1400647489:0;cd src/volumeicon
 : 1400647527:0;xprop
@@ -945,7 +721,6 @@ fastcgi.server = ( \
 : 1400647962:5;./configure
 : 1400647971:3;make
 : 1400647979:0;sudo make install
-: 1400647985:0;rh
 : 1400647989:0;which volumeicon
 : 1400648163:0;file ~/.fonts.conf
 : 1400648173:7893;vim /home/dbb/.config/fontconfig/fonts.conf
@@ -955,7 +730,6 @@ fastcgi.server = ( \
 : 1400659949:0;which psg
 : 1400659974:0;alias psg='ps -e | grep -i'
 : 1400659977:0;psg ssh
-: 1400659985:0;/sbin/ifconfig
 : 1400660239:2;aps tumbler
 : 1400660249:23;apin tumbler tumbler-plugins-extra
 : 1400660304:2;aps gimp
@@ -967,14 +741,12 @@ fastcgi.server = ( \
 : 1400698025:0;lsmod|grep dell
 : 1400731560:11;apin gnome-screenshot
 : 1400736158:0;pc 1/.8
-: 1400737271:2;time cat
 : 1400737311:0;pc 25/11.285
 : 1400737345:11;time cat
 : 1400737414:0;pc 26/12.129
 : 1400737428:0;pc 12.129/26
 : 1400741478:2;sudo fdisk -l
 : 1400741518:0;sudo mount /media/mybook
-: 1400783799:328;man rsync
 : 1400784136:0;pc 47.80/12
 : 1400784148:0;pc 3.98/8.95
 : 1400811354:80;vim ~/Documents/email.txt
@@ -983,67 +755,41 @@ fastcgi.server = ( \
 : 1400811718:12;apin mutt-patched
 : 1400811937:0;cat .ssh/id_rsa
 : 1400812000:0;cat .ssh/id_rsa.pub
-: 1400812043:92;ssh beraexfn@beratyr.com
 : 1400812306:0;cd src
 : 1400812311:1;md beratyr
 : 1400812320:0;git init
 : 1400812334:28;vim index.html
-: 1400812366:0;git add index.html
 : 1400812377:0;git commit -m 'Initial commit'
 : 1400812405:32;scp index.html beraexfn@beratyr.com:~
 : 1400812500:35;rsync index.html beraexfn@beratyr.com:~
 : 1400813626:20;ssh beraexfn@beratyr.com
 : 1400813649:1;ssh beraexfn@beratyr.com:21098
-: 1400813654:4;man ssh
 : 1400813705:0;which ghe
 : 1400813664:957;ssh beraexfn@beratyr.com -p 21098
 : 1400656076:158560;ps3ms
-: 1400814764:82;man rsync
-: 1400814852:0;ls
 : 1400814869:0;mkdir img
 : 1400814878:0;touch img/tmp.png
-: 1400814882:0;srcall
-: 1400814886:0;which bt-sync
 : 1400814901:23;rsync -e ssh --port=21098 -av --exclude=".*" ~/src/beratyr/* beraexfn@beratyr.com:~/public_html
 : 1400814969:50;rsync --port=21098 index.html beraexfn@beratyr.com:~/public_html
 : 1400815039:2;ssh -p 21098 beraexfn@beratyr.com     "which rsync"
 : 1400815090:2;rsync -v -e "ssh -p 21098" ./index.html beraexfn@beratyr.com:~/public_html
 : 1400816194:101;man ssh
 : 1400816495:0;/sbin/ifconfig
-: 1400817616:3;ssh beratyr
-: 1400818292:0;cd ..
 : 1400818297:1;rm -rf beratyr/*
-: 1400818304:1;git clone git@github.com:dbb/beratyr.git
-: 1400818310:0;cd beratyr
 : 1400818454:0;git remote set-url --add --push origin ssh://beratyr:~/public_html
-: 1400818459:0;ls
 : 1400818472:0;echo 'Hello, world!' > index.html
-: 1400818477:0;git add index.html
 : 1400818490:0;git commit -m 'Add index.html'
-: 1400818515:1;git push -u origin master
 : 1400818585:2;git push  --receive-pack=/usr/local/cpanel/3rdparty/bin/git-receive-pack -u origin master
 : 1400818710:3;bash
-: 1400818763:0;cd src/beratyr
-: 1400818764:0;ls
-: 1400818769:0;git push -u origin master
-: 1400818796:0;git push --receive-pack=/usr/local/cpanel/3rdparty/bin/git-receive-pack 
-: 1400818819:0;git config --global push.default simple
-: 1400818829:34;vim .git/config
 : 1400818868:0;git config --global push.default simple
-: 1400818871:0;git push --receive-pack=/usr/local/cpanel/3rdparty/bin/git-receive-pack 
-: 1400818883:19;vim .git/config
-: 1400818904:2;git push --receive-pack=/usr/local/cpanel/3rdparty/bin/git-receive-pack 
 : 1400818935:0;git reset --hard
 : 1400818938:1;git push --receive-pack=/usr/local/cpanel/3rdparty/bin/git-receive-pack 
-: 1400818976:0;cd ..
 : 1400818994:0;srcall
 : 1400819001:0;which bt-sync
 : 1400819010:8;bt-sync
 : 1400814653:4383;ghe .config/zsh/aliases
 : 1400819103:1;rsync -e ssh --port=21098 -av --exclude=".*" ~/src/beratyr/* beratyr:~/public_html
 : 1400819116:0;rsync -e ssh --port=21098 -av  ~/src/beratyr/* beratyr:~/public_html
-: 1400819148:0;cd beratyr
-: 1400819154:0;mkdir cgi-bin
 : 1400819166:0;touch test.txt
 : 1400819178:0;git add test.txt
 : 1400819185:0;git commit -m 'test'
@@ -1051,39 +797,24 @@ fastcgi.server = ( \
 : 1400819379:0;xcat .gitconfig
 : 1400819381:0;cat .gitconfig
 : 1400819840:0;git remote add web ssh://beratyr:~/public_html
-: 1400819882:0;git push web +master:refs/heads/master
-: 1400819935:0;git push --receive-pack=/usr/local/cpanel/3rdparty/bin/git-receive-pack web +master:refs/heads/master
 : 1400819967:0;git remote rm web
 : 1400820094:0;git remote add web ssh://beraexfn@server97.web-hosting.com:21098/home/beraexfn/public_html
 : 1400820103:4;git push --receive-pack=/usr/local/cpanel/3rdparty/bin/git-receive-pack web +master:refs/heads/master
-: 1400820179:0;ls
 : 1400820310:0;git push origin master
 : 1400820322:36;vim .git/config
-: 1400820363:1;git push -u origin master
 : 1400820429:0;git config remote.origin.receivepack /usr/local/cpanel/3rdparty/bin/git-receive-pack
-: 1400820432:1;git push -u origin master
-: 1400820437:0;ls
 : 1400820463:0;touch test2
 : 1400820466:0;git add test2
 : 1400820475:0;git commit -m 'Add test2'
-: 1400820482:1;git push -u origin master
-: 1400820552:0;cd ..
 : 1400820563:0;mv beratyr beratyr-old
 : 1400820571:1;git clone git@github.com:dbb/beratyr.git
-: 1400820575:0;cd beratyr
-: 1400820577:0;ls
 : 1400821171:0;git remote add web ssh://beraexfn@server97.web-hosting.com:21098/home/beraexfn/beratyr.git
-: 1400821179:0;ls
 : 1400821185:0;touch test
-: 1400821190:0;git add test
 : 1400821194:0;mkdir cgi-bin
 : 1400821207:0;git commit -m 'Add test'
-: 1400821223:1;git push web +master:refs/heads/master
-: 1400821248:0;cat .git/config
 : 1400821280:0;git config remote.web.receivepack /usr/local/cpanel/3rdparty/bin/git-receive-pack
 : 1400821286:2;git push web +master:refs/heads/master
 : 1400877765:2;git push -u origin master
-: 1400818619:59185;ssh beratyr
 : 1400877810:0;cat .git/config
 : 1400877921:0;which git-receive-pack
 : 1400878662:5;man rsync
@@ -1096,7 +827,6 @@ fastcgi.server = ( \
 : 1400880065:0;pkgs="sylpheed"
 : 1400880068:1;aps claws
 : 1400880093:0;pkgs="$pkgs claws-mail"
-: 1400880096:0;echo $pkgs
 : 1400880105:1;aps balsa
 : 1400880113:0;pkgs="$pkgs balsa"
 : 1400880120:1;aps postler
@@ -1112,11 +842,9 @@ fastcgi.server = ( \
 : 1400880446:1;apsh yelp
 : 1400880435:194;apin sylpheed claws-mail balsa geary aspell-en xfonts-100dpi-transcoded libgnomevfs2-extra
 : 1400899983:0;echo $MAIL
-: 1400900081:0;file /var/spool/mail/dbb
 : 1400900089:0;file /var/spool/mail/dbbggg
 : 1400900128:0;ls -l /var/spool/mail/dbb
 : 1400900131:0;ls -l /var/spool/mail
-: 1400900139:0;file /var/spool/mail/dbb
 : 1400900142:0;file /var/spool/mail
 : 1400900153:0;file /var/mail
 : 1400900159:0;ls -l $_
@@ -1128,3 +856,169 @@ fastcgi.server = ( \
 : 1400900321:102;ghe ~/.config/zsh/zshenv
 : 1400900478:0;cd ~/src/githome
 : 1400900482:0;cd .config
+: 1400900493:0;cp -r ~/.config/zsh .
+: 1400900504:0;git add .config/zsh/
+: 1400900519:1;gcp 'Add .config/zsh'
+: 1400900567:0;git add etc/apt/apt.conf
+: 1400900579:2;gcp 'Merge, add apt.conf'
+: 1400984009:3;shn
+: 1401157534:7;mail
+: 1401157573:211;apdg
+: 1401157793:0;tail /etc/fstab
+: 1401158108:0;cd src/urxvt-stuff
+: 1401158111:0;cat README.md
+: 1401158126:2;<tabbed.patch sudo patch -d /usr/lib/urxvt/perl
+: 1401157841:290;sudo zsh
+: 1401158154:238;man ntfs-3g
+: 1401158394:23;man mount
+: 1401171091:0;xbacklight --help
+: 1401171107:2;xbacklight -set 75
+: 1401171112:0;xbacklight -get
+: 1401171122:3;xbacklight -set 25
+: 1401216990:0;pc 999.99/60
+: 1401330828:1;chmod -R a+r ~/src/beratyr
+: 1401330889:0;cd src/beratyr
+: 1401330895:0;mkdir ob
+: 1401330897:0;cd ob
+: 1401330908:0;ls ~/Templates
+: 1401331027:0;cp ~/Templates/index.html stats.html
+: 1401331090:1;git pull
+: 1401331144:0;chmod -R a+rw beratyr
+: 1401331160:0;chmod 0777 -R beratyr
+: 1401331173:0;cp ~/Templates/index.html beratyr
+: 1401331184:0;git add index.html
+: 1401331191:0;git add ob/stats.html
+: 1401331195:0;git add LICENSE
+: 1401331199:0;git add README.md
+: 1401331226:0;git add test
+: 1401331241:2;gcp 'Add OB stats template'
+: 1401331252:5;git push web master
+: 1401331293:78;ssh beratyr
+: 1401332501:0;chmod a_rw beratyr/index.html
+: 1401332507:0;chmod a+rw beratyr/index.html
+: 1401332518:0;chmod a+rw beratyr/ob/stats.html
+: 1401332667:0;ps -e |grep lighttp
+: 1401332811:0;ls -l index.html
+: 1401343225:0;pc '10+35+7+21+14'
+: 1401343376:0;pc '4+10.75+4+6+4+13'
+: 1401348580:0;pc 15x40
+: 1401348587:0;pc 600/7
+: 1401356193:24;apin tesseract-ocr
+: 1401356227:0;cd ~/Pictures/x
+: 1401356242:0;cd skinwalker
+: 1401356247:0;tesseract ocr1401158781004.jpg
+: 1401356310:0;cd ~/Pictures/x/skinwalker
+: 1401356269:72;tesseract ocr1401158781004.jpg out.txt
+: 1401356345:5;tesseract ocr1401158781004.jpg stdout
+: 1401356353:16;apin gocr
+: 1401356378:6;gocr ocr1401158781004.jpg
+: 1401356387:0;gocr --help
+: 1401356422:0;l
+: 1401356426:0;tail out.txt
+: 1401356455:0;cat out.txt
+: 1401356410:51;gocr -i ocr1401158781004.jpg -o out.txt
+: 1401356465:1;aps ocr
+: 1401356493:10;apin ocrad
+: 1401356505:0;rh
+: 1401356509:0;ocrad --help
+: 1401356533:0;rm out.txt
+: 1401356535:0;ocrad -o out.txt ocr1401158781004.jpg
+: 1401428456:0;cd ..
+: 1401428464:0;chmod a+x beratyr
+: 1401428488:0;ls -l beratyr
+: 1401428498:0;ls -l
+: 1401428506:0;ls -l | grep beratyr
+: 1401429012:0;cd beratyr
+: 1401429013:0;ls
+: 1401429017:0;cat index.html
+: 1401429037:0;ls /home/dbb/src/beratyr
+: 1401429361:0;ls
+: 1401429364:0;cd ..
+: 1401429370:0;ls -l beratyr
+: 1401429391:0;chmod a+rwx beratyr/index.html
+: 1401429424:0;chgrp -R www-data beratyr
+: 1401429439:0;ls -l
+: 1401429551:0;chmod -R a+rwx beratyr
+: 1401559034:1;pc 2600x365x6
+: 1401588206:0;shn
+: 1401676600:0;file .zshenv
+: 1401676610:0;rm .zshenv
+: 1401676636:0;echo 'export ZDOTDIR="${HOME}/.config/zsh"'
+: 1401676644:0;echo 'export ZDOTDIR="${HOME}/.config/zsh"' > .zshenv
+: 1401676658:1;file /etc/sysctl.d/README.sysctl 
+: 1401676663:16;vim $_
+: 1401676686:5;vim /etc/sysctl.conf
+: 1401676698:8;sudo vim /etc/sysctl.conf
+: 1401676720:0;cd .config/zsh
+: 1401676721:0;ls
+: 1401676728:0;mv zshenv .zshenv
+: 1401676733:0;mv kbd .zkbd
+: 1401676745:0;mv zshrc .zshrc
+: 1401676746:0;ls
+: 1401676758:0;ls -a
+: 1401676769:0;cd
+: 1401691888:0;grep corpor /usr/share/dict/american-english
+: 1401702439:57;apin evince
+: 1401775187:26;sagi /media/mybook whit
+: 1401775216:479;sagi /media/mybook whitest
+: 1401818433:0;rm .pulse-cookie
+: 1401818437:0;rm -rf .pulse
+: 1401818488:0;srn
+: 1401818931:0;pc .05z595
+: 1401818934:0;pc .05x595
+: 1401848583:3;su www-data
+: 1401848595:7;sudo passwd www-data
+: 1401848623:2;su www-data
+: 1401848693:0;groups
+: 1401925862:1;man --html zsh
+: 1401925876:1;zsoelim
+: 1401925885:0;/usr/lib/man-db/manconv
+: 1401925892:2;groff
+: 1401925896:5;tbl
+: 1401926006:0;echo $BROWSER
+: 1401926016:0;export BROWSER-iceweasel
+: 1401926020:0;export BROWSER=iceweasel
+: 1401926027:0;man --html zsh
+: 1401928839:0;print $BROWSER
+: 1401928845:0;man --html zsh
+: 1401928870:0;which $BROWSER
+: 1401928891:0;which groff
+: 1401928900:0;which apv
+: 1401928904:1;apt-cache policy
+: 1401928911:0;apt-cache policy groff
+: 1401928918:0;which groff
+: 1401928926:0;file /usr/bin/groff
+: 1401928934:4;apt-file search bin/groff
+: 1401928951:0;apt-cache polict groff-base
+: 1401928956:0;apt-cache policy groff-base
+: 1401928964:3;apsh groff
+: 1401929008:20;apin groff
+: 1401929033:0;rehash
+: 1401929038:0;which groff
+: 1401929047:1;man --html zsh
+: 1401929592:0;print $WWW_HOME
+: 1401929519:99;vim $ZDOTDIR/.zshenv
+: 1401932422:8356;vim Documents/pwsafe.txt
+: 1401940788:0;pc .66x255 .33x255
+: 1401940810:0;.66x120
+: 1401940813:0;pc $_
+: 1401940945:0;pc 218-104
+: 1401940952:0;pc .66x114
+: 1401940976:0;pc .33x114
+: 1401940984:0;pc 218-37.62
+: 1401993042:0;ls Desktop
+: 1402036590:1;man -t zsh
+: 1402036661:0;echo "foo-" | sed 's/-/%/g'
+: 1402075949:1;man -t zsh
+: 1402359095:11;cp -r .mozilla .mozila20140608
+: 1402463711:0;echo $ZDOTDIR
+: 1402463792:1;file .zshenv
+: 1402463796:0;cd
+: 1402463821:0;echo 'export ZDOTDIR="${HOME}/.config/zsh"' > ~/.zshenv
+: 1401848648:615211;sudo zsh
+: 1402463900:0;file .zshenv
+: 1402463903:0;cat .zshenv
+: 1402463866:0;su -c 'bash'
+rm .zshenv 
+cp /home/dbb/.zshenv ~/.zshenv
+cp /home/dbb/.zshenv ~/.zshenv

@@ -134,16 +134,15 @@ alias xdef="vim ${HOME}/.Xdefaults; xrdb -load ${HOME}/.Xdefaults"
 alias xconf="sudo vim /etc/X11/xorg.conf"
 
 # zsh specific files
-alias srcall="source ~/.zshenv; source ~/.zshrc; source ${ZSH_DIR}/aliases; \
-              source $ZSH_DIR/functions"
-alias srca="source ${ZSH_DIR}/aliases"
-alias srcf="source ${ZSH_DIR}/functions"
-alias srcp="source ${ZSH_DIR}/prompt"
-alias srcz="source ${HOME}/.zshrc"
-alias via="vim ${ZSH_DIR}/aliases; source ${ZSH_DIR}/aliases"
-alias vif="vim ${ZSH_DIR}/functions; source ${ZSH_DIR}/functions"
-alias vip="vim ${ZSH_DIR}/prompt; source ${ZSH_DIR}/prompt"
-alias viz="vim ${HOME}/.zshrc; source ${ZSH_DIR}/.zshrc"
+alias srcall="source ${ZDOTDIR}.zshenv; source ${ZDOTDIR}/.zshrc"
+alias srca="source ${ZDOTDIR}/aliases"
+alias srcf="source ${ZDOTDIR}/functions"
+alias srcp="source ${ZDOTDIR}/prompt"
+alias srcz="source ${ZDOTDIR}/.zshrc"
+alias via="vim ${ZDOTDIR}/aliases; source ${ZDOTDIR}/aliases"
+alias vif="vim ${ZDOTDIR}/functions; source ${ZDOTDIR}/functions"
+alias vip="vim ${ZDOTDIR}/prompt; source ${ZDOTDIR}/prompt"
+alias viz="vim ${ZDOTDIR}/.zshrc; source ${ZDOTDIR}/.zshrc"
 
 
 ## find
@@ -159,7 +158,7 @@ alias ngrep='egrep -in'
 alias hdoc='cat << EOF >'
 
 ## make
-alias mi='su -c "make install"'
+alias mi='sudo make install'
 
 ## misc
 alias clear-hosts='rm -v '"$HOME"'/.ssh/known_hosts'
