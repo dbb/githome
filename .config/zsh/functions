@@ -80,6 +80,13 @@ ckb () {
         "$revision" kernel_image kernel_headers
 }
 
+# copy a file with .orig
+cporig () {
+    file="$1" 
+	fullpath=$( readlink -f "$file" )
+    cp -v ${fullpath} "${fullpath}.orig"
+}
+
 # D ---------------------------------- D --------------------------------- D #
 
 # E ---------------------------------- E --------------------------------- E #
@@ -284,6 +291,13 @@ md () {
 mkpatch () { # [new file] [old file] [output file]
     diff -u "$1" "$2" > "$3"'.patch'
 
+}
+
+# "rename" a file with .orig
+mvorig () {
+    file="$1" 
+	fullpath=$( readlink -f "$file" )
+    mv -v ${fullpath} "${fullpath}.orig"
 }
 
 # My "development environment"
