@@ -32,7 +32,7 @@ autoload -U compinit
 compinit
 
 zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path $ZSH_DIR/cache
+zstyle ':completion:*' cache-path "${ZDOTDIR}/cache" 
 
 which dircolors >/dev/null && eval "$(dircolors -b)"
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
