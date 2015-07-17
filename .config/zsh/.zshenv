@@ -7,22 +7,22 @@ export DEBFULLNAME="Daniel Bolton"
 
 # directories
 #export CDPATH=".:~:~/src"
-export ZSH_DIR="$HOME/.config/zsh"
-export gh="$HOME/src/githome"
-export gc="$HOME/src/configs"
-export gs="$HOME/src/scripts"
-export nes="$HOME/Games/nes"
-export n64="$HOME/Games/n64"
-export ob="$HOME/.config/openbox"
-export pd="$HOME/perl"
-export PERLBREW_ROOT="$HOME/src/perl"
+export gh="${HOME}/src/githome"
+export gc="${HOME}/src/configs"
+export gs="${HOME}/src/scripts"
+export nes="${HOME}/Games/nes"
+export n64="${HOME}/Games/n64"
+export ob="${HOME}/.config/openbox"
+export pd="${HOME}/perl"
+export PERLBREW_ROOT="${HOME}/src/perl"
+export src="${HOME}/src"
 
 # files
-export HISTFILE="${ZDOTFIR}/history"
-export WWW_HOME="$HOME/Documents/home.html"
+export HISTFILE="${ZDOTDIR}/history"
+export WWW_HOME="${HOME}/Documents/home.html"
 
 # githome
-export GITHOME="$HOME/src/githome"
+export GITHOME="${HOME}/src/githome"
 
 # grep
 #export GREP_OPTIONS='--perl-regexp'

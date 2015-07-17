@@ -372,6 +372,26 @@ qf () {
 }
 
 # R ---------------------------------- R --------------------------------- R #
+## root stuff
+root_vim () {
+    stamp=$(date '+%Y%m%d')
+    sudo mv -v /root/.vim /root/.vim_${stamp}
+    sudo mv -v /root/.vimrc /root/.vimrc_${stamp}
+    sudo mv -v /root/.gvimrc /root/.gvimrc_${stamp}
+    sudo cp -rv ~/.vim /root
+    sudo cp -rv ~/.vimrc /root
+    sudo cp -rv ~/.gvimrc /root
+}
+
+root_zsh () {
+    stamp=$(date '+%Y%m%d')
+    sudo mkdir -pv /root/.config
+
+    sudo mv -v /root/.config/zsh /root/.config/zsh_${stamp}
+    sudo rm -rv /root/.zsh
+    sudo rm -v /root/.zshrc
+    sudo rm -v /root/.zkbd
+}
 
 # S ---------------------------------- S --------------------------------- S #
 ## sagi - a find shortcut
@@ -380,17 +400,12 @@ sagi () { # [where] [what]
 }
 
 ## say - append a newline to 'print'
-say () {
-    print "$@\n"
-}
+# say () {
+#     print "$@\n"
+# }
 
 
 # T ---------------------------------- T --------------------------------- T #
-
-# a simple timestamp
-timestamp () {
-    date '+%Y-%m-%d'
-}
 
 # to - makes it easier to cd to a variable that contains a path, e.g.
 #   p="$HOME/some/long/ridiculous/path/name"

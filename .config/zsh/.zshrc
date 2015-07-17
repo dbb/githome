@@ -29,7 +29,7 @@ zle -N self-insert url-quote-magic
 
 # completion
 autoload -U compinit
-compinit
+compinit -d ${ZDOTDIR}/zcompdump
 
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path "${ZDOTDIR}/cache" 

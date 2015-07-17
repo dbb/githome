@@ -171,7 +171,8 @@ alias :q='exit'
 alias quit='exit'
 alias rsp="rename 's/(\s+)/_/g' "
 alias temp='sensors'
-alias td="date +'%l:%M %p, %d %b %Y'"
+alias timestamp="date '+%F_%H%M%S'"
+alias timedate="date +'%l:%M %p, %d %b %Y'"
 alias xsr='xsetroot -solid "#303030"'
 
 ## net
@@ -216,6 +217,9 @@ alias rf='rm -fr'
 alias sw='/usr/bin/time -f "\n----\n\nElapsed time: %E\n" cat'
 alias t='/usr/bin/time -p'
 
+## urxvt
+alias utest="xrdb -load ~/.Xdefaults; urxvt &"
+
 ## web
 alias bt-ssh='ssh beraexfn@beratyr.com -p 21098'
 alias bt-sync='rsync -e ssh --port=21098 -av --exclude=".*" ~/src/beratyr/* beraexfn@beratyr.com:~/public_html'
@@ -224,8 +228,8 @@ alias demus='rsync -e ssh -av --exclude=".*" ~/web/demus.co dbbolton@graffias.dr
 alias dbbo='rsync -e ssh -av --exclude=".*" ~/web/dbbo.co dbbolton@graffias.dreamhost.com:~/'
 
 ## zsh stuff
-alias sa='source ~/.zsh/aliases'
+alias sa="source ${ZDOTDIR}/aliases"
 alias sz='source ~/.zshrc'
 alias rh='rehash'
-alias za='vim ~/.zsh/aliases ; source ~/.zsh/aliases'
+alias za="vim ${ZDOTDIR}/aliases ; source ${ZDOTDIR}/aliases"
 
