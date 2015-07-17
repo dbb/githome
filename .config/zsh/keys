@@ -41,21 +41,25 @@ fi
 [[ -n "${key[Right]}"    ]] && bindkey "${key[Right]}"    forward-char
 [[ -n "${key[PageUp]}"   ]] && bindkey "${key[PageUp]}"   history-search-backward
 [[ -n "${key[PageDown]}" ]] && bindkey "${key[PageDown]}" history-search-forward
-[[ -n "${key[C-Left]}"   ]] && bindkey "${key[C-Left]}"   backward-word
-[[ -n "${key[C-Right]}"  ]] && bindkey "${key[C-Right]}"  forward-word
 
 [[ -n "${key[Home]}"     ]] && bindkey -M vicmd "${key[Home]}"    beginning-of-line
 [[ -n "${key[End]}"      ]] && bindkey -M vicmd "${key[End]}"     end-of-line
 
+# vi mode
 bindkey -M vicmd '^R' redo
 bindkey -M vicmd 'u'  undo
 bindkey -M vicmd 'ga' what-cursor-position
 bindkey -M vicmd 'q'  push-line
 
-bindkey '^xp' history-beginning-search-forward
-bindkey '^xn' history-beginning-search-backward
+# hist
+bindkey '^xp'  history-beginning-search-forward
+bindkey '^xn'  history-beginning-search-backward
 bindkey '^X^I' expand-or-complete-prefix
 bindkey '^X^H' expand-history
+bindkey '^o'   accept-and-infer-next-history
 
-bindkey '^o' accept-and-infer-next-history
-
+# nav
+bindkey '^b'   backward-word
+bindkey '^w'   backward-kill-word
+bindkey '^f'   forward-word
+bindkey '^d'   kill-word
