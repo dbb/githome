@@ -88,7 +88,7 @@ alias l='ls -CF'
 ## chmod 
 alias cx='chmod u+x'
 
-## debian ###################################################################
+## debian ############################################################
 alias afl='apt-file list'
 alias afs='apt-file search --regexp'
 alias aps='aptitude search'
@@ -96,6 +96,8 @@ alias apsh='aptitude show'
 alias apsrc='apt-get source'
 alias apv='apt-cache policy'
 
+### root stuff
+alias apcl='sudo aptitude clean'
 alias apin='sudo aptitude install'
 alias aprm='sudo aptitude remove'
 alias appg='sudo aptitude purge'
@@ -109,6 +111,7 @@ alias apug='sudo aptitude safe-upgrade'
 
 alias dia='sudo dpkg -i ./*.deb'
 alias di='sudo dpkg -i'
+alias dpcl='sudo dpkg --clear-avail'
 alias drc='sudo dpkg-reconfigure'
 alias quikdeb='/usr/bin/time -p dpkg-buildpackage -rfakeroot -us -uc'
 alias sources='sudo vim /etc/apt/sources.list'
@@ -120,6 +123,12 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias up='cd ..'
 alias back='cd -'
+
+## copy/paste
+alias xcp='xsel --clipboard --output' # "X clipboard Put"
+alias xcy='xsel --clipboard --input'  # "X clipboard Yank"
+alias xp='xsel --output'  # "X selection Put"
+alias xy='xsel --input'   # "X selection Yank"
 
 ## editing
 alias sv='sudo vim'

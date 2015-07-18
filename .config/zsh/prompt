@@ -1,3 +1,6 @@
+
+# vim: set ft=zsh
+
 # host symbols
 # if [ $TERM == 'rxvt-unicode' ]; then
 if [ $HOST == 'ganymed' ]; then
@@ -11,6 +14,11 @@ elif [ $HOST == 'persephone' ]; then
 else
     HOST_SYM='%%'
 fi
+
+# prompt character, used at end of prompt
+# Some interesting prompt chars
+# ≻ ≽ ≿ ⊃ ⊇ ⋟ ⌘ ▶ ▷ ▸ ▹ ► ▻ ⚡ ❩ ❫ ❭ ❯ ❱ ➔ ➙ ➛ ➜ ➝ ➞ ➟
+# ➠ ➡ ➢ ➣ ➤ ➥ ➳ ➵ ➸ ➺ ➻ ➼ ⇋ ⇌ ∫ ∬ ∭ ∴ ∵ ≍
 
 
 setcolors () {
@@ -107,9 +115,7 @@ setprompt () {
 #    RPROMPT='%l, ${PR_RED}%@${PR_NO_COLOR}'
 # ↬»↬ ♄
 
-# Some interesting prompt chars
-# ≻ ≽ ≿ ⊃ ⊇ ⋟ ⌘ ▶ ▷ ▸ ▹ ► ▻ ⚡ ❩ ❫ ❭ ❯ ❱ ➔ ➙ ➛ ➜ ➝ ➞ ➟
-# ➠ ➡ ➢ ➣ ➤ ➥ ➳ ➵ ➸ ➺ ➻ ➼ ⇋ ⇌ ∫ ∬ ∭ ∴ ∵ ≍
+
 
 
 if [ $TERM == 'linux' ] ; then

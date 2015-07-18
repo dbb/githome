@@ -1,35 +1,47 @@
 Xcursor.theme: DMZ-Black
 
-URxvt.perl-ext-common:  default,tabbed,matcher,searchable-scrollback
-URxvt*cutchars:         "()*,<>[]{}|'`
-URxvt*termName:         rxvt-unicode
-URxvt*urlLauncher:      firefox
-URxvt*matcher.button:   1
+URxvt.perl-ext-common:  default,matcher,searchable-scrollback,clipboard
+URxvt.cutchars:         "().,<>[]{}|'`
+URxvt.termName:         rxvt-unicode
+URxvt.urlLauncher:      x-www-browser
+URxvt.matcher.button:   1
 URxvt.saveLines:        4096
+URxvt.visualBell: True
+URxvt.urgentOnBell: true
 
-URxvt*scrollTtyOutput: false
-URxvt*scrollWithBuffer: true
-URxvt*scrollTtyKeypress: true
-!URxvt*secondaryScroll: false
+URxvt.scrollTtyOutput: false
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyKeypress: true
+!URxvt.secondaryScroll: false
 
-!URxvt*keysym.S-Prior:   ^[[5;2~
-!URxvt*keysym.S-Next:    ^[[6;2~
+!URxvt.keysym.S-Prior:   ^[[5;2~
+!URxvt.keysym.S-Next:    ^[[6;2~
 
-URxvt*geometry:      96x30
-URxvt*highlightSelection: true
-URxvt*transparent: true
-URxvt*shading: 3
+!! list of "perfect" 16:5 ratios: 80x25, 96x30, 112x35, 128x40
+URxvt.geometry:      80x30
+URxvt.highlightSelection: true
+URxvt.transparent: false
+URxvt.shading: 3
 !URxvt*tintColor: #000000
 !URxvt*blurRadius: 5
 
 URxvt.scrollstyle:      plain
 URxvt.secondaryScroll:  true
 
+!! disp options
+URxvt*cursorBlink:   off
+URxvt*boldMode:      on
+URxvt*underLine:     on
+
+!! paste
+URxvt.keysym.C-M-c: builtin-string:
+URxvt.keysym.C-M-v: builtin-string:
+
 
 ! gohufont, small
-!*font: -gohu-gohufont-medium-r-normal-*-11-80-100-100-c-60-iso10646-1
-!*boldFont: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
-!*boldFont: -gohu-gohufont-bold-r-normal-*-11-80-100-100-c-60-iso10646-1
+! *font: -gohu-gohufont-medium-r-normal-*-11-80-100-100-c-60-iso10646-1 */
+! *boldFont: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
+! *boldFont: -gohu-gohufont-bold-r-normal-*-11-80-100-100-c-60-iso10646-1
 
 ! gohufont, large
 !*font: -gohu-gohufont-medium-r-normal-*-14-100-100-100-c-80-iso10646-1
@@ -45,20 +57,10 @@ URxvt.secondaryScroll:  true
 !*boldFont: -*-proggysquare-medium-r-normal-*-11-80-96-96-c-70-iso8859-1
 
 ! xft fonts
-!Xft.antialias:			true
-!URxvt*font:             xft:Mensch:pixelsize=12
-!URxvt*boldFont:             xft:Mensch:pixelsize=11
-
-!URxvt*font:		xft:DejaVu Sans Mono:pixelsize=13
-!URxvt*boldFont:		xft:DejaVu Sans Mono:style=Bold:pixelsize=13
-
-!URxvt*font:			xft:Monaco:pixelsize=11
-!URxvt*boldFont:			xft:Monaco:pixelsize=11
-
-!URxvt*font:			xft:ProggySquareTTSZ:pixelsize=16
-!URxvt*boldFont:			xft:ProggySquareTTSZ:pixelsize=16
-
-!URxvt*font:			xft:Consolas:pixelsize=14
+! Xft.antialias:	true 
+! URxvt*font:     xft:Fantasque Sans Mono:pixelsize=12
+! URxvt*font:     xft:DejaVu Sans Mono:pixelsize=10
+! URxvt*boldFont:     xft:DejaVu Sans Mono:pixelsize=10
 
 ! small terminus fonts
 URxvt*font:     -xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1
@@ -68,30 +70,30 @@ URxvt*boldfont: -xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1
 !URxvt*font:     -xos4-terminus-medium-r-normal-*-14-140-72-72-c-80-iso10646-1
 !URxvt*boldfont: -xos4-terminus-medium-r-normal-*-14-140-72-72-c-80-iso10646-1
 
-URxvt*cursorColor:  #ff4f00
-URxvt*cursorBlink:   off
-URxvt*pointerColor: #ff4f00
-URxvt*background:   #000000
-URxvt*boldMode:      on
+
+! colors -----------------------------------------------------------------
+!! color options
 URxvt*colorMode:     on
 URxvt*colorBDMode:   on
 URxvt*colorULMode:   on
-URxvt*underLine:     on
-
-! colors --------------------------------------------------------------------
-URxvt*foreground:   #d4d4d4
+!! term colors
+URxvt*background:   #262522
+URxvt*cursorColor:  #ff4f00
+URxvt*foreground:   #e6994c
+URxvt*pointerColor: #ff4f00
+!! color palette ----------------------
 !  black
-URxvt*color0:		#000000
-URxvt*color8:		#202020
+URxvt*color0:		#1a1a1a
+URxvt*color8:		#333333
 !  red: sangria, lava
-URxvt*color1:		#92000a
-URxvt*color9:		#c80815
+URxvt*color1:		#a6352b
+URxvt*color9:		#eb504d
 !  green: india green, neon green
-URxvt*color2:		#138808
-URxvt*color10:		#39ff14
+URxvt*color2:		#4d8033
+URxvt*color10:		#36d936
 !  yellow: dark goldenrod, gamboge
-URxvt*color3:		#b8860b
-URxvt*color11:		#ef9b0f
+URxvt*color3:		#ab9144
+URxvt*color11:		#f0b030
 !  blue: egyptian blue, palatinate blue
 URxvt*color4:		#1034a6
 URxvt*color12:		#273be2
@@ -110,7 +112,7 @@ URxvt*colorBD:		#ff4f00
 ! azure
 URxvt*colorUL:		#007fff
 
-! end colors ----------------------------------------------------------------
+! end colors -------------------------------------------------------------
 
 !URxvt.underlineColor:   white
 URxvt*scrollColor:   #212121

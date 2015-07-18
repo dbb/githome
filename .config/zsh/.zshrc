@@ -136,13 +136,18 @@ fi
 # %% » › > │
 # ≻  ≽≿ ⊃ ⊇ ⋟ ⌘ ▶ ▷ ▸ ▹ ► ▻ ⚡ ❩ ❫ ❭ ❯ ❱ ➔ ➙ ➛ ➜ ➝ ➞ ➟
 # ➠ ➡ ➢ ➣ ➤ ➥ ➳ ➵ ➸ ➺ ➻ ➼ ⇋ ⇌ ∫ ∬ ∭ ∴ ∵ ≍
-PROMPT_CHAR='»'
+if [[ $LANG == *UTF* ]]; then
+    PROMPT_CHAR='»'
+else
+    PROMPT_CHAR='>'
+fi
+
 if [[ $UID -eq 0 ]]; then
     ROOT_NAME='(root) '
-    PROMPT_CHAR='%#'
+    ROOT_CHAR='%#'
 else
     ROOT_NAME=''
-    PROMPT_CHAR='»'
+    ROOT_CHAR=''
 fi
 
 # preexec () {

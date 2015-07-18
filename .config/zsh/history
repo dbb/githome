@@ -1,594 +1,3 @@
-: 1402463866:0;su -c 'bash'
-: 1409415609:0;rm .zshenv 
-: 1409415609:0;cp /home/dbb/.zshenv ~/.zshenv
-: 1408399250:0;ls .gtkrc.mine
-: 1408399270:0;mv .gtkrc.mine .gtkrc.mine.orig
-: 1408399275:0;touch .gtkrc.mine
-: 1408399485:0;aps plasma
-: 1408399497:0;apin ~nplasma-widget
-: 1408408779:0;cd .fonts
-: 1408408784:0;sagi . hand
-: 1408409150:0;pse > ps-e.log
-: 1408409156:0;vim ps-e.log
-: 1408409176:0;pse|grep g
-: 1408409319:0;aps "oxygen gtk"
-: 1408409331:0;apin gtk2-engines-oxygen gtk3-engines-oxygen
-: 1408410268:0;sudo alsactl
-: 1408415531:0;ls /usr/share/themes/oxygen-gtk
-: 1408415535:0;ls /usr/share/themes/oxygen-gtk/gtk-3.0
-: 1408415562:0;ls /usr/share/themes/oxygen-gtk/gtk-2.0/gtkrc
-: 1408415576:0;echo /usr/share/themes/oxygen-gtk/gtk-2.0/gtkrc >> .gtkrc-2.0
-: 1408415639:0;vim ~/.kde4/share/config/gtkrc-2.0
-: 1408415651:0;cat .gtkrc-2.0
-: 1408415689:0;aps "kde gtk"
-: 1408415699:0;apin kde-config-gtk-style kde-config-gtk-style-preview
-: 1408415729:0;echo > ~/.kde4/share/config/gtkrc-2.0
-: 1408417172:0;aps opera
-: 1408417180:0;apv opera
-: 1408417216:0;apin opera
-: 1408418064:0;aps flash
-: 1408418080:0;apsh mint-flashplugin
-: 1408418092:0;apin mint-flashplugin
-: 1408418123:0;sudo
-: 1408499338:0;pc '17/(.35*12)'
-: 1408499375:0;pc '13.46/(.17*24)'
-: 1408499458:0;pc '11.79/(.4*6)'
-: 1408502548:0;pse|grep k
-: 1408502656:0;gsettings set org.nemo.desktop show-desktop-icons false
-: 1408539766:0;vim ~/.pentadactyl/info/default/quickmarks
-: 1408540063:0;ls .config/autostart
-: 1408540106:0;free -m
-: 1408651505:0;ssh beratyr
-: 1408651551:0;cd src/beratyr
-: 1408651580:0;scp -r beratyr:~/public_html/wiki .
-: 1408651652:0;apin tmux
-: 1408739813:0;saki .kde gtk
-: 1408739844:0;cd .kde/share/config/gtkrc
-: 1408739892:0;ghe ~/.config/zsh/functions
-: 1408739960:0;which ghe
-: 1408740145:0;cd $gh
-: 1408740172:0;diff ~/.config/zsh/functions .config/zsh/functions
-: 1408740196:0;sagi .kde gtk
-: 1408740217:0;source ~/.config/zsh/functions
-: 1408740219:0;mvorig .kde/share/config/gtkrc
-: 1408740227:0;mvorig .kde/share/config/gtkrc-2.0 
-: 1408771312:0;pc '(5/7)*365'
-: 1408771331:0;pc 150/6
-: 1408822599:0;grep config $ZDOTDIR/aliases
-: 1408822607:0;drc gdm
-: 1408822638:0;apin mdm
-: 1408822664:0;drc gdm3
-: 1408822673:0;drc mdm
-: 1409095629:7;aps uim
-: 1409095652:59;aprm uim-qt uim-utils uim-common 
-: 1409191329:0;cd bin
-: 1409191347:0;source $ZDOTDIR/.zshenv
-: 1409191348:0;echo $PATH
-: 1409191354:0;pc 28.99/30
-: 1409324909:0;source .config/zsh/.zshenv
-: 1409324913:0;pc '(38+44)/101'
-: 1409328880:0;aps pepper
-: 1409328890:0;apin pepperflashplugin-nonfree
-: 1409341106:0;aps lighttp
-: 1409341127:0;apin lighttpd
-: 1409343043:0;sudo aptitude remove <kde_pkgs
-: 1409343172:0;26)     kde-config-gtk-style-preview recommends kde-config-gtk-style
-: 1409343173:0;27)     ktorrent-data recommends ktorrent (>= 4.3.1-2)              
-: 1409415149:0;aps quodl
-: 1409415162:0;aptitude show quodlibet
-: 1409415190:0;sudo aptitude remove -s quodlibet
-: 1409415297:0;apsh quodlibet
-: 1409415338:0;apt-cache show quodlibet
-: 1409415359:0;aptitude why quodlibet
-: 1409415527:0;aptitude why rhythmbox
-: 1409415539:0;aptitude why rhythmbox-plugin-cdrecorder
-: 1409415572:0;aps clement
-: 1409415602:0;cat .zshenv
-: 1409415629:0;echo 
-: 1409415792:0;killall tilda
-: 1409415813:0;source .zshenv
-: 1409415821:0;apin clementine
-: 1409415857:0;cp $ZDOTDIR/.zshrc /home/dbb/src/githome/.config/zsh/.zshrc
-: 1409415924:0;guf .config/zsh/.zshrc
-: 1409416065:0;aps qt
-: 1409416074:0;aps ~iqt
-: 1409417916:0;echo "Here is the relevant text from the Wikipedia article:\
-\
-    In 1993, R. D. Stevenson and R. J. Wassersug published an article calculating the upper limit to an animal's power output. The peak power over a few seconds has been measured to be as high as 14.9hp. However, Stevenson and Wassersug observe that for sustained activity, a work rate of about 1hp per horse is consistent with agricultural advice from both 19th and 20th century sources.\
-\
-" | wc
-: 1409451072:0;xdotool -k "Ctrl"
-: 1409451077:0;xdotool key "Ctrl"
-: 1409498615:0;while true; do sleep 60s; xdotool key "Ctrl"; done
-: 1423633838:0;thunar
-: 1423633935:0;df -h
-: 1423634102:0;sagi ~ plpdl
-: 1423634210:0;sagi /data plpdl
-: 1423635142:0;sudo dpkg -i ./firmware-b43-lpphy-installer_015-14_all.deb
-: 1426966208:0;sagi ~ aqua
-: 1429561356:0;sudo -i
-: 1429561502:0;cat .xinitrc
-: 1429561511:0;startx
-: 1429561567:0;ps -e |grep dock
-: 1429561634:0;apin gtk2-engines-*
-: 1429561689:0;sudo aptitude install ~ngtk2-engines
-: 1429561702:0;aps "gtk2 engine"
-: 1429561727:0;apin gtk2-engines-aurora gtk2-engines-nodoka
-: 1429562333:0;apin b43-fwcutter firmware-linux firmware-linux-nonfree firmware-b43-lpphy-installer
-: 1429562452:0;cd src/scripts/
-: 1429562505:0;vim b43-lp-installer
-: 1429562539:0;mkdir b43
-: 1429562543:0;cd b43
-: 1429562559:0;mkdir b43-script
-: 1429562563:0;cd b43-script
-: 1429562569:0;cp ../scripts/b43-lp-installer .
-: 1429562573:0;sudo ./b43-lp-installer
-: 1429562622:0;aps b43
-: 1429562694:0;lspci -vnn
-: 1429562778:0;aps linux-image
-: 1429562800:0;aprm linux-image-3.14-2-amd64
-: 1429562865:0;aprm linux-headers-3.14-2-amd64 linux-headers-3.14-2-common
-: 1429562890:0;aps gdm
-: 1429562913:0;sudo aptitude purge gdm3
-: 1429562954:0;aps desktop
-: 1429562982:0;aps mdm
-: 1429563001:0;apin task-cinnamon-desktop
-: 1429563202:0;sudo aptitude reinstall mdm
-: 1429563259:0;sudo dpkg-reconfigure mdm
-: 1429563338:0;sudo update-alternatives --config x-session-manager
-: 1429563453:0;rm cairo-dock.desktop checkgmail.desktop
-: 1429563564:0;sudo echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
-: 1429563664:0;sudo vim /etc/inputrc
-: 1429563710:0;lsmod |grep snd
-: 1429563719:0;lsmod |grep pc
-: 1429563744:0;sudo vim /etc/modprobe.d/nobeep.conf
-: 1429838035:0;sudo /etc/init.d/mdm restart
-: 1429838044:0;ls /etc/init.d
-: 1429838061:0;man mdm
-: 1429838065:0;man -k mdm
-: 1429838078:0;man mdm-run
-: 1429838114:0;ps -e|grep dm
-: 1429838159:0;killall cairo-dock
-: 1429838186:0;ps -e
-: 1429838195:0;killall cinnamon
-: 1430166323:0;sagi ~ paper
-: 1430166345:0;sagi ~ mario
-: 1430612756:0;who
-: 1430612762:0;whoami
-: 1430612943:0;w
-: 1430613097:0;bash
-: 1430775313:0;which say
-: 1430770633:0;sagi . config
-: 1430770640:0;cd ftplugin
-: 1430770666:0;cp configfile.vim hosts.vim
-: 1430770669:0;vim hosts.vim
-: 1430770895:0;vim .vim/colors/CapsulaPigmentorum.vim
-: 1430774481:0;vim /etc/hosts
-: 1430774589:0;sudo cp /etc/hosts /etc/hosts.local
-: 1430774596:0;sudo vim /etc/hosts
-: 1430774661:0;gksudo gvim /etc/hosts
-: 1430774768:0;sudo ln -s /home/dbb/.vim/ftplugin/hosts.vim /usr/share/vim/vim74/ftplugin/hosts.vim
-: 1430775393:0;cp ~/.vim/ftplugin/hosts.vim hosts.vim
-: 1430775397:0;git add hosts.vim
-: 1430775414:0;gcp 'Add hosts.vim'
-: 1430775421:0;git status
-: 1430922712:0;uname -a
-: 1430922886:0;apv xserver-xorg
-: 1430922925:0;glxgears -info
-: 1430923039:0;aps intel
-: 1430923056:0;apv xserver-xorg-video-intel
-: 1431185752:0;apin inkscape
-: 1431185773:0;aps inkscape
-: 1431436787:0;aps ~ifont
-: 1431437044:0;aptitude search '?name(font|ttf)'
-: 1431437080:0;aptitude search '?name(font~|ttf)'
-: 1431437202:0;aptitude search '?installed(font~|ttf)'
-: 1431559442:0;weechat
-: 1431560262:0;aptitude why-not moo
-: 1431560276:0;aptitude install moo
-: 1431560283:0;sudo aptitude install moo
-: 1431560303:0;aptitude -v moo
-: 1431637943:0;uptime
-: 1431639988:0;apin feh
-: 1431640018:0;ps --help
-: 1431640029:0;ps --help simple
-: 1431640045:0;ps --help list
-: 1431640085:0;ps -u
-: 1431640092:0;ps -u dbb
-: 1431640116:0;ps -e |grep -i net
-: 1431640182:0;perl --version
-: 1431640242:0;aps thumbn
-: 1431640267:0;aps thunar
-: 1431640373:0;apin thunar-gtkhash ffmpegthumbnailer games-thumbnails gnome-nds-thumbnailer gnome-xcf-thumbnailer ooo-thumbnailer
-: 1431640453:0;aps tumbler
-: 1431640469:0;apin tumbler-plugins-extra
-: 1431640511:0;aps shared-mime
-: 1431640531:0;sudo update-mime-database /usr/share/mime
-: 1431640613:0;ls /usr/share/thumbnailers/
-: 1431640655:0;thunar --help
-: 1431640662:0;thunar -q
-: 1431640696:0;nemo
-: 1431640759:0;rm -rf .thumbnails
-: 1431640764:0;mkdir .thumbnails
-: 1431640904:0;apin tint2
-: 1431640923:0;apin gmrun
-: 1431641154:0;aps nemo
-: 1431641963:0;cd .config/autostart
-: 1431714167:0;iotop
-: 1431714203:0;apin htop iotop
-: 1431714294:0;ps -e |grep chrom
-: 1431714302:0;killall chromium
-: 1431714319:0;sudo service lightdm restart
-: 1431717411:0;gnome-screenshot -ac
-: 1431717664:0;shotwell --help
-: 1431717668:0;man shotwell
-: 1431717712:0;aps shooter
-: 1431717760:0;xfce4-screenshooter
-: 1431811121:0;git clone https://github.com/hchargois/gohufont.git
-: 1431811125:0;cd gohufont
-: 1431811177:0;aps bdf
-: 1431811390:0;aptitude --help
-: 1431811428:0;man aptitude
-: 1431811522:0;su
-: 1431825090:0;q
-: 1431811535:0;mail
-: 1431811553:0;mkdir gohudeb
-: 1431811557:0;cd gohudeb
-: 1431811572:0;aps terminus
-: 1431811589:0;apsh console-terminus
-: 1431811602:0;which apsh
-: 1431811612:0;apt-cache policy console-terminus
-: 1431811656:0;grep sources ~/.zsh/aliases
-: 1431811714:0;apt-get source xfonts-terminus
-: 1431811727:0;cd xfonts-terminus-4.39
-: 1431811801:0;cd src/gohufont
-: 1431811813:0;dh_make
-: 1431811828:0;aps debhelp
-: 1431811838:0;apin debhelper
-: 1431811915:0;apin debhelper dh-make fakeroot
-: 1431812010:0;ls /usr/share/fonts
-: 1431812096:0;ls /usr/share/fonts/X11
-: 1431812104:0;ls /usr/share/fonts/X11/misc
-: 1431812196:0;cd gohufont-2.0
-: 1431812232:0;sudo cp *.gz /usr/share/fonts/X11/misc
-: 1431812243:0;sudo zsh
-: 1431812509:0;pse |grep vim
-: 1431812553:0;xset fp rehash
-: 1431812652:0;xfontsel
-: 1431824972:0;urxvt
-: 1431825026:0;grep load ~/.zsh/aliases
-: 1431825030:0;xdef
-: 1431825183:0;cd src/urxvt-stuff
-: 1431825244:0;<tabbed.patch sudo patch -d /usr/lib/urxvt/perl
-: 1431972092:0;source .zsh/functions
-: 1431972136:0;xrdb -load ~/.Xdefaults
-: 1432175011:0;sudo sh -c 'echo "deb https://repo.tox.im/ nightly main" > /etc/apt/sources.list.d/tox.list'
-: 1432175021:0;wget -qO - https://repo.tox.im/pubkey.gpg | sudo apt-key add -
-: 1432175029:0;sudo apt-get install apt-transport-https
-: 1432175054:0;apt-get --help
-: 1432175063:0;sudo apt-get update
-: 1432175098:0;apin utox
-: 1432371722:0;to gh
-: 1432371742:0;diff .vimrc ~/.vimrc
-: 1432529501:0;apin espeak
-: 1432529530:0;aps eflite
-: 1432529537:0;apin eflite
-: 1432529636:0;echo "hello" | espeak --stdin
-: 1432529756:0;espeak read.txt
-: 1432529795:0;man espeak
-: 1432529843:0;apin apt-file
-: 1432529853:0;man eflite
-: 1432529887:0;eflite <read.txt
-: 1432529923:0;sudo apt-file update
-: 1432529962:0;afs espeak-data
-: 1432530008:0;ls /usr/lib/x86_64-linux-gnu/espeak-data
-: 1432530014:0;ls /usr/lib/x86_64-linux-gnu/espeak-data/voices
-: 1432530049:0;espeak -v en_US -f read.txt
-: 1432530119:0;aps festival
-: 1432530151:0;apin festival 
-: 1432530178:0;festival
-: 1432530193:0;man festival
-: 1432530300:0;apin gnome-speech
-: 1432530310:0;aps speech
-: 1432530333:0;apin libgnome-speech7
-: 1432530354:0;aps orca
-: 1432530363:0;apin gnome-orca
-: 1432530398:0;orca
-: 1432530543:0;orca --help
-: 1432530550:0;orca -s
-: 1432530676:0;killall orca
-: 1432530741:0;espeak -v en-US -f read.txt
-: 1432530995:0;espeak  -f read.txt
-: 1432600911:0;sudo gtk-update-icon-cache /usr/share/icons/Tango
-: 1432600932:0;aps icon-theme
-: 1432601151:0;apin gnome-brave-icon-theme gnome-human-icon-theme tangerine-icon-theme faenza-icon-theme moblin-icon-theme gnome-icon-theme-nuovo gnome-icon-theme-suede
-: 1432601215:0;espeak "hey, i'm talking to you"
-: 1432601229:0;espeak "yes you, faggot"
-: 1432601236:0;espeak "taylee is a faggot"
-: 1432601268:0;espeak -v en-us "do I sound like a fucking limey to you?"
-: 1432601281:0;espeak -v en-us "limey"
-: 1432601292:0;espeak --help
-: 1432601320:0;espeak -v en-us -s 80 "is this slow enough for you, retard?"
-: 1432601425:0;sudo gtk-update-icon-cache /home/dbb/.icons/Faience
-: 1432601429:0;sudo gtk-update-icon-cache /home/dbb/.icons/Faience-Ocre
-: 1432601433:0;sudo gtk-update-icon-cache /home/dbb/.icons/Faience-Azur
-: 1432601439:0;sudo gtk-update-icon-cache /home/dbb/.icons/Faience-Claire
-: 1432699367:0;sudo eject
-: 1433008338:0;echo Â«Cookie: session=session1Â»
-: 1433008463:0;print Â«Cookie: session=session1Â»
-: 1433015134:0;cat /etc/modprobe.d/blacklist.conf
-: 1433015327:0;lsmod | sort -d
-: 1433015351:0;lsmod | sort -d > lsmod.txt
-: 1433015405:0;lsmod | grep -i "snd"
-: 1433021106:0;grep -i "anal" /usr/share/dict/american-english
-: 1433125156:0;file bin/redshift_script
-: 1433125163:0;cat $_
-: 1433125252:0;cx bin/redshift_script
-: 1433125255:0;redshift_script
-: 1433268415:0;cat .ssh/id_rsa.pub
-: 1433268485:0;openssl rsa -text -noout -in .ssh/id_rsa
-: 1433445589:0;ls src/
-: 1433445597:0;ls src/themes
-: 1433445648:0;apin gcolor2
-: 1433446305:0;which u
-: 1433446332:0;alias u="xrdb -load ~/.Xdefaults; urxvt &"
-: 1433446863:0;pc 80/25
-: 1433446869:0;pc 100/40
-: 1433446875:0;pc 100/36
-: 1433446884:0;pc 100/26
-: 1433446888:0;pc 100/27
-: 1433446894:0;pc 100/28
-: 1433446899:0;pc 100/29
-: 1433446903:0;pc 100/30
-: 1433446906:0;pc 100/31
-: 1433446915:0;pc 101/31
-: 1433446920:0;pc 101/32
-: 1433446976:0;for i in {29..35}; do echo $i; done
-: 1433446999:0;for i in {29..35}; do pc "$i x 3.2"; done
-: 1433447130:0;pc 16/5
-: 1433447160:0;for i in {25..35}; do pc "$i x 3.2"; done
-: 1433447202:0;for i in {25..40}; do pc "$i x 3.2"; done
-: 1433447317:0;u
-: 1433447322:0;top
-: 1433447457:0;git clone https://github.com/Swordfish90/cool-retro-term.git
-: 1433447501:0;cat /etc/issue
-: 1433447538:0;apin build-essential qmlscene qt5-qmake qt5-default qtdeclarative5-dev qml-module-qtquick-controls qml-module-qtgraphicaleffects qml-module-qtquick-dialogs qml-module-qtquick-localstorage qml-module-qtquick-window2
-: 1433447912:0;aps yad
-: 1433447920:0;apin zenity
-: 1433447938:0;qmake && make
-: 1433447995:0;apin build-essential qmlscene qt5-qmake qt5-default qtdeclarative5-dev qtdeclarative5-controls-plugin qtdeclarative5-qtquick2-plugin libqt5qml-graphicaleffects qtdeclarative5-dialogs-plugin qtdeclarative5-localstorage-plugin qtdeclarative5-window-plugin
-: 1433448101:0;rf cool-retro-term
-: 1433448133:0;git clone --recursive https://github.com/Swordfish90/cool-retro-term.git
-: 1433448154:0;cd cool-retro-term
-: 1433448157:0;qmake
-: 1433448202:0;sagi . pathogen
-: 1433448621:0;./cool-retro-term
-: 1433448971:0;htop
-: 1433449464:0;echo $HOST_SYM
-: 1433449475:0;export HOST_SYM="P"
-: 1433449788:0;feh
-: 1433449830:0;xfce4-settings-manager
-: 1433449925:0;sudo update-alternatives --config x-www-browser
-: 1433450236:0;feh --help
-: 1433450409:0;man /usr/lib/urxvt/perl/clipboard
-: 1433450417:0;vim $_
-: 1433450580:0;git clone https://github.com/muennich/urxvt-perls.git
-: 1433450586:0;cd urxvt-perls
-: 1433450609:0;sudo cp clipboard /usr/lib/urxvt/perl
-: 1433450760:0;man urxvt
-: 1433451063:0;echo $ZDOTDIR
-: 1433451208:0;source $ZDOTDIR/aliases
-: 1433451232:0;sa
-: 1433451945:0;cd ~/.vim
-: 1433451948:0;cd bundle
-: 1433451962:0;cd vim-pathogen
-: 1433451983:0;cp autoload/pathogen.vim ../../autoload/pathogen.vim
-: 1433451988:0;cd ../..
-: 1433451991:0;cd autoload
-: 1433452000:0;rm perlsupport*
-: 1433452060:0;cd ../bundle
-: 1433452064:0;git clone https://github.com/tpope/vim-pathogen.git
-: 1433452076:0;git clone https://github.com/Rykka/colorv.vim.git
-: 1433452091:0;git clone https://github.com/KabbAmine/vCoolor.vim.git
-: 1433454890:0;feh --bg-fill ~/Pictures/wallpaper/orange/Nexus\ 4\ -\ Purple\ Polygon\ \(2880x1800\).png
-: 1433454938:0;cat .config/tint2/tint2rc
-: 1433455010:0;ps | grep tint
-: 1433455017:0;ps -e | grep tint
-: 1433455024:0;kill 3064
-: 1433456090:0;vim .config/openbox/autostart.sh
-: 1433456147:0;vim .vimrc
-: 1433458106:0;ls autoload
-: 1433458131:0;rm perl-support.vim.orig
-: 1433458136:0;rf perl-support
-: 1433458139:0;ls plugin
-: 1433458144:0;rm plugin/perl-support.vim
-: 1433458342:0;pc 105/3.2
-: 1433462820:0;ls /etc/
-: 1433462829:0;sagi /etc alsa
-: 1433462841:0;man alsa
-: 1433462845:0;man -k alsa
-: 1433462858:0;man -k pulse
-: 1433462878:0;ls /etc/pulse
-: 1433462888:0;sudo vim client.conf
-: 1433462920:0;cat daemon.conf
-: 1433463104:0;amixer set 'Beep' 0% mute
-: 1433463132:0;amixer scontrols
-: 1433463142:0;amixer
-: 1433463154:0;amixer controls
-: 1433463166:0;amixer contents
-: 1433463183:0;amixer --help
-: 1433463247:0;sudo alsamixer
-: 1433463332:0;sudo alsactl store
-: 1433539231:0;yad
-: 1433539246:0;man gcolor2
-: 1433539273:0;gcolor2
-: 1433539287:0;gcolor2 --help
-: 1433539438:0;zenity --title "custom" --color-selection --show-palette --color 
-: 1433539458:0;zenity --help |grep titl
-: 1433539467:0;zenity --color-selection --show-palette --color 
-: 1433539475:0;aps zenity
-: 1433539514:0;man zenity
-: 1433539525:0;zenity --color-selection --show-palette 
-: 1433539551:0;zenity --help-gtk
-: 1433539596:0;aps '~d"color pick"
-: 1433539597:0;aps '~d"color pick"'
-: 1433539884:0;mkdir gcolor
-: 1433539888:0;cd gcolor
-: 1433540315:0;apin gpick
-: 1433540335:0;xfce4-taskmanager
-: 1433540354:0;gpick
-: 1433540448:0;aps '~d"color cho"'
-: 1433540556:0;aps color
-: 1433540702:0;aps compass
-: 1433540938:0;apin xcolors xcolorsel colordiff colorgcc colormake colortail colortest opencolorio-tools python-pyopencolorio  python3-colorama python3-colorlog python3-termcolor python3-webcolors python3-xtermcolor gnome-color-chooser
-: 1433541035:0;gnome-color-chooser
-: 1433541064:0;colors
-: 1433541091:0;man -k colorio
-: 1433541110:0;xcolors
-: 1433541117:0;xcolorsel
-: 1433550440:0;apt-get src gcolor2
-: 1433550446:0;apt-get source gcolor2
-: 1433550460:0;cd gcolor2-0.4
-: 1433550472:0;rh
-: 1433550477:0;colormake
-: 1433550484:0;./configure
-: 1433550622:0;zenity --color
-: 1433550627:0;zenity --help
-: 1433550666:0;zenity --color-selection
-: 1433776369:0;ls .gimp-2.8
-: 1433776383:0;which gimp
-: 1433776386:0;gimp
-: 1433789489:0;alsamixer
-: 1433792029:0; vim --help
-: 1433792081:0;which x-terminal-emulator
-: 1433792094:0;file `which x-terminal-emulator`
-: 1433792100:0;file /etc/alternatives/x-terminal-emulator
-: 1433792111:0;sudo update-alternatives --config x-terminal-emulator
-: 1433792172:0;urxvt -help
-: 1433792198:0;urxvt -help|grep dir
-: 1433792216:0;urxvt -help > urxvtShortHelp.txt
-: 1433792223:0;cat urxvtShortHelp.txt
-: 1433792538:0;ls Documents
-: 1433792551:0;mkdir Documents/help
-: 1433792574:0;urxvt --help
-: 1433792637:0;sources
-: 1433792674:0;vim /etc/apt/apt.conf
-: 1433792806:0;sudo vim /etc/apt/preferences
-: 1433793090:0;man apt_preferences
-: 1433794616:0;aps cinnamon
-: 1433794642:0;apv cinnamon
-: 1433896960:0;apin pychess
-: 1433897320:0;aps equinox
-: 1433897362:0;cd .themes
-: 1433897382:0;cp Glow\ Cinder glowCinderLC
-: 1433897392:0;cpr Glow\ Cinder glowCinderLC
-: 1433899496:0;cpr Staffel StaffelLC
-: 1433899513:0;aps openbox
-: 1433899534:0;aps theme
-: 1433899563:0;aps ob
-: 1433899585:0;aps ~dopenbox
-: 1433899664:0;pychess
-: 1433902600:0;killall tint2
-: 1433902602:0;tint2
-: 1433903189:0;sagi .fonts star
-: 1433903195:0;sagi .fonts red
-: 1433903445:0;mkdir fonttests
-: 1433903447:0;cd fonttests
-: 1433903509:0;alias ss="gnome-screenshot -w -f"
-: 1433903543:0;ss abeezee.png
-: 1433903585:0;xfce4-screenshooter --help
-: 1433903600:0;apin jscrot
-: 1433903611:0;apin scrot
-: 1433903655:0;scrot -s abee.png
-: 1433903677:0;scrot -s aller.png
-: 1433903746:0;scrot -s amble.png
-: 1433903764:0;alias ss="scrot -s"
-: 1433903815:0;ss cantarell.png
-: 1433903833:0;ss carto.png
-: 1433903852:0;ss clear.png
-: 1433903923:0;ss dinalt.png
-: 1433903944:0;ss dinaltmed.png
-: 1433903972:0;ss dinmed.png
-: 1433904088:0;ss maven.png
-: 1433904124:0;ss mentone.png
-: 1433904159:0;ss neris.png
-: 1433904271:0;ss sourcesans.png
-: 1433904313:0;ss ubuntu.png
-: 1433904409:0;ss dejabook8.png
-: 1433904419:0;ss dejabook9.png
-: 1433904436:0;ss dejacond8.png
-: 1433904450:0;ss dejacond9.png
-: 1433952240:0;apud
-: 1433952389:0;aps keyring
-: 1433952506:0;apv deb-multimedia-keyring
-: 1433972098:0;ls /usr/share/vim/vim74/syntax
-: 1433972137:0;cp /usr/share/vim/vim74/syntax/conf.vim src/vim/tint2rc.conf
-: 1433972176:0;cd src/vim
-: 1433972188:0;mv tint2rc.conf tint2rc.vim
-: 1433975037:0;cd ~/.config/tint2
-: 1433975062:0;cp tint2rc AllerGrey20150610
-: 1433975076:0;apin obmenu
-: 1433975280:0;xfce4-notes-settings
-: 1433989655:0;aps gimp
-: 1433989667:0;apv gimp
-: 1433989751:0;aps gegl
-: 1433989774:0;apv libgegl-0.2-0
-: 1434049104:0;xinput
-: 1434049111:0;xev
-: 1434053258:0;cd Desktop
-: 1434053271:0;ls -d
-: 1434053275:0;ls --help
-: 1434053338:0;find . -type d
-: 1434053348:0;mkdir pixelfonttests
-: 1434053352:0;cd pixelfonttests
-: 1434053357:0;which ss
-: 1434053368:0;unalias ss
-: 1434053383:0;which s
-: 1434053416:0;s () { scrot -s "$1".png }
-: 1434053501:0;s angieatore12
-: 1434053506:0;feh angieatore12.png
-: 1434053552:0;echo "aa=true; hint=full; spo=rgb;" > settings.conf
-: 1434053609:0;s bitlight7
-: 1434053660:0;s bmharry7
-: 1434053713:0;s brandi12
-: 1434053792:0;feh brandi12.png
-: 1434053827:0;s ccredinet10
-: 1434053861:0;s chariotdel7
-: 1434053893:0;s coderscrux11
-: 1434053999:0;aps linuxfont
-: 1434054007:0;aps font | less
-: 1434054059:0;which sfd
-: 1434054067:0;afs 'bin/sfd'
-: 1434054082:0;apin fontforge
-: 1434054102:0;vim untestable.log
-: 1434054144:0;s dotspitch9
-: 1434054259:0;s goldy6
-: 1434054290:0;s graph35pix6
-: 1434054327:0;s grixelacme9reg6
-: 1434054365:0;s grixelkyrou9reg6
-: 1434054432:0;s hiairportffm8
-: 1434054494:0;s lexipa7
-: 1434054519:0;s miniforma2_6
-: 1434054539:0;s miniset2_6
-: 1434054570:0;s mojang6
-: 1434054632:0;s pfeastaseven6
-: 1434054646:0;s pfeastasevencond6
-: 1434054666:0;s pfrondasevencond6
-: 1434054714:0;mv pftempestasevencond6.png pftempestaseven6.png
-: 1434054719:0;s pftempestasevencond6
-: 1434054754:0;s pixelarial11_6
-: 1434054807:0;s pixelunicode11
-: 1434054820:0;s pixelunicode12
-: 1434054868:0;s rasterman6_BUGGED
-: 1434054889:0;s regupix8
-: 1434054921:0;s rittswoodofficelg08_6
-: 1434054957:0;s rittswoodplaza8_6
-: 1434054991:0;s rittswoodredstarreg8_6
-: 1434055012:0;s rittswoodthreeoranges7_6
-: 1434055047:0;s sfpixelate7
-: 1434055083:0;s ska75marulce6
-: 1434055097:0;s ska75marulceext6
-: 1434055132:0;s skacubic0175ce6
 : 1434055215:0;s superhelioreg8
 : 1434055241:0;s superhelioext7
 : 1434055305:0;s supernatural1001_8
@@ -714,7 +123,6 @@
 : 1434314126:0;gvim --help
 : 1434314158:0;gvim --remote-tab-silent
 : 1434314178:0;gvim --remote-tab ~/.config/openbox/rc.xml
-: 1434314243:0;cd .config/openbox
 : 1434314271:0;cp rc.xml backupRC_20150614.txt
 : 1434337080:0;colortest-16b
 : 1434337260:0;font_test
@@ -738,7 +146,6 @@
 : 1434388717:0;gnome-screenshot -c -a -d 2
 : 1434394251:0;xcal
 : 1434394254:0;orage
-: 1434394602:0;orage --help
 : 1434394863:0;afs bin/xcompm
 : 1434394876:0;apin xcompmgr
 : 1434394967:0;apin xkbset x11-xkb-utils x11-xserver-utils
@@ -782,11 +189,7 @@
 : 1434396311:0;xcompmgr -r 7.5  -o 0.8 -l -10 -t -10 -D 4 -c -C -f -F
 : 1434396323:0;xcompmgr -r 7.5  -o 0.8 -l -10 -t -10 -D 3 -c -C -f -F
 : 1434396446:0;man feh
-: 1434396858:0;xrandr
-: 1434493095:0;apdg
 : 1434493421:0;sudo shutdown -r now
-: 1434511243:0;cd src
-: 1434511266:0;make
 : 1434511279:0;aps "gtk dev"
 : 1434511408:0;apin libgtk2.0-dev
 : 1434511495:0;aps "glib dev"
@@ -806,11 +209,8 @@
 : 1434512045:0;./autogen.sh --without-gtk3 
 : 1434512058:0;time make
 : 1434512121:0;sudo make install
-: 1434512141:0;xprop
-: 1434512216:0;ps -e | grep xf
 : 1434512232:0;kill 1339
 : 1434512304:0;file /home/dbb/.themes/glowCinderLC/gtk-2.0/gtkrc
-: 1434512327:0;vim .gtkrc-2.0
 : 1434512513:0;ls .icons
 : 1434513083:0;aps "alsa lib"
 : 1434513676:0;cd -
@@ -842,8 +242,6 @@
 : 1434566233:0;mkdir deb
 : 1434566238:0;mv openbox-themes_1.0.2_all.deb deb
 : 1434566240:0;cd deb
-: 1434566241:0;la
-: 1434566245:0;ls -a
 : 1434566246:0;ll
 : 1434566258:0;dpkg -x openbox-themes_1.0.2_all.deb
 : 1434566265:0;dpkg --help
@@ -854,7 +252,6 @@
 : 1434566358:0;cd usr/share
 : 1434566363:0;l doc
 : 1434566379:0;l doc/openbox-themes
-: 1434566417:0;...
 : 1434566422:0;cd openbox-themes
 : 1434566430:0;ls openbox-themes-1.0.2
 : 1434566446:0;mv deb/usr/share/doc/openbox-themes/c* .
@@ -872,7 +269,6 @@
 : 1434567383:0;cd src/openbox-themes
 : 1434567387:0;cd openbox-themes-1.0.2
 : 1434567472:0;mv README README.md
-: 1434567483:0;..
 : 1434567486:0;mv openbox-themes-1.0.2
 : 1434567495:0;mv openbox-themes-1.0.2 ~/src/obth
 : 1434567656:0;mv openbox-themes obthemes-orig
@@ -918,7 +314,6 @@ Simple-Green Simple-Industrial Simple-Orange Simple-Red Simple-Slate Sodio \\
 Spiffe Spiffish Spoff Squadron SublimeWhite Surreal Taqua Thebear \\
 TropicBomb Turq Wblue Weightless-industry Zenyellow; \\
 do echo "cp -r $theme $themedir"; done
-: 1434576022:0;l
 : 1434576036:0;cp -r A* ~/.themes
 : 1434576138:0;find -maxdepth 1 -type d
 : 1434576142:0;find -maxdepth 1 -type d | sort -f
@@ -938,14 +333,12 @@ do echo "cp -r $theme $themedir"; done
 : 1434577179:0;cd src/obthemes-orig/deb/usr/share/themes
 : 1434577221:0;ls | sort -d
 : 1434577242:0;ls | sort -d >> ~/src/openbox-themes-deb/themelist.txt
-: 1434577266:0;cd ~/src/openbox-themes-deb
 : 1434577277:0;git add themelist.txt
 : 1434577287:0;gcp 'Add themelist.txt'
 : 1434577823:0;git pull
 : 1434577862:0;vim install.sh
 : 1434578151:0;/bin/echo "foo\nbar"
 : 1434578174:0;/bin/echo "foo\tbar"
-: 1434578269:0;env
 : 1434578276:0;env|grep -i trash
 : 1434578398:0;cx install.sh
 : 1434578402:0;guf install.sh
@@ -954,13 +347,11 @@ do echo "cp -r $theme $themedir"; done
 : 1434578895:0;guf README.md
 : 1434578967:0;cd ~/src/obthemes-orig/deb/usr/share/themes
 : 1434578975:0;cp -r * ~/.themes
-: 1434586234:0;vim .gtkrc.mine
 : 1434586495:0;xfce4-mixer
 : 1434586794:0;aps python
 : 1434586885:0;sudo update-alternatives --config pthon
 : 1434587005:0;aps python2
 : 1435019983:0;cd .vim/syntax
-: 1435019993:0;to src
 : 1435019995:0;cd vim
 : 1435020014:0;echo $src
 : 1435020019:0;which to
@@ -970,7 +361,6 @@ fi
 : 1435020237:0;[[ -f ~/.zshrc ]] && echo 1
 : 1435020243:0;file ~/.zshrc
 : 1435020315:0;rm .zshrc
-: 1435020327:0;cd .config/zsh
 : 1435020340:0;mv .zshenv zshenv
 : 1435020351:0;file .zshrc
 : 1435020356:0;file zshrc
@@ -989,26 +379,19 @@ fi
 : 1435071338:0;lspci | grep broad
 : 1435071344:0;lspci | grep -i broad
 : 1435071349:0;which prep
-: 1435071679:0;cd .vim
 : 1435071682:0;sagi . perl
 : 1435071704:0;rm ./after/ftplugin/perl.vim
 : 1435071709:0;rm ./README.perlsupport
 : 1435071715:0;rm ./ftplugin/perl.vim
 : 1435071720:0;rm ./doc/perlsupport.txt
-: 1435071729:0;cd
-: 1435071730:0;rehash
 : 1435071734:0;which pgrep
 : 1435071738:0;pgrep foo bar
 : 1435071743:0;pgrep foo
-: 1435071888:0;cd sand
-: 1435071889:0;ls
 : 1435071902:0;vim testfile
 : 1435072054:0;cat testfile|pgrep a
 : 1435072112:0;pgrep a <testfile
 : 1435072138:0;pgrep a testfile
-: 1435072987:0;chromium --help
 : 1435090802:0;source .zshenv
-: 1435090820:0;source $ZDOTDIR/.zshenv
 : 1435090822:0;echo $PATH
 : 1435090841:0;pc 1x1
 : 1435090877:0;pc '3.99/15' '(3.99+2.5)/30' '(3.99+30)/236'
@@ -1016,13 +399,9 @@ fi
 : 1435121354:0;which aprm
 : 1435121469:0;aprm xserver-xorg-video-vmware xserver-xorg-video-trident xserver-xorg-video-tdfx xserver-xorg-video-sisusb xserver-xorg-video-siliconmotion xserver-xorg-video-savage xserver-xorg-video-radeon xserver-xorg-video-r128 xserver-xorg-video-qxl xserver-xorg-video-openchrome xserver-xorg-video-nouveau xserver-xorg-video-neomagic xserver-xorg-video-mga xserver-xorg-video-mach64 xserver-xorg-video-cirrus xserver-xorg-video-ati xserver-xorg-video-all xserver-xorg-input-wacom 
 : 1435121563:0;aprm openbox-themes
-: 1435121652:0;aprm xserver-xorg-video-vmware xserver-xorg-video-trident xserver-xorg-video-tdfx xserver-xorg-video-sisusb xserver-xorg-video-siliconmotion xserver-xorg-video-savage xserver-xorg-video-radeon xserver-xorg-video-r128 xserver-xorg-video-qxl xserver-xorg-video-openchrome xserver-xorg-video-nouveau xserver-xorg-video-neomagic xserver-xorg-video-mga xserver-xorg-video-mach64 xserver-xorg-video-cirrus xserver-xorg-video-ati xserver-xorg-video-all xserver-xorg-input-wacom xserver-xorg-input-all
 : 1435121874:0;apin libreoffice
 : 1435121927:0;sudo aptitude hold hyphen-en-us libreoffice mythes-en-us 
 : 1435121938:0;aprm xserver-xorg-video-vmware xserver-xorg-video-trident xserver-xorg-video-tdfx xserver-xorg-video-sisusb xserver-xorg-video-siliconmotion xserver-xorg-video-savage xserver-xorg-video-radeon xserver-xorg-video-r128 xserver-xorg-video-qxl xserver-xorg-video-openchrome xserver-xorg-video-nouveau xserver-xorg-video-neomagic xserver-xorg-video-mga xserver-xorg-video-mach64 xserver-xorg-video-cirrus xserver-xorg-video-ati xserver-xorg-video-all xserver-xorg-input-wacom xserver-xorg-input-all
-: 1435122127:0;apdg
-: 1435184204:0;su
-: 1435184322:0;ls /usr/share/themes
 : 1435184331:0;ls -l /usr/share/themes
 : 1435184345:0;ls -l /usr/share/themes/ZOMG-PONIES\!
 : 1435184351:0;ls -l /usr/share/themes/ZOMG-PONIES\!/xfce-notify-4.0
@@ -1030,26 +409,683 @@ fi
 : 1435184544:8288;gksudo gvim
 : 1435192886:0;which iceweasel
 : 1435192893:0;file `which iceweasel`
-: 1435193062:0;to gh
 : 1435193083:0;source $ZDOTDIR/.zshenv
 : 1435193088:0;echo $gh
 : 1435193096:0;cat .zshenv
-: 1435193110:0;to gh
 : 1435193134:0;cd ~/.config
-: 1435193138:0;cd zsh
-: 1435193140:0;ls
-: 1435193337:0;env
-: 1435193343:0;ls
 : 1435193365:0;rm 0
 : 1435193366:0;rm 1
 : 1435193374:0;rm midori_0.5.8-1_amd64_*
 : 1435193379:0;rm qupzilla_1.6.6_amd6*
-: 1435193381:0;l
 : 1435193393:0;file zshenv
 : 1435193398:0;rm zshenv
-: 1435193414:0;env
 : 1435193453:0;file .zcompdump
-: 1435193604:0;ls -a
-: 1435193639:0;to gh
 : 1435193649:0;cat .gitignore
 : 1435193678:0;cp -r ~/.config/zsh .config
+: 1435193694:0;cd zsh
+: 1435193715:0;echo *.swp
+: 1435193725:0;rm $.swp
+: 1435193730:0;rm *.swp
+: 1435193742:0;rm .zcompdump
+: 1435193751:0;rf cache
+: 1435193798:0;git add aliases functions history .zshenv .zshrc
+: 1435193805:0;git rm cache/
+: 1435193815:0;git rm -r cache
+: 1435193848:0;vim .gitignore
+: 1435193883:0;cd .config/zsh/
+: 1435193918:0;git rm .zcompdump
+: 1435193924:0;git rm zcompdump
+: 1435441921:0;vim .gtkrc-2.0
+: 1435441921:0;chmod a-w .gtkrc-2.0 
+: 1435441921:0;cat /home/dbb/.gtkrc.mine >> ~/.gtkrc.mine 
+: 1435441921:0;vim .gtkrc.mine
+: 1435441921:0;chmod a-w .gtkrc.mine 
+: 1435441921:0;cp /home/dbb/.gvimrc .gvimrc
+: 1435441921:0;vim .gvimrc
+: 1435441921:0;which td
+: 1435257863:0;which gdebi
+: 1435257870:0;cd Downloads
+: 1435257934:0;rm atom-amd64*
+: 1435346624:0;l a*
+: 1435346636:0;sudo gdebi atom-amd64.deb
+: 1435346671:0;atom
+: 1435358687:0;cat /etc/ issue
+: 1435358693:0;cat /etc/issue
+: 1435358758:0;file /bin/sh
+: 1435358803:0;dash
+: 1435358892:0;perl --version
+: 1435359039:0;./newdeb.pl
+: 1435439149:0;sudo mkdir /etc/X11/xorg.conf.d
+: 1435439163:0;sudo cp /usr/share/X11/xorg.conf.d/50-synaptics.conf $_
+: 1435439182:0;gksudo gvim /etc/X11/xorg.conf.d/50-synaptics.conf
+: 1435439230:0;ls /usr/share/vim/vim74/colors
+: 1435439962:0;aps synclient
+: 1435440399:0;find . -name 'themerc'
+: 1435440413:0;find . -name 'themerc' xargs | grep 0000000
+: 1435440423:0;find . -name 'themerc' | xargs | grep 0000000
+: 1435440492:0;find . -name 'themerc' | xargs grep 0000000
+: 1435440530:0;find . -name 'themerc' -prune -o -print | xargs grep -r -R -i "0000000"
+: 1435440570:0;rm -rf OMG*
+: 1435440585:0;find . -name 'themerc' -prune -o -print | xargs grep -r -R -i "#0000000"
+: 1435440708:0;man obconf
+: 1435440723:0;obconf --version
+: 1435440732:0;bash
+: 1435440771:0;cd ~/src/openbox-themes-deb
+: 1435440789:0;cd AbsE
+: 1435440792:0;cd openbox-3
+: 1435440805:0;cp ~/.themes/AbsE/openbox-3/themerc ./themerc
+: 1435440819:0;cd Weightless-industry/openbox-3/
+: 1435440832:0;cp ~/.themes/Wblue/openbox-3/themerc ./themerc
+: 1435440835:0;git add themerc
+: 1435440838:0;...
+: 1435440843:0;git add AbsE/openbox-3/themerc
+: 1435440862:0;gcp 'Fix hex colors with extra digit'
+: 1435441781:0;srn
+: 1435441969:0;mv .themes .themes-bak
+: 1435441974:0;mkdir .themes
+: 1435441997:0;sudo mv /usr/share/themes /usr/share/themes-bak
+: 1435442020:0;rm .themes
+: 1435442025:0;rm -r .themes
+: 1435442030:0;mv .themes-bak .themes
+: 1435442054:0;mkdir themesbak
+: 1435442106:0;mv a* ~/themesbak
+: 1435442116:0;export tb=~/themesbak
+: 1435442128:0;mv A* $tb
+: 1435442141:0;mv boje_1_2_1_by_nale12-d5o4jp6 $tb
+: 1435442149:0;mv B* $tb
+: 1435442162:0;mv c* $tb
+: 1435442170:0;mv C* $tb
+: 1435442183:0;mv d* $tb
+: 1435442196:0;mv e* $tb
+: 1435442204:0;mv E* $tb
+: 1435442217:0;mv ffuu $tb
+: 1435442224:0;mv F* $tb
+: 1435442255:0;mv glowCinderLC $tb
+: 1435442260:0;mv G* $tb
+: 1435442277:0;mv 142331-solidity-0.4.1 $tb
+: 1435442286:0;mv 3spr3sso $tb
+: 1435442304:0;mv D* $tb
+: 1435442311:0;alias o=obconf
+: 1435442342:0;mv m* $tb
+: 1435442350:0;mv M* $tb
+: 1435442362:0;mv nightfall $tb
+: 1435442372:0;mv N* $tb
+: 1435442406:0;mv 86083-Glow_xfwm4.tar.gz $tb
+: 1435442413:0;mv 94004-ClearLUX\ 1.3.tar.gz $tb
+: 1435442435:0;mv Holo $tb
+: 1435442444:0;mv I* $tb
+: 1435442458:0;mv Jolly $tb
+: 1435442476:0;cd .themes
+: 1435442491:0;mv Kong $tb
+: 1435442504:0;mv L* $tb
+: 1435442527:0;mv O* $tb
+: 1435442545:0;mv o* $tb
+: 1435442565:0;mv P* $tb
+: 1435442594:0;mv R* $tb
+: 1435442633:0;mv S* $tb
+: 1435442647:0;mv s* $tb
+: 1435442656:0;mv T* $tb
+: 1435442668:0;la
+: 1435442679:0;mv ULTRA $tb
+: 1435442687:0;mv V* $tb
+: 1435442699:0;mv Wblue $tb
+: 1435442714:0;mv Weightless-industry $tb
+: 1435442724:0;mv X* $tb
+: 1435442735:0;mv xfce-autumn $tb
+: 1435442746:0;mv zips $tb
+: 1435442757:0;mv Z* $tb
+: 1435442775:0;ls -a
+: 1435442786:0;mv $tb/Zenyellow .
+: 1435442803:0;mv Zenyellow $tb
+: 1435442835:0;mv $tb/Staffel .
+: 1435442851:0;mv Staffel $tb
+: 1435442868:0;mkdir testdir
+: 1435442883:0;mkdir testdir/openbox-3
+: 1435442918:0;touch testdir/openbox-3/themerc
+: 1435442976:0;apt-file list openbox
+: 1435443019:0;cp -r /usr/share/themes-bak/Clearlooks .
+: 1435443123:0;sudo mv /usr/share/themes-bak /usr/share/themes
+: 1435443165:0;rf testdir
+: 1435443184:0;cd .config
+: 1435443191:0;mv openbox openbox-bak
+: 1435443254:0;rm -rf Clearlooks
+: 1435443257:0;o
+: 1435443324:0;apin reportbug
+: 1435443409:0;reportbug obconf
+: 1435443891:0;mv openbox-bak openbox
+: 1435443915:0;ls .themes
+: 1435443922:0;rm -rf .themes
+: 1435443927:0;mv themesbak .themes
+: 1435443939:0;ls /usr/share/themes
+: 1435447154:0;sources
+: 1435447189:0;apud
+: 1435447292:0;git clone git://git.openbox.org/mikachu/openbox openbox
+: 1435447377:0;which sidstall
+: 1435447396:0;sudo aptitude install --target-release sid openbox
+: 1435447427:0;sudo aptitude install --target-release sid openbox libobrender31 obconf
+: 1435518455:0;to src
+: 1435518461:0;file wmii
+: 1435518483:0;mv wmii wmii-old
+: 1435518501:0;git clone https://github.com/sunaku/wmii.git
+: 1435518530:0;aps xlib
+: 1435518574:0;aps "libx dev"
+: 1435518597:0;aps "lib ixp"
+: 1435518611:0;apin libixp libixp-dev
+: 1435518653:0;cd wmii
+: 1435518758:0;aps wmii
+: 1435518766:0;apv wmii
+: 1435518792:0;make
+: 1435518930:0;apv libx11-dev
+: 1435518949:0;apv libixp-dev
+: 1435519273:0;vim config.mk
+: 1435529241:0;apv i3-wm
+: 1435531816:0;synclient
+: 1435532112:0;whois nongnu.org
+: 1435536262:0;apin i3-wm
+: 1435536302:0;aps i3
+: 1435536337:0;apsh i3blocks
+: 1435536357:0;apsh i3lock
+: 1435536376:0;apsh i3status
+: 1435536391:0;aps i3bar
+: 1435536400:0;afs i3bar
+: 1435536769:0;l oxrandr
+: 1435536772:0;xrandr
+: 1435548105:0;ll .vim/colors
+: 1435548111:0;ll .vim/colors | less
+: 1435548157:0;cd .vim
+: 1435548161:0;cd colors
+: 1435548167:0;rm af.vim
+: 1435548241:0;vim ~/.vimrc
+: 1435548281:0;cd .vim/colors
+: 1435548340:0;rm blackangus.vim
+: 1435548464:0;rm BlackSea.vim
+: 1435548486:0;rm Black.vim
+: 1435548596:0;ls | sort -d | less
+: 1435548609:0;ls .vim/colors| sort -d | less
+: 1435614465:0;less .config/tint2/tint2rc
+: 1436309450:0;killall xcompmgr
+: 1436309615:0;pnmixer
+: 1436309877:0;vim .config/gtk-3.0/settings.ini
+: 1436310007:0;ls /usr/share/themes/A
+: 1436310012:0;ls /usr/share/themes/Adwaita
+: 1436310056:0;aps lxa
+: 1436310076:0;apin lxappearance lxappearance-obconf
+: 1436316838:0;pc 31.65/12
+: 1436317484:0;pc '16.74/(.12*150)'
+: 1436317493:0;pc .93x16
+: 1436317503:0;pc '16.74/(.125*150)'
+: 1436317512:0;pc .89x16
+: 1436318192:0;cd .config/openbox
+: 1436318217:0;cp rc.xml 20150707_rc_backup
+: 1436318379:0;openbox --help
+: 1436318392:0;openbox --reconfigure
+: 1436319281:0;obconf
+: 1436319510:0;aps dock
+: 1436319716:0;apin wmcpu
+: 1436319813:0;aps ~d'window maker'
+: 1436319828:0;aps wmcpu
+: 1436319860:0;aps wmbat
+: 1436319886:0;aps ~d'maker dock'
+: 1436319990:0;apsh wmaker
+: 1436320043:0;apsh wmaloader
+: 1436320060:0;apsh wmail
+: 1436320078:0;aps ~ddocklet
+: 1436320126:0;apsh wmanager
+: 1436320138:0;apsh wmanx
+: 1436320149:0;apsh wmauda
+: 1436320172:0;apsh wmbat
+: 1436320177:0;apsh wmbattery
+: 1436320195:0;aps ~ddockable
+: 1436320258:0;apsh wmacpi
+: 1436320358:0;apin wmcalc wmcliphist wmcalclock wmclock wmclockmon wmfsm wmifs wmsun wmxres
+: 1436320478:0;apsh wmbubble
+: 1436320510:0;apsh wmbutton
+: 1436320540:0;apsh wmcoincoin
+: 1436320556:0;apsh wmctrl
+: 1436320576:0;apsh wmcube
+: 1436320639:0;apsh wmforkplop
+: 1436320670:0;apsh wmfrog
+: 1436320694:0;apsh wmget
+: 1436320710:0;apsh wmgui
+: 1436320811:0;apsh wmnut
+: 1436320839:0;apsh wmpinboard
+: 1436320862:0;apsh wmpomme
+: 1436320878:0;apsh wmrack
+: 1436320886:0;apsh wmressel
+: 1436320923:0;apsh wmwave
+: 1436320952:0;apin wmclock wmclockmon wmcpu wmcpuload wmnet wmdate wmdiskmon wmbattery wmbubble wmbutton wmctrl wmcube wmdate wmdrawer wmfire wmforecast wmforkplop wmfrog wmget wmix wmhdplop wmifinfo wminput wmitime wmlongrun wmmatrix wmmemload wmmixer wmmon wmnet wmnut wmrack wmpinboard wmshutdown wmsun wmsystemtray wmtemp wmtime wmave wmweather wmweather+ wmwork
+: 1436321027:0;apin wmwave
+: 1436321122:0;pc 2/5048
+: 1436321128:0;pc 200/5048
+: 1436321296:0;pc 2000/5048
+: 1436321322:0;pc 1/.0396
+: 1436321347:0;pc 25x.0396
+: 1436382014:0;aps flash
+: 1436382047:0;apsh  flashplugin-nonfree
+: 1436382096:0;sudo update-flashplugin-nonfree 
+: 1436385713:0;chromium --help
+: 1436385728:0;sagi /usr hangout
+: 1436385880:0;wmagnify
+: 1436385899:0;wmbattery
+: 1436385911:0;wmbubble
+: 1436385930:0;wmbutton
+: 1436385955:0;wmcalc
+: 1436385967:0;wmcalclock
+: 1436385983:0;wmcliphist
+: 1436386021:0;wmclockmon-cal
+: 1436386030:0;wmclockmon-config
+: 1436386109:0;wmctrl
+: 1436386117:0;wmcube
+: 1436386184:0;touch /home/dbb/.wmdrawerrc
+: 1436386187:0;wmdrawer
+: 1436386199:0;wmf2eps
+: 1436386206:0;wmfire
+: 1436386233:0;wmforkplop
+: 1436386245:0;wmfrog
+: 1436386263:0;wmgenmenu
+: 1436386267:0;wmget
+: 1436386320:0;wminput
+: 1436386341:0;wmix
+: 1436386347:0;wmlongrun
+: 1436386354:0;wmmatrix
+: 1436386428:0;wmpinboard
+: 1436386444:0;wmtemp
+: 1436386467:0;wmtime
+: 1436386477:0;wmwave
+: 1436386533:0;wmweather+
+: 1436386551:0;man wmweather
+: 1436386630:0;wmweather --station=KLWB
+: 1436386674:0;wmweather --station=KLWB --lcd
+: 1436386708:0;wmweather --station=KLWB -lc=red
+: 1436386715:0;wmweather --station=KLWB --lc=red
+: 1436386733:0;wmweather --station=KLWB --compat --lc=red
+: 1436386777:0;wmweather --station=KLWB --compat --lc=#3F7FBF
+: 1436386801:0;wmweather --station=KLWB --compat --lc=#3F54BF
+: 1436386810:0;wmweather --station=KLWB --compat --lc=blue
+: 1436386867:0;wmweather --station=KLWB --compat --lc=cornflower
+: 1436386895:0;wmweather --station=KLWB --compat --lc=\#3F54BF
+: 1436386902:0;wmweather --station=KLWB --compat --lc=\#3F7FBF
+: 1436386920:0;wmweather --station=KLWB --compat --lc=\#3F7FBF --dc=#ff6600
+: 1436386925:0;wmweather --station=KLWB --compat --lc=\#3F7FBF --dc=\#ff6600
+: 1436386934:0;wmweather --station=KLWB --compat --lc=\#3F7FBF --dc=\#ff8800
+: 1436386939:0;wmweather --station=KLWB --compat --lc=\#3F7FBF --dc=\#ffaa00
+: 1436386945:0;wmweather --station=KLWB --compat --lc=\#3F7FBF --dc=\#ff9900
+: 1436387017:0;wmweather --station=KLWB --compat --lc=\#4388cc --dc=green
+: 1436387022:0;wmweather --station=KLWB --compat --lc=\#4388cc --dc=orange
+: 1436387041:0;wmweather --station=KLWB --compat --lc=\#4388cc --dc=orangered
+: 1436387052:0;wmweather --station=KLWB --compat --lc=\#4388cc --dc=\#ff7700
+: 1436387132:0;wmweather --station=KLWB --compat --lc=\#4388cc --dc=\#ff7700 --tc=green
+: 1436387154:0;wmweather --station=KLWB --compat --lc=\#4388cc --dc=\#ff7700 --tc=\#808080
+: 1436387175:0;wmweather --station=KLWB --compat --lc=\#4388cc --dc=\#ff8000 --tc=\#808080
+: 1436387182:0;wmweather --station=KLWB --compat --lc=\#4388cc --dc=\#ff8800 --tc=\#808080
+: 1436387195:0;wmweather --station=KLWB --compat --lc=\#4388cc --dc=\#ff9000 --tc=\#808080
+: 1436387222:0;ls .wmweather
+: 1436387230:0;cd .wmweather
+: 1436387235:0;rm EDDK
+: 1436387256:0;vim config
+: 1436387477:0;wmwork
+: 1436387521:0;man wmdiskmon
+: 1436387558:0;df -P
+: 1436387584:0;rh
+: 1436387588:0;wmdiskmon
+: 1436387653:0;wmdiskmon -p /dev/sda
+: 1436387657:0;wmdiskmon -p /dev/sda1
+: 1436387705:0;wmdiskmon -p /dev/sda2 -p /dev/sda3 -p /dev/sda7
+: 1436387752:0;wmdiskmon -p /dev/sda2 -p /dev/sda3 -p /dev/sda7 -bl
+: 1436387766:0;wmdiskmon -p /dev/sda2 -p /dev/sda3 -p /dev/sda7 -bl -lc \#ff6600
+: 1436387802:0;wmdiskmon -p /dev/sda2 -p /dev/sda3 -p /dev/sda7 -bl -lc \#ff9f40
+: 1436387821:0;wmdiskmon -p /dev/sda2 -p /dev/sda3 -p /dev/sda7 -bl -lc \#cc8033
+: 1436387975:0;man wmclockmon
+: 1436387999:0;wmclockmon -bl -lc \#cc8033
+: 1436388218:0;wmcpu
+: 1436388223:0;wmcpuload
+: 1436388231:0;man wmcpuload
+: 1436388251:0;wmcpuload -bl -lc \#f2a150
+: 1436388308:0;wmdate
+: 1436388320:0;wmforecast
+: 1436388341:0;wmhdplop
+: 1436388371:0;man wmifinfo
+: 1436388382:0;wmifinfo -l
+: 1436388393:0;wmifinfo
+: 1436388501:0;orage --help
+: 1436388660:0;middle-click
+: 1436388726:0;wmifs
+: 1436388738:0;man wmifs
+: 1436388769:0;wmfsm
+: 1436388779:0;wmitime
+: 1436388790:0;man wmitime
+: 1436388816:0;wmmemload
+: 1436388832:0;wmmemload -bl -lc \#f2a150
+: 1436388934:0;alsamixer --help
+: 1436388945:0;sudo alsactl --help
+: 1436388957:0;sudo alsactl 
+: 1436388987:0;ls /dev
+: 1436389063:0;sudo modprobe snd-mixer-oss
+: 1436389066:0;wmmixer
+: 1436389082:0;wmmon
+: 1436389092:0;man wmmon
+: 1436389115:0;wmmon -i
+: 1436389128:0;wmnet
+: 1436389290:0;wmnut
+: 1436389307:0;wmrack
+: 1436389313:0;wmsun
+: 1436389438:0;cat .config/openbox/autostart.sh
+: 1436389459:0;wmweather
+: 1436389470:0;wmcpuload -bl -lc \#f2a150 &
+: 1436389488:0;wmmemload -bl -lc \#f2a150 &
+: 1436389493:0;wmdiskmon -p /dev/sda2 -p /dev/sda3 -p /dev/sda7 -bl -lc \#cc8033 &
+: 1436389578:0;ps -e |grep wm
+: 1436389596:0;kill 13801 13805 13809 13821
+: 1436389611:0;wmcpuload -bl -lc \#f2a150 
+: 1436389654:0;wmmemload -bl -lc \#ff8800
+: 1436389682:0;wmmemload -bl -lc \#E67F17
+: 1436389754:0;wmclock
+: 1436389758:0;wmclockmon
+: 1436389769:0;vim .wmclockmonrc
+: 1436389817:0;wmclockmon &
+: 1436389817:0;wmcpuload -bl -lc \#E67F17 &
+: 1436389817:0;wmmemload -bl -lc \#E67F17 &
+: 1436389817:0;wmdiskmon -p /dev/sda2 -p /dev/sda3 -p /dev/sda7 -bl -lc \#E67F17 &
+: 1436389817:0;wmifinfo &
+: 1436389817:0;wmweather &
+: 1436389914:0;xfce4-taskmanager
+: 1436390017:0;rm evolution-alarm-notify.desktop
+: 1436390029:0;..
+: 1436390041:0;mv autostart autostrt_old
+: 1436390045:0;mkdir autostart
+: 1436390074:0;ps -e | grep xf
+: 1436390095:0;kill 1599 1608 
+: 1436404399:0;pc 57.28/32
+: 1436404412:0;pc 20/8
+: 1436473978:0;apv chromium
+: 1436473992:0;apv linux-image-3.16.0-4-amd64
+: 1436474006:0;apv vim-runtime
+: 1436474035:0;apv obconf
+: 1436474045:0;apv openbox
+: 1436474055:0;apv tint2
+: 1436474087:0;apv ffmpeg
+: 1436474137:0;apv vlc
+: 1436481191:0;cat /proc/cpuinfo
+: 1436482442:0;pc 6.40/5
+: 1436561386:0;pse |grep hrom
+: 1436561392:0;killall chromium
+: 1436561444:0;free -m
+: 1436561455:0;aps ~ilinux
+: 1436561471:0;uname -r
+: 1436561534:0;aprm linux-headers-3.2.0-4-amd64 linux-headers-3.2.0-4-common linux-image-3.2.0-4-amd64 linux-kbuild-3.2
+: 1436561568:0;sh .fehbg
+: 1436561611:0;sudo dpkg --clear-avail
+: 1436561780:0;sudo aptitude clean
+: 1436561783:0;df -h
+: 1436565278:0;aps tor
+: 1436565313:0;apsh torbrowser-launcher
+: 1436565331:0;apin torbrowser-launcher
+: 1436568941:0;which socat
+: 1436569119:0;aps socat
+: 1436569128:0;apin socat
+: 1436569280:0;which psutil
+: 1436569285:0;aps psutil
+: 1436569373:0;cd sand
+: 1436569384:0;touch apticolor
+: 1436569504:0;echo -e "\e[1;31m This is red text \e[0m"
+: 1436569822:0;echo "foo\nbar"
+: 1436569833:0;echo "foo\nbar" | ./apticolor
+: 1436569858:0;ln -s ~/sand/apticolor ~/bin/apticolor
+: 1436569874:0;chmod +x apticolor
+: 1436569889:0;ls -l apticolor
+: 1436569910:0;./apticolor
+: 1436569914:0;echo "foo\nbar" | apticolor
+: 1436570003:0;aps "perl ansi"
+: 1436570013:0;apsh libansicolor-perl
+: 1436570224:0;apsh socat
+: 1436570245:0;apsh socat | apticolor
+: 1436570340:0;echo "Package: name\nfoo\nbar" | apticolor
+: 1436570643:0;apsh perl > perlAptShow.txt
+: 1436570663:0;vim perlAptShow.txt
+: 1436570686:0;cat perlAptShow.txt
+: 1436570694:0;cat perlAptShow.txt | apticolor
+: 1436570877:0;apin python3-psutil
+: 1436570907:0;aps "py merc"
+: 1436570917:0;aps mercurial
+: 1436570981:0;aps pip
+: 1436571025:0;apsh python-pip
+: 1436571040:0;aps setuptool
+: 1436571073:0;apin python3-pip python3-setuptools
+: 1436571135:0;file `which which python`
+: 1436571148:0;which python
+: 1436571161:0;file `which $_`
+: 1436571210:0;rehash
+: 1436571212:0;which pip
+: 1436571225:0;sagi /usr/bin pip
+: 1436571323:0;sagi /usr/bin setup
+: 1436571334:0;apsh python3-setuptools
+: 1436571501:0;pip3 search mercurial
+: 1436571523:0;pip3 --help
+: 1436571530:0;pip3 show Mercurial
+: 1436571566:0;pip3 show mercurial
+: 1436571582:0;pip3 search mercurial | sort -d | less
+: 1436571606:0;sudo pip3 install Mercurial
+: 1436571624:0;sudo cat /root/.pip/pip.log
+: 1436571691:0;python-mercurial
+: 1436571697:0;mkdir $_
+: 1436571701:0;cd python-mercurial
+: 1436571710:0;mv ~/Downloads/mercurial-3.4.2.tar.gz .
+: 1436571727:0;tar xzf mercurial-3.4.2.tar.gz
+: 1436571731:0;cd mercurial-3.4.2
+: 1436571743:0;less README
+: 1436571759:0;vim PKG-INFO
+: 1436571910:0;aps "py pip"
+: 1436571924:0;apin python-pip
+: 1436576557:0;afs /usr/include/python2.7/Python.h
+: 1436576584:0;python --version
+: 1436576586:0;apin libpython2.7-dev
+: 1436631897:0;sudo pip install Mercurial
+: 1436631929:0;aps "py git"
+: 1436631986:0;aps python-cffi
+: 1436632032:0;apsh python-cffi
+: 1436632067:0;apv python-pygit2
+: 1436632086:0;apsid python-cffi
+: 1436632876:0;apv python-cffi
+: 1436632896:0;apsid python3-cffi
+: 1436632970:0;apin python-pygit2 python3-pygit2
+: 1436633743:0;sudo pip3 install i3-py
+: 1436633753:0;sudo pip install i3-py
+: 1436633939:0;pip3 search pyuv
+: 1436634033:0;aps toolize
+: 1436634073:0;apin libtool
+: 1436634093:0;sudo pip3 install pyuv
+: 1436634134:0;sudo pip2 install pyuv
+: 1436634330:0;aps pypy
+: 1436634366:0;apv pyp
+: 1436634618:0;apsh pypy
+: 1436643571:0;cd .config/autostart
+: 1436643616:0;orage --toggle
+: 1436643857:0;pstree --help
+: 1436643879:0;ps -e | grep -i xf
+: 1436643896:0;pstree -H 1518
+: 1436643923:0;ps uf
+: 1436643934:0;ps auxf
+: 1436656486:0;aps ~dfractal
+: 1436674699:0;afs /bin/vi
+: 1436674763:0;apt-file search --regexp '/bin/vi$'
+: 1437063336:0;sudo update-flashplugin-nonfree
+: 1437063344:0;sudo update-flashplugin-nonfree --install
+: 1437065309:0;sudo update-flashplugin-nonfree --status
+: 1437065319:0;apdg
+: 1437100377:0;sudo pip install --user git+git://github.com/powerline/powerline
+: 1437100472:0;cd src
+: 1437100484:0;git clone https://github.com/powerline/fonts.git powerline-fonts
+: 1437100503:0;cd powerline-fonts
+: 1437100544:0;wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+: 1437100551:0;wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+: 1437100562:0;cp PowerlineSymbols.otf ~/.fonts
+: 1437100575:0;fc-cache -cf ~/.fonts
+: 1437100583:0;fc-cache -vf ~/.fonts
+: 1437100606:0;mkdir -p ~/.config/fontconfig/conf.d/
+: 1437100613:0;cp 10-powerline-symbols.conf $_
+: 1437100636:0;vim --version | grep +python
+: 1437100808:0;pip install --user git+git://github.com/powerline/powerline
+: 1437103021:0;vim .pentadactylrc
+: 1437158886:0;aps midi
+: 1437158927:0;apin timidity
+: 1437158990:0;aps vlc
+: 1437159004:0;apin vlc-plugin-fluidsynth
+: 1437159224:0;urxvt
+: 1437159246:0;vim /etc/inputrc
+: 1437159571:0;ls ~/.fonts/programming
+: 1437159579:0;ls ~/.fonts/programming | sort -d
+: 1437160027:0;vim
+: 1437160380:0;xprop
+: 1437160524:0;apv quodlibet
+: 1437169346:0;cd .vim/bundle
+: 1437169353:0;git clone https://github.com/tpope/vim-fugitive.git
+: 1437169504:0;git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
+: 1437169957:0;git clone https://github.com/airblade/vim-gitgutter.git
+: 1437170207:0;git clone https://github.com/sjl/gundo.vim.git
+: 1437170303:0;git clone https://github.com/scrooloose/syntastic.git
+: 1437170738:0;ls vim-airline
+: 1437170762:0;sagi vim-airline molo
+: 1437170771:0;ls vim-airline/autoload/airline/themes
+: 1437173821:0;apv tmux
+: 1437173875:0;apin tmux
+: 1437173909:0;sagi src/githome tmux
+: 1437173920:0;cp src/githome/.tmux.conf ~
+: 1437174018:0;file .zkbd
+: 1437174042:0;ls src/githome/.tmux.conf
+: 1437174082:0;mv zkbd .zkbd
+: 1437174095:0;rm ~/.zkbd
+: 1437174162:0;ln -s ~/.config/zsh/.zkbd ~/.zkbd
+: 1437174188:0;[[ ! -d ~/.zkbd ]] && echo 1
+: 1437174329:0;rm .zkbd
+: 1437174333:0;cd $ZDOTDIR
+: 1437174342:0;ls .zkbd
+: 1437174378:0;cd .zkbd
+: 1437174395:0;echo ${ZDOTDIR}/.zkbd/${TERM}-${VENDOR}-${OSTYPE}
+: 1437174413:0;${ZDOTDIR}/.zkbd/${TERM}-${DISPLAY}
+: 1437174435:0;cp rxvt-unicode-:0.0 rxvt-unicode-:0
+: 1437174475:0;cp rxvt-unicode-:0 rxvt-unicode-pc-linux-gnu
+: 1437174510:0;[[ -f ${ZDOTDIR}/.zkbd/${TERM}-${VENDOR}-${OSTYPE} ]] && echo 1
+: 1437174559:0;afs zkbd
+: 1437174597:0;sudo cp /usr/share/zsh/functions/Misc/zkbd  /usr/share/zsh/functions/Misc/zkbd.orig
+: 1437174606:0;sudo vim  /usr/share/zsh/functions/Misc/zkbd
+: 1437174654:0;ls
+: 1437174797:0;print ${ZDOTDIR}/.zkbd/${TERM}-${VENDOR}-${OSTYPE}
+: 1437174804:0;file ${ZDOTDIR}/.zkbd/${TERM}-${VENDOR}-${OSTYPE}
+: 1437174819:0;print ${ZDOTDIR}/".zkbd/${TERM}-${VENDOR}-${OSTYPE}"
+: 1437174825:0;file ${ZDOTDIR}/".zkbd/${TERM}-${VENDOR}-${OSTYPE}"
+: 1437174857:0;print
+: 1437174861:0;print ${ZDOTDIR}/.zkbd/${TERM}-${DISPLAY}
+: 1437175028:0;print ~/.zkbd/$TERM-${DISPLAY:-$VENDOR-$OSTYPE}
+: 1437175032:0;file $_
+: 1437175070:0;file $ZDOTDIR/.zkbd/$TERM-${DISPLAY:-$VENDOR-$OSTYPE}
+: 1437175129:0; [[ -f ${ZDOTDIR}/.zkbd/${TERM}-${DISPLAY}:-${VENDOR}-${OSTYPE} ]] && echo file
+: 1437175144:0;print ${ZDOTDIR}/.zkbd/${TERM}-${DISPLAY}:-${VENDOR}-
+: 1437175167:0;print ${ZDOTDIR}/.zkbd/${TERM}-${DISPLAY}:-${VENDOR}-${OSTYPE}
+: 1437175175:0;file ${ZDOTDIR}/.zkbd/${TERM}-${DISPLAY}:-${VENDOR}-${OSTYPE}
+: 1437175223:0;[[ -f ${ZDOTDIR}/.zkbd/$TERM-${DISPLAY:-$VENDOR-$OSTYPE}\
+]] && echo file
+: 1437175861:0;to gh
+: 1437175867:0;cd .config/zsh
+: 1437175944:0;bindkey "${key[C-Left]}"   backward-word
+: 1437176018:0;bindkey --help
+: 1437176025:0;bindkey
+: 1437176085:0;bindkey 
+: 1437176095:0;bindkey "^b" backward-word
+: 1437176204:0;bindkey | grep word
+: 1437176260:0;bindkey | grep -i '^n'
+: 1437176263:0;bindkey | grep -i '\^n'
+: 1437176311:0;bindkey '^f' forward-word
+: 1437176327:0;bindkey |grep kill
+: 1437176396:0;bindkey '^d' kill-word
+: 1437176422:0;cp $ZDOTDIR/keys keys
+: 1437176428:0;guf keys
+: 1437177407:0;echo $PROMPT_CHAR
+: 1437177410:0;l
+: 1437177422:0;grep * 'PROMPT_CHAR'
+: 1437177444:0;grep 'PROMPT_CHAR' *
+: 1437177685:0;env | grep UTF
+: 1437177801:0;su
+: 1437177876:0;echo $LANG
+: 1437177922:0;[[ $LANG == "*UTF*" ]] && print 1
+: 1437177929:0;[[ $LANG == "*UTF" ]] && print 1
+: 1437177961:0;[[ $LANG == "*UTF-8" ]] && print 1
+: 1437177987:0;[[ $LANG == "rn_US.UTF-8" ]] && print 1
+: 1437177996:0;[[ $LANG == "en_US.UTF-8" ]] && print 1
+: 1437178008:0;[[ $LANG == *UTF-8 ]] && print 1
+: 1437178015:0;[[ $LANG == *UTF* ]] && print 1
+: 1437183961:0;cd
+: 1437183961:0;env
+: 1437183961:0;env | grep -i utf
+: 1437178221:0;export PROMPT_CHAR='áƒ»ƒ£'
+: 1437178420:0;xrdb -load ~/.Xdefaults
+: 1437178424:0;for i in áƒº¦ áƒ»ƒ£ áƒ»¢ áƒ»ƒ² áƒº§ áƒ»ƒ§ áƒ»ƒ£ áƒº© áƒ»ƒ³ áƒ»ƒª áƒº¡ áƒº¹ áƒ»ª; do print "âƒ¹ƒ§ ~ $i ls\n"; done
+: 1437178429:0;export PROMPT_CHAR='Â»'
+: 1437178432:0;export PROMPT_CHAR='áƒ»ƒ§'
+: 1437183973:0;export PROMPT_CHAR='>'
+: 1437183979:0;tmux
+: 1437184224:0;cd
+: 1437184226:0;man tmux
+: 1437184581:0;git clone https://github.com/edkolev/tmuxline.vim ~/.vim/bundle/tmuxline.vim
+: 1437184694:0;man tmux
+: 1437184729:0;ls
+: 1437184781:0;kde_pkgs   Templates
+: 1437184781:0;bin                                  lsmod.txt  themedir
+: 1437184781:0;browsers.log                         Mail       untitled.png
+: 1437184781:0;Desktop                              Music      urxvtShortHelp.txt
+: 1437184899:0;ls /
+: 1437184900:0;l
+: 1437184925:0;kde_pkgs   Templates
+: 1437184925:0;bin                                  lsmod.txt  themedir
+: 1437184925:0;browsers.log                         Mail       untitled.png
+: 1437184925:0;Desktop                              Music      urxvtShortHelp.txt
+: 1437185217:0;pc '2^4'
+: 1437185221:0;pc '2^8'
+: 1437185224:0;pc '2^16'
+: 1437185229:0;pc '2^10'
+: 1437185233:0;pc '2^12'
+: 1437185237:0;pc '2^13'
+: 1437185242:0;pc '2^14'
+: 1437185665:0;afs pbpaste
+: 1437185784:0;ln -s ~/.config ~/.c
+: 1437185845:0;xsel
+: 1437185857:0;xsel --output
+: 1437185870:0;man xsel
+: 1437185920:0;print foo | xsel -i
+: 1437185924:0;xsel
+: 1437185943:0;xsel -bo
+: 1437185960:0;which paste
+: 1437185966:0;man paste
+: 1437186086:0;which xy
+: 1437186091:0;which xp
+: 1437186267:0;xsel -bo
+: 1437186283:0;eval `xsel -bo`
+: 1437186323:0;xsel -o
+: 1437186327:0;xsel -bo
+: 1437186345:0;echo "xsel" | xsel -i
+: 1437186350:0;xsel -o
+: 1437186359:0;echo "clip" | xsel -bi
+: 1437186363:0;xsel -bo
+: 1437190188:0;date
+: 1437194180:0;man tmux
+: 1437194281:0;sagi .vim commentary
+: 1437194326:0;ls vim/bundle/vim-commentary
+: 1437194344:0;bindkey
+: 1437194352:0;bindkey | grep backw
+: 1437194374:0;source $ZDOTDIR/keys
+: 1437194381:0;ls .vim/bundle/vim-commentary
+: 1437246158:0;ls
+: 1437249798:0;zsh --help
+: 1437250823:0;cd .vim/colors
+: 1437250833:0;cp CapsulaPigmentorum.vim Pigmenta.vim
+: 1437261284:0;vim
+: 1437261366:0;man -k xdef
+: 1437261375:0;afs Xdefaults
+: 1437261957:0;to gh
+: 1437261960:0;ls
+: 1437261971:0;cat password_files.txt
+: 1437261990:0;cat githome
+: 1437261993:0;cat githome.zsh
+: 1437262012:0;cp ~/.vimrc .vimrc
+: 1437262029:0;cp ~/.zshenv .zshenv
+: 1437262037:0;cd .config/zsh
+: 1437262062:0;cp $ZDOTDIR/* .
