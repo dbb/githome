@@ -216,8 +216,8 @@ au BufNewFile,BufRead *.cf set filetype=configfile
 au BufNewFile,BufRead *.z* set filetype=zsh
 
 " extra bindings ------------------------------------------------------------
-let mapleader = "<Space>"
-let g:mapleader = "<Space>"
+let mapleader = ","
+let g:mapleader = ","
 
 
 " classic cut/copy/paste
@@ -267,6 +267,7 @@ nnoremap <leader>s ddpk
 nnoremap <leader>t :NERDTreeToggle<CR>
 " write
 nnoremap <leader>w :w!<CR>
+nnoremap <leader>m :w!<CR>
 
 " add to beginning of line with a space
 nnoremap <leader>I ^i <Esc>i

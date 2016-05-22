@@ -1,5 +1,5 @@
 "set guifont=Envy\ Code\ R\ 10
-set guifont=DejaVu\ Sans\ Mono\ 10
+set guifont=DejaVu\ Sans\ Mono\ 12
 "set guifont=GohuFont\ 8
 set lines=41 columns=84
 set background=dark
