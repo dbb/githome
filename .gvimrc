@@ -7,6 +7,9 @@ set guioptions-=T
 set showtabline=2
 colorscheme CapsulaPigmentorum
 
+"let g:airline_theme = 'base16_bright'
+let g:airline_theme = 'base16_chalk'
+
 " Windows: move ~\_vim to ~\vimfiles
 " set guifont=DejaVu\ Sans\ Mono:h10
 "colorscheme paintbox2

@@ -1,5 +1,9 @@
 Xcursor.theme: DMZ-Black
 
+URxvt.iconFile: /usr/share/pixmaps/urxvt.xpm
+URxvt.iconName: xterm
+URxvt.title: xterm
+
 URxvt.perl-ext-common:  default,matcher,searchable-scrollback,clipboard
 URxvt.cutchars:         "().,<>[]{}|'`
 URxvt.termName:         rxvt-unicode
@@ -18,7 +22,7 @@ URxvt.scrollTtyKeypress: true
 !URxvt.keysym.S-Next:    ^[[6;2~
 
 !! list of "perfect" 16:5 ratios: 80x25, 96x30, 112x35, 128x40
-URxvt.geometry:      80x30
+URxvt.geometry:      80x25
 URxvt.highlightSelection: true
 URxvt.transparent: false
 URxvt.shading: 3
@@ -63,13 +67,16 @@ URxvt.keysym.C-M-v: builtin-string:
 ! URxvt*boldFont:     xft:DejaVu Sans Mono:pixelsize=10
 
 ! small terminus fonts
-URxvt*font:     -xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1
-URxvt*boldfont: -xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1
+!URxvt*font:     -xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1
+!URxvt*boldfont: -xos4-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1
 
 ! big terminus fonts
 !URxvt*font:     -xos4-terminus-medium-r-normal-*-14-140-72-72-c-80-iso10646-1
 !URxvt*boldfont: -xos4-terminus-medium-r-normal-*-14-140-72-72-c-80-iso10646-1
 
+! huge terminus fonts
+URxvt*font:     -xos4-terminus-medium-r-normal-*-18-*-*-*-*-*-iso10646-1
+URxvt*boldFont: -xos4-terminus-bold-r-normal-*-18-*-*-*-*-*-iso10646-1
 
 ! colors -----------------------------------------------------------------
 !! color options

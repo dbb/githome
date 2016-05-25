@@ -158,9 +158,34 @@ fi
 # }
 
 
+#############################################################################
+
+## logging, check vars
+
+if [[ ! -f $ZLOGFILE ]]; then
+    export ZLOGFILE="${HOME}/zsh.log"
+    touch $ZLOGFILE
+    print "(EE) $(date '+%F %T') -- \$ZLOGFILE was undefined in .zshrc" >> $ZLOGFILE
+fi
+
+if [[ -z $ZDOTDIR ]]; then 
+    export ZDOTDIR="${HOME}/.config/zsh" 
+    print "(EE) $(date '+%F %T') -- \$ZDOTDIR was undefined in .zshrc" >> $ZLOGFILE
+fi
+
+if [[ -z $ZFILES_CUSTOM ]]; then
+    export ZFILES_CUSTOM=( aliases functions keys prompt )
+    print "(EE) $(date '+%F %T') -- \$ZFILES_CUSTOM was undefined in .zshrc" >> $ZLOGFILE
+fi
+
 ## source external files
-ext_files=( aliases functions keys prompt )
-for file in $ext_files; do
-    [[ -f ${ZDOTDIR}/${file} ]] && source ${ZDOTDIR}/${file}
+for file in $ZFILES_CUSTOM; do
+    filepath="${ZDOTDIR}/${file}"
+    if [[ -f $filepath ]]; then
+        source $filepath
+    else
+        print "(EE) $(date '+%F %T') -- Failed tp source '$filepath': DNE" >> $ZLOGFILE
+    fi
 done
+
 

@@ -89,6 +89,7 @@ alias l='ls -CF'
 alias cx='chmod u+x'
 
 ## debian ############################################################
+alias aar='sudo add-apt-repository'
 alias afl='apt-file list'
 alias afs='apt-file search --regexp'
 alias aps='aptitude search'
@@ -98,7 +99,7 @@ alias apv='apt-cache policy'
 
 ### root stuff
 alias apcl='sudo aptitude clean'
-alias apin='sudo aptitude install'
+alias apin='sudo aptitude install --without-recommends'
 alias aprm='sudo aptitude remove'
 alias appg='sudo aptitude purge'
 alias apcl='sudo aptitude clean'
@@ -202,6 +203,7 @@ alias pl='perl -le'
 
 ## ps
 alias pse='ps -e'
+alias psg='ps -e | grep'
 
 ## redshift
 alias rs_tung='redshift -o -l 0:0 -m randr -t 2700:2700'
@@ -230,15 +232,14 @@ alias t='/usr/bin/time -p'
 alias utest="xrdb -load ~/.Xdefaults; urxvt &"
 
 ## web
-alias bt-ssh='ssh beraexfn@beratyr.com -p 21098'
-alias bt-sync='rsync -e ssh --port=21098 -av --exclude=".*" ~/src/beratyr/* beraexfn@beratyr.com:~/public_html'
-alias websync='rsync -e ssh -av --exclude=".*" ~/web/dbbolton.us dbbolton@graffias.dreamhost.com:~/'
-alias demus='rsync -e ssh -av --exclude=".*" ~/web/demus.co dbbolton@graffias.dreamhost.com:~/'
-alias dbbo='rsync -e ssh -av --exclude=".*" ~/web/dbbo.co dbbolton@graffias.dreamhost.com:~/'
+# alias bt-ssh='ssh beraexfn@beratyr.com -p 21098'
+# alias bt-sync='rsync -e ssh --port=21098 -av --exclude=".*" ~/src/beratyr/* beraexfn@beratyr.com:~/public_html'
+# alias websync='rsync -e ssh -av --exclude=".*" ~/web/dbbolton.us dbbolton@graffias.dreamhost.com:~/'
+# alias demus='rsync -e ssh -av --exclude=".*" ~/web/demus.co dbbolton@graffias.dreamhost.com:~/'
+# alias dbbo='rsync -e ssh -av --exclude=".*" ~/web/dbbo.co dbbolton@graffias.dreamhost.com:~/'
 
 ## zsh stuff
-alias sa="source ${ZDOTDIR}/aliases"
-alias sz='source ~/.zshrc'
+# alias sa="source ${ZDOTDIR}/aliases"
+# alias sz='source ~/.zshrc'
 alias rh='rehash'
-alias za="vim ${ZDOTDIR}/aliases ; source ${ZDOTDIR}/aliases"
-
+# alias za="vim ${ZDOTDIR}/aliases ; source ${ZDOTDIR}/aliases"

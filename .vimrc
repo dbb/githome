@@ -193,10 +193,6 @@ hi User6 guibg=#090909 guifg=#e6aa00 gui=none
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'tomorrow'
 
-set cursorline
-" set cursorcolumn
-highlight CursorLine ctermbg=black guibg=black
-highlight CursorColumn ctermbg=black guibg=black
 set showcmd " show partially entered commands
 set showmode " display INSERT when in i mode
 set whichwrap=h,l,~,[,],<,>
@@ -345,12 +341,16 @@ else
 	colorscheme slate
 endif
 
-" pthogen
-filetype off
-call pathogen#infect('bundle/{}')
-call pathogen#helptags()
+set cursorline
+" set cursorcolumn
+highlight CursorLine ctermbg=black guibg=black
+highlight CursorColumn ctermbg=black guibg=black
+highlight Cursor guifg=white guibg=black
+highlight iCursor guifg=white guibg=steelblue
 
-" turn filetype back on
+
+" pathogen
+execute pathogen#infect()
 "filetype on
 "filetype plugin on " turn off to disable auto-commenting
 filetype indent plugin on
